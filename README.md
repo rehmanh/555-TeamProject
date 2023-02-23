@@ -6,6 +6,10 @@
 3. Install django using pip `pip install Django`
 4. Verify django installed using `python -m django --version`. Should be at least 4.1
 5. Clone this project, navigate to project directory
+6. Install react and react Dom "npm install react react-dom", 
+7. Install dependencies "npm install"
+
+
 
 ## Starting up
 1. Inside the project directory, you should see the module `finalproject` and `solar`. `finalproject` is django's root/parent project, and `solar` is the child app inside it. This is not that important for now.

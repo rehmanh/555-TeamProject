@@ -1,0 +1,26 @@
+{
+  "status": "done",
+  "assets": {
+    "frontend-0d5f1d4167981fac698a.js": {
+      "name": "frontend-0d5f1d4167981fac698a.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-0d5f1d4167981fac698a.js",
+      "publicPath": "static/solar/frontend-0d5f1d4167981fac698a.js"
+    },
+    "frontend-3f5b1b1a9d35b13e6dd9.js": {
+      "name": "frontend-3f5b1b1a9d35b13e6dd9.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-3f5b1b1a9d35b13e6dd9.js",
+      "publicPath": "static/solar/frontend-3f5b1b1a9d35b13e6dd9.js"
+    },
+    "frontend-e7e0b33a0102f0145328.js": {
+      "name": "frontend-e7e0b33a0102f0145328.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-e7e0b33a0102f0145328.js",
+      "publicPath": "static/solar/frontend-e7e0b33a0102f0145328.js"
+    }
+  },
+  "chunks": {
+    "frontend": [
+      "frontend-3f5b1b1a9d35b13e6dd9.js"
+    ]
+  },
+  "publicPath": "static/solar/"
+}
