@@ -6,8 +6,8 @@
 3. Install django using pip `pip install Django`
 4. Verify django installed using `python -m django --version`. Should be at least 4.1
 5. Clone this project, navigate to project directory
-6. Install react and react Dom "npm install react react-dom", 
-7. Install dependencies "npm install"
+6. Install react and react Dom `npm install react react-dom`
+7. Install dependencies `npm install`
 
 
 
