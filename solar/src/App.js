@@ -1,8 +1,9 @@
 import React from 'react'
-
+import Login from '../client/src/pages/login'
 const App = () => {
     return (
-        <div>This is the start of the react app.</div>
+        <Login />
+
     )
 }
 
