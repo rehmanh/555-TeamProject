@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sales Representatives</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f2f2f2;
+      }
+      
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      table {
+        border-collapse: collapse;
+        width: 50%;
+        margin: 50px auto;
+        background-color: white;
+        box-shadow: 0px 0px 10px grey;
+      }
+      
+      th, td {
+        text-align: left;
+        padding: 12px;
+      }
+      
+      th {
+        background-color: #4CAF50;
+        color: white;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      
+      .checkbox {
+        display: flex;
+        justify-content: center;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <h1>Sales Representatives</h1>
+    
+    <table id="sales-reps">
+      <thead>
+        <tr>
+          <th>Select</th>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Request ID</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <div class="checkbox">
+      <button type="submit" id="submit-btn">Submit</button>
+    </div>
+    
+    <table id="sales-data">
+      <thead>
+        <tr>
+          <th>Customer</th>
+          <th>Revenue</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    
+    <div class="checkbox">
+      <button type="button" id="refresh-btn">Refresh</button>
+    </div>
+    
+    <script>
+      // Function to fetch sales representatives data and populate the table
+      const getSalesRepsData = async () => {
+        const salesRepsTable = document.getElementById('sales-reps');
+        const salesRepsTableBody = salesRepsTable.getElementsByTagName('tbody')[0];
+        salesRepsTableBody.innerHTML = '';
+        
+        const response = await fetch('https://xntg7p1h47.execute-api.us-east-1.amazonaws.com/UAT/second', {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }).then(response => response.json())
+    .then(data => {
+      console.log(data);
+      // You can do something with the response data here
+      document.getElementById("result").innerHTML = JSON.stringify(data);
+    })
+    .catch(error => {
+      console.error(error);
+    });
+        const data = await response.json();
+        
+        data.forEach((item) => {
+          const row = salesRepsTableBody.insertRow();
+          
+          const checkBoxCell = row.insertCell();
+          checkBoxCell.innerHTML = '<input type="checkbox" value="' + item.id + '">';
+          
+          const nameCell = row.insertCell();
+          nameCell.innerHTML = item.first_name;
+          
+          const locationCell = row.insertCell();
+          locationCell.innerHTML = item.city;
+          
+          const activeCell = row.insertCell();
+          activeCell.innerHTML = item.request_id;
+        });
+      };
+      
+      // Function to fetch sales data and populate the table
+        const getSalesData = async () => {
+  const salesDataTable = document.getElementById('sales-data');
+  const salesDataTableBody = salesDataTable.getElementsByTagName('tbody')[0];
+  salesDataTableBody.innerHTML = '';
+
+  const response = await fetch('https://xntg7p1h47.execute-api.us-east-1.amazonaws.com/UAT/second');
+  const data = await response.json();
+
+  data.forEach((item) => {
+    const row = document.createElement('tr');
+
+    const checkColumn = document.createElement('td');
+    const checkInput = document.createElement('input');
+    checkInput.type = 'checkbox';
+    checkColumn.appendChild(checkInput);
+    row.appendChild(checkColumn);
+
+    const nameColumn = document.createElement('td');
+    nameColumn.textContent = item.name;
+    row.appendChild(nameColumn);
+
+    const productColumn = document.createElement('td');
+    productColumn.textContent = item.product;
+    row.appendChild(productColumn);
+
+    const amountColumn = document.createElement('td');
+    amountColumn.textContent = item.amount;
+    row.appendChild(amountColumn);
+
+    salesDataTableBody.appendChild(row);
+  });
+};
+
+const submitSelectedSales = async () => {
+  const salesDataTable = document.getElementById('sales-data');
+  const salesDataTableBody = salesDataTable.getElementsByTagName('tbody')[0];
+  const selectedItems = [];
+
+  salesDataTableBody.querySelectorAll('input[type="checkbox"]:checked').forEach((checkbox) => {
+    const row = checkbox.closest('tr');
+    const name = row.getElementsByTagName('td')[1].textContent;
+    const product = row.getElementsByTagName('td')[2].textContent;
+    const amount = row.getElementsByTagName('td')[3].textContent;
+
+    selectedItems.push({
+      name,
+      product,
+      amount
+    });
+  });
+
+  const response = await fetch('https://xntg7p1h47.execute-api.us-east-1.amazonaws.com/UAT/second', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(selectedItems)
+  });
+
+  // Display a success message or handle any errors
+};
+
+const getSecondTableData = async () => {
+  const secondTable = document.getElementById('second-table');
+  const secondTableBody = secondTable.getElementsByTagName('tbody')[0];
+  secondTableBody.innerHTML = '';
+
+  const response = await fetch('https://xntg7p1h47.execute-api.us-east-1.amazonaws.com/UAT/second');
+  const data = await response.json();
+
+  data.forEach((item) => {
+    const row = document.createElement('tr');
+
+    const nameColumn = document.createElement('td');
+    nameColumn.textContent = item.name;
+    row.appendChild(nameColumn);
+
+    const productColumn = document.createElement('td');
+    productColumn.textContent = item.product;
+    row.appendChild(productColumn);
+
+    const amountColumn = document.createElement('td');
+    amountColumn.textContent = item.amount;
+    row.appendChild(amountColumn);
+
+    secondTableBody.appendChild(row);
+  });
+};
+
+document.getElementById('refresh-button').addEventListener('click', getSalesData);
+document.getElementById('submit-button').addEventListener('click', submitSelectedSales);
+document.getElementById('second-table-refresh-button').addEventListener('click', getSecondTableData);
+
+getSalesData();
+getSecondTableData();
