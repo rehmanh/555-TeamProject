@@ -1,1 +1,16 @@
 *node_modules/*
+.DS_Store
+
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+# Backup files #
+*.bak
+
+# Python #
+*$py.class
