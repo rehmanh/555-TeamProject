@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../pages/navbar'
 import {
     MDBInput,
     MDBCheckbox,
@@ -8,7 +9,7 @@ import {
     from 'mdb-react-ui-kit';
 import {Form} from '../components/loginElements'
 
-function App() {
+function Login() {
     return (
         <Form>
             <MDBInput wrapperClass='mb-4' label='Email address' id='form1' type='email' />
@@ -49,4 +50,16 @@ function App() {
     );
 }
 
-export default App;
+export default Login;
+
+// import React, { Component } from 'react';
+// // import { render } from "react-dom"
+
+// export default class Login extends Component {
+//     constructor(props) {
+//         super(props);
+//     }
+//     render() {
+//         return <h1>Homepage</h1>
+//     }
+// }

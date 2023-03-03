@@ -5,7 +5,8 @@ from django.contrib import messages
 
 # Create your views here.
 
-def index(request):
+
+def index(request, *arg, **kwargs):
     return render(request, "frontend/index.html")
 
 def signup(request):
@@ -30,5 +31,4 @@ def signup(request):
     return render(request, "frontend/signup.html")
 
     
-
 
