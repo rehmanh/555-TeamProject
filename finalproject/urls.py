@@ -20,4 +20,5 @@ urlpatterns = [
     # path('solar/', include('solar.urls')),
     path('admin/', admin.site.urls),
     path('', include("solar.urls"))
+
 ]
