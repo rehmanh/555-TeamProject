@@ -11,6 +11,7 @@
 // }
 
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from '../pages/navbar'
 import {
     MDBInput,

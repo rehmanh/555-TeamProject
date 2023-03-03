@@ -35,6 +35,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import HomePage from '../client/src/pages/home';
 import SignUp from '../client/src/pages/signUp';
 import Login from '../client/src/pages/login';
+import SalesRep from '../client/src/pages/salesRep';
 export default class App extends Component {
     constructor(props) {
         super(props);
@@ -46,6 +47,7 @@ export default class App extends Component {
                 <Route exact path='/' element={<HomePage />}/>
                 <Route exact path='/login' element={<Login />}/>
                 <Route exact path='/signup' element={<SignUp />}/>
+                <Route exact path='/salesrep' element={<SalesRep />}/>
             </Routes>
         </Router>
         )
