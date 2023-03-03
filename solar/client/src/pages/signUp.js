@@ -25,7 +25,9 @@ import {Form} from '../components/loginElements'
 
 function SignUp() {
     return (
-        
+        <div>
+
+        <Navbar />
         <Form>
             <header>
             <center><h1>Sign Up</h1></center>
@@ -52,7 +54,7 @@ function SignUp() {
             </div>
 
         </Form>
-        
+        </div>
     );
 }
 

@@ -12,6 +12,8 @@ import {Form} from '../components/loginElements'
 
 function Login() {
     return (
+        <div>
+        <Navbar />
         <header>
             <center><h1>Login</h1></center>
         <Form>
@@ -51,6 +53,7 @@ function Login() {
 
         </Form>
         </header>
+        </div>
     );
 }
 

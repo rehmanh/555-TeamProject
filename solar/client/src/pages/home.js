@@ -1,22 +1,14 @@
 import React, { Component } from 'react';
 // import { render } from "react-dom"
+import Navbar from '../pages/navbar'
 
-export default class HomePage extends Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return <h1>Homepage</h1>
-    }
+function HomePage() {
+    return (
+        <div>
+            <Navbar />
+            <h1>HomePage</h1>
+        </div>
+    );
 }
 
-
-// import {Form} from '../components/loginElements'
-
-// function Login() {
-//     return (
-
-//     );
-// }
-
-// export default Login;
+export default HomePage;
