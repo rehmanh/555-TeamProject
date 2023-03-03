@@ -11,6 +11,8 @@ import {Form} from '../components/loginElements'
 
 function Login() {
     return (
+        <header>
+            <center><h1>Login</h1></center>
         <Form>
             <MDBInput wrapperClass='mb-4' label='Email address' id='form1' type='email' />
             <MDBInput wrapperClass='mb-4' label='Password' id='form2' type='password' />
@@ -23,7 +25,7 @@ function Login() {
             <MDBBtn className="mb-4">Sign in</MDBBtn>
 
             <div className="text-center">
-                <p>Not a member? <a href="#!">Register</a></p>
+                <p>Not a member? <a href="/signup">Register</a></p>
                 <p>or sign up with:</p>
 
                 <div className='d-flex justify-content-between mx-auto' style={{ width: '40%' }}>
@@ -47,6 +49,7 @@ function Login() {
             </div>
 
         </Form>
+        </header>
     );
 }
 
