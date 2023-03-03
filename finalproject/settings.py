@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "solar",
-    "webpack_loader"
+    "webpack_loader",
+    # "solar.apps.SolarConfig"
 ]
 
 WEBPACK_LOADER = {
