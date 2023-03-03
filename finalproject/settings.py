@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "solar",
+    "solar.apps.SolarConfig",
+    #"solar",
     "webpack_loader",
-    # "solar.apps.SolarConfig"
 ]
 
 WEBPACK_LOADER = {
@@ -131,3 +131,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# telling Django to use this User model by default
+AUTH_USER_MODEL = 'solar.User'
