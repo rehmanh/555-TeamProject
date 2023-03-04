@@ -1,28 +1,263 @@
 {
   "status": "done",
   "assets": {
-    "frontend-3adb079968b38664b8b6.js": {
-      "name": "frontend-3adb079968b38664b8b6.js",
-      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-3adb079968b38664b8b6.js",
-      "publicPath": "static/solar/frontend-3adb079968b38664b8b6.js"
+    "frontend-002d78073466e1b15e6f.js": {
+      "name": "frontend-002d78073466e1b15e6f.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-002d78073466e1b15e6f.js",
+      "publicPath": "static/solar/frontend-002d78073466e1b15e6f.js"
     },
-    "frontend-4bce083efac42a4a5706.js": {
-      "name": "frontend-4bce083efac42a4a5706.js",
-      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-4bce083efac42a4a5706.js",
-      "publicPath": "static/solar/frontend-4bce083efac42a4a5706.js"
+    "frontend-078f188730e2ed6d7493.js": {
+      "name": "frontend-078f188730e2ed6d7493.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-078f188730e2ed6d7493.js",
+      "publicPath": "static/solar/frontend-078f188730e2ed6d7493.js"
     },
-    "frontend-dbe2cd80d9049548fe00.js": {
-      "name": "frontend-dbe2cd80d9049548fe00.js",
-      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-dbe2cd80d9049548fe00.js",
-      "publicPath": "static/solar/frontend-dbe2cd80d9049548fe00.js"
+    "frontend-1070d80897d9dae13e8c.js": {
+      "name": "frontend-1070d80897d9dae13e8c.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-1070d80897d9dae13e8c.js",
+      "publicPath": "static/solar/frontend-1070d80897d9dae13e8c.js"
+    },
+    "frontend-129813867f305fb7864d.js": {
+      "name": "frontend-129813867f305fb7864d.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-129813867f305fb7864d.js",
+      "publicPath": "static/solar/frontend-129813867f305fb7864d.js"
+    },
+    "frontend-133a34407e52efdc4cbd.js": {
+      "name": "frontend-133a34407e52efdc4cbd.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-133a34407e52efdc4cbd.js",
+      "publicPath": "static/solar/frontend-133a34407e52efdc4cbd.js"
+    },
+    "frontend-14249d1b4ed7b190c146.js": {
+      "name": "frontend-14249d1b4ed7b190c146.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-14249d1b4ed7b190c146.js",
+      "publicPath": "static/solar/frontend-14249d1b4ed7b190c146.js"
+    },
+    "frontend-1809a98ba0c4ce3d80c4.js": {
+      "name": "frontend-1809a98ba0c4ce3d80c4.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-1809a98ba0c4ce3d80c4.js",
+      "publicPath": "static/solar/frontend-1809a98ba0c4ce3d80c4.js"
+    },
+    "frontend-18d4fe7961796655d58b.js": {
+      "name": "frontend-18d4fe7961796655d58b.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-18d4fe7961796655d58b.js",
+      "publicPath": "static/solar/frontend-18d4fe7961796655d58b.js"
+    },
+    "frontend-2466d80022d52d154ceb.js": {
+      "name": "frontend-2466d80022d52d154ceb.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-2466d80022d52d154ceb.js",
+      "publicPath": "static/solar/frontend-2466d80022d52d154ceb.js"
+    },
+    "frontend-24c361885e29cd98be98.js": {
+      "name": "frontend-24c361885e29cd98be98.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-24c361885e29cd98be98.js",
+      "publicPath": "static/solar/frontend-24c361885e29cd98be98.js"
+    },
+    "frontend-25058e8c82802b4ade96.js": {
+      "name": "frontend-25058e8c82802b4ade96.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-25058e8c82802b4ade96.js",
+      "publicPath": "static/solar/frontend-25058e8c82802b4ade96.js"
+    },
+    "frontend-2ac7b4d5e77a5439b5f0.js": {
+      "name": "frontend-2ac7b4d5e77a5439b5f0.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-2ac7b4d5e77a5439b5f0.js",
+      "publicPath": "static/solar/frontend-2ac7b4d5e77a5439b5f0.js"
+    },
+    "frontend-2d9a7dbd129f6c16ff91.js": {
+      "name": "frontend-2d9a7dbd129f6c16ff91.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-2d9a7dbd129f6c16ff91.js",
+      "publicPath": "static/solar/frontend-2d9a7dbd129f6c16ff91.js"
+    },
+    "frontend-2e6393670f48c1fe48b5.js": {
+      "name": "frontend-2e6393670f48c1fe48b5.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-2e6393670f48c1fe48b5.js",
+      "publicPath": "static/solar/frontend-2e6393670f48c1fe48b5.js"
+    },
+    "frontend-2e81ef49b4171735d2a9.js": {
+      "name": "frontend-2e81ef49b4171735d2a9.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-2e81ef49b4171735d2a9.js",
+      "publicPath": "static/solar/frontend-2e81ef49b4171735d2a9.js"
+    },
+    "frontend-2fc38a465d755e33a642.js": {
+      "name": "frontend-2fc38a465d755e33a642.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-2fc38a465d755e33a642.js",
+      "publicPath": "static/solar/frontend-2fc38a465d755e33a642.js"
+    },
+    "frontend-39262d265d49db45965b.js": {
+      "name": "frontend-39262d265d49db45965b.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-39262d265d49db45965b.js",
+      "publicPath": "static/solar/frontend-39262d265d49db45965b.js"
+    },
+    "frontend-3cd8bef2b7301389b2c2.js": {
+      "name": "frontend-3cd8bef2b7301389b2c2.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-3cd8bef2b7301389b2c2.js",
+      "publicPath": "static/solar/frontend-3cd8bef2b7301389b2c2.js"
+    },
+    "frontend-400e273cd3f31fa25258.js": {
+      "name": "frontend-400e273cd3f31fa25258.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-400e273cd3f31fa25258.js",
+      "publicPath": "static/solar/frontend-400e273cd3f31fa25258.js"
+    },
+    "frontend-4110027139b081b00efa.js": {
+      "name": "frontend-4110027139b081b00efa.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-4110027139b081b00efa.js",
+      "publicPath": "static/solar/frontend-4110027139b081b00efa.js"
+    },
+    "frontend-50ea0539767cc68dd82a.js": {
+      "name": "frontend-50ea0539767cc68dd82a.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-50ea0539767cc68dd82a.js",
+      "publicPath": "static/solar/frontend-50ea0539767cc68dd82a.js"
+    },
+    "frontend-5ade0ff0c577c58aaa31.js": {
+      "name": "frontend-5ade0ff0c577c58aaa31.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-5ade0ff0c577c58aaa31.js",
+      "publicPath": "static/solar/frontend-5ade0ff0c577c58aaa31.js"
+    },
+    "frontend-66298323c2e72a9c00ef.js": {
+      "name": "frontend-66298323c2e72a9c00ef.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-66298323c2e72a9c00ef.js",
+      "publicPath": "static/solar/frontend-66298323c2e72a9c00ef.js"
+    },
+    "frontend-6c79f52efdbf072e8dec.js": {
+      "name": "frontend-6c79f52efdbf072e8dec.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-6c79f52efdbf072e8dec.js",
+      "publicPath": "static/solar/frontend-6c79f52efdbf072e8dec.js"
+    },
+    "frontend-75b8ae6d8c5c394438b1.js": {
+      "name": "frontend-75b8ae6d8c5c394438b1.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-75b8ae6d8c5c394438b1.js",
+      "publicPath": "static/solar/frontend-75b8ae6d8c5c394438b1.js"
+    },
+    "frontend-78fab5b3febbf05b510e.js": {
+      "name": "frontend-78fab5b3febbf05b510e.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-78fab5b3febbf05b510e.js",
+      "publicPath": "static/solar/frontend-78fab5b3febbf05b510e.js"
+    },
+    "frontend-7a44b1775f3090f374cd.js": {
+      "name": "frontend-7a44b1775f3090f374cd.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-7a44b1775f3090f374cd.js",
+      "publicPath": "static/solar/frontend-7a44b1775f3090f374cd.js"
+    },
+    "frontend-7cefa1657a1c3545c38e.js": {
+      "name": "frontend-7cefa1657a1c3545c38e.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-7cefa1657a1c3545c38e.js",
+      "publicPath": "static/solar/frontend-7cefa1657a1c3545c38e.js"
+    },
+    "frontend-8057068a46a47326a057.js": {
+      "name": "frontend-8057068a46a47326a057.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-8057068a46a47326a057.js",
+      "publicPath": "static/solar/frontend-8057068a46a47326a057.js"
+    },
+    "frontend-810c46744dd952d462c8.js": {
+      "name": "frontend-810c46744dd952d462c8.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-810c46744dd952d462c8.js",
+      "publicPath": "static/solar/frontend-810c46744dd952d462c8.js"
+    },
+    "frontend-8345c3bf44bb3596a0e7.js": {
+      "name": "frontend-8345c3bf44bb3596a0e7.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-8345c3bf44bb3596a0e7.js",
+      "publicPath": "static/solar/frontend-8345c3bf44bb3596a0e7.js"
+    },
+    "frontend-852b38382dce65102c95.js": {
+      "name": "frontend-852b38382dce65102c95.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-852b38382dce65102c95.js",
+      "publicPath": "static/solar/frontend-852b38382dce65102c95.js"
+    },
+    "frontend-859a8cc92a31d5c64147.js": {
+      "name": "frontend-859a8cc92a31d5c64147.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-859a8cc92a31d5c64147.js",
+      "publicPath": "static/solar/frontend-859a8cc92a31d5c64147.js"
+    },
+    "frontend-8601be82f56b1f112333.js": {
+      "name": "frontend-8601be82f56b1f112333.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-8601be82f56b1f112333.js",
+      "publicPath": "static/solar/frontend-8601be82f56b1f112333.js"
+    },
+    "frontend-86b049fc27972d6deeea.js": {
+      "name": "frontend-86b049fc27972d6deeea.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-86b049fc27972d6deeea.js",
+      "publicPath": "static/solar/frontend-86b049fc27972d6deeea.js"
+    },
+    "frontend-8a6d743257a1105ae46c.js": {
+      "name": "frontend-8a6d743257a1105ae46c.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-8a6d743257a1105ae46c.js",
+      "publicPath": "static/solar/frontend-8a6d743257a1105ae46c.js"
+    },
+    "frontend-9c30249ef35f53b3aec9.js": {
+      "name": "frontend-9c30249ef35f53b3aec9.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-9c30249ef35f53b3aec9.js",
+      "publicPath": "static/solar/frontend-9c30249ef35f53b3aec9.js"
+    },
+    "frontend-9de30110b3ead7bc00a5.js": {
+      "name": "frontend-9de30110b3ead7bc00a5.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-9de30110b3ead7bc00a5.js",
+      "publicPath": "static/solar/frontend-9de30110b3ead7bc00a5.js"
+    },
+    "frontend-ab1e1069d3b1081aa515.js": {
+      "name": "frontend-ab1e1069d3b1081aa515.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-ab1e1069d3b1081aa515.js",
+      "publicPath": "static/solar/frontend-ab1e1069d3b1081aa515.js"
+    },
+    "frontend-ab4e289b3a300698c7c6.js": {
+      "name": "frontend-ab4e289b3a300698c7c6.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-ab4e289b3a300698c7c6.js",
+      "publicPath": "static/solar/frontend-ab4e289b3a300698c7c6.js"
+    },
+    "frontend-bc30adde799c380b876e.js": {
+      "name": "frontend-bc30adde799c380b876e.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-bc30adde799c380b876e.js",
+      "publicPath": "static/solar/frontend-bc30adde799c380b876e.js"
+    },
+    "frontend-bce70396721a8b151763.js": {
+      "name": "frontend-bce70396721a8b151763.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-bce70396721a8b151763.js",
+      "publicPath": "static/solar/frontend-bce70396721a8b151763.js"
+    },
+    "frontend-c3db147ee096dda40b64.js": {
+      "name": "frontend-c3db147ee096dda40b64.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-c3db147ee096dda40b64.js",
+      "publicPath": "static/solar/frontend-c3db147ee096dda40b64.js"
+    },
+    "frontend-d567de03621eaef3c64e.js": {
+      "name": "frontend-d567de03621eaef3c64e.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-d567de03621eaef3c64e.js",
+      "publicPath": "static/solar/frontend-d567de03621eaef3c64e.js"
+    },
+    "frontend-d5a58f1a5d9bc0b52a9b.js": {
+      "name": "frontend-d5a58f1a5d9bc0b52a9b.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-d5a58f1a5d9bc0b52a9b.js",
+      "publicPath": "static/solar/frontend-d5a58f1a5d9bc0b52a9b.js"
+    },
+    "frontend-d81813578b4ba07ca1e3.js": {
+      "name": "frontend-d81813578b4ba07ca1e3.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-d81813578b4ba07ca1e3.js",
+      "publicPath": "static/solar/frontend-d81813578b4ba07ca1e3.js"
+    },
+    "frontend-de00578be89ad27c2e8e.js": {
+      "name": "frontend-de00578be89ad27c2e8e.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-de00578be89ad27c2e8e.js",
+      "publicPath": "static/solar/frontend-de00578be89ad27c2e8e.js"
+    },
+    "frontend-dee1215437418cc5dd00.js": {
+      "name": "frontend-dee1215437418cc5dd00.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-dee1215437418cc5dd00.js",
+      "publicPath": "static/solar/frontend-dee1215437418cc5dd00.js"
+    },
+    "frontend-e4fcd4bcf977c3fa2693.js": {
+      "name": "frontend-e4fcd4bcf977c3fa2693.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-e4fcd4bcf977c3fa2693.js",
+      "publicPath": "static/solar/frontend-e4fcd4bcf977c3fa2693.js"
+    },
+    "frontend-fbf6c371eb454e47d86c.js": {
+      "name": "frontend-fbf6c371eb454e47d86c.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-fbf6c371eb454e47d86c.js",
+      "publicPath": "static/solar/frontend-fbf6c371eb454e47d86c.js"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-3adb079968b38664b8b6.js"
+      "frontend-859a8cc92a31d5c64147.js"
     ]
   },
   "publicPath": "static/solar/",
   "error": "ModuleBuildError",
-  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\client\\src\\pages\\home.js: Unexpected token (11:4)\n\n   9 |             <h1>HomePage</h1>\n  10 |         </div>>\n> 11 |     );\n     |     ^\n  12 | }\n  13 |\n  14 | export default HomePage;\n    at instantiate (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:64:32)\n    at constructor (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:364:12)\n    at JSXParserMixin.raise (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:3253:19)\n    at JSXParserMixin.unexpected (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:3283:16)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11248:22)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6992:20)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10859:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10656:61)\n    at JSXParserMixin.parseExprOpBaseRightExpr (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10749:34)\n    at JSXParserMixin.parseExprOpRightExpr (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10744:21)\n    at JSXParserMixin.parseExprOp (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10707:27)\n    at JSXParserMixin.parseExprOps (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10665:17)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10569:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12244:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10569:17)\n    at JSXParserMixin.parseParenAndDistinguishExpression (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11477:28)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11128:23)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6992:20)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10859:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10656:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at JSXParserMixin.parseExpressionBase (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10553:23)\n    at C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10549:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12239:16)\n    at JSXParserMixin.parseExpression (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10549:17)\n    at JSXParserMixin.parseReturnStatement (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12934:28)\n    at JSXParserMixin.parseStatementContent (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12581:21)\n    at JSXParserMixin.parseStatementLike (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12548:17)\n    at JSXParserMixin.parseStatementListItem (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12528:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13120:61)\n    at JSXParserMixin.parseBlockBody (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13113:10)\n    at JSXParserMixin.parseBlock (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13101:10)\n    at JSXParserMixin.parseFunctionBody (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11911:24)\n    at JSXParserMixin.parseFunctionBodyAndFinish (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11897:10)\n    at C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13256:12\n    at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12221:14)\n    at JSXParserMixin.parseFunction (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13255:10)\n    at JSXParserMixin.parseFunctionStatement (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12915:17)\n    at JSXParserMixin.parseStatementContent (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12574:21)\n    at JSXParserMixin.parseStatementLike (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12548:17)\n    at JSXParserMixin.parseModuleItem (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12525:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13120:36)"
+  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\client\\src\\pages\\salesRep.js: JSX attributes must only be assigned a non-empty expression. (16:29)\n\n  14 |     render() {\n  15 |         return (\n> 16 |             <Container style={}>\n     |                              ^\n  17 |                 <Navbar />\n  18 |                 <Container className='mt-5'>\n  19 |                     <Row>\n    at instantiate (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:64:32)\n    at constructor (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:364:12)\n    at JSXParserMixin.raise (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:3253:19)\n    at JSXParserMixin.jsxParseAttributeValue (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6822:16)\n    at JSXParserMixin.jsxParseAttribute (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6873:38)\n    at JSXParserMixin.jsxParseOpeningElementAfterName (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6887:28)\n    at JSXParserMixin.jsxParseOpeningElementAt (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6882:17)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6906:33)\n    at JSXParserMixin.jsxParseElement (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6975:17)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6987:19)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10859:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10656:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10569:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12244:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10569:17)\n    at JSXParserMixin.parseParenAndDistinguishExpression (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11477:28)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11128:23)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6992:20)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10859:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10656:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at JSXParserMixin.parseExpressionBase (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10553:23)\n    at C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10549:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12239:16)\n    at JSXParserMixin.parseExpression (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10549:17)\n    at JSXParserMixin.parseReturnStatement (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12934:28)\n    at JSXParserMixin.parseStatementContent (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12581:21)\n    at JSXParserMixin.parseStatementLike (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12548:17)\n    at JSXParserMixin.parseStatementListItem (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12528:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13120:61)\n    at JSXParserMixin.parseBlockBody (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13113:10)\n    at JSXParserMixin.parseBlock (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13101:10)\n    at JSXParserMixin.parseFunctionBody (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11911:24)\n    at JSXParserMixin.parseFunctionBodyAndFinish (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11897:10)\n    at JSXParserMixin.parseMethod (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11855:31)\n    at JSXParserMixin.pushClassMethod (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13561:30)\n    at JSXParserMixin.parseClassMemberWithIsStatic (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13433:12)\n    at JSXParserMixin.parseClassMember (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13377:10)\n    at C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13327:14\n    at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12221:14)\n    at JSXParserMixin.parseClassBody (C:\\Users\\user\\OneDrive\\桌面\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13307:10)"
 }
