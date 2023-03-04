@@ -13,7 +13,7 @@ export default class Salesrep extends Component {
 
     render() {
         return (
-            <Container>
+            <Container fluid>
                 <Navbar />
                 <Container className='mt-5'>
                     <Row>

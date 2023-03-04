@@ -181,6 +181,11 @@
       "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-8a6d743257a1105ae46c.js",
       "publicPath": "static/solar/frontend-8a6d743257a1105ae46c.js"
     },
+    "frontend-9089b9924839bf43cc7e.js": {
+      "name": "frontend-9089b9924839bf43cc7e.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-9089b9924839bf43cc7e.js",
+      "publicPath": "static/solar/frontend-9089b9924839bf43cc7e.js"
+    },
     "frontend-9c30249ef35f53b3aec9.js": {
       "name": "frontend-9c30249ef35f53b3aec9.js",
       "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-9c30249ef35f53b3aec9.js",
@@ -254,7 +259,7 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-859a8cc92a31d5c64147.js"
+      "frontend-9089b9924839bf43cc7e.js"
     ]
   },
   "publicPath": "static/solar/",
