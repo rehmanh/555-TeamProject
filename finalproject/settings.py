@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "solar.apps.SolarConfig",
-    #"solar",
+    "api.apps.ApiConfig",
     "webpack_loader",
+    "corsheaders",
+    "rest_framework",
+    "rest_framework.authtoken"
 ]
 
 WEBPACK_LOADER = {
@@ -50,6 +53,7 @@ WEBPACK_LOADER = {
 }
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -133,4 +137,8 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # telling Django to use this User model by default
-AUTH_USER_MODEL = 'solar.User'
+AUTH_USER_MODEL = 'api.User'
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:8000',
+]
