@@ -14,11 +14,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path, reverse_lazy
+from django.views.generic.base import RedirectView
+from rest_framework import routers
+from api.views import UserView, UserLoginView
+
+router = routers.DefaultRouter()
+router.register(r'users', UserView, 'user')
 
 urlpatterns = [
-    # path('solar/', include('solar.urls')),
     path('admin/', admin.site.urls),
-    path('', include("solar.urls"))
-
+    path('', include("solar.urls")),
+    path('api/', include(router.urls)),
+    path('api-login/', UserLoginView.as_view()),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    #re_path(r'^$', RedirectView.as_view(url=reverse_lazy('api-root'), permanent=False))
 ]

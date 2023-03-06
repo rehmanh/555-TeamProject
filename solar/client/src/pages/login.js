@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {Component} from 'react';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from '../pages/navbar'
 import {
@@ -10,63 +11,87 @@ import {
     from 'mdb-react-ui-kit';
 import {Form} from '../components/loginElements'
 
-function Login() {
-    return (
-        <div>
-        <Navbar />
-        <header>
-            <center><h1>Login</h1></center>
-        <Form>
-            <MDBInput wrapperClass='mb-4' label='Email address' id='form1' type='email' />
-            <MDBInput wrapperClass='mb-4' label='Password' id='form2' type='password' />
+export default class Login extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            email_address: '',
+            password: ''
+        }
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleLogin = this.handleLogin.bind(this);
+    }
 
-            <div className="d-flex justify-content-between mx-3 mb-4">
-                <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me' />
-                <a href="!#">Forgot password?</a>
-            </div>
+    handleLogin(event) {
+        event.preventDefault();
+        const json = JSON.stringify({
+            email_address: this.state.email_address, 
+            password: this.state.password
+        })
+        axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+        axios.defaults.xsrfCookieName = "csrftoken";
+        axios.defaults.withCredentials = true;
+        axios.post("/api-login/", json, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then((response) => {
+            console.log(response)
+        })
+    }
 
-            <MDBBtn className="mb-4">Sign in</MDBBtn>
+    handleInputChange(event) {
+        const target = event.target;
+        this.setState({
+          [target.name]: target.value,
+        });
+        event.preventDefault();
+      }
 
-            <div className="text-center">
-                <p>Not a member? <a href="/signup">Register</a></p>
-                <p>or sign up with:</p>
-
-                <div className='d-flex justify-content-between mx-auto' style={{ width: '40%' }}>
-                    <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                        <MDBIcon fab icon='facebook-f' size="sm" />
-                    </MDBBtn>
-
-                    <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                        <MDBIcon fab icon='twitter' size="sm" />
-                    </MDBBtn>
-
-                    <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                        <MDBIcon fab icon='google' size="sm" />
-                    </MDBBtn>
-
-                    <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                        <MDBIcon fab icon='github' size="sm" />
-                    </MDBBtn>
-
+    render() {
+        return (
+            <div>
+            <Navbar />
+            <header>
+                <center><h1>Login</h1></center>
+            <Form onSubmit={this.handleLogin}>
+                <MDBInput wrapperClass='mb-4' label='Email address' id='form1' name="email_address" type='text' value={this.state.email_address} onChange={this.handleInputChange} />
+                <MDBInput wrapperClass='mb-4' label='Password' id='form2' name="password" type='password' value={this.state.password} onChange={this.handleInputChange}/>
+    
+                <div className="d-flex justify-content-between mx-3 mb-4">
+                    <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me' />
+                    <a href="!#">Forgot password?</a>
                 </div>
+    
+                <MDBBtn type="submit" className="mb-4">Sign in</MDBBtn>
+    
+                <div className="text-center">
+                    <p>Not a member? <a href="/signup">Register</a></p>
+                    <p>or sign up with:</p>
+    
+                    <div className='d-flex justify-content-between mx-auto' style={{ width: '40%' }}>
+                        <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
+                            <MDBIcon fab icon='facebook-f' size="sm" />
+                        </MDBBtn>
+    
+                        <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
+                            <MDBIcon fab icon='twitter' size="sm" />
+                        </MDBBtn>
+    
+                        <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
+                            <MDBIcon fab icon='google' size="sm" />
+                        </MDBBtn>
+    
+                        <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
+                            <MDBIcon fab icon='github' size="sm" />
+                        </MDBBtn>
+    
+                    </div>
+                </div>
+    
+            </Form>
+            </header>
             </div>
-
-        </Form>
-        </header>
-        </div>
-    );
+        );
+    }
 }
-
-export default Login;
-
-// import React, { Component } from 'react';
-// // import { render } from "react-dom"
-
-// export default class Login extends Component {
-//     constructor(props) {
-//         super(props);
-//     }
-//     render() {
-//         return <h1>Homepage</h1>
-//     }
-// }
