@@ -21,7 +21,7 @@ def signup(request):
         # clients = User.objects.create.user(username, email, password)
         # clients.first_name = fname
         # clients.last_name = lname
-
+        
         # clients.save()
         
         # messages.success(request, "Your account has been succesfully created")
