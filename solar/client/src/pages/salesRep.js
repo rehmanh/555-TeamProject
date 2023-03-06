@@ -1,88 +1,71 @@
-import React, { Component } from 'react';
-import Table from 'react-bootstrap/Table';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container';
-import Navbar from '../pages/navbar';
-// import { render } from "react-dom"
+// import React, { Component } from 'react';
+// // import { render } from "react-dom"
 
-export default class Salesrep extends Component {
-    constructor(props) {
-        super(props);
+// export default class HomePage extends Component {
+//     constructor(props) {
+//         super(props);
+//     }
+//     render() {
+//         return <h1>Sales Rep</h1>
+//     }
+// }
+import 'bootstrap/dist/css/bootstrap.css';
+import Navbar from '../pages/navbar'
+import React, { useState } from 'react';
+import {
+  MDBTabs,
+  MDBTabsItem,
+  MDBTabsLink,
+  MDBTabsContent,
+  MDBTabsPane,
+  MDBRow,
+  MDBCol
+} from 'mdb-react-ui-kit';
+
+export default function App() {
+  const [verticalActive, setVerticalActive] = useState('tab1');
+
+  const handleVerticalClick = (value= String) => {
+    if (value === verticalActive) {
+      return;
     }
 
-    render() {
-        return (
-            <Container fluid>
-                <Navbar />
-                <Container className='mt-5'>
-                    <Row>
-                        <Col>
-                            <Table striped bordered hover size="sm">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Username</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Danny</td>
-                                        <td>Davito</td>
-                                        <td>@yahoo</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Lebron</td>
-                                        <td>james</td>
-                                        <td>@nba</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td colSpan={2}>Larry the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </tbody>
-                            </Table>
-                        </Col>
-                        <Col>
-                            <Table striped bordered hover size="sm">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Username</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Anthony</td>
-                                        <td>github</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Django</td>
-                                        <td>React</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </tbody>
-                            </Table>
-                        </Col>
-                    </Row>
-                </Container>
-            </Container>
-        )
-    }
+    setVerticalActive(value);
+  };
+
+  return (
+    <div>
+        <Navbar />
+    <>
+      <MDBRow>
+        <MDBCol size='2'>
+          <MDBTabs pills className='flex-column text-center'>
+            <MDBTabsItem>
+              <MDBTabsLink onClick={() => handleVerticalClick('tab1')} active={verticalActive === 'tab1'}>
+              Unassigned clients
+              </MDBTabsLink>
+            </MDBTabsItem>
+            <MDBTabsItem>
+              <MDBTabsLink onClick={() => handleVerticalClick('tab2')} active={verticalActive === 'tab2'}>
+              Clients
+              </MDBTabsLink>
+            </MDBTabsItem>
+            <MDBTabsItem>
+              <MDBTabsLink onClick={() => handleVerticalClick('tab3')} active={verticalActive === 'tab3'}>
+              On going Projects
+              </MDBTabsLink>
+            </MDBTabsItem>
+          </MDBTabs>
+        </MDBCol>
+        <MDBCol size='8'>
+          <MDBTabsContent>
+            <MDBTabsPane show={verticalActive === 'tab1'}>Unassigned clients</MDBTabsPane>
+            <MDBTabsPane show={verticalActive === 'tab2'}>Clients</MDBTabsPane>
+            <MDBTabsPane show={verticalActive === 'tab3'}>On going Projects</MDBTabsPane>
+          </MDBTabsContent>
+        </MDBCol>
+      </MDBRow>
+    </>
+    </div>
+  );
 }
