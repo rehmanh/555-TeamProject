@@ -16,3 +16,6 @@ media
 *$py.class
 
 *.vscode
+
+# static JS files
+solar/static/solar/*
