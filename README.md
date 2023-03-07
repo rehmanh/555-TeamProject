@@ -13,7 +13,7 @@
 
 ## Starting up
 1. Inside the project directory, you should see the module `finalproject` and `solar`. `finalproject` is django's root/parent project, and `solar` is the child app inside it. This is not that important for now.
-2. To Start the app on your local machine, just run `python manage.py runserver`.
-3. Navigate to `localhost:8000/solar` in your browser to view app.
+2. To Start the app on your local machine, just run `npm run dev` and then `python manage.py runserver`.
+3. Navigate to `localhost:8000/` in your browser to view app.
 3. To Stop the server, `CTRL-c` inside your terminal window.
 
