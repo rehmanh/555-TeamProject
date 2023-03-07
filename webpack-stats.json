@@ -1,15 +1,15 @@
 {
   "status": "done",
   "assets": {
-    "frontend-3a90280176c4a5bfe883.js": {
-      "name": "frontend-3a90280176c4a5bfe883.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-3a90280176c4a5bfe883.js",
-      "publicPath": "static/solar/frontend-3a90280176c4a5bfe883.js"
+    "frontend-006811226b25807579db.js": {
+      "name": "frontend-006811226b25807579db.js",
+      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/frontend-006811226b25807579db.js",
+      "publicPath": "static/solar/frontend-006811226b25807579db.js"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-3a90280176c4a5bfe883.js"
+      "frontend-006811226b25807579db.js"
     ]
   },
   "publicPath": "static/solar/"

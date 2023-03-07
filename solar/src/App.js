@@ -38,6 +38,7 @@ import Login from '../client/src/pages/login';
 import SalesRep from '../client/src/pages/salesRep';
 // import { Navbar } from 'react-bootstrap';
 import Navbar from '../client/src/pages/navbar'
+import UserRequestForm from '../client/src/pages/UserRequestForm';
 
 export default class App extends Component {
     constructor(props) {
@@ -51,6 +52,7 @@ export default class App extends Component {
                 <Route exact path='/login' element={<Login />}/>
                 <Route exact path='/signup' element={<SignUp />}/>
                 <Route exact path='/salesrep' element={<SalesRep />}/>
+                <Route exact path='/userReq' element={<UserRequestForm />}/>
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
         </Router>
