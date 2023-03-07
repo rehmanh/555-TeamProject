@@ -8,6 +8,9 @@
 __pycache__
 db.sqlite3
 media
+finalproject/__pycache__/*.pyc
+solar/__pycache__/*.pyc
+api/__pycache__/*.pyc
 
 # Backup files #
 *.bak
@@ -19,3 +22,6 @@ media
 
 # static JS files
 solar/static/solar/*
+
+# webpack
+webpack-stats.json
