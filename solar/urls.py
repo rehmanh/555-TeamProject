@@ -7,5 +7,6 @@ urlpatterns = [
     path('login', index),
     path('signup', index),
     # path('nav', index)
-    path('salesrep', index)
+    path('salesrep', index),
+    path('userReq', index)
 ]
