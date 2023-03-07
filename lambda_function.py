@@ -1,11 +1,5 @@
 import json
-import boto3
-from botocore.exceptions import ClientError
-
-USER_POOL_ID = 'us-east-1_d8fHjvvwS'
-CLIENT_ID = 'qnp5kqqa59lhghjecur68090r'
-
-client = boto3.client('cognito-idp')
+import pymysql
 
 headers = {'Content-Type':'application/json',
            'Access-Control-Allow-Origin':'*',
@@ -15,39 +9,37 @@ headers = {'Content-Type':'application/json',
 }
 
 def lambda_handler(event, context):
-    email = event['email']
-    password = event['password']
     
-    try:
-        response = client.initiate_auth(
-            ClientId=CLIENT_ID,
-            AuthFlow='USER_PASSWORD_AUTH',
-            AuthParameters={
-                'USERNAME': email,
-                'PASSWORD': password
-            }
-        )
-        if 'AuthenticationResult' in response:
-            return {
-                'statusCode': 200,
-                'headers': headers,
-                'body': json.dumps(response['AuthenticationResult'])
-            }
-        elif 'ChallengeName' in response:
-            return {
-                'statusCode': 401,
-                'headers': headers,
-                'body': 'Authentication challenge required: {}'.format(response['ChallengeName'])
-            }
-        else:
-            return {
-                'statusCode': 400,
-                'headers': headers,
-                'body': 'Unknown authentication error'
-            }
-    except ClientError as e:
-        return {
-            'statusCode': 401,
-            'headers': headers,
-            'body': e.response['Error']['Message']
-        }
+    # Connect to the database
+    connection = pymysql.connect(
+        host='database-1.cbxlmzf07zcq.us-east-1.rds.amazonaws.com',
+        user='admin',
+        password='TripleS321#',
+        db='request_db'
+    )
+    
+    # Fetch the data from the database
+    with connection.cursor() as cursor:
+        sql = "SELECT request_id, first_name, city FROM mytable WHERE request_status = 'INITIATED'"
+        cursor.execute(sql)
+        result = cursor.fetchall()
+    
+    # Format the response
+    response = []
+    for row in result:
+        request_id = row[0]
+        first_name = row[1]
+        city = row[2]
+        response.append({
+            'request_id': request_id,
+            'first_name': first_name,
+            'city': city
+        })
+        
+    response_2 = { "sales_reps": response }
+    # Return the response
+    return {
+        'statusCode': 200,
+        'headers': headers,
+        'body': response_2
+    }
