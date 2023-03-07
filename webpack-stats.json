@@ -1,15 +1,15 @@
 {
   "status": "done",
   "assets": {
-    "frontend-ce5ad7805c2f44adfbdc.js": {
-      "name": "frontend-ce5ad7805c2f44adfbdc.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\new\\555-TeamProject\\solar\\static\\solar\\frontend-ce5ad7805c2f44adfbdc.js",
-      "publicPath": "static/solar/frontend-ce5ad7805c2f44adfbdc.js"
+    "frontend-67c7905c54e53cdd5683.js": {
+      "name": "frontend-67c7905c54e53cdd5683.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-67c7905c54e53cdd5683.js",
+      "publicPath": "static/solar/frontend-67c7905c54e53cdd5683.js"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-ce5ad7805c2f44adfbdc.js"
+      "frontend-67c7905c54e53cdd5683.js"
     ]
   },
   "publicPath": "static/solar/"

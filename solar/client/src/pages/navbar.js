@@ -21,10 +21,10 @@ function navbar() {
               <NavDropdown.Item href="#billinginfo/3.2">
                 Billing Info
               </NavDropdown.Item>
-              <NavDropdown.Item href="#contactus/3.3">Contact Us</NavDropdown.Item>
+              <NavDropdown.Item href="#contactus/3.3">Contact</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item href="#aboutus/3.4">
+                About Us
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
