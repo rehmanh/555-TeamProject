@@ -1,45 +1,78 @@
 import json
-import pymysql
+import boto3
+from botocore.exceptions import ClientError
 
-headers = {'Content-Type':'application/json',
-           'Access-Control-Allow-Origin':'*',
-           'Access-Control-Allow-Methods':'*',
-            'Access-Control-Allow-Headers':'*',
-            'Accept':'*/*'
-}
+USER_POOL_ID = 'us-east-1_d8fHjvvwS'
+
+client = boto3.client('cognito-idp')
+
+def initiate_forgot_password(username):
+    try:
+        response = client.forgot_password(
+            ClientId='qnp5kqqa59lhghjecur68090r',
+            Username=username
+        )
+        return {
+            'statusCode': 200,
+            'body': 'Verification code sent successfully'
+        }
+    except ClientError as e:
+        return {
+            'statusCode': 400,
+            'body': e.response['Error']['Message']
+        }
+
+def confirm_forgot_password(username, verification_code, new_password):
+    try:
+        response = client.confirm_forgot_password(
+            ClientId='qnp5kqqa59lhghjecur68090r',
+            Username=username,
+            ConfirmationCode=verification_code,
+            Password=new_password
+        )
+        return {
+            'statusCode': 200,
+            'body': 'Password changed successfully'
+        }
+    except ClientError as e:
+        return {
+            'statusCode': 400,
+            'body': e.response['Error']['Message']
+        }
+
+def change_password(access_token, old_password, new_password):
+    try:
+        response = client.change_password(
+            AccessToken=access_token,
+            PreviousPassword=old_password,
+            ProposedPassword=new_password
+        )
+        return {
+            'statusCode': 200,
+            'body': 'Password changed successfully'
+        }
+    except ClientError as e:
+        return {
+            'statusCode': 400,
+            'body': e.response['Error']['Message']
+        }
 
 def lambda_handler(event, context):
+    action = event['action']
+    username = event['username']
+    old_password = event['old_password']
+    new_password = event['new_password']
+    verification_code = event['verification_code']
     
-    # Connect to the database
-    connection = pymysql.connect(
-        host='database-1.cbxlmzf07zcq.us-east-1.rds.amazonaws.com',
-        user='admin',
-        password='TripleS321#',
-        db='request_db'
-    )
-    
-    # Fetch the data from the database
-    with connection.cursor() as cursor:
-        sql = "SELECT request_id, first_name, city FROM mytable WHERE request_status = 'INITIATED'"
-        cursor.execute(sql)
-        result = cursor.fetchall()
-    
-    # Format the response
-    response = []
-    for row in result:
-        request_id = row[0]
-        first_name = row[1]
-        city = row[2]
-        response.append({
-            'request_id': request_id,
-            'first_name': first_name,
-            'city': city
-        })
-        
-    response_2 = { "sales_reps": response }
-    # Return the response
-    return {
-        'statusCode': 200,
-        'headers': headers,
-        'body': response_2
-    }
+    if action == 'initiate_forgot_password':
+        return initiate_forgot_password(username)
+    elif action == 'confirm_forgot_password':
+        return confirm_forgot_password(username, verification_code, new_password)
+    elif action == 'change_password':
+        access_token = event['access_token']
+        return change_password(access_token, old_password, new_password)
+    else:
+        return {
+            'statusCode': 400,
+            'body': 'Invalid action'
+        }
