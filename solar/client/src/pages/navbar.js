@@ -15,13 +15,13 @@ function navbar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+            <Nav.Link href="/userReq">Request Form</Nav.Link>
             <NavDropdown title="Service" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#requestportal/3.1">Request Portal</NavDropdown.Item>
+              <NavDropdown.Item href="#requeststatus/3.1">Request Status</NavDropdown.Item>
               <NavDropdown.Item href="#billinginfo/3.2">
                 Billing Info
               </NavDropdown.Item>
-              <NavDropdown.Item href="#contactus/3.3">Contact</NavDropdown.Item>
+              <NavDropdown.Item href="#contactus/3.3">Contact Us</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#aboutus/3.4">
                 About Us
