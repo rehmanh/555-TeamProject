@@ -6,15 +6,15 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 // import { Form } from '../components/loginElements'
 
-function navbar() {
+function navbar2() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/">Solar</Navbar.Brand>
+        <Navbar.Brand href="/userHome">Solar</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/userHome">Home</Nav.Link>
             <Nav.Link href="/userReq">Request Form</Nav.Link>
             <NavDropdown title="Service" id="basic-nav-dropdown">
               <NavDropdown.Item href="#requeststatus/3.1">Request Status</NavDropdown.Item>
@@ -29,10 +29,7 @@ function navbar() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="/login">Log in</Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link href="/signup">Sign Up</Nav.Link>
+            <Nav.Link href="#logout">Log out</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -40,4 +37,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default navbar2;
