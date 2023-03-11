@@ -15,9 +15,9 @@ function navbar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/userReq">Request Form</Nav.Link>
+            <Nav.Link href="/userreq">Request Form</Nav.Link>
             <NavDropdown title="Service" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#requeststatus/3.1">Request Status</NavDropdown.Item>
+              <NavDropdown.Item href="/userprog">Request Status</NavDropdown.Item>
               <NavDropdown.Item href="#billinginfo/3.2">
                 Billing Info
               </NavDropdown.Item>
