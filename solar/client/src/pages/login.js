@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
-import Navbar from "../pages/navbar";
+import SolarNavbar from "../pages/navbar";
 import { MDBInput, MDBCheckbox, MDBBtn, MDBIcon } from "mdb-react-ui-kit";
 import { Form } from "../components/loginElements";
 import "./login.css";
+import "react-toastify/dist/ReactToastify.css";
+import {ToastContainer, toast} from 'react-toastify'
 
 export default class Login extends Component {
   constructor(props) {
@@ -23,6 +25,11 @@ export default class Login extends Component {
       email_address: this.state.email_address,
       password: this.state.password,
     });
+
+    const toastOptions = {
+      onClose: props => window.location.href = "/"
+    };
+
     axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
     axios.defaults.xsrfCookieName = "csrftoken";
     axios.defaults.withCredentials = true;
@@ -33,7 +40,28 @@ export default class Login extends Component {
         },
       })
       .then((response) => {
-        console.log(response);
+        if (response && response.status === 200) {
+          // want to store the role and token in the localStorage
+          localStorage.setItem('token', response.data.token);
+          localStorage.setItem('roleId', response.data.roleId);
+          localStorage.setItem('userId', response.data.userId);
+          toast.success('Login Successful', toastOptions);
+        }
+        this.setState({
+          email_address: '',
+          password: ''
+        });
+      })
+      .catch((response) => {
+        // response status code was not SUCCESS
+        console.log(response)
+        if (response && response.status !== 200) {
+          toast.error('Incorrect Email/Password provided. Please try again.')
+        }
+      })
+      .catch((response) => {
+        // we did not receive a response; there was a request issue
+        toast.error('There was an issue with your request. Please try again later.')
       });
   }
 
@@ -48,7 +76,7 @@ export default class Login extends Component {
   render() {
     return (
       <>
-        <Navbar />
+        <SolarNavbar />
         <div className="background-image">
           <img
             src={
@@ -59,6 +87,11 @@ export default class Login extends Component {
 
           <div className="login-background">
             <div className="centered">
+              <ToastContainer
+                position="top-center"
+                autoClose={1500}
+                closeOnClick
+              />
               <header>
                 <center>
                   <h1>Login</h1>
