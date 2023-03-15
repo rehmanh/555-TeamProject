@@ -29,7 +29,7 @@ function navbar2() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#logout">Log out</Nav.Link>
+            <Nav.Link href="/">Log out</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
