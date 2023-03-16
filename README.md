@@ -8,8 +8,9 @@
 5. Clone this project, navigate to project directory
 6. Install Django Rest Framework: `pip install django-rest-framework`
 7. Install Django CORS Headers: `pip install django-cors-headers`
-8. Install react and react Dom `npm install react react-dom`
-9. Install dependencies `npm install`
+8. Install Knox: `pip install django-rest-knox`
+9. Install react and react Dom `npm install react react-dom`
+10. Install dependencies `npm install`
 
 
 
