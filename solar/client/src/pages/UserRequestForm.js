@@ -159,6 +159,7 @@ export default function UserRequestForm() {
             id="firstName"
             name="firstName"
             value={firstName}
+            placeholder = "example: John"
             onChange={(e) => setFirstName(e.target.value)}
             required
           />
