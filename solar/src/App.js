@@ -8,6 +8,7 @@ import SalesRep from '../client/src/pages/salesRep';
 // import { Navbar } from 'react-bootstrap';
 import Navbar from '../client/src/pages/navbar'
 import UserRequestForm from '../client/src/pages/UserRequestForm';
+import {ToastContainer, toast} from 'react-toastify'
 
 export default class App extends Component {
     constructor(props) {
@@ -15,6 +16,12 @@ export default class App extends Component {
     }
     render() {
         return(
+        <>
+        <ToastContainer
+            position="top-right"
+            autoClose={1500}
+            closeOnClick
+            />
         <Router>
             <Routes>
                 <Route exact path='/' element={<HomePage />}/>
@@ -25,6 +32,7 @@ export default class App extends Component {
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
         </Router>
+        </>
         )
     }
 }
