@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "webpack_loader",
     "corsheaders",
     "rest_framework",
-    "rest_framework.authtoken"
+    "rest_framework.authtoken",
+    "knox"
 ]
 
 WEBPACK_LOADER = {
@@ -142,3 +143,13 @@ AUTH_USER_MODEL = 'api.User'
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:8000',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+         'rest_framework.authentication.BasicAuthentication' ,
+         'knox.auth.TokenAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+   )
+}

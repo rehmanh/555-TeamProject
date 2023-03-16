@@ -42,9 +42,9 @@ export default class Login extends Component {
       .then((response) => {
         if (response && response.status === 200) {
           // want to store the role and token in the localStorage
-          localStorage.setItem('token', response.data.token);
-          localStorage.setItem('roleId', response.data.roleId);
-          localStorage.setItem('userId', response.data.userId);
+          localStorage.setItem('token', response.data.data.token);
+          localStorage.setItem('roleId', response.data.data.roleId);
+          localStorage.setItem('userId', response.data.data.userId);
           toast.success('Login Successful', toastOptions);
         }
         this.setState({
@@ -88,7 +88,7 @@ export default class Login extends Component {
           <div className="login-background">
             <div className="centered">
               <ToastContainer
-                position="top-center"
+                position="top-right"
                 autoClose={1500}
                 closeOnClick
               />

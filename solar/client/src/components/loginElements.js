@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Link as LinkRouter} from 'react-router-dom';
+import axios from "axios";
+import {ToastContainer, toast} from 'react-toastify'
 
 export const Container = styled.div`
     min-height: 692px;
@@ -108,3 +110,30 @@ export const Text = styled(LinkRouter)`
     color: #fff;
     font-size: 14px;
 `
+
+export const logout = () => {
+    if (localStorage && localStorage.getItem("token")) {
+        axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+        axios.defaults.xsrfCookieName = "csrftoken";
+        axios.defaults.withCredentials = true;
+        token = "Token " + localStorage.getItem("token");
+        
+        axios.post("/logout", {
+            headers: {
+                "Authentication": token
+            }
+        })
+        .then((response) => {
+            if (response && response.status === 204) { // success 
+                localStorage.clear();
+                toast.success('Logout Successful');
+            }
+        })
+        .catch((response) => {
+            toast.error('There was an issue with logging out your User. Please try again.')
+        });
+
+    } else {
+        toast.error('There was an issue with your User session. Please try again later.')
+    }
+}
