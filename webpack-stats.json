@@ -1,55 +1,35 @@
 {
   "status": "done",
   "assets": {
-    "frontend-01a2bf319f30bacab280.js": {
-      "name": "frontend-01a2bf319f30bacab280.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-01a2bf319f30bacab280.js",
-      "publicPath": "static/solar/frontend-01a2bf319f30bacab280.js"
+    "frontend-6502952614ed5afc87d5.js": {
+      "name": "frontend-6502952614ed5afc87d5.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-6502952614ed5afc87d5.js",
+      "publicPath": "static/solar/frontend-6502952614ed5afc87d5.js"
     },
-    "frontend-2e9c6aa95080085c06c9.js": {
-      "name": "frontend-2e9c6aa95080085c06c9.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-2e9c6aa95080085c06c9.js",
-      "publicPath": "static/solar/frontend-2e9c6aa95080085c06c9.js"
+    "frontend-747c4f3acd14f2070d92.js": {
+      "name": "frontend-747c4f3acd14f2070d92.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-747c4f3acd14f2070d92.js",
+      "publicPath": "static/solar/frontend-747c4f3acd14f2070d92.js"
     },
-    "frontend-51c7483310ef9b2d06ad.js": {
-      "name": "frontend-51c7483310ef9b2d06ad.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-51c7483310ef9b2d06ad.js",
-      "publicPath": "static/solar/frontend-51c7483310ef9b2d06ad.js"
+    "frontend-7bffd304bdacda6dddf7.js": {
+      "name": "frontend-7bffd304bdacda6dddf7.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-7bffd304bdacda6dddf7.js",
+      "publicPath": "static/solar/frontend-7bffd304bdacda6dddf7.js"
     },
-    "frontend-5a2a3dec4b04cae40628.js": {
-      "name": "frontend-5a2a3dec4b04cae40628.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-5a2a3dec4b04cae40628.js",
-      "publicPath": "static/solar/frontend-5a2a3dec4b04cae40628.js"
+    "frontend-a940512f78d53694fee2.js": {
+      "name": "frontend-a940512f78d53694fee2.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-a940512f78d53694fee2.js",
+      "publicPath": "static/solar/frontend-a940512f78d53694fee2.js"
     },
-    "frontend-9d143242a5a3444afc4f.js": {
-      "name": "frontend-9d143242a5a3444afc4f.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-9d143242a5a3444afc4f.js",
-      "publicPath": "static/solar/frontend-9d143242a5a3444afc4f.js"
-    },
-    "frontend-c2977e1818f50eafad2d.js": {
-      "name": "frontend-c2977e1818f50eafad2d.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-c2977e1818f50eafad2d.js",
-      "publicPath": "static/solar/frontend-c2977e1818f50eafad2d.js"
-    },
-    "frontend-f1b967babcc760c6a645.js": {
-      "name": "frontend-f1b967babcc760c6a645.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-f1b967babcc760c6a645.js",
-      "publicPath": "static/solar/frontend-f1b967babcc760c6a645.js"
-    },
-    "frontend-ff550e6284ef36412a45.js": {
-      "name": "frontend-ff550e6284ef36412a45.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-ff550e6284ef36412a45.js",
-      "publicPath": "static/solar/frontend-ff550e6284ef36412a45.js"
-    },
-    "frontend-ff70a65e9272ad7aeca1.js": {
-      "name": "frontend-ff70a65e9272ad7aeca1.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-ff70a65e9272ad7aeca1.js",
-      "publicPath": "static/solar/frontend-ff70a65e9272ad7aeca1.js"
+    "frontend-f91b04467ad2fe962b2f.js": {
+      "name": "frontend-f91b04467ad2fe962b2f.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-f91b04467ad2fe962b2f.js",
+      "publicPath": "static/solar/frontend-f91b04467ad2fe962b2f.js"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-01a2bf319f30bacab280.js"
+      "frontend-f91b04467ad2fe962b2f.js"
     ]
   },
   "publicPath": "static/solar/"

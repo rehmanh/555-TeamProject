@@ -11,7 +11,7 @@ import {
   MDBCol
 } from 'mdb-react-ui-kit';
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import Table from 'react-bootstrap/Table';
 import { ThemeConsumer } from 'styled-components';
 
@@ -80,103 +80,60 @@ import { ThemeConsumer } from 'styled-components';
 //   );
 // }
 
+export default function SalesRep() {
+    const [data, setData] = useState();
 
-export default class SalesRep extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            objectData: ""
-        };
-        this.retrieveSalesRepData = this.retrieveSalesRepData.bind(this);
-    }
-
-    retrieveSalesRepData() {
-        fetch("https://h0pt17fv6g.execute-api.us-east-1.amazonaws.com/UAT")
-        .then((data) => {
-        // console.log(data); DATA IN JSON Format
-        console.log(data);
-        this.state.objectData = data;
-        return data.json(); // Converted data to object
+    useEffect(() => {
+        fetch("https://h0pt17fv6g.execute-api.us-east-1.amazonaws.com/UAT").then((data) => {
+            // console.log(data); DATA IN JSON Format
+            return data.json(); // Converted data to object
         }).then((objectData) => {
             console.log("in the second then");
             console.log(objectData);
-            this.state.objectData = objectData;
-        }); 
-    }
+            //this.state.objectData = objectData;
+            setData(objectData.body.sales_reps);
+        }, [])    
+    });
 
-
-    render() {
-        if (this.state.objectData && this.state.objectData.body !== null) {
-            return(
-                <div className='container'>
-                    <h2 className="text-center">Customer List</h2>
-                    <br></br>
-                    <div className = "row">
-                        <MDBTable className = "table table-striped table-bordered">
-                            <MDBTableHead>
-                                <tr>
-                                    <th>Customer's Request ID</th>
-                                    <th>Customer's First Name</th>
-                                    <th>Customer's city</th>
-                                </tr>
-                            </MDBTableHead>
-                            <MDBTableBody>
-                                {
-                                this.state.objectData.body.map((value) => 
-                                <tr key = {value.sales_reps}>
-                                    <td>{value.request_id}</td>   
-                                    <td>{value.first_name}</td>
-                                    <td>{value.city}</td>
-                                    </tr>
-                                        )
-                                }
-                            </MDBTableBody>
-                        </MDBTable>
-                        </div>         
-                    </div>
-            )
-        } else {
-            console.log('calling api now')
-            this.retrieveSalesRepData()
-            return null
-        }
-        
-    }
-
+    return(
+        <div className='container'>
+            <h2 className="text-center">Customer List</h2>
+            <br></br>
+            <div className = "row">
+                <MDBTable className = "table table-striped table-bordered">
+                    <MDBTableHead>
+                        <tr>
+                            <th>Customer's Request ID</th>
+                            <th>Customer's First Name</th>
+                            <th>Customer's city</th>
+                        </tr>
+                    </MDBTableHead>
+                    <MDBTableBody>
+                        {
+                            data && <SalesRepTable data={data}/>
+                        }
+                    </MDBTableBody>
+                </MDBTable>
+                </div>         
+            </div>
+    )
 }
 
-
-// export default function myApp(){
-    
-// }
-
-    // this.state = {
-    //   customers: []
-    // }
-    // this.editCustomer = this.editCustomer.bind(this);
-    // this.deleteCustomer = this.deleteCustomer.bind(this);
-//   }
-//   deleteCustomer(request_id){
-//     CustomerInfo.deleteCustomer(request_id).then(res => {
-//       this.setState({customers: this.state.customers.filter(customers => customers.id !== id)});
-//     });
-//   }
-//   editCustomer(request_id){
-//     this.props.history.push(`/add-customer/${request_id}`);
-//   }
-
-//   componentDidMount(){
-//     CustomerInfo.getCustomer().then((res) => {
-//       this.setState({customers: res.data});
-//     });
-//   }
-
-//   addCustomer(){
-//     this.props.history.push('/add-customer/_add');
-//   }
-
-
-
+function SalesRepTable({data}) {
+    return (
+        <>
+        {
+            data.map((value) => (
+                <tr key = {value.sales_reps}>
+                    <td>{value.request_id}</td>   
+                    <td>{value.first_name}</td>
+                    <td>{value.city}</td>
+                </tr>
+            ))
+        }
+        </>
+    );
+}
 
 // import 'bootstrap/dist/css/bootstrap.css';
 // import Navbar from '../pages/navbar'
