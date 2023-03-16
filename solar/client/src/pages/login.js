@@ -87,11 +87,6 @@ export default class Login extends Component {
 
           <div className="login-background">
             <div className="centered">
-              <ToastContainer
-                position="top-right"
-                autoClose={1500}
-                closeOnClick
-              />
               <header>
                 <center>
                   <h1>Login</h1>

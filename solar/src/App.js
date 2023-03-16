@@ -8,7 +8,6 @@ import SalesRep from '../client/src/pages/salesRep';
 // import { Navbar } from 'react-bootstrap';
 import Navbar from '../client/src/pages/navbar'
 import UserRequestForm from '../client/src/pages/UserRequestForm';
-import { logout } from '../client/src/components/loginElements';
 import {ToastContainer, toast} from 'react-toastify'
 
 export default class App extends Component {
@@ -27,7 +26,6 @@ export default class App extends Component {
             <Routes>
                 <Route exact path='/' element={<HomePage />}/>
                 <Route exact path='/login' element={<Login />}/>
-                <Route exact path='/logout' onEnter={() => logout}/>
                 <Route exact path='/signup' element={<SignUp />}/>
                 <Route exact path='/salesrep' element={<SalesRep />}/>
                 <Route exact path='/userReq' element={<UserRequestForm />}/>
