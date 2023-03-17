@@ -1,24 +1,30 @@
 import React from "react";
-import ProgressBar from "react-bootstrap/ProgressBar";
+import styles from "./styles.module.css";
+
 export const TrackingStages = (props) => {
   return (
-    <>
-      <div className="container">
-        <h2>{props.Tstatus}</h2>
-        {props.Tstatus === "INITIATED" ? (
-          <ProgressBar animated now={20} />
-        ) : props.Tstatus === "Sales Rep Appointed" ? (
-          <ProgressBar animated now={40} />
-        ) : props.Tstatus === "Operation Manger" ? (
-          <ProgressBar animated now={60} />
-        ) : props.Tstatus === "Contrators on the way" ? (
-          <ProgressBar animated now={80} />
-        ) : props.Tstatus === "Completed Enjoy the Energy" ? (
-          <ProgressBar animated now={100} />
-        ) : (
-          <ProgressBar animated now={0} />
-        )}
+    <div className={styles.container}>
+      <h1>Solar Installation Progress</h1>
+      <div className={styles.progress}>
+        <div className={styles.progressBar} style={{ width: "75%" }}></div>
       </div>
-    </>
+      <div className={styles.status}>
+        <div className={styles.statusLabel}>Status:</div>
+        <div className={styles.statusMessage}>{props.Tstatus}</div>
+      </div>
+      <div className={styles.details}>
+        <div className={styles.detailsLabel}>Tracking Number:</div>
+        <div className={styles.detailsValue}>1234567890</div>
+
+        <div className={styles.detailsLabel}>Shipped From:</div>
+        <div className={styles.detailsValue}>Seattle, WA</div>
+        <div className={styles.detailsLabel}>Delivered To:</div>
+        <div className={styles.detailsValue}>John Smith</div>
+        
+        <div className={styles.detailsLabel}>Estimated Installation:</div>
+        <div className={styles.detailsValue}>March 21, 2023</div>
+        
+      </div>
+    </div>
   );
 };
