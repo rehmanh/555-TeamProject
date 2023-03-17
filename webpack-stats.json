@@ -1,278 +1,93 @@
 {
   "status": "done",
   "assets": {
-    "frontend-0024f0132db979c3689b.js": {
-      "name": "frontend-0024f0132db979c3689b.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-0024f0132db979c3689b.js",
-      "publicPath": "static/solar/frontend-0024f0132db979c3689b.js"
+    "frontend-002ac93097bb3c8fb7a7.js": {
+      "name": "frontend-002ac93097bb3c8fb7a7.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-002ac93097bb3c8fb7a7.js",
+      "publicPath": "static/solar/frontend-002ac93097bb3c8fb7a7.js"
     },
-    "frontend-01d26fdfa357d255b114.js": {
-      "name": "frontend-01d26fdfa357d255b114.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-01d26fdfa357d255b114.js",
-      "publicPath": "static/solar/frontend-01d26fdfa357d255b114.js"
+    "frontend-0f720c7124c7d5137a27.js": {
+      "name": "frontend-0f720c7124c7d5137a27.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-0f720c7124c7d5137a27.js",
+      "publicPath": "static/solar/frontend-0f720c7124c7d5137a27.js"
     },
-    "frontend-09b0fd5002b3deb4bc9b.js": {
-      "name": "frontend-09b0fd5002b3deb4bc9b.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-09b0fd5002b3deb4bc9b.js",
-      "publicPath": "static/solar/frontend-09b0fd5002b3deb4bc9b.js"
-    },
-    "frontend-0ed0edae43e79714fee0.js": {
-      "name": "frontend-0ed0edae43e79714fee0.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-0ed0edae43e79714fee0.js",
-      "publicPath": "static/solar/frontend-0ed0edae43e79714fee0.js"
-    },
-    "frontend-0eeec16a8f9cca5f3620.js": {
-      "name": "frontend-0eeec16a8f9cca5f3620.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-0eeec16a8f9cca5f3620.js",
-      "publicPath": "static/solar/frontend-0eeec16a8f9cca5f3620.js"
-    },
-    "frontend-13dc63c79cdca72c0f35.js": {
-      "name": "frontend-13dc63c79cdca72c0f35.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-13dc63c79cdca72c0f35.js",
-      "publicPath": "static/solar/frontend-13dc63c79cdca72c0f35.js"
-    },
-    "frontend-18f8f9d1a5f89e123cb9.js": {
-      "name": "frontend-18f8f9d1a5f89e123cb9.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-18f8f9d1a5f89e123cb9.js",
-      "publicPath": "static/solar/frontend-18f8f9d1a5f89e123cb9.js"
-    },
-    "frontend-19392db63d39a241b563.js": {
-      "name": "frontend-19392db63d39a241b563.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-19392db63d39a241b563.js",
-      "publicPath": "static/solar/frontend-19392db63d39a241b563.js"
+    "frontend-13bdbb9141ea92e33054.js": {
+      "name": "frontend-13bdbb9141ea92e33054.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-13bdbb9141ea92e33054.js",
+      "publicPath": "static/solar/frontend-13bdbb9141ea92e33054.js"
     },
     "frontend-1ed484d1dc02f316cf9f.js": {
       "name": "frontend-1ed484d1dc02f316cf9f.js",
       "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-1ed484d1dc02f316cf9f.js",
       "publicPath": "static/solar/frontend-1ed484d1dc02f316cf9f.js"
     },
-    "frontend-208659a83a577591708d.js": {
-      "name": "frontend-208659a83a577591708d.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-208659a83a577591708d.js",
-      "publicPath": "static/solar/frontend-208659a83a577591708d.js"
+    "frontend-266578234aa0d948035a.js": {
+      "name": "frontend-266578234aa0d948035a.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-266578234aa0d948035a.js",
+      "publicPath": "static/solar/frontend-266578234aa0d948035a.js"
     },
-    "frontend-2237228a8e1886ce2150.js": {
-      "name": "frontend-2237228a8e1886ce2150.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-2237228a8e1886ce2150.js",
-      "publicPath": "static/solar/frontend-2237228a8e1886ce2150.js"
+    "frontend-27b75953c42f09589461.js": {
+      "name": "frontend-27b75953c42f09589461.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-27b75953c42f09589461.js",
+      "publicPath": "static/solar/frontend-27b75953c42f09589461.js"
     },
-    "frontend-233c71957063a357f871.js": {
-      "name": "frontend-233c71957063a357f871.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-233c71957063a357f871.js",
-      "publicPath": "static/solar/frontend-233c71957063a357f871.js"
+    "frontend-3dc948e1fd19dc924e9f.js": {
+      "name": "frontend-3dc948e1fd19dc924e9f.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-3dc948e1fd19dc924e9f.js",
+      "publicPath": "static/solar/frontend-3dc948e1fd19dc924e9f.js"
     },
-    "frontend-2563c0e1f5f369360240.js": {
-      "name": "frontend-2563c0e1f5f369360240.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-2563c0e1f5f369360240.js",
-      "publicPath": "static/solar/frontend-2563c0e1f5f369360240.js"
+    "frontend-5255d3cfaa403ab68c45.js": {
+      "name": "frontend-5255d3cfaa403ab68c45.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-5255d3cfaa403ab68c45.js",
+      "publicPath": "static/solar/frontend-5255d3cfaa403ab68c45.js"
     },
-    "frontend-2bf8331c975162fa33d8.js": {
-      "name": "frontend-2bf8331c975162fa33d8.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-2bf8331c975162fa33d8.js",
-      "publicPath": "static/solar/frontend-2bf8331c975162fa33d8.js"
+    "frontend-7bd24871b4c4b63a90cc.js": {
+      "name": "frontend-7bd24871b4c4b63a90cc.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-7bd24871b4c4b63a90cc.js",
+      "publicPath": "static/solar/frontend-7bd24871b4c4b63a90cc.js"
     },
-    "frontend-326a9f924d89b9080bc5.js": {
-      "name": "frontend-326a9f924d89b9080bc5.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-326a9f924d89b9080bc5.js",
-      "publicPath": "static/solar/frontend-326a9f924d89b9080bc5.js"
+    "frontend-84add64491df89ead797.js": {
+      "name": "frontend-84add64491df89ead797.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-84add64491df89ead797.js",
+      "publicPath": "static/solar/frontend-84add64491df89ead797.js"
     },
-    "frontend-3359f9d8cd78f3ba96ec.js": {
-      "name": "frontend-3359f9d8cd78f3ba96ec.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-3359f9d8cd78f3ba96ec.js",
-      "publicPath": "static/solar/frontend-3359f9d8cd78f3ba96ec.js"
+    "frontend-8843f3fd3290514ea25e.js": {
+      "name": "frontend-8843f3fd3290514ea25e.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-8843f3fd3290514ea25e.js",
+      "publicPath": "static/solar/frontend-8843f3fd3290514ea25e.js"
     },
-    "frontend-384bf296c4d1f1fa8282.js": {
-      "name": "frontend-384bf296c4d1f1fa8282.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-384bf296c4d1f1fa8282.js",
-      "publicPath": "static/solar/frontend-384bf296c4d1f1fa8282.js"
+    "frontend-9c0d8fae2d78f3c8262c.js": {
+      "name": "frontend-9c0d8fae2d78f3c8262c.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-9c0d8fae2d78f3c8262c.js",
+      "publicPath": "static/solar/frontend-9c0d8fae2d78f3c8262c.js"
     },
-    "frontend-3cba11146e33ad46677f.js": {
-      "name": "frontend-3cba11146e33ad46677f.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-3cba11146e33ad46677f.js",
-      "publicPath": "static/solar/frontend-3cba11146e33ad46677f.js"
+    "frontend-b4697dcc47da68820566.js": {
+      "name": "frontend-b4697dcc47da68820566.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-b4697dcc47da68820566.js",
+      "publicPath": "static/solar/frontend-b4697dcc47da68820566.js"
     },
-    "frontend-3d8488926f408373eecb.js": {
-      "name": "frontend-3d8488926f408373eecb.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-3d8488926f408373eecb.js",
-      "publicPath": "static/solar/frontend-3d8488926f408373eecb.js"
+    "frontend-d2ae13cad9d9e003bd8e.js": {
+      "name": "frontend-d2ae13cad9d9e003bd8e.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-d2ae13cad9d9e003bd8e.js",
+      "publicPath": "static/solar/frontend-d2ae13cad9d9e003bd8e.js"
     },
-    "frontend-3ec2344f56ad87d76ba2.js": {
-      "name": "frontend-3ec2344f56ad87d76ba2.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-3ec2344f56ad87d76ba2.js",
-      "publicPath": "static/solar/frontend-3ec2344f56ad87d76ba2.js"
+    "frontend-e699050c5319b9927d5b.js": {
+      "name": "frontend-e699050c5319b9927d5b.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-e699050c5319b9927d5b.js",
+      "publicPath": "static/solar/frontend-e699050c5319b9927d5b.js"
     },
-    "frontend-47b4827bb5f66f70b78f.js": {
-      "name": "frontend-47b4827bb5f66f70b78f.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-47b4827bb5f66f70b78f.js",
-      "publicPath": "static/solar/frontend-47b4827bb5f66f70b78f.js"
-    },
-    "frontend-4e5a657648cc893ae968.js": {
-      "name": "frontend-4e5a657648cc893ae968.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-4e5a657648cc893ae968.js",
-      "publicPath": "static/solar/frontend-4e5a657648cc893ae968.js"
-    },
-    "frontend-55963c05f77b37c88dc9.js": {
-      "name": "frontend-55963c05f77b37c88dc9.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-55963c05f77b37c88dc9.js",
-      "publicPath": "static/solar/frontend-55963c05f77b37c88dc9.js"
-    },
-    "frontend-56265cea36fa99111c27.js": {
-      "name": "frontend-56265cea36fa99111c27.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-56265cea36fa99111c27.js",
-      "publicPath": "static/solar/frontend-56265cea36fa99111c27.js"
-    },
-    "frontend-588f9d3fab2e996052d1.js": {
-      "name": "frontend-588f9d3fab2e996052d1.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-588f9d3fab2e996052d1.js",
-      "publicPath": "static/solar/frontend-588f9d3fab2e996052d1.js"
-    },
-    "frontend-59c37131007732016fc3.js": {
-      "name": "frontend-59c37131007732016fc3.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-59c37131007732016fc3.js",
-      "publicPath": "static/solar/frontend-59c37131007732016fc3.js"
-    },
-    "frontend-68449b2885685ce76b3c.js": {
-      "name": "frontend-68449b2885685ce76b3c.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-68449b2885685ce76b3c.js",
-      "publicPath": "static/solar/frontend-68449b2885685ce76b3c.js"
-    },
-    "frontend-6f08dbcd02dc8c5dbc61.js": {
-      "name": "frontend-6f08dbcd02dc8c5dbc61.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-6f08dbcd02dc8c5dbc61.js",
-      "publicPath": "static/solar/frontend-6f08dbcd02dc8c5dbc61.js"
-    },
-    "frontend-714a09e0d8c1b5404de2.js": {
-      "name": "frontend-714a09e0d8c1b5404de2.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-714a09e0d8c1b5404de2.js",
-      "publicPath": "static/solar/frontend-714a09e0d8c1b5404de2.js"
-    },
-    "frontend-830ece4f3e4aa1bdde0f.js": {
-      "name": "frontend-830ece4f3e4aa1bdde0f.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-830ece4f3e4aa1bdde0f.js",
-      "publicPath": "static/solar/frontend-830ece4f3e4aa1bdde0f.js"
-    },
-    "frontend-83aef75ae1bee89ad634.js": {
-      "name": "frontend-83aef75ae1bee89ad634.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-83aef75ae1bee89ad634.js",
-      "publicPath": "static/solar/frontend-83aef75ae1bee89ad634.js"
-    },
-    "frontend-8e9b62be6694b8aed365.js": {
-      "name": "frontend-8e9b62be6694b8aed365.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-8e9b62be6694b8aed365.js",
-      "publicPath": "static/solar/frontend-8e9b62be6694b8aed365.js"
-    },
-    "frontend-9390612aa9d46e9d8f8a.js": {
-      "name": "frontend-9390612aa9d46e9d8f8a.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-9390612aa9d46e9d8f8a.js",
-      "publicPath": "static/solar/frontend-9390612aa9d46e9d8f8a.js"
-    },
-    "frontend-9955d0aa60052955265e.js": {
-      "name": "frontend-9955d0aa60052955265e.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-9955d0aa60052955265e.js",
-      "publicPath": "static/solar/frontend-9955d0aa60052955265e.js"
-    },
-    "frontend-9cc5254f0502f60b21c8.js": {
-      "name": "frontend-9cc5254f0502f60b21c8.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-9cc5254f0502f60b21c8.js",
-      "publicPath": "static/solar/frontend-9cc5254f0502f60b21c8.js"
-    },
-    "frontend-a77fe702cf32ed60822f.js": {
-      "name": "frontend-a77fe702cf32ed60822f.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-a77fe702cf32ed60822f.js",
-      "publicPath": "static/solar/frontend-a77fe702cf32ed60822f.js"
-    },
-    "frontend-a8818274fa9cd8f3bc95.js": {
-      "name": "frontend-a8818274fa9cd8f3bc95.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-a8818274fa9cd8f3bc95.js",
-      "publicPath": "static/solar/frontend-a8818274fa9cd8f3bc95.js"
-    },
-    "frontend-a93d67ad3b6da0419ed1.js": {
-      "name": "frontend-a93d67ad3b6da0419ed1.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-a93d67ad3b6da0419ed1.js",
-      "publicPath": "static/solar/frontend-a93d67ad3b6da0419ed1.js"
-    },
-    "frontend-ad6d6193448f03aea300.js": {
-      "name": "frontend-ad6d6193448f03aea300.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-ad6d6193448f03aea300.js",
-      "publicPath": "static/solar/frontend-ad6d6193448f03aea300.js"
-    },
-    "frontend-b013682b43925358add0.js": {
-      "name": "frontend-b013682b43925358add0.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-b013682b43925358add0.js",
-      "publicPath": "static/solar/frontend-b013682b43925358add0.js"
-    },
-    "frontend-c2797752bdc36da733f7.js": {
-      "name": "frontend-c2797752bdc36da733f7.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-c2797752bdc36da733f7.js",
-      "publicPath": "static/solar/frontend-c2797752bdc36da733f7.js"
-    },
-    "frontend-c3b372ce0746576782ca.js": {
-      "name": "frontend-c3b372ce0746576782ca.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-c3b372ce0746576782ca.js",
-      "publicPath": "static/solar/frontend-c3b372ce0746576782ca.js"
-    },
-    "frontend-c3f5db72462c93fb3d1b.js": {
-      "name": "frontend-c3f5db72462c93fb3d1b.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-c3f5db72462c93fb3d1b.js",
-      "publicPath": "static/solar/frontend-c3f5db72462c93fb3d1b.js"
-    },
-    "frontend-c4b0847526fcf65c240e.js": {
-      "name": "frontend-c4b0847526fcf65c240e.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-c4b0847526fcf65c240e.js",
-      "publicPath": "static/solar/frontend-c4b0847526fcf65c240e.js"
-    },
-    "frontend-c6cacd560aa0e2892c40.js": {
-      "name": "frontend-c6cacd560aa0e2892c40.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-c6cacd560aa0e2892c40.js",
-      "publicPath": "static/solar/frontend-c6cacd560aa0e2892c40.js"
-    },
-    "frontend-d6ca6c21e384a16981c1.js": {
-      "name": "frontend-d6ca6c21e384a16981c1.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-d6ca6c21e384a16981c1.js",
-      "publicPath": "static/solar/frontend-d6ca6c21e384a16981c1.js"
-    },
-    "frontend-dcaaa01e9168702ade74.js": {
-      "name": "frontend-dcaaa01e9168702ade74.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-dcaaa01e9168702ade74.js",
-      "publicPath": "static/solar/frontend-dcaaa01e9168702ade74.js"
-    },
-    "frontend-f30d19e9b53935aa358f.js": {
-      "name": "frontend-f30d19e9b53935aa358f.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-f30d19e9b53935aa358f.js",
-      "publicPath": "static/solar/frontend-f30d19e9b53935aa358f.js"
-    },
-    "frontend-f5d0339c640f15eaec45.js": {
-      "name": "frontend-f5d0339c640f15eaec45.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-f5d0339c640f15eaec45.js",
-      "publicPath": "static/solar/frontend-f5d0339c640f15eaec45.js"
-    },
-    "frontend-f851cbd6233055fb7566.js": {
-      "name": "frontend-f851cbd6233055fb7566.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-f851cbd6233055fb7566.js",
-      "publicPath": "static/solar/frontend-f851cbd6233055fb7566.js"
-    },
-    "frontend-fc0b6658b75f3f543c4d.js": {
-      "name": "frontend-fc0b6658b75f3f543c4d.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-fc0b6658b75f3f543c4d.js",
-      "publicPath": "static/solar/frontend-fc0b6658b75f3f543c4d.js"
-    },
-    "frontend-fedee033db470d72fe86.js": {
-      "name": "frontend-fedee033db470d72fe86.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-fedee033db470d72fe86.js",
-      "publicPath": "static/solar/frontend-fedee033db470d72fe86.js"
-    },
-    "frontend-ffb7ddc91583a11d47f5.js": {
-      "name": "frontend-ffb7ddc91583a11d47f5.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-ffb7ddc91583a11d47f5.js",
-      "publicPath": "static/solar/frontend-ffb7ddc91583a11d47f5.js"
+    "frontend-e7d698d5c92212a9c037.js": {
+      "name": "frontend-e7d698d5c92212a9c037.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-e7d698d5c92212a9c037.js",
+      "publicPath": "static/solar/frontend-e7d698d5c92212a9c037.js"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-1ed484d1dc02f316cf9f.js"
+      "frontend-b4697dcc47da68820566.js"
     ]
   },
   "publicPath": "static/solar/",
   "error": "ModuleBuildError",
-  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\client\\src\\pages\\TrackingStages.js: Unexpected token, expected \":\" (18:7)\n\n  16 |       ): props.Tstatus === \"Completed Enjoy the Energy\" ?(\n  17 |         <ProgressBar animated now={100} />\n> 18 |       )}\n     |        ^\n  19 |     </div>\n  20 |   );\n  21 | };\n    at instantiate (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:64:32)\n    at constructor (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:364:12)\n    at JSXParserMixin.raise (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:3253:19)\n    at JSXParserMixin.unexpected (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:3283:16)\n    at JSXParserMixin.expect (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:3629:28)\n    at JSXParserMixin.parseConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10649:12)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10642:17)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at JSXParserMixin.parseConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10650:29)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10642:17)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at JSXParserMixin.parseConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10650:29)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10642:17)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at JSXParserMixin.parseConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10650:29)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10642:17)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at JSXParserMixin.parseConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10650:29)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10642:17)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at JSXParserMixin.parseExpressionBase (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10553:23)\n    at C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10549:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12244:12)\n    at JSXParserMixin.parseExpression (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10549:17)\n    at JSXParserMixin.jsxParseExpressionContainer (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6852:31)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6931:36)\n    at JSXParserMixin.jsxParseElement (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6975:17)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6987:19)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10859:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10656:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10569:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12244:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10569:17)\n    at JSXParserMixin.parseParenAndDistinguishExpression (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:11477:28)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:11128:23)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6992:20)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10859:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10656:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at JSXParserMixin.parseExpressionBase (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10553:23)\n    at C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10549:39"
+  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\client\\src\\pages\\TrackingInfo.js: Unexpected token (48:6)\n\n  46 |     <div>\n  47 |       <Nav\n> 48 |       <h1><TrackingStages Tstatus = {data.request_status}/></h1>\n     |       ^\n  49 |       {/* <h1><TrackingStages Tstatus = \"Sales Rep Appointed\"/></h1> */}\n  50 |       {/* <h1><TrackingStages Tstatus = \"Operation Manger\"/></h1>\n  51 |       <h1><TrackingStages Tstatus = \"Contrators on the way\"/></h1>\n    at instantiate (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:64:32)\n    at constructor (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:364:12)\n    at JSXParserMixin.raise (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:3253:19)\n    at JSXParserMixin.unexpected (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:3283:16)\n    at JSXParserMixin.jsxParseIdentifier (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6785:12)\n    at JSXParserMixin.jsxParseNamespacedName (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6792:23)\n    at JSXParserMixin.jsxParseAttribute (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6872:22)\n    at JSXParserMixin.jsxParseOpeningElementAfterName (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6887:28)\n    at JSXParserMixin.jsxParseOpeningElementAt (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6882:17)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6906:33)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6918:32)\n    at JSXParserMixin.jsxParseElement (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6975:17)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6987:19)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10859:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10656:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10569:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12244:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10569:17)\n    at JSXParserMixin.parseParenAndDistinguishExpression (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:11477:28)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:11128:23)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6992:20)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10859:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10656:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at JSXParserMixin.parseExpressionBase (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10553:23)\n    at C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10549:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12239:16)\n    at JSXParserMixin.parseExpression (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10549:17)\n    at JSXParserMixin.parseReturnStatement (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12934:28)\n    at JSXParserMixin.parseStatementContent (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12581:21)\n    at JSXParserMixin.parseStatementLike (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12548:17)\n    at JSXParserMixin.parseStatementListItem (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12528:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13120:61)\n    at JSXParserMixin.parseBlockBody (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13113:10)\n    at JSXParserMixin.parseBlock (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13101:10)\n    at JSXParserMixin.parseFunctionBody (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:11911:24)\n    at JSXParserMixin.parseFunctionBodyAndFinish (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:11897:10)\n    at C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13256:12\n    at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12221:14)\n    at JSXParserMixin.parseFunction (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13255:10)\n    at JSXParserMixin.parseFunctionStatement (C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12915:17)"
 }
