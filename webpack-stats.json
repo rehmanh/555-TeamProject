@@ -1,35 +1,55 @@
 {
   "status": "done",
   "assets": {
-    "frontend-6502952614ed5afc87d5.js": {
-      "name": "frontend-6502952614ed5afc87d5.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-6502952614ed5afc87d5.js",
-      "publicPath": "static/solar/frontend-6502952614ed5afc87d5.js"
+    "frontend-17c304c9b0df967771e5.js": {
+      "name": "frontend-17c304c9b0df967771e5.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-17c304c9b0df967771e5.js",
+      "publicPath": "static/solar/frontend-17c304c9b0df967771e5.js"
     },
-    "frontend-747c4f3acd14f2070d92.js": {
-      "name": "frontend-747c4f3acd14f2070d92.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-747c4f3acd14f2070d92.js",
-      "publicPath": "static/solar/frontend-747c4f3acd14f2070d92.js"
+    "frontend-1bba43a83e056749bb8f.js": {
+      "name": "frontend-1bba43a83e056749bb8f.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-1bba43a83e056749bb8f.js",
+      "publicPath": "static/solar/frontend-1bba43a83e056749bb8f.js"
     },
-    "frontend-7bffd304bdacda6dddf7.js": {
-      "name": "frontend-7bffd304bdacda6dddf7.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-7bffd304bdacda6dddf7.js",
-      "publicPath": "static/solar/frontend-7bffd304bdacda6dddf7.js"
+    "frontend-6257dbc6832114bed5f5.js": {
+      "name": "frontend-6257dbc6832114bed5f5.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-6257dbc6832114bed5f5.js",
+      "publicPath": "static/solar/frontend-6257dbc6832114bed5f5.js"
     },
-    "frontend-a940512f78d53694fee2.js": {
-      "name": "frontend-a940512f78d53694fee2.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-a940512f78d53694fee2.js",
-      "publicPath": "static/solar/frontend-a940512f78d53694fee2.js"
+    "frontend-674840278f84b64b392f.js": {
+      "name": "frontend-674840278f84b64b392f.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-674840278f84b64b392f.js",
+      "publicPath": "static/solar/frontend-674840278f84b64b392f.js"
     },
-    "frontend-f91b04467ad2fe962b2f.js": {
-      "name": "frontend-f91b04467ad2fe962b2f.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-f91b04467ad2fe962b2f.js",
-      "publicPath": "static/solar/frontend-f91b04467ad2fe962b2f.js"
+    "frontend-67a2afe49d01e45d1391.js": {
+      "name": "frontend-67a2afe49d01e45d1391.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-67a2afe49d01e45d1391.js",
+      "publicPath": "static/solar/frontend-67a2afe49d01e45d1391.js"
+    },
+    "frontend-939dcb096330cc6662a7.js": {
+      "name": "frontend-939dcb096330cc6662a7.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-939dcb096330cc6662a7.js",
+      "publicPath": "static/solar/frontend-939dcb096330cc6662a7.js"
+    },
+    "frontend-ad82c78ffa8398a1db1b.js": {
+      "name": "frontend-ad82c78ffa8398a1db1b.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-ad82c78ffa8398a1db1b.js",
+      "publicPath": "static/solar/frontend-ad82c78ffa8398a1db1b.js"
+    },
+    "frontend-c1420ab0a0d1c7b0a4ec.js": {
+      "name": "frontend-c1420ab0a0d1c7b0a4ec.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-c1420ab0a0d1c7b0a4ec.js",
+      "publicPath": "static/solar/frontend-c1420ab0a0d1c7b0a4ec.js"
+    },
+    "frontend-c7e9f29b9d5a11859416.js": {
+      "name": "frontend-c7e9f29b9d5a11859416.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-c7e9f29b9d5a11859416.js",
+      "publicPath": "static/solar/frontend-c7e9f29b9d5a11859416.js"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-f91b04467ad2fe962b2f.js"
+      "frontend-17c304c9b0df967771e5.js"
     ]
   },
   "publicPath": "static/solar/"
