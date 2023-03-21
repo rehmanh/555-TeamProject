@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import SolarNavbar from '../pages/navbar'
-import React, { useState } from 'react';
+import React, { Component, useEffect, useState } from "react";
 import {
   MDBTabs,
   MDBTabsItem,
@@ -13,7 +13,7 @@ import {
   MDBBtn
 } from 'mdb-react-ui-kit';
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
-import React, { Component, useEffect, useState } from "react";
+import {ToastContainer, toast} from 'react-toastify'
 import Table from 'react-bootstrap/Table';
 import { ThemeConsumer } from 'styled-components';
 import axios from 'axios';
@@ -46,10 +46,17 @@ export default function App() {
   };
 
   const assignRequestToSalesRep = () => {
+    try {
+      validateSalesRepUser();
+    } catch (message) {
+      toast.error(message);
+      return;
+    }
+    
     if (requests !== null && requests.length > 0) {
       const json = JSON.stringify({
         request_id_list: requests,
-        sales_rep_id: 99999
+        sales_rep_id: localStorage.getItem('userId')
       });
       axios
         .post("https://045zhv1hwl.execute-api.us-east-1.amazonaws.com/UAT", json, {
@@ -58,11 +65,25 @@ export default function App() {
           },
         })
         .then((response) => {
-          console.log(response);
+          if (response && response.status === 200) {
+            toast.success(`Successfully assigned Requests: ${requests} to your profile!`)
+          } else if (response && response.status in [400, 404]) {
+            toast.error('There was an issue with your Request. Please contact IT for support.')
+          } else {
+            toast.error('There was an issue with the Request API. Please try again later.')
+          }
         })
     } else {
-      // TODO insert the toastify message here
-      console.log("there are no requests");
+      toast.error('Please use the checkboxes to specify which Requests you would like to assign to your Profile.')
+    }
+  };
+
+  const validateSalesRepUser = () => {
+    if (localStorage.length === 0
+      || localStorage.getItem('userId') === null
+      || localStorage.getItem('roleId') === null
+      || localStorage.getItem('token') === null) {
+        throw "There was an error with the User for this request, please Log In and try again.";
     }
   };
 
