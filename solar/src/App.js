@@ -1,34 +1,3 @@
-// import React from 'react'
-// import Login from '../client/src/pages/login'
-// import Navbar from '../client/src/pages/navbar'
-// import Home from '../client/src/pages/home'
-// import SignUp from '../client/src/pages/signUp'
-
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-
-
-// const App = () => {
-//     return (
-//         <Router>
-//             <Navbar />
-//             <Routes>
-//                 <Route path='/'>
-//                     <Home />
-//                 </Route>
-//                 <Route path="/login">
-//                     <Login />
-//                 </Route>
-//                 <Route path="/signup">
-//                     <SignUp />
-//                 </Route>
-//             </Routes>
-//         </Router>
-
-//     )
-// }
-
-// export default App
-
 import React, { Component } from 'react';
 import { render } from "react-dom"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
@@ -41,6 +10,7 @@ import UserHome from '../client/src/pages/userHome';
 // import { Navbar } from 'react-bootstrap';
 // import Navbar from '../client/src/pages/navbar'
 import UserRequestForm from '../client/src/pages/UserRequestForm';
+import {ToastContainer, toast} from 'react-toastify'
 
 export default class App extends Component {
     constructor(props) {
@@ -48,6 +18,12 @@ export default class App extends Component {
     }
     render() {
         return(
+        <>
+        <ToastContainer
+            position="top-right"
+            autoClose={1500}
+            closeOnClick
+            />
         <Router>
             <Routes>
                 <Route element={<PrivateRoutes />}>
@@ -61,6 +37,7 @@ export default class App extends Component {
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
         </Router>
+        </>
         )
     }
 }

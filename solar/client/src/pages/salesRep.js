@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import Navbar from '../pages/navbar'
-// import React, { useState, useEffect, useReducer } from 'react';
+import SolarNavbar from '../pages/navbar'
+import React, { useState } from 'react';
 import {
   MDBTabs,
   MDBTabsItem,
@@ -68,7 +68,7 @@ export default function App() {
 
   return (
     <div>
-        <Navbar />
+        <SolarNavbar />
     <>
       <MDBRow>
         <MDBCol size='2'>

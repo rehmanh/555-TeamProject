@@ -1,6 +1,6 @@
 import React from 'react';
 // import { render } from "react-dom"
-import Navbar from '../pages/navbar'
+import SolarNavbar from '../pages/navbar'
 import 'bootstrap/dist/css/bootstrap.css';
 import {
   MDBCarousel,
@@ -10,7 +10,7 @@ import {
 export default function HomePage() {
   return (
   <div>
-    <Navbar />
+    <SolarNavbar />
     <MDBCarousel showControls showIndicators>
       <MDBCarouselItem
         className='w-100 d-block'
