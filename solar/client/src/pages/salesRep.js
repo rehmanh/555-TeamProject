@@ -16,6 +16,7 @@ import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 import React, { Component, useEffect, useState } from "react";
 import Table from 'react-bootstrap/Table';
 import { ThemeConsumer } from 'styled-components';
+import axios from 'axios';
 
 export default function App() {
   const [verticalActive, setVerticalActive] = useState('tab1');
@@ -30,17 +31,40 @@ export default function App() {
 
   const [data, setData] = useState();
 
-    useEffect(() => {
-        fetch("https://h0pt17fv6g.execute-api.us-east-1.amazonaws.com/UAT").then((data) => {
-            // console.log(data); DATA IN JSON Format
-            return data.json(); // Converted data to object
-        }).then((objectData) => {
-            console.log("in the second then");
-            console.log(objectData);
-            //this.state.objectData = objectData;
-            setData(objectData.body.sales_reps);
-        }, [])    
-    });
+  useEffect(() => {
+      fetch("https://h0pt17fv6g.execute-api.us-east-1.amazonaws.com/UAT").then((data) => {
+          return data.json(); // Converted data to object
+      }).then((objectData) => {
+          setData(objectData.body.sales_reps);
+      }, [])    
+  }, []);
+
+  const [requests, setRequests] = useState([]);
+  
+  const handleCheckboxSelection = (requests) => {
+    setRequests(requests);
+  };
+
+  const assignRequestToSalesRep = () => {
+    if (requests !== null && requests.length > 0) {
+      const json = JSON.stringify({
+        request_id_list: requests,
+        sales_rep_id: 99999
+      });
+      axios
+        .post("https://045zhv1hwl.execute-api.us-east-1.amazonaws.com/UAT", json, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+        .then((response) => {
+          console.log(response);
+        })
+    } else {
+      // TODO insert the toastify message here
+      console.log("there are no requests");
+    }
+  };
 
   return (
     <div>
@@ -76,7 +100,7 @@ export default function App() {
                         <MDBTableHead dark>
                             <tr>
                                 <th scope='col'>
-                                    <MDBBtn rounded color='success' type='submit'>Submit</MDBBtn>
+                                    <MDBBtn rounded color='success' type='submit' onClick={assignRequestToSalesRep}>Submit</MDBBtn>
                                 </th>
                                 <th>Customer's Request ID</th>
                                 <th>Customer's First Name</th>
@@ -85,7 +109,7 @@ export default function App() {
                         </MDBTableHead>
                         <MDBTableBody>
                             {
-                                data && <SalesRepTable data={data}/>
+                                data && <SalesRepTable data={data} handleCheckboxSelection={handleCheckboxSelection}/>
                             }
                         </MDBTableBody>
                     </MDBTable>
@@ -100,66 +124,41 @@ export default function App() {
   );
 }
 
-function SalesRepTable({data}) {
-    return (
-        <>
-        {
-            data.map((value) => (
-                <tr key = {value.sales_reps}>
-                    <th scope='col'>
-                        <MDBCheckbox></MDBCheckbox>
-                    </th>
-                    <td>{value.request_id}</td>   
-                    <td>{value.first_name}</td>
-                    <td>{value.city}</td>
-                </tr>
-            ))
-        }
-        </>
-    );
+function SalesRepTable({data, handleCheckboxSelection}) {
+  const [requests, setRequests] = useState([]);
+
+  const handleChange = (event, requestId) => {
+    if (event.target.checked) {
+      requests.push(requestId);
+      setRequests(requests); 
+    } else {
+      // check if state contains unchecked requestId
+      // and remove it
+      const index = requests.indexOf(requestId);
+      if (index > -1) {
+        requests.splice(index, 1);
+      }
+    }
+  };
+
+  return (
+      <>
+      {
+          data.map((value) => (
+              <tr key = {value.sales_reps}>
+                  <th scope='col'>
+                      <MDBCheckbox onClick={(e) => {
+                        handleChange(e, value.request_id); 
+                        handleCheckboxSelection(requests);
+                      }}></MDBCheckbox>
+                  </th>
+                  <td>{value.request_id}</td>   
+                  <td>{value.first_name}</td>
+                  <td>{value.city}</td>
+              </tr>
+          ))
+      }
+      </>
+  );
 }
-
-// export default function SalesRep() {
-    
-
-//     return(
-//         <div className='container'>
-//             <h2 className="text-center">Customer List</h2>
-//             <br></br>
-//             <div className = "row">
-//                 <MDBTable className = "table table-striped table-bordered">
-//                     <MDBTableHead>
-//                         <tr>
-//                             <th>Customer's Request ID</th>
-//                             <th>Customer's First Name</th>
-//                             <th>Customer's city</th>
-//                         </tr>
-//                     </MDBTableHead>
-//                     <MDBTableBody>
-//                         {
-//                             data && <SalesRepTable data={data}/>
-//                         }
-//                     </MDBTableBody>
-//                 </MDBTable>
-//                 </div>         
-//             </div>
-//     )
-// }
-
-// function SalesRepTable({data}) {
-//     return (
-//         <>
-//         {
-//             data.map((value) => (
-//                 <tr key = {value.sales_reps}>
-//                     <td>{value.request_id}</td>   
-//                     <td>{value.first_name}</td>
-//                     <td>{value.city}</td>
-//                 </tr>
-//             ))
-//         }
-//         </>
-//     );
-// }
-
 
