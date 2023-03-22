@@ -152,104 +152,106 @@ export default function UserRequestForm() {
         <Navbar />
         <h1>Customer Request Form</h1>
         <ToastContainer />
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="firstName">First Name:</label>
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            value={firstName}
-            placeholder = "example: John"
-            onChange={(e) => setFirstName(e.target.value)}
-            required
-          />
+        <div>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="firstName">First Name:</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              value={firstName}
+              placeholder="example: John"
+              onChange={(e) => setFirstName(e.target.value)}
+              required
+            />
 
-          <label htmlFor="lastName">Last Name:</label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-            required
-          />
+            <label htmlFor="lastName">Last Name:</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              required
+            />
 
-          <label htmlFor="emailAddress">Email Address:</label>
-          <input
-            type="email"
-            id="emailAddress"
-            name="emailAddress"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+            <label htmlFor="emailAddress">Email Address:</label>
+            <input
+              type="email"
+              id="emailAddress"
+              name="emailAddress"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
 
-          <label htmlFor="phoneNumber">Phone Number:</label>
-          <input
-            type="tel"
-            id="phoneNumber"
-            name="phoneNumber"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            required
-          />
+            <label htmlFor="phoneNumber">Phone Number:</label>
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+            />
 
-          <label htmlFor="streetAddress1">Street Address 1:</label>
-          <input
-            type="text"
-            id="streetAddress1"
-            name="streetAddress1"
-            value={streetAddress}
-            onChange={(e) => setStreetAddress(e.target.value)}
-            required
-          />
+            <label htmlFor="streetAddress1">Street Address 1:</label>
+            <input
+              type="text"
+              id="streetAddress1"
+              name="streetAddress1"
+              value={streetAddress}
+              onChange={(e) => setStreetAddress(e.target.value)}
+              required
+            />
 
-          <label htmlFor="city">City:</label>
-          <input
-            type="text"
-            id="city"
-            name="city"
-            value={city}
-            onChange={(e) => setCity(e.target.value)}
-            required
-          />
+            <label htmlFor="city">City:</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              value={city}
+              onChange={(e) => setCity(e.target.value)}
+              required
+            />
 
-          <label htmlFor="state">State:</label>
-          <input
-            type="text"
-            id="state"
-            name="state"
-            value={state}
-            onChange={(e) => setState(e.target.value)}
-            required
-          />
+            <label htmlFor="state">State:</label>
+            <input
+              type="text"
+              id="state"
+              name="state"
+              value={state}
+              onChange={(e) => setState(e.target.value)}
+              required
+            />
 
-          <label htmlFor="zipCode">Zip Code:</label>
-          <input
-            type="text"
-            id="zipCode"
-            name="zipCode"
-            value={zipCode}
-            onChange={(e) => setZipCode(e.target.value)}
-            required
-          />
+            <label htmlFor="zipCode">Zip Code:</label>
+            <input
+              type="text"
+              id="zipCode"
+              name="zipCode"
+              value={zipCode}
+              onChange={(e) => setZipCode(e.target.value)}
+              required
+            />
 
-          <label htmlFor="message">Message</label>
-          <textarea
-            type="text"
-            id="message"
-            rows={5}
-            cols={60}
-            name="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
-          <br></br>
-          <br></br>
+            <label htmlFor="message">Message</label>
+            <textarea
+              type="text"
+              id="message"
+              rows={5}
+              cols={60}
+              name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+            />
+            <br></br>
+            <br></br>
 
-          <input type="submit" value="Submit" />
-        </form>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </div>
     </>
   );
