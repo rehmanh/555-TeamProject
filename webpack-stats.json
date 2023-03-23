@@ -1,16 +1,18 @@
 {
   "status": "done",
   "assets": {
-    "frontend-c3111f7f20996b805f9e.js": {
-      "name": "frontend-c3111f7f20996b805f9e.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-c3111f7f20996b805f9e.js",
-      "publicPath": "static/solar/frontend-c3111f7f20996b805f9e.js"
+    "frontend-8b475291bc83cadf0ccf.js": {
+      "name": "frontend-8b475291bc83cadf0ccf.js",
+      "path": "C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\static\\solar\\frontend-8b475291bc83cadf0ccf.js",
+      "publicPath": "static/solar/frontend-8b475291bc83cadf0ccf.js"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-c3111f7f20996b805f9e.js"
+      "frontend-8b475291bc83cadf0ccf.js"
     ]
   },
-  "publicPath": "static/solar/"
+  "publicPath": "static/solar/",
+  "error": "ModuleNotFoundError",
+  "message": "Module not found: Error: Can't resolve 'react-toastify' in 'C:\\Users\\user\\OneDrive\\桌面\\Final_project\\solar\\client\\src\\components'"
 }
