@@ -40,6 +40,7 @@ import SalesRep from '../client/src/pages/salesRep';
 import Navbar from '../client/src/pages/navbar'
 import UserRequestForm from '../client/src/pages/UserRequestForm';
 import Userprog from '../client/src/pages/Userprog';
+import { Operation } from '../client/src/pages/Operation';
 export default class App extends Component {
     constructor(props) {
         super(props);
@@ -54,6 +55,7 @@ export default class App extends Component {
                 <Route exact path='/salesrep' element={<SalesRep />}/>
                 <Route exact path='/userreq' element={<UserRequestForm />}/>
                 <Route exact path= '/userprog' element={<Userprog />}/>
+                <Route exact path= '/oper' element={<Operation />}/>
                 
                 
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
