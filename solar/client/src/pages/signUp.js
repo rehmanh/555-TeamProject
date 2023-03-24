@@ -1,18 +1,6 @@
-// import React, { Component } from 'react';
-// // // import { render } from "react-dom"
-
-// export default class SignUp extends Component {
-//     constructor(props) {
-//         super(props);
-//     }
-//     render() {
-//         return <h1>Sign Up!</h1>
-//     }
-// }
-
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import Navbar from '../pages/navbar'
+import SolarNavbar from '../pages/navbar'
 import {
     MDBInput,
     MDBCheckbox,
@@ -27,7 +15,7 @@ function SignUp() {
     return (
         <div>
 
-        <Navbar />
+        <SolarNavbar />
         <Form>
             <header>
             <center><h1>Sign Up</h1></center>

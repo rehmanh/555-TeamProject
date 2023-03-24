@@ -10,5 +10,6 @@ urlpatterns = [
     path('salesrep', index),
     path('userreq',index),
     path('userprog', index),
-    path('oper',index)
+    path('oper',index),
+    path('userHome', index)
 ]
