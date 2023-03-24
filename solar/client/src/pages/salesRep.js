@@ -103,8 +103,10 @@ export default function App() {
         <SolarNavbar />
     <>
       <MDBRow>
-        <MDBCol size='2'>
-          <MDBTabs pills className='flex-column text-center'>
+        <MDBCol size='1'></MDBCol>
+        <MDBCol size='10'>
+
+          <MDBTabs fill className='mt-3'>
             <MDBTabsItem>
               <MDBTabsLink onClick={() => handleVerticalClick('tab1')} active={verticalActive === 'tab1'}>
                 All Requests
@@ -121,27 +123,34 @@ export default function App() {
               </MDBTabsLink>
             </MDBTabsItem>
           </MDBTabs>
-        </MDBCol>
-        <MDBCol size='9'>
+
           <MDBTabsContent>
             <MDBTabsPane show={verticalActive === 'tab1'}>
-              <h1>
-                <MDBBtn>Refresh</MDBBtn>
-              </h1>
                 <MDBTable className = "table table-light table-bordered table-responsive table-hover">
                         <MDBTableHead dark>
                             <tr>
                                 <th scope='col'>
                                     <MDBBtn rounded color='success' type='submit' onClick={assignRequestToSalesRep}>Submit</MDBBtn>
                                 </th>
-                                <th>Customer's Request ID</th>
-                                <th>Customer's First Name</th>
-                                <th>Customer's city</th>
+                                <th>
+                                  <span style={{float: 'left'}}>Customer's Request ID</span>
+                                </th>
+                                <th>
+                                  <span style={{float: 'left'}}>Customer's First Name</span>
+                                </th>
+                                <th>
+                                  <span style={{float: 'left'}}>Customer's city</span>
+                                  <span style={{float: 'right'}}><MDBBtn>Refresh</MDBBtn></span>
+                                </th>
                             </tr>
                         </MDBTableHead>
                         <MDBTableBody>
                             {
-                                allRequests && <SalesRepTable data={allRequests} handleCheckboxSelection={handleCheckboxSelection}/>
+                                allRequests && 
+                                <SalesRepTable 
+                                  data={allRequests} 
+                                  handleCheckboxSelection={handleCheckboxSelection} 
+                                  isUsersRequests={false}/>
                             }
                         </MDBTableBody>
                     </MDBTable>
@@ -156,13 +165,14 @@ export default function App() {
                       </th>
                       <th>Customer's Request ID</th>
                       <th>Customer's First Name</th>
-                      <th>Customer's city</th>
+                      <th>Customer's City</th>
+                      <th>Request Status</th>
                   </tr>
                 </MDBTableHead>
                 <MDBTableBody>
                     {
                         userRequests && userRequests.length !== 0 
-                          ? <SalesRepTable data={userRequests} handleCheckboxSelection={handleCheckboxSelection}/>
+                          ? <SalesRepTable data={userRequests} handleCheckboxSelection={handleCheckboxSelection} isUsersRequests={true}/>
                           : <></>
                     }
                 </MDBTableBody>
@@ -178,13 +188,14 @@ export default function App() {
             <MDBTabsPane show={verticalActive === 'tab3'}>On going Projects</MDBTabsPane>
           </MDBTabsContent>
         </MDBCol>
+        <MDBCol size='1'></MDBCol>
       </MDBRow>
     </>
     </div>
   );
 }
 
-function SalesRepTable({data, handleCheckboxSelection}) {
+function SalesRepTable({data, handleCheckboxSelection, isUsersRequests}) {
   const [requests, setRequests] = useState([]);
 
   const handleChange = (event, requestId) => {
@@ -216,6 +227,9 @@ function SalesRepTable({data, handleCheckboxSelection}) {
             <td>{value.request_id}</td>   
             <td>{value.first_name}</td>
             <td>{value.city}</td>
+            {
+              isUsersRequests ? <td>{value.current_stage}</td> : <></>
+            }
           </tr>
         ))
       }
