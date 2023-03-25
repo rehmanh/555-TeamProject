@@ -9,5 +9,6 @@ urlpatterns = [
     # path('nav', index)
     path('salesrep', index),
     path('userReq', index),
-    path('userHome', index)
+    path('userHome', index),
+    path('opManager', index)
 ]
