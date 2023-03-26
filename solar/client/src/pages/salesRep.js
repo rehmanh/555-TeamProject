@@ -127,7 +127,7 @@ export default function App() {
           <MDBTabsContent>
             <MDBTabsPane show={verticalActive === 'tab1'}>
                 <MDBTable className = "table table-light table-bordered table-responsive table-hover">
-                        <MDBTableHead dark>
+                        <MDBTableHead dark style={{top: '0', position: 'sticky'}}>
                             <tr>
                                 <th scope='col'>
                                     <MDBBtn rounded color='success' type='submit' onClick={assignRequestToSalesRep}>Submit</MDBBtn>
