@@ -10,8 +10,9 @@ import UserHome from '../client/src/pages/userHome';
 // import { Navbar } from 'react-bootstrap';
 // import Navbar from '../client/src/pages/navbar'
 import UserRequestForm from '../client/src/pages/UserRequestForm';
+import Userprog from '../client/src/pages/Userprog';
+import { Operation } from '../client/src/pages/Operation';
 import {ToastContainer, toast} from 'react-toastify'
-
 export default class App extends Component {
     constructor(props) {
         super(props);
@@ -33,7 +34,12 @@ export default class App extends Component {
                 <Route exact path='/' element={<HomePage />}/>
                 <Route exact path='/login' element={<Login />}/>
                 <Route exact path='/signup' element={<SignUp />}/>
-                <Route exact path='/userReq' element={<UserRequestForm />}/>
+                <Route exact path='/salesrep' element={<SalesRep />}/>
+                <Route exact path='/userreq' element={<UserRequestForm />}/>
+                <Route exact path= '/userprog' element={<Userprog />}/>
+                <Route exact path= '/oper' element={<Operation />}/>
+                
+                
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
         </Router>

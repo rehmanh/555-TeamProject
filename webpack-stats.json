@@ -1,35 +1,15 @@
 {
   "status": "done",
   "assets": {
-    "frontend-1b67b65731ea136ceccc.js": {
-      "name": "frontend-1b67b65731ea136ceccc.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-1b67b65731ea136ceccc.js",
-      "publicPath": "static/solar/frontend-1b67b65731ea136ceccc.js"
-    },
-    "frontend-64b5ffd938c73a6fc280.js": {
-      "name": "frontend-64b5ffd938c73a6fc280.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-64b5ffd938c73a6fc280.js",
-      "publicPath": "static/solar/frontend-64b5ffd938c73a6fc280.js"
-    },
-    "frontend-7006b2f1d528da0771d4.js": {
-      "name": "frontend-7006b2f1d528da0771d4.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-7006b2f1d528da0771d4.js",
-      "publicPath": "static/solar/frontend-7006b2f1d528da0771d4.js"
-    },
-    "frontend-ae31801fbcd923db2838.js": {
-      "name": "frontend-ae31801fbcd923db2838.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-ae31801fbcd923db2838.js",
-      "publicPath": "static/solar/frontend-ae31801fbcd923db2838.js"
-    },
-    "frontend-f7cd16c0516188f9f3f2.js": {
-      "name": "frontend-f7cd16c0516188f9f3f2.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-f7cd16c0516188f9f3f2.js",
-      "publicPath": "static/solar/frontend-f7cd16c0516188f9f3f2.js"
+    "frontend-8f2f35a090d42b97cb84.js": {
+      "name": "frontend-8f2f35a090d42b97cb84.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-8f2f35a090d42b97cb84.js",
+      "publicPath": "static/solar/frontend-8f2f35a090d42b97cb84.js"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-f7cd16c0516188f9f3f2.js"
+      "frontend-8f2f35a090d42b97cb84.js"
     ]
   },
   "publicPath": "static/solar/"
