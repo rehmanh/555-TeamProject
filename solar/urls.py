@@ -11,5 +11,7 @@ urlpatterns = [
     path('userreq',index),
     path('userprog', index),
     path('oper',index),
-    path('userHome', index)
+    path('userHome', index),
+    path('opManager', index)
+
 ]

@@ -13,6 +13,8 @@ import UserRequestForm from '../client/src/pages/UserRequestForm';
 import Userprog from '../client/src/pages/Userprog';
 import { Operation } from '../client/src/pages/Operation';
 import {ToastContainer, toast} from 'react-toastify'
+import OpManager from '../client/src/pages/OpManager'
+
 export default class App extends Component {
     constructor(props) {
         super(props);
@@ -30,6 +32,7 @@ export default class App extends Component {
                 <Route element={<PrivateRoutes />}>
                     <Route exact path='/userHome' element={<UserHome />}/>
                     <Route exact path='/salesrep' element={<SalesRep />}/>
+                    <Route exact path='/opManager' element={<OpManager />}/>
                 </Route>
                 <Route exact path='/' element={<HomePage />}/>
                 <Route exact path='/login' element={<Login />}/>
