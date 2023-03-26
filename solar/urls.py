@@ -8,6 +8,10 @@ urlpatterns = [
     path('signup', index),
     # path('nav', index)
     path('salesrep', index),
-    path('userReq', index),
-    path('userHome', index)
+    path('userreq',index),
+    path('userprog', index),
+    path('oper',index),
+    path('userHome', index),
+    path('opManager', index)
+
 ]
