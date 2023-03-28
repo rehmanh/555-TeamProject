@@ -105,100 +105,99 @@ export default function App() {
   };
 
   return (
-    (roleId == 1 || roleId == 2) && isLoggedIn ?
-      (<div>
-        <SolarNavbar />
-        <>
-          <MDBRow>
-            <MDBCol size='1'></MDBCol>
-            <MDBCol size='10'>
+    <div>
+      <SolarNavbar />
+      <>
+        <MDBRow>
+          <MDBCol size='1'></MDBCol>
+          <MDBCol size='10'>
 
-              <MDBTabs fill className='mt-3'>
-                <MDBTabsItem>
-                  <MDBTabsLink onClick={() => handleVerticalClick('tab1')} active={verticalActive === 'tab1'}>
-                    All Requests
-                  </MDBTabsLink>
-                </MDBTabsItem>
-                <MDBTabsItem>
-                  <MDBTabsLink onClick={() => handleVerticalClick('tab2')} active={verticalActive === 'tab2'}>
-                    Your Requests
-                  </MDBTabsLink>
-                </MDBTabsItem>
-                <MDBTabsItem>
-                  <MDBTabsLink onClick={() => handleVerticalClick('tab3')} active={verticalActive === 'tab3'}>
-                    Active Requests
-                  </MDBTabsLink>
-                </MDBTabsItem>
-              </MDBTabs>
+            <MDBTabs fill className='mt-3'>
+              <MDBTabsItem>
+                <MDBTabsLink onClick={() => handleVerticalClick('tab1')} active={verticalActive === 'tab1'}>
+                  All Requests
+                </MDBTabsLink>
+              </MDBTabsItem>
+              <MDBTabsItem>
+                <MDBTabsLink onClick={() => handleVerticalClick('tab2')} active={verticalActive === 'tab2'}>
+                  Your Requests
+                </MDBTabsLink>
+              </MDBTabsItem>
+              <MDBTabsItem>
+                <MDBTabsLink onClick={() => handleVerticalClick('tab3')} active={verticalActive === 'tab3'}>
+                  Active Requests
+                </MDBTabsLink>
+              </MDBTabsItem>
+            </MDBTabs>
 
-              <MDBTabsContent>
-                <MDBTabsPane show={verticalActive === 'tab1'}>
-                  <MDBTable className="table table-light table-bordered table-responsive table-hover">
-                    <MDBTableHead dark>
-                      <tr>
-                        <th scope='col'>
-                          <MDBBtn rounded color='success' type='submit' onClick={assignRequestToSalesRep}>Submit</MDBBtn>
-                        </th>
-                        <th>
-                          <span style={{ float: 'left' }}>Customer's Request ID</span>
-                        </th>
-                        <th>
-                          <span style={{ float: 'left' }}>Customer's First Name</span>
-                        </th>
-                        <th>
-                          <span style={{ float: 'left' }}>Customer's city</span>
-                          <span style={{ float: 'right' }}><MDBBtn>Refresh</MDBBtn></span>
-                        </th>
-                      </tr>
-                    </MDBTableHead>
-                    <MDBTableBody>
-                      {
-                        allRequests &&
-                        <SalesRepTable
-                          data={allRequests}
-                          handleCheckboxSelection={handleCheckboxSelection}
-                          isUsersRequests={false} />
-                      }
-                    </MDBTableBody>
-                  </MDBTable>
-                </MDBTabsPane>
+            <MDBTabsContent>
+              <MDBTabsPane show={verticalActive === 'tab1'}>
+                <MDBTable className="table table-light table-bordered table-responsive table-hover">
+                  <MDBTableHead dark>
+                    <tr>
+                      <th scope='col'>
+                        <MDBBtn rounded color='success' type='submit' onClick={assignRequestToSalesRep}>Submit</MDBBtn>
+                      </th>
+                      <th>
+                        <span style={{ float: 'left' }}>Customer's Request ID</span>
+                      </th>
+                      <th>
+                        <span style={{ float: 'left' }}>Customer's First Name</span>
+                      </th>
+                      <th>
+                        <span style={{ float: 'left' }}>Customer's city</span>
+                        <span style={{ float: 'right' }}><MDBBtn>Refresh</MDBBtn></span>
+                      </th>
+                    </tr>
+                  </MDBTableHead>
+                  <MDBTableBody>
+                    {
+                      allRequests &&
+                      <SalesRepTable
+                        data={allRequests}
+                        handleCheckboxSelection={handleCheckboxSelection}
+                        isUsersRequests={false} />
+                    }
+                  </MDBTableBody>
+                </MDBTable>
+              </MDBTabsPane>
 
-                <MDBTabsPane show={verticalActive === 'tab2'}>
-                  <MDBTable className="table table-light table-bordered table-responsive table-hover">
-                    <MDBTableHead dark>
-                      <tr>
-                        <th scope='col'>
+              <MDBTabsPane show={verticalActive === 'tab2'}>
+                <MDBTable className="table table-light table-bordered table-responsive table-hover">
+                  <MDBTableHead dark>
+                    <tr>
+                      <th scope='col'>
 
-                        </th>
-                        <th>Customer's Request ID</th>
-                        <th>Customer's First Name</th>
-                        <th>Customer's City</th>
-                        <th>Request Status</th>
-                      </tr>
-                    </MDBTableHead>
-                    <MDBTableBody>
-                      {
-                        userRequests && userRequests.length !== 0
-                          ? <SalesRepTable data={userRequests} handleCheckboxSelection={handleCheckboxSelection} isUsersRequests={true} />
-                          : <></>
-                      }
-                    </MDBTableBody>
-                  </MDBTable>
-                  {
-                    // this is bad, but hopefully it works
-                    !userRequests || userRequests.length === 0
-                      ? <div style={{ textAlign: 'center' }}>You do not have any Requests assigned to you yet...</div>
-                      : <></>
-                  }
-                </MDBTabsPane>
+                      </th>
+                      <th>Customer's Request ID</th>
+                      <th>Customer's First Name</th>
+                      <th>Customer's City</th>
+                      <th>Request Status</th>
+                    </tr>
+                  </MDBTableHead>
+                  <MDBTableBody>
+                    {
+                      userRequests && userRequests.length !== 0
+                        ? <SalesRepTable data={userRequests} handleCheckboxSelection={handleCheckboxSelection} isUsersRequests={true} />
+                        : <></>
+                    }
+                  </MDBTableBody>
+                </MDBTable>
+                {
+                  // this is bad, but hopefully it works
+                  !userRequests || userRequests.length === 0
+                    ? <div style={{ textAlign: 'center' }}>You do not have any Requests assigned to you yet...</div>
+                    : <></>
+                }
+              </MDBTabsPane>
 
-                <MDBTabsPane show={verticalActive === 'tab3'}>On going Projects</MDBTabsPane>
-              </MDBTabsContent>
-            </MDBCol>
-            <MDBCol size='1'></MDBCol>
-          </MDBRow>
-        </>
-      </div>) : (<div>Invalid</div>)
+              <MDBTabsPane show={verticalActive === 'tab3'}>On going Projects</MDBTabsPane>
+            </MDBTabsContent>
+          </MDBCol>
+          <MDBCol size='1'></MDBCol>
+        </MDBRow>
+      </>
+    </div>
   );
 }
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from "react-dom"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import PrivateRoutes from "../src/PrivateRoute"
+import {SaRoute, OpRoute} from "./PrivateRoutes";
 import HomePage from '../client/src/pages/home';
 import SignUp from '../client/src/pages/signUp';
 import Login from '../client/src/pages/login';
@@ -29,9 +29,12 @@ export default class App extends Component {
             />
         <Router>
             <Routes>
-                <Route element={<PrivateRoutes />}>
+                <Route element={<SaRoute />}>
                     <Route exact path='/userHome' element={<UserHome />}/>
                     <Route exact path='/salesrep' element={<SalesRep />}/>
+                </Route>
+                <Route element={<OpRoute />}>
+                    <Route exact path='/userHome' element={<UserHome />}/>
                     <Route exact path='/opManager' element={<OpManager />}/>
                 </Route>
                 <Route exact path='/' element={<HomePage />}/>
@@ -41,8 +44,6 @@ export default class App extends Component {
                 <Route exact path='/userreq' element={<UserRequestForm />}/>
                 <Route exact path= '/userprog' element={<Userprog />}/>
                 <Route exact path= '/oper' element={<Operation />}/>
-                
-                
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
         </Router>
