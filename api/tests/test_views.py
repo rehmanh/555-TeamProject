@@ -125,3 +125,11 @@ class TestViews(TestSetUp):
 
         self.assertEqual(res.status_code, 200)
        
+     def test_get_users(self):
+
+
+            # Act
+            res = self.client.get('https://h0pt17fv6g.execute-api.us-east-1.amazonaws.com/UAT')
+
+            # Assert
+            self.assertEqual(res.status_code, 200)
