@@ -25,7 +25,7 @@ router.register(r'users', UserView, 'user')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("solar.urls"), name='home'),
+    path('', include("solar.urls")),
     path('api/', include(router.urls)),
     path('api-login/', UserLoginView.as_view(), name='knox_login'),
     path('logout/', knox_views.LogoutView.as_view(), name='knox_logout'),
