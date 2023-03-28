@@ -105,7 +105,7 @@ export default function App() {
   };
 
   return (
-    isLoggedIn && roleId == 1 || roleId == 2 ?
+    (roleId == 1 || roleId == 2) && isLoggedIn ?
       (<div>
         <SolarNavbar />
         <>
