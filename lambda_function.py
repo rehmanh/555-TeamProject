@@ -1,78 +1,66 @@
 import json
-import boto3
-from botocore.exceptions import ClientError
+import mysql.connector
+from mysql.connector import Error
 
-USER_POOL_ID = 'us-east-1_d8fHjvvwS'
-
-client = boto3.client('cognito-idp')
-
-def initiate_forgot_password(username):
-    try:
-        response = client.forgot_password(
-            ClientId='qnp5kqqa59lhghjecur68090r',
-            Username=username
-        )
-        return {
-            'statusCode': 200,
-            'body': 'Verification code sent successfully'
-        }
-    except ClientError as e:
-        return {
-            'statusCode': 400,
-            'body': e.response['Error']['Message']
-        }
-
-def confirm_forgot_password(username, verification_code, new_password):
-    try:
-        response = client.confirm_forgot_password(
-            ClientId='qnp5kqqa59lhghjecur68090r',
-            Username=username,
-            ConfirmationCode=verification_code,
-            Password=new_password
-        )
-        return {
-            'statusCode': 200,
-            'body': 'Password changed successfully'
-        }
-    except ClientError as e:
-        return {
-            'statusCode': 400,
-            'body': e.response['Error']['Message']
-        }
-
-def change_password(access_token, old_password, new_password):
-    try:
-        response = client.change_password(
-            AccessToken=access_token,
-            PreviousPassword=old_password,
-            ProposedPassword=new_password
-        )
-        return {
-            'statusCode': 200,
-            'body': 'Password changed successfully'
-        }
-    except ClientError as e:
-        return {
-            'statusCode': 400,
-            'body': e.response['Error']['Message']
-        }
+headers = {'Content-Type':'application/json',
+           'Access-Control-Allow-Origin':'*',
+           'Access-Control-Allow-Methods':'*',
+            'Access-Control-Allow-Headers':'*',
+            'Accept':'*/*'
+}
 
 def lambda_handler(event, context):
-    action = event['action']
-    username = event['username']
-    old_password = event['old_password']
-    new_password = event['new_password']
-    verification_code = event['verification_code']
-    
-    if action == 'initiate_forgot_password':
-        return initiate_forgot_password(username)
-    elif action == 'confirm_forgot_password':
-        return confirm_forgot_password(username, verification_code, new_password)
-    elif action == 'change_password':
-        access_token = event['access_token']
-        return change_password(access_token, old_password, new_password)
-    else:
-        return {
-            'statusCode': 400,
-            'body': 'Invalid action'
+    # Get the request_id from the API Gateway request
+    #print(event)
+   # body = event['body']
+    #request_id = body['request_id']
+   # print(body)
+   # json_data = json.loads(body)
+    #print(json_data)
+   # request_id = body.json_data
+   # print(request_id)
+    #request_id = "cb275fc8-9896-4791-9661-1360c382e32e"
+    # Connect to the MySQL database
+    request_body = json.loads(event['body'])
+    request_id = request_body['request_id']
+    try:
+        connection = mysql.connector.connect(
+            host='database-1.cbxlmzf07zcq.us-east-1.rds.amazonaws.com',
+            database='request_db',
+            user='admin',
+            password='TripleS321#'
+        )
+        
+        # Execute a SELECT query to get the request_status for the given request_id
+        cursor = connection.cursor()
+        query = "SELECT request_status, sales_rep_id FROM mytable WHERE request_id = %s"
+        cursor.execute(query, (request_id,))
+        result = cursor.fetchone()
+        
+        # Build the response
+        response = {
+            'request_id': request_id,
+            'request_status': result[0],
+            'sales_rep_ID': result[1]
         }
+        
+        # Return the response as a JSON object
+        return {
+            'statusCode': 200,
+            'headers': headers,
+            'body': json.dumps(response)
+        }
+        
+    except Error as e:
+        print("Error while connecting to MySQL", e)
+        return {
+            'statusCode': 500,
+            'headers': headers,
+            'body': json.dumps({'message': 'Internal Server Error'})
+        }
+        
+    finally:
+        # Close the database connection
+        if connection.is_connected():
+            cursor.close()
+            connection.close()
