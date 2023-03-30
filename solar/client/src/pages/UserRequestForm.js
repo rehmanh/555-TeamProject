@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Navbar from "./navbar";
 // import { Form, Button, Row, Col } from 'react-bootstrap';
 import "./UserRequestForm.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // const UserRequestForm = () => {
 //   const [name, setName] = useState('');
@@ -57,7 +59,7 @@ import "./UserRequestForm.css";
 //           Submit
 //         </Button>
 //       </Form>
-const UserRequestForm = () => {
+export default function UserRequestForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -97,6 +99,7 @@ const UserRequestForm = () => {
 
       const responseData = await response.json();
       console.log(responseData);
+      const customer_id = responseData.request_id;
 
       // Clear form inputs after successful submission
       setFirstName("");
@@ -110,120 +113,146 @@ const UserRequestForm = () => {
       setMessage("");
 
       // Display success message to user
-      alert("Thank you for submitting the form!");
+      toast.success(
+        `Thank you! Tracking Id will me mailed to you(Click to copy the ID)`,
+        {
+          onClick: () => {
+            copyToClipboard(customer_id);
+            // window.location.href = '/userprog';
+          },
+        }
+      );
     } catch (err) {
       console.log(err);
 
       // Display error message to user
-      alert(
+      toast.error(
         "An error occurred while submitting the form. Please try again later."
       );
     }
   };
 
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text).then(
+      () => {
+        toast.success("Copied to clipboard!(Click to redirect)", {
+          onClick: () => {
+            window.location.href = "/userprog";
+          },
+        });
+      },
+      (err) => {
+        console.error("Failed to copy: ", err);
+      }
+    );
+  };
   return (
-    <div>
-      <Navbar />
-      <h1>Customer Request Form</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="firstName">First Name:</label>
-        <input
-          type="text"
-          id="firstName"
-          name="firstName"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-          required
-        />
+    <>
+      <div>
+        <Navbar />
+        <h1>Customer Request Form</h1>
+        <ToastContainer />
+        <div>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="firstName">First Name:</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              value={firstName}
+              placeholder="example: John"
+              onChange={(e) => setFirstName(e.target.value)}
+              required
+            />
 
-        <label htmlFor="lastName">Last Name:</label>
-        <input
-          type="text"
-          id="lastName"
-          name="lastName"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-          required
-        />
+            <label htmlFor="lastName">Last Name:</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              required
+            />
 
-        <label htmlFor="emailAddress">Email Address:</label>
-        <input
-          type="email"
-          id="emailAddress"
-          name="emailAddress"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
+            <label htmlFor="emailAddress">Email Address:</label>
+            <input
+              type="email"
+              id="emailAddress"
+              name="emailAddress"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
 
-        <label htmlFor="phoneNumber">Phone Number:</label>
-        <input
-          type="tel"
-          id="phoneNumber"
-          name="phoneNumber"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          required
-        />
+            <label htmlFor="phoneNumber">Phone Number:</label>
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+            />
 
-        <label htmlFor="streetAddress1">Street Address 1:</label>
-        <input
-          type="text"
-          id="streetAddress1"
-          name="streetAddress1"
-          value={streetAddress}
-          onChange={(e) => setStreetAddress(e.target.value)}
-          required
-        />
+            <label htmlFor="streetAddress1">Street Address 1:</label>
+            <input
+              type="text"
+              id="streetAddress1"
+              name="streetAddress1"
+              value={streetAddress}
+              onChange={(e) => setStreetAddress(e.target.value)}
+              required
+            />
 
-        <label htmlFor="city">City:</label>
-        <input
-          type="text"
-          id="city"
-          name="city"
-          value={city}
-          onChange={(e) => setCity(e.target.value)}
-          required
-        />
+            <label htmlFor="city">City:</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              value={city}
+              onChange={(e) => setCity(e.target.value)}
+              required
+            />
 
-        <label htmlFor="state">State:</label>
-        <input
-          type="text"
-          id="state"
-          name="state"
-          value={state}
-          onChange={(e) => setState(e.target.value)}
-          required
-        />
+            <label htmlFor="state">State:</label>
+            <input
+              type="text"
+              id="state"
+              name="state"
+              value={state}
+              onChange={(e) => setState(e.target.value)}
+              required
+            />
 
-        <label htmlFor="zipCode">Zip Code:</label>
-        <input
-          type="text"
-          id="zipCode"
-          name="zipCode"
-          value={zipCode}
-          onChange={(e) => setZipCode(e.target.value)}
-          required
-        />
+            <label htmlFor="zipCode">Zip Code:</label>
+            <input
+              type="text"
+              id="zipCode"
+              name="zipCode"
+              value={zipCode}
+              onChange={(e) => setZipCode(e.target.value)}
+              required
+            />
 
-        <label htmlFor="message">Message</label>
-        <textarea
-          type="text"
-          id="message"
-          rows={5}
-          cols={60}
-          name="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-        />
-        <br></br>
-        <br></br>
+            <label htmlFor="message">Message</label>
+            <textarea
+              type="text"
+              id="message"
+              rows={5}
+              cols={60}
+              name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+            />
+            <br></br>
+            <br></br>
 
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </>
   );
-};
-
-export default UserRequestForm;
+}
