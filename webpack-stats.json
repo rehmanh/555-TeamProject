@@ -1,15 +1,65 @@
 {
   "status": "done",
   "assets": {
-    "frontend-8f2f35a090d42b97cb84.js": {
-      "name": "frontend-8f2f35a090d42b97cb84.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-8f2f35a090d42b97cb84.js",
-      "publicPath": "static/solar/frontend-8f2f35a090d42b97cb84.js"
+    "frontend-01183ad542a7a385da87.js": {
+      "name": "frontend-01183ad542a7a385da87.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-01183ad542a7a385da87.js",
+      "publicPath": "static/solar/frontend-01183ad542a7a385da87.js"
+    },
+    "frontend-1807e78b9ed8188f647a.js": {
+      "name": "frontend-1807e78b9ed8188f647a.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-1807e78b9ed8188f647a.js",
+      "publicPath": "static/solar/frontend-1807e78b9ed8188f647a.js"
+    },
+    "frontend-48c40c3bb0c2b38e2576.js": {
+      "name": "frontend-48c40c3bb0c2b38e2576.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-48c40c3bb0c2b38e2576.js",
+      "publicPath": "static/solar/frontend-48c40c3bb0c2b38e2576.js"
+    },
+    "frontend-5e5fa597787b48aeaa4c.js": {
+      "name": "frontend-5e5fa597787b48aeaa4c.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-5e5fa597787b48aeaa4c.js",
+      "publicPath": "static/solar/frontend-5e5fa597787b48aeaa4c.js"
+    },
+    "frontend-92ee684e8189828884bc.js": {
+      "name": "frontend-92ee684e8189828884bc.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-92ee684e8189828884bc.js",
+      "publicPath": "static/solar/frontend-92ee684e8189828884bc.js"
+    },
+    "frontend-9ad6bdb1154f792c4e6d.js": {
+      "name": "frontend-9ad6bdb1154f792c4e6d.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-9ad6bdb1154f792c4e6d.js",
+      "publicPath": "static/solar/frontend-9ad6bdb1154f792c4e6d.js"
+    },
+    "frontend-a3837a8409eef4450705.js": {
+      "name": "frontend-a3837a8409eef4450705.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-a3837a8409eef4450705.js",
+      "publicPath": "static/solar/frontend-a3837a8409eef4450705.js"
+    },
+    "frontend-aac8a2f9c2bcec931442.js": {
+      "name": "frontend-aac8a2f9c2bcec931442.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-aac8a2f9c2bcec931442.js",
+      "publicPath": "static/solar/frontend-aac8a2f9c2bcec931442.js"
+    },
+    "frontend-ad741bfa67345c8f4925.js": {
+      "name": "frontend-ad741bfa67345c8f4925.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-ad741bfa67345c8f4925.js",
+      "publicPath": "static/solar/frontend-ad741bfa67345c8f4925.js"
+    },
+    "frontend-f57be61cc089b030bb9a.js": {
+      "name": "frontend-f57be61cc089b030bb9a.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-f57be61cc089b030bb9a.js",
+      "publicPath": "static/solar/frontend-f57be61cc089b030bb9a.js"
+    },
+    "frontend-facd5358d33a27a4b430.js": {
+      "name": "frontend-facd5358d33a27a4b430.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\AgileUser\\555-TeamProject\\solar\\static\\solar\\frontend-facd5358d33a27a4b430.js",
+      "publicPath": "static/solar/frontend-facd5358d33a27a4b430.js"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-8f2f35a090d42b97cb84.js"
+      "frontend-ad741bfa67345c8f4925.js"
     ]
   },
   "publicPath": "static/solar/"
