@@ -18,6 +18,7 @@ class UserView(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     queryset = User.objects.all()
     permissions_classes = [IsAuthenticated]
+    
 
 class UserLoginView(KnoxLoginView):
     serializer_class = LoginSerializer
