@@ -2,11 +2,20 @@ import React, { Component } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 import SolarNavbar from "../pages/navbar";
-import { MDBInput, MDBCheckbox, MDBBtn, MDBIcon } from "mdb-react-ui-kit";
-import { Form } from "../components/loginElements";
+// import { MDBInput, MDBCheckbox, MDBBtn, MDBIcon } from "mdb-react-ui-kit";
+import "../css/login.css";
 import "./login.css";
 import "react-toastify/dist/ReactToastify.css";
-import {ToastContainer, toast} from 'react-toastify'
+import { ToastContainer, toast } from 'react-toastify'
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container'
+import { IconContext } from "react-icons";
+import { BsGoogle, BsFacebook, BsTwitter } from "react-icons/bs";
+
+
 
 export default class Login extends Component {
   constructor(props) {
@@ -78,14 +87,14 @@ export default class Login extends Component {
       <>
         <SolarNavbar />
         <div className="background-image">
-          <img
+          {/* <img
             src={
               "https://tesla-cdn.thron.com/delivery/public/image/tesla/45992f1c-a33a-4a04-b1f0-338aff182f8e/bvlatuR/std/2880x1800/_25-Hero-D"
             }
             alt="background"
-          />
+          /> */}
 
-          <div className="login-background">
+          {/* <div className="login-background">
             <div className="centered">
               <header>
                 <center>
@@ -175,7 +184,90 @@ export default class Login extends Component {
                 </Form>
               </header>
             </div>
-          </div>
+          </div> */}
+          <img
+            src={
+              "https://tesla-cdn.thron.com/delivery/public/image/tesla/45992f1c-a33a-4a04-b1f0-338aff182f8e/bvlatuR/std/2880x1800/_25-Hero-D"
+            }
+            alt="background"
+          />
+          <Form className="formclass centered" onSubmit={this.handleLogin}>
+            {/* <center> */}
+            <h1>Login</h1>
+            {/* </center> */}
+            <Form.Group className="mb-3" controlId="formGroupEmail">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="Email address"
+                label="Email address"
+                id="form1"
+                name="email_address"
+                value={this.state.email_address}
+                onChange={this.handleInputChange} />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formGroupPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                label="Password"
+                id="form2"
+                name="password"
+                value={this.state.password}
+                onChange={this.handleInputChange}
+              />
+            </Form.Group>
+            <Form.Group className="mt-3 mb-3" controlId="formHorizontalCheck">
+              <Row>
+                <Col xs={6} md="auto">
+                  <Form.Check
+                    label="Remember me"
+                    name="flexCheck"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                </Col>
+                <Col xs={6} md="auto" className="mt-">
+                  <span>
+                    <a href="!#">Forgot password?</a>
+                  </span>
+                </Col>
+              </Row>
+            </Form.Group>
+            <Form.Group className="d-grid gap-2">
+              <Button type="submit" variant="primary" size="lg">
+                Sign in
+              </Button>
+            </Form.Group>
+            <Form.Group>
+              <div className="text-center mt-5">
+                <p>
+                  Not a member? <a href="/signup">Register</a>
+                </p>
+                <p>or sign up with:</p>
+                <Container className="w-75 mb-4">
+                  <Row xs="auto" className="justify-content-md-center">
+                    <Col xs>
+                      <IconContext.Provider value={{ size: "2em", color: "#de5246" }}>
+                        <a className="iconBtn" href="!#"><BsGoogle /></a>
+                      </IconContext.Provider>
+                    </Col>
+                    <Col xs>
+                      <IconContext.Provider value={{ size: "2em", color: "#4267B2" }}>
+                        <a href="!#"><BsFacebook /></a>
+                      </IconContext.Provider>
+                    </Col>
+                    <Col xs>
+                      <IconContext.Provider value={{ size: "2em", color: "#1DA1F2" }}>
+                        <a href="!#"><BsTwitter /></a>
+                      </IconContext.Provider>
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
+            </Form.Group>
+          </Form>
         </div>
       </>
     );
