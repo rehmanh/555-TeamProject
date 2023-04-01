@@ -1,6 +1,6 @@
 import TrackingInfo from "./TrackingInfo";
-import Navbar from "./navbar.js";
 import React, { useState } from "react";
+import { motion } from 'framer-motion'
 
 function Userprog() {
   const [showTracking, setShowTracking] = useState(false);
@@ -14,12 +14,15 @@ function Userprog() {
   }
 
   return (
-    <div>
+    <motion.div
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    >
       {showTracking ? (
         <TrackingInfo trackingId={trackingId} />
       ) : (
         <>
-          <Navbar />
           <form onSubmit={handleSubmit}>
             <div className="container my-auto">
               <label className="form-label">Tracking ID</label>
@@ -40,7 +43,7 @@ function Userprog() {
           </form>
         </>
       )}
-    </div>
+    </motion.div>
   );
 }
 

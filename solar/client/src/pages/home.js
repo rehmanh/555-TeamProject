@@ -1,16 +1,20 @@
 import React from 'react';
 // import { render } from "react-dom"
-import SolarNavbar from '../pages/navbar'
 import 'bootstrap/dist/css/bootstrap.css';
 import {
   MDBCarousel,
   MDBCarouselItem,
 } from 'mdb-react-ui-kit';
+import { motion } from 'framer-motion'
 
 export default function HomePage() {
   return (
-  <div>
-    <SolarNavbar />
+  <motion.div
+  initial={{opacity: 0}}
+  animate={{opacity: 1}}
+  exit={{opacity: 0}}
+  >
+    {/* <SolarNavbar /> */}
     <MDBCarousel showControls showIndicators>
       <MDBCarouselItem
         className='w-100 d-block'
@@ -49,6 +53,6 @@ export default function HomePage() {
       </MDBCarouselItem>
 
       </MDBCarousel>
-    </div>
+    </motion.div>
   );
 }

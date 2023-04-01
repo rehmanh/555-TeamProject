@@ -1,6 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import SolarNavbar from '../pages/navbar'
 import {
     MDBInput,
     MDBCheckbox,
@@ -9,13 +8,17 @@ import {
 }
     from 'mdb-react-ui-kit';
 import {Form} from '../components/loginElements'
-
+import { motion } from 'framer-motion'
 
 function SignUp() {
     return (
-        <div>
+        <motion.div
+        initial={{opacity: 0}}
+        animate={{opacity: 1, transition: {duration: 1}}}
+        exit={{opacity: 0 }}
+        >
 
-        <SolarNavbar />
+        {/* <SolarNavbar /> */}
         <Form>
             <header>
             <center><h1>Sign Up</h1></center>
@@ -42,7 +45,7 @@ function SignUp() {
             </div>
 
         </Form>
-        </div>
+        </motion.div>
     );
 }
 
