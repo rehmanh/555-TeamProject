@@ -14,6 +14,7 @@ import Userprog from '../client/src/pages/Userprog';
 import { Operation } from '../client/src/pages/Operation';
 import {ToastContainer, toast} from 'react-toastify'
 import OpManager from '../client/src/pages/OpManager'
+import OpTable from '../client/src/components/CustProgTable'
 
 export default class App extends Component {
     constructor(props) {
@@ -41,8 +42,7 @@ export default class App extends Component {
                 <Route exact path='/userreq' element={<UserRequestForm />}/>
                 <Route exact path= '/userprog' element={<Userprog />}/>
                 <Route exact path= '/oper' element={<Operation />}/>
-                
-                
+                <Route exact path= '/table' element={<OpTable />}/>             
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
         </Router>
