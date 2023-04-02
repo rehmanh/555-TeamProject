@@ -12,8 +12,9 @@ import UserHome from '../client/src/pages/userHome';
 import UserRequestForm from '../client/src/pages/UserRequestForm';
 import Userprog from '../client/src/pages/Userprog';
 import { Operation } from '../client/src/pages/Operation';
-import {ToastContainer, toast} from 'react-toastify'
-import OpManager from '../client/src/pages/OpManager'
+import {ToastContainer, toast} from 'react-toastify';
+import OpManager from '../client/src/pages/OpManager';
+import OrderTable from '../client/src/components/OrderTable';
 
 export default class App extends Component {
     constructor(props) {
@@ -44,6 +45,7 @@ export default class App extends Component {
                 <Route exact path='/userreq' element={<UserRequestForm />}/>
                 <Route exact path= '/userprog' element={<Userprog />}/>
                 <Route exact path= '/oper' element={<Operation />}/>
+                <Route exact path= '/orderTable' element={<OrderTable />}/>
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
         </Router>
