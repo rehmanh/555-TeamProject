@@ -5,7 +5,9 @@ import PieChart from "../components/PieChart";
 import BarChart from "../components/BarChart";
 import LineChart from '../components/LineChart'
 import Table from '../components/Table';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
+import Calender from '../components/Calender';
+
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
@@ -90,7 +92,7 @@ export default function OpManager() {
           <MDBRow className="mt-4">
             <MDBCol sm='6'>
               <MDBCard>
-                <BarChart />
+                <Calender />
                 {/* <MDBCardBody>
                 <MDBCardTitle>New Requests</MDBCardTitle>
                 <MDBCardText>

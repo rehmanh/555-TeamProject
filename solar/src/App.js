@@ -16,6 +16,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import OpManager from '../client/src/pages/OpManager';
 import AnimatedRoutes from '../client/src/components/AnimatedRoutes';
 
+
 export default class App extends Component {
     constructor(props) {
         super(props);

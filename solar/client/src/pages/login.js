@@ -11,8 +11,8 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container'
 import { IconContext } from "react-icons";
 import { BsGoogle, BsFacebook, BsTwitter } from "react-icons/bs";
-import { motion } from 'framer-motion'
-
+import { motion } from 'framer-motion';
+import Navbar from '../pages/navbar';
 
 export default class Login extends Component {
   constructor(props) {
@@ -86,6 +86,7 @@ export default class Login extends Component {
       animate={{opacity: 1, transition: {duration: 1}}}
       exit={{opacity: 0 }}
       >
+        
         {/* <div className="background-image"> */}
           <img
           className="background-image"
