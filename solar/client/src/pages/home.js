@@ -6,10 +6,24 @@ import {
   MDBCarousel,
   MDBCarouselItem,
 } from 'mdb-react-ui-kit';
+import { toast } from 'react-toastify'
 
 export default function HomePage() {
+
+  const toastOptions = {
+    onClose: props => sessionStorage.clear()
+  };
+
+  const validateAndDisplayError = () => {
+    let msg = sessionStorage.getItem('error')
+    if (msg !== null && msg.length !== 0 && msg !== undefined) {
+      toast.error(msg, toastOptions)
+    }
+  };
+
   return (
   <div>
+    { validateAndDisplayError() }
     <SolarNavbar />
     <MDBCarousel showControls showIndicators>
       <MDBCarouselItem

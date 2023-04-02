@@ -15,6 +15,7 @@ import {
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 import { toast } from 'react-toastify'
 import axios from 'axios';
+import { Navigate } from 'react-router-dom';
 
 export default function App() {
   const [verticalActive, setVerticalActive] = useState('tab1');
@@ -104,9 +105,14 @@ export default function App() {
     }
   };
 
+  const redirectToHomePage = () => {
+    sessionStorage.setItem('error', 'You are not authorized to view this page.')
+    return <Navigate to='/'/>
+  };
+
   return (
-    (roleId == 1 || roleId == 2) && isLoggedIn ?
-      (<div>
+    (roleId == 1 || roleId == 2) && isLoggedIn 
+      ? (<div>
         <SolarNavbar />
         <>
           <MDBRow>
@@ -198,7 +204,7 @@ export default function App() {
             <MDBCol size='1'></MDBCol>
           </MDBRow>
         </>
-      </div>) : (<div>Invalid</div>)
+      </div>) : redirectToHomePage()
   );
 }
 

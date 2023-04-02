@@ -34,7 +34,7 @@ export default class App extends Component {
                     <Route exact path='/salesrep' element={<SalesRep />}/>
                     <Route exact path='/opManager' element={<OpManager />}/>
                 </Route>
-                <Route exact path='/' element={<HomePage />}/>
+                <Route exact path='/' element={<HomePage errorMessage={''}/>}/>
                 <Route exact path='/login' element={<Login />}/>
                 <Route exact path='/signup' element={<SignUp />}/>
                 <Route exact path='/salesrep' element={<SalesRep />}/>
