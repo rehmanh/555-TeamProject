@@ -1,18 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React, { Component, useState, useEffect } from "react";
 import axios from "axios";
-import Navbar from '../pages/navbar'
 import PieChart from "../components/PieChart";
 import BarChart from "../components/BarChart";
 import LineChart from '../components/LineChart'
 import Table from '../components/Table';
+import { motion } from 'framer-motion';
+import Calender from '../components/Calender';
+
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
 // import Card from 'react-bootstrap/Card';
 import '../css/opManager.css'
 import { toast } from 'react-toastify'
-import '../pages/UserRequestForm.css'
+import '../css//UserRequestForm.css'
 import { BsHammer, BsFlagFill, BsClipboard2CheckFill, BsClipboard2PlusFill } from "react-icons/bs";
 import {
   MDBContainer,
@@ -35,8 +37,12 @@ import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 export default function OpManager() {
 
   return (
-    <div>
-      <Navbar />
+    <motion.div
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    >
+      {/* <Navbar /> */}
       <h1>
         Welcome back Operation Manager!
       </h1>
@@ -86,7 +92,7 @@ export default function OpManager() {
           <MDBRow className="mt-4">
             <MDBCol sm='6'>
               <MDBCard>
-                <BarChart />
+                <Calender />
                 {/* <MDBCardBody>
                 <MDBCardTitle>New Requests</MDBCardTitle>
                 <MDBCardText>
@@ -121,6 +127,6 @@ export default function OpManager() {
           </MDBRow>
         </MDBContainer>
       </div>
-    </div >
+    </motion.div >
   )
 }

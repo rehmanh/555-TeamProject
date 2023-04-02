@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { TrackingStages } from "./TrackingStages";
-import Navbar from "./navbar.js"
+import { motion } from 'framer-motion';
 function TrackingInfo({ trackingId }) {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -43,14 +43,18 @@ function TrackingInfo({ trackingId }) {
   }
 
   return (
-    <div>
-      <Navbar />
+    <motion.div
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    >
+      {/* <Navbar /> */}
       <h1><TrackingStages Tstatus = {data.request_status}/></h1>
       {/* <h1><TrackingStages Tstatus = "Sales Rep Appointed"/></h1> */}
       {/* <h1><TrackingStages Tstatus = "Operation Manger"/></h1>
       <h1><TrackingStages Tstatus = "Contrators on the way"/></h1>
       <h1><TrackingStages Tstatus = "Completed Enjoy the Energy"/></h1> */}
-    </div>
+    </motion.div>
   );
 }
 
