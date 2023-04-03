@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Navbar from "./navbar";
 // import { Form, Button, Row, Col } from 'react-bootstrap';
-import "./UserRequestForm.css";
+import "../css/UserRequestForm.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { motion } from 'framer-motion'
 // const UserRequestForm = () => {
 //   const [name, setName] = useState('');
 //   const [email, setEmail] = useState('');
@@ -147,9 +147,13 @@ export default function UserRequestForm() {
     );
   };
   return (
-    <>
+    <motion.div
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    >
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <h1>Customer Request Form</h1>
         <ToastContainer />
         <div>
@@ -253,6 +257,6 @@ export default function UserRequestForm() {
           </form>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }

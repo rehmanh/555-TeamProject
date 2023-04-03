@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import SolarNavbar from '../pages/navbar'
 import React, { Component, useEffect, useState } from "react";
 import {
   MDBTabs,
@@ -16,6 +15,7 @@ import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 import { toast } from 'react-toastify'
 import axios from 'axios';
 import { Navigate } from 'react-router-dom';
+import { motion } from 'framer-motion'
 
 export default function App() {
   const [verticalActive, setVerticalActive] = useState('tab1');
@@ -114,6 +114,11 @@ export default function App() {
     (roleId == 1 || roleId == 2) && isLoggedIn 
       ? (<div>
         <SolarNavbar />
+        <motion.div
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        >
         <>
           <MDBRow>
             <MDBCol size='1'></MDBCol>
@@ -204,7 +209,7 @@ export default function App() {
             <MDBCol size='1'></MDBCol>
           </MDBRow>
         </>
-      </div>) : redirectToHomePage()
+        </motion.div></div>) : redirectToHomePage()
   );
 }
 

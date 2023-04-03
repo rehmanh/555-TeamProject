@@ -2,6 +2,8 @@ const path = require('path')
 const BundleTracker = require('webpack-bundle-tracker')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
+
+
 module.exports = {
     entry: {
         frontend: './solar/src/index.js',
@@ -32,3 +34,4 @@ module.exports = {
         ],
     },
 }
+
