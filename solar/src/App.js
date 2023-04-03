@@ -37,6 +37,7 @@ export default class App extends Component {
                 <Route element={<OpRoute />}>
                     <Route exact path='/userHome' element={<UserHome />}/>
                     <Route exact path='/opManager' element={<OpManager />}/>
+                    <Route exact path= '/orderTable' element={<OrderTable />}/>
                 </Route>
                 <Route exact path='/' element={<HomePage />}/>
                 <Route exact path='/login' element={<Login />}/>
@@ -45,7 +46,7 @@ export default class App extends Component {
                 <Route exact path='/userreq' element={<UserRequestForm />}/>
                 <Route exact path= '/userprog' element={<Userprog />}/>
                 <Route exact path= '/oper' element={<Operation />}/>
-                <Route exact path= '/orderTable' element={<OrderTable />}/>
+                
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
         </Router>

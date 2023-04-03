@@ -2,11 +2,13 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./OrderTable.css"
+import Cart from './Cart';
 import { Container, Row, Col, Table } from 'react-bootstrap';
 
 export default function OrderTable() {
     const [items, setItems] = useState([]);
     const [selectedItems, setSelectedItems] = useState([]);
+
 
     useEffect(() => {
         // Fetch the available items from the backend API
@@ -26,6 +28,7 @@ export default function OrderTable() {
             setSelectedItems(prevItems => prevItems.filter(item => item !== itemId));
         } else {
             // Otherwise, add it to the list
+            const selectedItem = items.find(item => item.id === itemId);
             setSelectedItems(prevItems => [...prevItems, itemId]);
         }
     };
@@ -53,12 +56,15 @@ export default function OrderTable() {
             });
     };
 
+    const handleRemoveItem = (itemId) => {
+        setSelectedItems(prevItems => prevItems.filter(item => item.id !== itemId));
+    };
+
     return (
         <div>
             <h1>Order Page</h1>
+            <h2>Items</h2>
             <form className="otForm" onSubmit={handleSubmit}>
-                <h2>Items</h2>
-
                 {items.map(item => (
                     <ul>
                         <Container>
@@ -70,24 +76,16 @@ export default function OrderTable() {
                                     <input
                                         type="number"
                                         min="0"
-                                        max="999"
+                                        max="99"
                                         value={item.quantity}
                                         onChange={(event) => handleQuantityChange(item.id, parseInt(event.target.value))}
                                     />
                                 </Col>
                             </Row>
                         </Container>
-                        {/* {item.id} {item.title}
-                            <input
-                                type="number"
-                                min="0"
-                                max="999"
-                                value={item.quantity}
-                                onChange={(event) => handleQuantityChange(item.id, parseInt(event.target.value))}
-                            /> */}
+                        <div class="line"></div>
                     </ul>
                 ))}
-
                 <button type="submit">Submit Order</button>
             </form>
         </div>

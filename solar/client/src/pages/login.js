@@ -6,7 +6,7 @@ import { MDBInput, MDBCheckbox, MDBBtn, MDBIcon } from "mdb-react-ui-kit";
 import { Form } from "../components/loginElements";
 import "./login.css";
 import "react-toastify/dist/ReactToastify.css";
-import {ToastContainer, toast} from 'react-toastify'
+import { ToastContainer, toast } from 'react-toastify';
 
 export default class Login extends Component {
   constructor(props) {

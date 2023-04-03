@@ -1,238 +1,196 @@
 {
   "status": "done",
   "assets": {
-    "frontend-01ec7e54f226944fc3fd.js": {
-      "name": "frontend-01ec7e54f226944fc3fd.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-01ec7e54f226944fc3fd.js",
-      "publicPath": "static/solar/frontend-01ec7e54f226944fc3fd.js"
+    "frontend-10b80d8a62605de7d5d5.js": {
+      "name": "frontend-10b80d8a62605de7d5d5.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-10b80d8a62605de7d5d5.js",
+      "publicPath": "static/solar/frontend-10b80d8a62605de7d5d5.js"
     },
-    "frontend-0e104a5776b90b51ff40.js": {
-      "name": "frontend-0e104a5776b90b51ff40.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-0e104a5776b90b51ff40.js",
-      "publicPath": "static/solar/frontend-0e104a5776b90b51ff40.js"
+    "frontend-2c582622f50ce929d101.js": {
+      "name": "frontend-2c582622f50ce929d101.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-2c582622f50ce929d101.js",
+      "publicPath": "static/solar/frontend-2c582622f50ce929d101.js"
     },
-    "frontend-10e2c27c69c4527b672a.js": {
-      "name": "frontend-10e2c27c69c4527b672a.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-10e2c27c69c4527b672a.js",
-      "publicPath": "static/solar/frontend-10e2c27c69c4527b672a.js"
+    "frontend-2ea9dc1d577eac6ccef0.js": {
+      "name": "frontend-2ea9dc1d577eac6ccef0.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-2ea9dc1d577eac6ccef0.js",
+      "publicPath": "static/solar/frontend-2ea9dc1d577eac6ccef0.js"
     },
-    "frontend-256633441bca42377404.js": {
-      "name": "frontend-256633441bca42377404.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-256633441bca42377404.js",
-      "publicPath": "static/solar/frontend-256633441bca42377404.js"
+    "frontend-315e869bdfb492d0074b.js": {
+      "name": "frontend-315e869bdfb492d0074b.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-315e869bdfb492d0074b.js",
+      "publicPath": "static/solar/frontend-315e869bdfb492d0074b.js"
     },
-    "frontend-2926447c86dc464648d2.js": {
-      "name": "frontend-2926447c86dc464648d2.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-2926447c86dc464648d2.js",
-      "publicPath": "static/solar/frontend-2926447c86dc464648d2.js"
+    "frontend-333fca0ae46d952da0b1.js": {
+      "name": "frontend-333fca0ae46d952da0b1.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-333fca0ae46d952da0b1.js",
+      "publicPath": "static/solar/frontend-333fca0ae46d952da0b1.js"
     },
-    "frontend-2b9f7b0402c95930da37.js": {
-      "name": "frontend-2b9f7b0402c95930da37.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-2b9f7b0402c95930da37.js",
-      "publicPath": "static/solar/frontend-2b9f7b0402c95930da37.js"
+    "frontend-44c5e3c9a4690f51d8e4.js": {
+      "name": "frontend-44c5e3c9a4690f51d8e4.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-44c5e3c9a4690f51d8e4.js",
+      "publicPath": "static/solar/frontend-44c5e3c9a4690f51d8e4.js"
     },
-    "frontend-2bef7513d09b0916de6e.js": {
-      "name": "frontend-2bef7513d09b0916de6e.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-2bef7513d09b0916de6e.js",
-      "publicPath": "static/solar/frontend-2bef7513d09b0916de6e.js"
+    "frontend-5225b0ef4e8fb346099d.js": {
+      "name": "frontend-5225b0ef4e8fb346099d.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-5225b0ef4e8fb346099d.js",
+      "publicPath": "static/solar/frontend-5225b0ef4e8fb346099d.js"
     },
-    "frontend-2ef14c2703bb80595873.js": {
-      "name": "frontend-2ef14c2703bb80595873.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-2ef14c2703bb80595873.js",
-      "publicPath": "static/solar/frontend-2ef14c2703bb80595873.js"
+    "frontend-5d56cbae86d7c1d5e234.js": {
+      "name": "frontend-5d56cbae86d7c1d5e234.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-5d56cbae86d7c1d5e234.js",
+      "publicPath": "static/solar/frontend-5d56cbae86d7c1d5e234.js"
     },
-    "frontend-30cbb6fe71c6eedb5eda.js": {
-      "name": "frontend-30cbb6fe71c6eedb5eda.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-30cbb6fe71c6eedb5eda.js",
-      "publicPath": "static/solar/frontend-30cbb6fe71c6eedb5eda.js"
+    "frontend-73db1e7bb722a9c96c7a.js": {
+      "name": "frontend-73db1e7bb722a9c96c7a.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-73db1e7bb722a9c96c7a.js",
+      "publicPath": "static/solar/frontend-73db1e7bb722a9c96c7a.js"
     },
-    "frontend-36b444bb01c3e86348e0.js": {
-      "name": "frontend-36b444bb01c3e86348e0.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-36b444bb01c3e86348e0.js",
-      "publicPath": "static/solar/frontend-36b444bb01c3e86348e0.js"
+    "frontend-77dd59e7a969f029186d.js": {
+      "name": "frontend-77dd59e7a969f029186d.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-77dd59e7a969f029186d.js",
+      "publicPath": "static/solar/frontend-77dd59e7a969f029186d.js"
     },
-    "frontend-41b3b2c89deb085ef853.js": {
-      "name": "frontend-41b3b2c89deb085ef853.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-41b3b2c89deb085ef853.js",
-      "publicPath": "static/solar/frontend-41b3b2c89deb085ef853.js"
+    "frontend-799a37a66dfa1032ba1f.js": {
+      "name": "frontend-799a37a66dfa1032ba1f.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-799a37a66dfa1032ba1f.js",
+      "publicPath": "static/solar/frontend-799a37a66dfa1032ba1f.js"
     },
-    "frontend-43b69b22ff5812c7d63c.js": {
-      "name": "frontend-43b69b22ff5812c7d63c.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-43b69b22ff5812c7d63c.js",
-      "publicPath": "static/solar/frontend-43b69b22ff5812c7d63c.js"
+    "frontend-7b12dc363680283ac409.js": {
+      "name": "frontend-7b12dc363680283ac409.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-7b12dc363680283ac409.js",
+      "publicPath": "static/solar/frontend-7b12dc363680283ac409.js"
     },
-    "frontend-45724be9efc538b84164.js": {
-      "name": "frontend-45724be9efc538b84164.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-45724be9efc538b84164.js",
-      "publicPath": "static/solar/frontend-45724be9efc538b84164.js"
-    },
-    "frontend-46ef8ad26ccd0723c8d5.js": {
-      "name": "frontend-46ef8ad26ccd0723c8d5.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-46ef8ad26ccd0723c8d5.js",
-      "publicPath": "static/solar/frontend-46ef8ad26ccd0723c8d5.js"
-    },
-    "frontend-4dfece78b6ef252a21de.js": {
-      "name": "frontend-4dfece78b6ef252a21de.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-4dfece78b6ef252a21de.js",
-      "publicPath": "static/solar/frontend-4dfece78b6ef252a21de.js"
-    },
-    "frontend-4e466b6e7a0a3456152b.js": {
-      "name": "frontend-4e466b6e7a0a3456152b.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-4e466b6e7a0a3456152b.js",
-      "publicPath": "static/solar/frontend-4e466b6e7a0a3456152b.js"
-    },
-    "frontend-56cf1a9ef84e6352cf63.js": {
-      "name": "frontend-56cf1a9ef84e6352cf63.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-56cf1a9ef84e6352cf63.js",
-      "publicPath": "static/solar/frontend-56cf1a9ef84e6352cf63.js"
-    },
-    "frontend-5e021045f392d0afa4e2.js": {
-      "name": "frontend-5e021045f392d0afa4e2.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-5e021045f392d0afa4e2.js",
-      "publicPath": "static/solar/frontend-5e021045f392d0afa4e2.js"
-    },
-    "frontend-5fa0d4c9f42213e0609e.js": {
-      "name": "frontend-5fa0d4c9f42213e0609e.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-5fa0d4c9f42213e0609e.js",
-      "publicPath": "static/solar/frontend-5fa0d4c9f42213e0609e.js"
-    },
-    "frontend-67a7e1f849596f7881d5.js": {
-      "name": "frontend-67a7e1f849596f7881d5.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-67a7e1f849596f7881d5.js",
-      "publicPath": "static/solar/frontend-67a7e1f849596f7881d5.js"
-    },
-    "frontend-6bd2f65fc4e35ce78014.js": {
-      "name": "frontend-6bd2f65fc4e35ce78014.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-6bd2f65fc4e35ce78014.js",
-      "publicPath": "static/solar/frontend-6bd2f65fc4e35ce78014.js"
-    },
-    "frontend-786f70703c4aea873a59.js": {
-      "name": "frontend-786f70703c4aea873a59.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-786f70703c4aea873a59.js",
-      "publicPath": "static/solar/frontend-786f70703c4aea873a59.js"
-    },
-    "frontend-7b1858dfc00e785e2330.js": {
-      "name": "frontend-7b1858dfc00e785e2330.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-7b1858dfc00e785e2330.js",
-      "publicPath": "static/solar/frontend-7b1858dfc00e785e2330.js"
-    },
-    "frontend-7d27ea6b5a31227c87b0.js": {
-      "name": "frontend-7d27ea6b5a31227c87b0.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-7d27ea6b5a31227c87b0.js",
-      "publicPath": "static/solar/frontend-7d27ea6b5a31227c87b0.js"
-    },
-    "frontend-8371284ef8484f502a11.js": {
-      "name": "frontend-8371284ef8484f502a11.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-8371284ef8484f502a11.js",
-      "publicPath": "static/solar/frontend-8371284ef8484f502a11.js"
-    },
-    "frontend-8be095675a16ee09df09.js": {
-      "name": "frontend-8be095675a16ee09df09.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-8be095675a16ee09df09.js",
-      "publicPath": "static/solar/frontend-8be095675a16ee09df09.js"
+    "frontend-85422f8b363376725f61.js": {
+      "name": "frontend-85422f8b363376725f61.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-85422f8b363376725f61.js",
+      "publicPath": "static/solar/frontend-85422f8b363376725f61.js"
     },
     "frontend-8f260c4eae8c36f83037.js": {
       "name": "frontend-8f260c4eae8c36f83037.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-8f260c4eae8c36f83037.js",
       "publicPath": "static/solar/frontend-8f260c4eae8c36f83037.js"
     },
-    "frontend-9091e6b7f8f2b1cd90c6.js": {
-      "name": "frontend-9091e6b7f8f2b1cd90c6.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-9091e6b7f8f2b1cd90c6.js",
-      "publicPath": "static/solar/frontend-9091e6b7f8f2b1cd90c6.js"
+    "frontend-95809913ce5fc5dd6984.js": {
+      "name": "frontend-95809913ce5fc5dd6984.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-95809913ce5fc5dd6984.js",
+      "publicPath": "static/solar/frontend-95809913ce5fc5dd6984.js"
     },
-    "frontend-935a3bc3243b8558dd0e.js": {
-      "name": "frontend-935a3bc3243b8558dd0e.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-935a3bc3243b8558dd0e.js",
-      "publicPath": "static/solar/frontend-935a3bc3243b8558dd0e.js"
+    "frontend-961e86f465f91ce4d885.js": {
+      "name": "frontend-961e86f465f91ce4d885.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-961e86f465f91ce4d885.js",
+      "publicPath": "static/solar/frontend-961e86f465f91ce4d885.js"
     },
-    "frontend-9e11dca84ea1a4da28f0.js": {
-      "name": "frontend-9e11dca84ea1a4da28f0.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-9e11dca84ea1a4da28f0.js",
-      "publicPath": "static/solar/frontend-9e11dca84ea1a4da28f0.js"
+    "frontend-969bdd756e205f2998ed.js": {
+      "name": "frontend-969bdd756e205f2998ed.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-969bdd756e205f2998ed.js",
+      "publicPath": "static/solar/frontend-969bdd756e205f2998ed.js"
     },
-    "frontend-a27366ec97371b5dd282.js": {
-      "name": "frontend-a27366ec97371b5dd282.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-a27366ec97371b5dd282.js",
-      "publicPath": "static/solar/frontend-a27366ec97371b5dd282.js"
+    "frontend-96c91bc4d7b28710aa48.js": {
+      "name": "frontend-96c91bc4d7b28710aa48.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-96c91bc4d7b28710aa48.js",
+      "publicPath": "static/solar/frontend-96c91bc4d7b28710aa48.js"
     },
-    "frontend-a81605f08da4b2047139.js": {
-      "name": "frontend-a81605f08da4b2047139.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-a81605f08da4b2047139.js",
-      "publicPath": "static/solar/frontend-a81605f08da4b2047139.js"
+    "frontend-a078dc3780f371196664.js": {
+      "name": "frontend-a078dc3780f371196664.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-a078dc3780f371196664.js",
+      "publicPath": "static/solar/frontend-a078dc3780f371196664.js"
     },
-    "frontend-b0d9a9aac8d4a06f40f5.js": {
-      "name": "frontend-b0d9a9aac8d4a06f40f5.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-b0d9a9aac8d4a06f40f5.js",
-      "publicPath": "static/solar/frontend-b0d9a9aac8d4a06f40f5.js"
+    "frontend-aab40226ce5c26066915.js": {
+      "name": "frontend-aab40226ce5c26066915.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-aab40226ce5c26066915.js",
+      "publicPath": "static/solar/frontend-aab40226ce5c26066915.js"
     },
-    "frontend-b5c86eed77912db428b7.js": {
-      "name": "frontend-b5c86eed77912db428b7.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-b5c86eed77912db428b7.js",
-      "publicPath": "static/solar/frontend-b5c86eed77912db428b7.js"
+    "frontend-af665af3bf15c56c0c8b.js": {
+      "name": "frontend-af665af3bf15c56c0c8b.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-af665af3bf15c56c0c8b.js",
+      "publicPath": "static/solar/frontend-af665af3bf15c56c0c8b.js"
     },
-    "frontend-b661f854336640fb7fea.js": {
-      "name": "frontend-b661f854336640fb7fea.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-b661f854336640fb7fea.js",
-      "publicPath": "static/solar/frontend-b661f854336640fb7fea.js"
+    "frontend-b773ce1cd8e0b837de36.js": {
+      "name": "frontend-b773ce1cd8e0b837de36.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-b773ce1cd8e0b837de36.js",
+      "publicPath": "static/solar/frontend-b773ce1cd8e0b837de36.js"
     },
-    "frontend-be816e5dd1cbd3ba63c4.js": {
-      "name": "frontend-be816e5dd1cbd3ba63c4.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-be816e5dd1cbd3ba63c4.js",
-      "publicPath": "static/solar/frontend-be816e5dd1cbd3ba63c4.js"
+    "frontend-b798429453b2fbf017bf.js": {
+      "name": "frontend-b798429453b2fbf017bf.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-b798429453b2fbf017bf.js",
+      "publicPath": "static/solar/frontend-b798429453b2fbf017bf.js"
     },
-    "frontend-c893ce7aa7e28fa6de79.js": {
-      "name": "frontend-c893ce7aa7e28fa6de79.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-c893ce7aa7e28fa6de79.js",
-      "publicPath": "static/solar/frontend-c893ce7aa7e28fa6de79.js"
+    "frontend-bf036be6a648dc83b8c3.js": {
+      "name": "frontend-bf036be6a648dc83b8c3.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-bf036be6a648dc83b8c3.js",
+      "publicPath": "static/solar/frontend-bf036be6a648dc83b8c3.js"
     },
-    "frontend-c9470336a22a103504dd.js": {
-      "name": "frontend-c9470336a22a103504dd.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-c9470336a22a103504dd.js",
-      "publicPath": "static/solar/frontend-c9470336a22a103504dd.js"
+    "frontend-c80d546d33cf2a7bf1b5.js": {
+      "name": "frontend-c80d546d33cf2a7bf1b5.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-c80d546d33cf2a7bf1b5.js",
+      "publicPath": "static/solar/frontend-c80d546d33cf2a7bf1b5.js"
     },
-    "frontend-cceb5ceb7c1bba3c2bb0.js": {
-      "name": "frontend-cceb5ceb7c1bba3c2bb0.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-cceb5ceb7c1bba3c2bb0.js",
-      "publicPath": "static/solar/frontend-cceb5ceb7c1bba3c2bb0.js"
+    "frontend-c96e3047c0fad162d21c.js": {
+      "name": "frontend-c96e3047c0fad162d21c.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-c96e3047c0fad162d21c.js",
+      "publicPath": "static/solar/frontend-c96e3047c0fad162d21c.js"
     },
-    "frontend-e032944dda4a919180cf.js": {
-      "name": "frontend-e032944dda4a919180cf.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e032944dda4a919180cf.js",
-      "publicPath": "static/solar/frontend-e032944dda4a919180cf.js"
+    "frontend-cfb79769ab08a9c2a4c9.js": {
+      "name": "frontend-cfb79769ab08a9c2a4c9.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-cfb79769ab08a9c2a4c9.js",
+      "publicPath": "static/solar/frontend-cfb79769ab08a9c2a4c9.js"
     },
-    "frontend-e7746634cc61133c8405.js": {
-      "name": "frontend-e7746634cc61133c8405.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e7746634cc61133c8405.js",
-      "publicPath": "static/solar/frontend-e7746634cc61133c8405.js"
+    "frontend-db6a12d108144e7a4ada.js": {
+      "name": "frontend-db6a12d108144e7a4ada.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-db6a12d108144e7a4ada.js",
+      "publicPath": "static/solar/frontend-db6a12d108144e7a4ada.js"
     },
-    "frontend-e863dfdf8f3709ea844e.js": {
-      "name": "frontend-e863dfdf8f3709ea844e.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e863dfdf8f3709ea844e.js",
-      "publicPath": "static/solar/frontend-e863dfdf8f3709ea844e.js"
+    "frontend-e38462235e4f208a17d2.js": {
+      "name": "frontend-e38462235e4f208a17d2.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e38462235e4f208a17d2.js",
+      "publicPath": "static/solar/frontend-e38462235e4f208a17d2.js"
     },
-    "frontend-f40ccc9fd996d06b9f3b.js": {
-      "name": "frontend-f40ccc9fd996d06b9f3b.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-f40ccc9fd996d06b9f3b.js",
-      "publicPath": "static/solar/frontend-f40ccc9fd996d06b9f3b.js"
+    "frontend-e4aa5b531fa253766c56.js": {
+      "name": "frontend-e4aa5b531fa253766c56.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e4aa5b531fa253766c56.js",
+      "publicPath": "static/solar/frontend-e4aa5b531fa253766c56.js"
     },
-    "frontend-f83a497774fce5e35fa5.js": {
-      "name": "frontend-f83a497774fce5e35fa5.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-f83a497774fce5e35fa5.js",
-      "publicPath": "static/solar/frontend-f83a497774fce5e35fa5.js"
+    "frontend-e4e6aaf9866dfda6bf8b.js": {
+      "name": "frontend-e4e6aaf9866dfda6bf8b.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e4e6aaf9866dfda6bf8b.js",
+      "publicPath": "static/solar/frontend-e4e6aaf9866dfda6bf8b.js"
     },
-    "frontend-fde2bbde682e4f6e66d9.js": {
-      "name": "frontend-fde2bbde682e4f6e66d9.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-fde2bbde682e4f6e66d9.js",
-      "publicPath": "static/solar/frontend-fde2bbde682e4f6e66d9.js"
+    "frontend-e6a107a155adba79bab6.js": {
+      "name": "frontend-e6a107a155adba79bab6.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e6a107a155adba79bab6.js",
+      "publicPath": "static/solar/frontend-e6a107a155adba79bab6.js"
+    },
+    "frontend-e6f24808401f5e54ffb8.js": {
+      "name": "frontend-e6f24808401f5e54ffb8.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e6f24808401f5e54ffb8.js",
+      "publicPath": "static/solar/frontend-e6f24808401f5e54ffb8.js"
+    },
+    "frontend-e991162fa5726aba5fb7.js": {
+      "name": "frontend-e991162fa5726aba5fb7.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e991162fa5726aba5fb7.js",
+      "publicPath": "static/solar/frontend-e991162fa5726aba5fb7.js"
+    },
+    "frontend-f7a83ba931722d5f7e04.js": {
+      "name": "frontend-f7a83ba931722d5f7e04.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-f7a83ba931722d5f7e04.js",
+      "publicPath": "static/solar/frontend-f7a83ba931722d5f7e04.js"
+    },
+    "frontend-fda24f6c86160de95686.js": {
+      "name": "frontend-fda24f6c86160de95686.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-fda24f6c86160de95686.js",
+      "publicPath": "static/solar/frontend-fda24f6c86160de95686.js"
+    },
+    "frontend-ffb6949974b22f3a4c9f.js": {
+      "name": "frontend-ffb6949974b22f3a4c9f.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-ffb6949974b22f3a4c9f.js",
+      "publicPath": "static/solar/frontend-ffb6949974b22f3a4c9f.js"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-8f260c4eae8c36f83037.js"
+      "frontend-e6a107a155adba79bab6.js"
     ]
   },
-  "publicPath": "static/solar/",
-  "error": "ModuleBuildError",
-  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/harrisonshih/Desktop/git/555-TeamProject/solar/client/src/components/OrderTable.js: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (87:24)\n\n  85 |                             />\n  86 |                         </label>\n> 87 |                         </li>\n     |                         ^\n  88 |                     ))}\n  89 |             </ul>\n  90 |             <button type=\"submit\">Submit Order</button>\n    at instantiate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:64:32)\n    at constructor (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:364:12)\n    at JSXParserMixin.raise (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:3253:19)\n    at JSXParserMixin.jsxParseElementAt (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:6966:18)\n    at JSXParserMixin.jsxParseElement (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:6975:17)\n    at JSXParserMixin.parseExprAtom (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:6987:19)\n    at JSXParserMixin.parseExprSubscripts (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10859:23)\n    at JSXParserMixin.parseUpdate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10656:61)\n    at JSXParserMixin.parseExprOps (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10599:21)\n    at /Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10569:39\n    at JSXParserMixin.allowInAnd (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12244:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10569:17)\n    at JSXParserMixin.parseParenAndDistinguishExpression (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11477:28)\n    at JSXParserMixin.parseExprAtom (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11128:23)\n    at JSXParserMixin.parseExprAtom (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:6992:20)\n    at JSXParserMixin.parseExprSubscripts (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10859:23)\n    at JSXParserMixin.parseUpdate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10656:61)\n    at JSXParserMixin.parseExprOps (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10599:21)\n    at JSXParserMixin.parseFunctionBody (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11904:24)\n    at JSXParserMixin.parseArrowExpression (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11886:10)\n    at JSXParserMixin.parseExprAtom (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11244:25)\n    at JSXParserMixin.parseExprAtom (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:6992:20)\n    at JSXParserMixin.parseExprSubscripts (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10859:23)\n    at JSXParserMixin.parseUpdate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10656:61)\n    at JSXParserMixin.parseExprOps (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10599:21)\n    at /Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10569:39\n    at JSXParserMixin.allowInAnd (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12244:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10569:17)\n    at JSXParserMixin.parseExprListItem (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11996:18)\n    at JSXParserMixin.parseCallExpressionArguments (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11051:22)\n    at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10966:29)\n    at JSXParserMixin.parseSubscript (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10901:19)\n    at JSXParserMixin.parseSubscripts (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10872:19)\n    at JSXParserMixin.parseExprSubscripts (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10863:17)\n    at JSXParserMixin.parseUpdate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10656:61)\n    at JSXParserMixin.parseExprOps (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10661:23)"
+  "publicPath": "static/solar/"
 }
