@@ -1,138 +1,16 @@
 {
   "status": "done",
   "assets": {
-    "frontend-0a78ed19555691dc5fb9.js": {
-      "name": "frontend-0a78ed19555691dc5fb9.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-0a78ed19555691dc5fb9.js",
-      "publicPath": "static/solar/frontend-0a78ed19555691dc5fb9.js"
-    },
-    "frontend-0ae4ba261dca4eb3266a.js": {
-      "name": "frontend-0ae4ba261dca4eb3266a.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-0ae4ba261dca4eb3266a.js",
-      "publicPath": "static/solar/frontend-0ae4ba261dca4eb3266a.js"
-    },
-    "frontend-0df8213db87bb502aaaa.js": {
-      "name": "frontend-0df8213db87bb502aaaa.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-0df8213db87bb502aaaa.js",
-      "publicPath": "static/solar/frontend-0df8213db87bb502aaaa.js"
-    },
-    "frontend-0ec1237b2180cb005308.js": {
-      "name": "frontend-0ec1237b2180cb005308.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-0ec1237b2180cb005308.js",
-      "publicPath": "static/solar/frontend-0ec1237b2180cb005308.js"
-    },
-    "frontend-1cc1cfacfdc6fcc0c4e5.js": {
-      "name": "frontend-1cc1cfacfdc6fcc0c4e5.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-1cc1cfacfdc6fcc0c4e5.js",
-      "publicPath": "static/solar/frontend-1cc1cfacfdc6fcc0c4e5.js"
-    },
-    "frontend-1e18e75bd47a0b0248dc.js": {
-      "name": "frontend-1e18e75bd47a0b0248dc.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-1e18e75bd47a0b0248dc.js",
-      "publicPath": "static/solar/frontend-1e18e75bd47a0b0248dc.js"
-    },
-    "frontend-2a4296b0f8ba842402c5.js": {
-      "name": "frontend-2a4296b0f8ba842402c5.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-2a4296b0f8ba842402c5.js",
-      "publicPath": "static/solar/frontend-2a4296b0f8ba842402c5.js"
-    },
-    "frontend-54753d289f19fded7e6d.js": {
-      "name": "frontend-54753d289f19fded7e6d.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-54753d289f19fded7e6d.js",
-      "publicPath": "static/solar/frontend-54753d289f19fded7e6d.js"
-    },
-    "frontend-54bf0b1d2dd454f0d1b4.js": {
-      "name": "frontend-54bf0b1d2dd454f0d1b4.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-54bf0b1d2dd454f0d1b4.js",
-      "publicPath": "static/solar/frontend-54bf0b1d2dd454f0d1b4.js"
-    },
-    "frontend-5c4cd57c9267e5bfc277.js": {
-      "name": "frontend-5c4cd57c9267e5bfc277.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-5c4cd57c9267e5bfc277.js",
-      "publicPath": "static/solar/frontend-5c4cd57c9267e5bfc277.js"
-    },
-    "frontend-6b6013f06e1115311884.js": {
-      "name": "frontend-6b6013f06e1115311884.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-6b6013f06e1115311884.js",
-      "publicPath": "static/solar/frontend-6b6013f06e1115311884.js"
-    },
-    "frontend-6ee9b10c6db41c26736e.js": {
-      "name": "frontend-6ee9b10c6db41c26736e.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-6ee9b10c6db41c26736e.js",
-      "publicPath": "static/solar/frontend-6ee9b10c6db41c26736e.js"
-    },
-    "frontend-6f9ffc3432b312a9e649.js": {
-      "name": "frontend-6f9ffc3432b312a9e649.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-6f9ffc3432b312a9e649.js",
-      "publicPath": "static/solar/frontend-6f9ffc3432b312a9e649.js"
-    },
-    "frontend-71ea0fd92148255d7d73.js": {
-      "name": "frontend-71ea0fd92148255d7d73.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-71ea0fd92148255d7d73.js",
-      "publicPath": "static/solar/frontend-71ea0fd92148255d7d73.js"
-    },
-    "frontend-770df33c3354b79eacfd.js": {
-      "name": "frontend-770df33c3354b79eacfd.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-770df33c3354b79eacfd.js",
-      "publicPath": "static/solar/frontend-770df33c3354b79eacfd.js"
-    },
-    "frontend-91ab0ab432f70863fb79.js": {
-      "name": "frontend-91ab0ab432f70863fb79.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-91ab0ab432f70863fb79.js",
-      "publicPath": "static/solar/frontend-91ab0ab432f70863fb79.js"
-    },
-    "frontend-98141201aebc06214464.js": {
-      "name": "frontend-98141201aebc06214464.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-98141201aebc06214464.js",
-      "publicPath": "static/solar/frontend-98141201aebc06214464.js"
-    },
-    "frontend-a8685fb27c27a7b378b5.js": {
-      "name": "frontend-a8685fb27c27a7b378b5.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-a8685fb27c27a7b378b5.js",
-      "publicPath": "static/solar/frontend-a8685fb27c27a7b378b5.js"
-    },
-    "frontend-c5372ac33ad77e8723f1.js": {
-      "name": "frontend-c5372ac33ad77e8723f1.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-c5372ac33ad77e8723f1.js",
-      "publicPath": "static/solar/frontend-c5372ac33ad77e8723f1.js"
-    },
-    "frontend-c73fa4869cd0d29b4570.js": {
-      "name": "frontend-c73fa4869cd0d29b4570.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-c73fa4869cd0d29b4570.js",
-      "publicPath": "static/solar/frontend-c73fa4869cd0d29b4570.js"
-    },
-    "frontend-ce4224f31a450214044c.js": {
-      "name": "frontend-ce4224f31a450214044c.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-ce4224f31a450214044c.js",
-      "publicPath": "static/solar/frontend-ce4224f31a450214044c.js"
-    },
-    "frontend-ecb5862370f8f2e58a48.js": {
-      "name": "frontend-ecb5862370f8f2e58a48.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-ecb5862370f8f2e58a48.js",
-      "publicPath": "static/solar/frontend-ecb5862370f8f2e58a48.js"
-    },
-    "frontend-ef3f87e71dd9ef99f61d.js": {
-      "name": "frontend-ef3f87e71dd9ef99f61d.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-ef3f87e71dd9ef99f61d.js",
-      "publicPath": "static/solar/frontend-ef3f87e71dd9ef99f61d.js"
-    },
-    "frontend-ef8fd904bd81a75ebffc.js": {
-      "name": "frontend-ef8fd904bd81a75ebffc.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-ef8fd904bd81a75ebffc.js",
-      "publicPath": "static/solar/frontend-ef8fd904bd81a75ebffc.js"
-    },
-    "frontend-f3f2eeccd5ac512f42e7.js": {
-      "name": "frontend-f3f2eeccd5ac512f42e7.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-f3f2eeccd5ac512f42e7.js",
-      "publicPath": "static/solar/frontend-f3f2eeccd5ac512f42e7.js"
+    "frontend-a1f52e1199ec3d530014.js": {
+      "name": "frontend-a1f52e1199ec3d530014.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-a1f52e1199ec3d530014.js",
+      "publicPath": "static/solar/frontend-a1f52e1199ec3d530014.js"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-1cc1cfacfdc6fcc0c4e5.js"
+      "frontend-a1f52e1199ec3d530014.js"
     ]
   },
-  "publicPath": "static/solar/",
-  "error": "ModuleBuildError",
-  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\user\\Desktop\\Final_project\\solar\\client\\src\\pages\\signUp.js: Unexpected token (64:12)\n\n  62 | //         exit={{opacity: 0 }}\n  63 | //         >\n> 64 |             <Container>\n     |             ^\n  65 |                 <Row className=\"vh-100 d-flex justify-content-center align-items-center\">\n  66 |                     <Col md={9} lg={6} xs={12}>\n  67 |                         <Card className=\"px-4\">\n    at instantiate (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:64:32)\n    at constructor (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:364:12)\n    at JSXParserMixin.raise (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:3253:19)\n    at JSXParserMixin.unexpected (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:3283:16)\n    at JSXParserMixin.jsxParseIdentifier (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6785:12)\n    at JSXParserMixin.jsxParseNamespacedName (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6792:23)\n    at JSXParserMixin.jsxParseAttribute (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6872:22)\n    at JSXParserMixin.jsxParseOpeningElementAfterName (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6887:28)\n    at JSXParserMixin.jsxParseOpeningElementAt (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6882:17)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6906:33)\n    at JSXParserMixin.jsxParseElement (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6975:17)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6987:19)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10859:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10656:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10569:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12244:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10569:17)\n    at JSXParserMixin.parseParenAndDistinguishExpression (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11477:28)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11128:23)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:6992:20)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10859:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10656:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at JSXParserMixin.parseExpressionBase (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10553:23)\n    at C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10549:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12239:16)\n    at JSXParserMixin.parseExpression (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:10549:17)\n    at JSXParserMixin.parseReturnStatement (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12934:28)\n    at JSXParserMixin.parseStatementContent (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12581:21)\n    at JSXParserMixin.parseStatementLike (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12548:17)\n    at JSXParserMixin.parseStatementListItem (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12528:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13120:61)\n    at JSXParserMixin.parseBlockBody (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13113:10)\n    at JSXParserMixin.parseBlock (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13101:10)\n    at JSXParserMixin.parseFunctionBody (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11911:24)\n    at JSXParserMixin.parseFunctionBodyAndFinish (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:11897:10)\n    at C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13256:12\n    at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:12221:14)\n    at JSXParserMixin.parseFunction (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13255:10)\n    at JSXParserMixin.parseExportDefaultExpression (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13740:19)\n    at JSXParserMixin.parseExport (C:\\Users\\user\\Desktop\\Final_project\\node_modules\\@babel\\parser\\lib\\index.js:13667:25)"
+  "publicPath": "static/solar/"
 }
