@@ -113,7 +113,6 @@ export default function App() {
   return (
     (roleId == 1 || roleId == 2) && isLoggedIn 
       ? (<div>
-        <SolarNavbar />
         <motion.div
         initial={{opacity: 0}}
         animate={{opacity: 1}}
