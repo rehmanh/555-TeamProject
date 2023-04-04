@@ -1,16 +1,35 @@
 import React from 'react';
 // import { render } from "react-dom"
-import SolarNavbar from '../pages/navbar'
 import 'bootstrap/dist/css/bootstrap.css';
 import {
   MDBCarousel,
   MDBCarouselItem,
 } from 'mdb-react-ui-kit';
+import { toast } from 'react-toastify'
+import { motion } from 'framer-motion'
 
 export default function HomePage() {
+
+  const toastOptions = {
+    onClose: props => sessionStorage.clear()
+  };
+
+  const validateAndDisplayError = () => {
+    let msg = sessionStorage.getItem('error')
+    if (msg !== null && msg.length !== 0 && msg !== undefined) {
+      toast.error(msg, toastOptions)
+    }
+  };
+
   return (
   <div>
-    <SolarNavbar />
+    { validateAndDisplayError() }
+    <motion.div
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+    >
+    {/* <SolarNavbar /> */}
     <MDBCarousel showControls showIndicators>
       <MDBCarouselItem
         className='w-100 d-block'
@@ -49,6 +68,7 @@ export default function HomePage() {
       </MDBCarouselItem>
 
       </MDBCarousel>
-    </div>
+      </motion.div>
+      </div>
   );
 }

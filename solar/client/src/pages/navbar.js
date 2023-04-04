@@ -36,6 +36,11 @@ export default class SolarNavbar extends Component {
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/userreq">Request Form</Nav.Link>
+              {
+                this.state.isLoggedIn && this.state.roleId === '2'
+                  ? <Nav.Link href="/salesrep">Sales Rep Dashboard</Nav.Link>
+                  : <></>
+              }
               <NavDropdown title="Service" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/userprog">Request Status</NavDropdown.Item>
                 <NavDropdown.Item href="#billinginfo/3.2">
@@ -59,7 +64,6 @@ export default class SolarNavbar extends Component {
                   ? <Nav.Link href="/admin">Administration</Nav.Link>
                   : <></>
               }
-              
             </Nav>
           </Navbar.Collapse>
         </Container>
