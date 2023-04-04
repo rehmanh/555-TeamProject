@@ -1,141 +1,185 @@
-// import 'bootstrap/dist/css/bootstrap.css';
-// import SolarNavbar from '../pages/navbar'
-// import React, { Component, useEffect, useState } from "react";
-// import {
-//   MDBTabs,
-//   MDBTabsItem,
-//   MDBTabsLink,
-//   MDBTabsContent,
-//   MDBTabsPane,
-//   MDBRow,
-//   MDBCol,
-//   MDBCheckbox,
-//   MDBBtn
-// } from 'mdb-react-ui-kit';
-// import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
-// import { toast } from 'react-toastify'
-// import axios from 'axios';
+import React, { useState, useEffect, useCallback } from 'react';
+import DataTable, { createTheme } from 'react-data-table-component';
+import axios from 'axios';
+// import Dropdown from './DropDown';
+import CustomListDropDown from './DropDown';
+import { Button } from 'react-bootstrap';
 
-// import FloatingLabel from 'react-bootstrap/FloatingLabel';
-// import Form from 'react-bootstrap/Form';
+createTheme('solarized', {
+  text: {
+    primary: 'black',
+    secondary: '#2aa198',
+  },
+  background: {
+    default: 'white',
+  },
+  context: {
+    background: '#cb4b16',
+    text: '#FFFFFF',
+  },
+  divider: {
+    default: '#073642',
+  },
+  action: {
+    button: 'rgba(0,0,0,.54)',
+    hover: 'rgba(0,0,0,.08)',
+    disabled: 'rgba(0,0,0,.12)',
+  },
+});
+
+const customStyles = {
+  rows: {
+      style: {
+          minHeight: '72px'
+      },
+  },
+  headCells: {
+      style: {
+          paddingLeft: '8px',
+          paddingRight: '8px',
+      },
+  },
+  cells: {
+      style: {
+          paddingLeft: '8px', 
+          paddingRight: '8px'
+      },
+  },
+};
+
+function Table() {
+  const [data, setData] = useState([]);
+  const [selectedRows, setSelectedRows] = useState([]);
+
+  useEffect(() => {
+    axios.get('https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT')
+      .then(response => {
+        setData(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }, []);
+
+  const handleChange = (state) => {
+    // You can set state or dispatch with something like Redux so we can use the retrieved data
+    console.log('Selected Rows: ', state);
+  };
+
+  const handleSelectedRow = useCallback(state => {
+    setSelectedRows(state.selectedRows)
+    console.log(state.selectedRows)
+  }, []);
+
+  // const handleSelectedRow = async (state) => {
+  //   try {
+  //     setSelectedRows(state.selectedRows);
+  //     console.log(state);
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // };
+
+  const columns = [
+    {name: 'Name', selector: 'first_name', center: true},
+    {name: 'Request ID', selector: 'request_id', center: true },
+    {name: 'Sales Rep Assigned', selector: 'sales_rep_id', center: true},
+    {name: 'Date of request', selector: 'created_at_datetime', center: true},
+    {name: 'Request Status', selector: 'request_status', center: true},
+  ];
+
+  return (
+    <div>
+      <CustomListDropDown />
+      <button onClick={handleSelectedRow}>submit</button>
+      <DataTable
+        title="All customers"
+        columns={columns}
+        data={data}
+        selectableRows
+        fixedHeader
+        onTableUpdate={handleChange}
+        // onSelectedRowsChange={handleSelectedRow}
+        theme='solarized'
+        customStyles={customStyles}
+        />
+    </div>
+  );
+}
+
+export default Table;
+
 
 // import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
 
-// function Dropdown() {
-//   const [values, setValues] = useState([]);
-//   const [selectedValue, setSelectedValue] = useState('');
-//   const [submitSuccess, setSubmitSuccess] = useState(false);
+// function Table() {
+//   const [data, setData] = useState([]);
+//   const [filter, setFilter] = useState({});
 
-//   // fetch the list of values from the API
 //   useEffect(() => {
-//     axios.get('https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT')
-//       .then(response => {
-//         setValues(response.data);
-//       })
-//       .catch(error => {
-//         console.log(error);
-//       });
+//     fetchData();
 //   }, []);
 
-//   // handle the selection of a value from the dropdown
-//   const handleSelect = (event) => {
-//     setSelectedValue(event.target.value);
+//   const fetchData = async () => {
+//     try {
+//       const response = await axios.get('https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT');
+//       setData(response.data);
+//     } catch (error) {
+//       console.error(error);
+//     }
 //   };
 
-//   // handle the form submission
-//   const handleSubmit = (event) => {
-//     event.preventDefault();
-
-//     axios.post('/api/submit', {
-//       selectedValue: selectedValue
-//     })
-//       .then(response => {
-//         setSubmitSuccess(true);
-//       })
-//       .catch(error => {
-//         console.log(error);
-//       });
+//   const handleFilterChange = (event) => {
+//     const { name, value } = event.target;
+//     setFilter({ ...filter, [name]: value });
 //   };
+
+//   const filteredData = data.filter((item) => {
+//     return (
+//       (!filter.first_name || (item.first_name.includes(filter.first_name)) &&
+//       (!filter.sales_rep_id || (item.sales_rep_id.includes(filter.sales_rep_id)) &&
+//       (!filter.request_id || (item.request_id.includes(filter.request_id))
+//       ))))
+//     });
 
 //   return (
 //     <div>
-//       {submitSuccess && <p>Submitted successfully!</p>}
-//       <form onSubmit={handleSubmit}>
-//         <select value={selectedValue} onChange={handleSelect}>
-//           {values.map(value => (
-//             <option key={value.id} value={value.const_mgr}>{value.const_mgr}</option>
+//       <h1>Table</h1>
+//       <div>
+//         <label htmlFor="id">ID:</label>
+//         <input type="text" name="id" onChange={handleFilterChange} />
+//       </div>
+//       <div>
+//         <label htmlFor="name">Name:</label>
+//         <input type="text" name="name" onChange={handleFilterChange} />
+//       </div>
+//       <div>
+//         <label htmlFor="email">Email:</label>
+//         <input type="text" name="email" onChange={handleFilterChange} />
+//       </div>
+//       <table>
+//         <thead>
+//           <tr>
+//             <th>ID</th>
+//             <th>Name</th>
+//             <th>Email</th>
+//           </tr>
+//         </thead>
+//         <tbody>
+//           {filteredData.map((item) => (
+//             <tr key={item.id}>
+//               <td>{item.first_name}</td>
+//               <td>{item.sales_rep_id}</td>
+//               <td>{item.request_id}</td>
+//             </tr>
 //           ))}
-//         </select>
-//         <button type="submit">Submit</button>
-//       </form>
+//         </tbody>
+//       </table>
 //     </div>
 //   );
 // }
 
-// export default Dropdown;
+// export default Table;
 
 
-import React from 'react'
-import { Button } from 'react-bootstrap'
-
-export const CustomDropdown = (props) => (
-  <div className="form-group">
-    <strong>{props.username}</strong>
-    <select
-      className="form-control"
-      name="{props.username}"
-      onChange={props.onChange}
-    >
-      <option defaultValue>Select {props.name}</option>
-      {props.options.map((item, index) => (
-        <option key={index} value={item.id}>
-          {item.name}
-        </option>
-      ))}
-    </select>
-  </div>
-)
-
-class CustomListDropDown extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      collection: [],
-      value: '',
-    }
-  }
-
-  componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then((response) => response.json())
-      .then((res) => this.setState({ collection: res }))
-  }
-
-  onChange = (event) => {
-    this.setState({ value: event.target.value })
-  }
-
-  handleClick = () => {
-    const selectedItem = this.state.collection.find(
-      (item) => item.id === parseInt(this.state.value)
-    )
-    console.log(selectedItem.name)
-  }
-
-  render() {
-    return (
-      <div className="container mt-4">
-        <h2>React Dropdown List API</h2>
-        <CustomDropdown
-          name={this.state.username}
-          options={this.state.collection}
-          onChange={this.onChange}
-        />
-        <Button onClick={this.handleClick}>Button</Button>
-      </div>
-    )
-  }
-}
-
-export default CustomListDropDown;
