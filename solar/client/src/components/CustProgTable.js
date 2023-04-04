@@ -71,14 +71,9 @@ function Table() {
     console.log(state.selectedRows)
   }, []);
 
-  // const handleSelectedRow = async (state) => {
-  //   try {
-  //     setSelectedRows(state.selectedRows);
-  //     console.log(state);
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-  // };
+  const handleSubmit = () => {
+    console.log("Selected Rows: ", selectedRows);
+  };
 
   const columns = [
     {name: 'Name', selector: 'first_name', center: true},
@@ -90,8 +85,8 @@ function Table() {
 
   return (
     <div>
-      <CustomListDropDown />
-      <button onClick={handleSelectedRow}>submit</button>
+      <CustomListDropDown selectedRows={selectedRows}/>
+      <button onClick={handleSubmit}>submit</button>
       <DataTable
         title="All customers"
         columns={columns}
@@ -99,7 +94,7 @@ function Table() {
         selectableRows
         fixedHeader
         onTableUpdate={handleChange}
-        // onSelectedRowsChange={handleSelectedRow}
+        onSelectedRowsChange={handleSelectedRow}
         theme='solarized'
         customStyles={customStyles}
         />
@@ -183,3 +178,11 @@ export default Table;
 // export default Table;
 
 
+// const handleSelectedRow = async (state) => {
+  //   try {
+  //     setSelectedRows(state.selectedRows);
+  //     console.log(state);
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // };

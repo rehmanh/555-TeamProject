@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-function Dropdown() {
+function Dropdown(props) {
   const [values, setValues] = useState([]);
   const [selectedValue, setSelectedValue] = useState('');
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -19,15 +19,20 @@ function Dropdown() {
 
   // handle the selection of a value from the dropdown
   const handleSelect = (event) => {
+    console.log(event.target.value);
     setSelectedValue(event.target.value);
   };
+  useEffect(() => {
+    console.log(selectedValue);
+  }, [selectedValue]);
 
   // handle the form submission
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+    axios.defaults.xsrfCookieName = "csrftoken";
     axios.post('https://e8cpgg0x5f.execute-api.us-east-1.amazonaws.com/UAT', {
-      selectedValue: selectedValue
+      const_mgr: selectedValue
     })
       .then(response => {
         setSubmitSuccess(true);
@@ -48,6 +53,7 @@ function Dropdown() {
         </select>
         <button type="submit">Submit</button>
       </form>
+      {/* <div>{props.selectedRows}</div> */}
     </div>
   );
 }
