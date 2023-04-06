@@ -4,6 +4,8 @@ import axios from 'axios';
 // import Dropdown from './DropDown';
 import CustomListDropDown from './DropDown';
 import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@coreui/coreui/dist/css/coreui.min.css';
 
 createTheme('solarized', {
   text: {
@@ -61,19 +63,20 @@ function Table() {
       });
   }, []);
 
-  const handleChange = (state) => {
-    // You can set state or dispatch with something like Redux so we can use the retrieved data
-    console.log('Selected Rows: ', state);
-  };
-
   const handleSelectedRow = useCallback(state => {
     setSelectedRows(state.selectedRows)
     console.log(state.selectedRows)
   }, []);
 
-  const handleSubmit = () => {
-    console.log("Selected Rows: ", selectedRows);
-  };
+  // Logs the selected rows to the console
+
+  // const handleSubmit = () => {
+  //   console.log("Selected Rows: ", selectedRows);
+  // };
+
+  useEffect(() => {
+    console.log(selectedRows);
+  }, [selectedRows])
 
   const columns = [
     {name: 'Name', selector: 'first_name', center: true},
@@ -86,14 +89,13 @@ function Table() {
   return (
     <div>
       <CustomListDropDown selectedRows={selectedRows}/>
-      <button onClick={handleSubmit}>submit</button>
+      {/* <Button onClick={handleSubmit}>submit</Button> */}
       <DataTable
         title="All customers"
         columns={columns}
         data={data}
         selectableRows
         fixedHeader
-        onTableUpdate={handleChange}
         onSelectedRowsChange={handleSelectedRow}
         theme='solarized'
         customStyles={customStyles}
@@ -103,9 +105,6 @@ function Table() {
 }
 
 export default Table;
-
-
-// import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
 
 // function Table() {

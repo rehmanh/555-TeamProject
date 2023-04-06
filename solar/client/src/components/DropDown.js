@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Button, Form } from 'react-bootstrap';
+
+
 
 function Dropdown(props) {
   const [values, setValues] = useState([]);
@@ -33,6 +36,7 @@ function Dropdown(props) {
     axios.defaults.xsrfCookieName = "csrftoken";
     axios.post('https://e8cpgg0x5f.execute-api.us-east-1.amazonaws.com/UAT', {
       const_mgr: selectedValue
+      // xxx:props.selectedRows
     })
       .then(response => {
         setSubmitSuccess(true);
@@ -45,14 +49,15 @@ function Dropdown(props) {
   return (
     <div>
       {submitSuccess && <p>Submitted successfully!</p>}
-      <form onSubmit={handleSubmit}>
-        <select value={selectedValue} onChange={handleSelect}>
+      <Form onSubmit={handleSubmit}>
+      <h2>Construction managers</h2>
+        <Form.Select value={selectedValue} onChange={handleSelect}>
           {values.map(value => (
             <option key={value.id} value={value.const_mgr}>{value.const_mgr}</option>
           ))}
-        </select>
-        <button type="submit">Submit</button>
-      </form>
+        </Form.Select>
+        <Button type="submit" variant='success'>Submit</Button>
+      </Form>
       {/* <div>{props.selectedRows}</div> */}
     </div>
   );
