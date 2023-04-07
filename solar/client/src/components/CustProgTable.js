@@ -68,12 +68,6 @@ function Table() {
     console.log(state.selectedRows)
   }, []);
 
-  // Logs the selected rows to the console
-
-  // const handleSubmit = () => {
-  //   console.log("Selected Rows: ", selectedRows);
-  // };
-
   useEffect(() => {
     console.log(selectedRows);
   }, [selectedRows])
@@ -88,8 +82,7 @@ function Table() {
 
   return (
     <div>
-      <CustomListDropDown selectedRows={selectedRows}/>
-      {/* <Button onClick={handleSubmit}>submit</Button> */}
+      <CustomListDropDown selectedRows={selectedRows.request_id}/>
       <DataTable
         title="All customers"
         columns={columns}

@@ -11,7 +11,7 @@ function Dropdown(props) {
 
   // fetch the list of values from the API
   useEffect(() => {
-    axios.get('https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT')
+    axios.get('https://bkpqz1ao2e.execute-api.us-east-1.amazonaws.com/UAT')
       .then(response => {
         setValues(response.data);
       })
@@ -35,8 +35,8 @@ function Dropdown(props) {
     axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
     axios.defaults.xsrfCookieName = "csrftoken";
     axios.post('https://e8cpgg0x5f.execute-api.us-east-1.amazonaws.com/UAT', {
+      request_id: props.selectedRows,
       const_mgr: selectedValue
-      // xxx:props.selectedRows
     })
       .then(response => {
         setSubmitSuccess(true);
@@ -58,7 +58,6 @@ function Dropdown(props) {
         </Form.Select>
         <Button type="submit" variant='success'>Submit</Button>
       </Form>
-      {/* <div>{props.selectedRows}</div> */}
     </div>
   );
 }
