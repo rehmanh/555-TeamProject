@@ -1,16 +1,38 @@
 {
   "status": "done",
   "assets": {
-    "frontend-5703e22eb1b22525e032.js": {
-      "name": "frontend-5703e22eb1b22525e032.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-5703e22eb1b22525e032.js",
-      "publicPath": "static/solar/frontend-5703e22eb1b22525e032.js"
+    "frontend-3ed16141f52b44eb4b5b.js": {
+      "name": "frontend-3ed16141f52b44eb4b5b.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-3ed16141f52b44eb4b5b.js",
+      "publicPath": "static/solar/frontend-3ed16141f52b44eb4b5b.js"
+    },
+    "frontend-846c811ae21bac5bba09.js": {
+      "name": "frontend-846c811ae21bac5bba09.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-846c811ae21bac5bba09.js",
+      "publicPath": "static/solar/frontend-846c811ae21bac5bba09.js"
+    },
+    "frontend-9d542dc913f1ecace4d2.js": {
+      "name": "frontend-9d542dc913f1ecace4d2.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-9d542dc913f1ecace4d2.js",
+      "publicPath": "static/solar/frontend-9d542dc913f1ecace4d2.js"
+    },
+    "frontend-b75f8698653cb4a530a7.js": {
+      "name": "frontend-b75f8698653cb4a530a7.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-b75f8698653cb4a530a7.js",
+      "publicPath": "static/solar/frontend-b75f8698653cb4a530a7.js"
+    },
+    "frontend-cdf9e5007671d4a99b67.js": {
+      "name": "frontend-cdf9e5007671d4a99b67.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-cdf9e5007671d4a99b67.js",
+      "publicPath": "static/solar/frontend-cdf9e5007671d4a99b67.js"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-5703e22eb1b22525e032.js"
+      "frontend-9d542dc913f1ecace4d2.js"
     ]
   },
-  "publicPath": "static/solar/"
+  "publicPath": "static/solar/",
+  "error": "ModuleNotFoundError",
+  "message": "Module not found: Error: Can't resolve 'react-data-table-component' in '/Users/luisng/Desktop/555-TeamProject/solar/client/src/components'"
 }

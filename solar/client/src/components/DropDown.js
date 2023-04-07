@@ -11,7 +11,8 @@ function Dropdown(props) {
 
   // fetch the list of values from the API
   useEffect(() => {
-    axios.get('https://bkpqz1ao2e.execute-api.us-east-1.amazonaws.com/UAT')
+    // axios.get('https://bkpqz1ao2e.execute-api.us-east-1.amazonaws.com/UAT')
+    axios.get('https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT')
       .then(response => {
         setValues(response.data);
       })
