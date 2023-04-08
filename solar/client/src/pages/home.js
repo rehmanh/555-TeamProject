@@ -5,15 +5,30 @@ import {
   MDBCarousel,
   MDBCarouselItem,
 } from 'mdb-react-ui-kit';
+import { toast } from 'react-toastify'
 import { motion } from 'framer-motion'
 
 export default function HomePage() {
+
+  const toastOptions = {
+    onClose: props => sessionStorage.clear()
+  };
+
+  const validateAndDisplayError = () => {
+    let msg = sessionStorage.getItem('error')
+    if (msg !== null && msg.length !== 0 && msg !== undefined) {
+      toast.error(msg, toastOptions)
+    }
+  };
+
   return (
-  <motion.div
-  initial={{opacity: 0}}
-  animate={{opacity: 1}}
-  exit={{opacity: 0}}
-  >
+  <div>
+    { validateAndDisplayError() }
+    <motion.div
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+    >
     {/* <SolarNavbar /> */}
     <MDBCarousel showControls showIndicators>
       <MDBCarouselItem
@@ -53,6 +68,7 @@ export default function HomePage() {
       </MDBCarouselItem>
 
       </MDBCarousel>
-    </motion.div>
+      </motion.div>
+      </div>
   );
 }
