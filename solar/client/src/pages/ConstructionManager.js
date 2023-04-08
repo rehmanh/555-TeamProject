@@ -18,7 +18,6 @@ import { motion } from 'framer-motion';
 import { toast } from 'react-toastify'
 import DataTable from 'react-data-table-component';
 import { Button, Modal, Form } from 'react-bootstrap';
-import { ContextExclusionPlugin } from 'webpack';
 
 
 export default function ConstructionManager() {
@@ -52,7 +51,6 @@ export default function ConstructionManager() {
           .then(([dataUnassignedRequests, dataSiteSurveyors]) => {
             setUnassignedRequestData(dataUnassignedRequests)
             setSiteSurveyors(dataSiteSurveyors)
-            console.log(siteSurveyors)
           })
     }, []);
 
@@ -93,8 +91,9 @@ export default function ConstructionManager() {
           <Modal.Body>
             <Form.Select value={selectedValue} onChange={handleDropDownChanged}>
               {
-                siteSurveyors.map(value => (
-                  <option key={value.id} value={value.const_mgr}> {value.const_mgr} </option>
+                siteSurveyors &&
+                siteSurveyors.map(val => (
+                  <option key={val.const_mgr} value={val.const_mgr}> {val.const_mgr} </option>
                 ))
               }
             </Form.Select>
@@ -103,7 +102,7 @@ export default function ConstructionManager() {
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary" onClick={handleSelection(selectedValue)}>
+            <Button variant="primary" onClick={() => handleSelection(selectedValue)}>
               Submit
             </Button>
           </Modal.Footer>

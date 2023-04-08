@@ -34,6 +34,7 @@
     "react-bootstrap": "^2.7.2",
     "react-bootstrap-sidebar-menu": "^2.0.3",
     "react-chartjs-2": "^5.2.0",
+    "react-data-table-component": "^7.5.3",
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
     "react-icons": "^4.8.0",
