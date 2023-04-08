@@ -11,8 +11,8 @@ function Dropdown(props) {
 
   // fetch the list of values from the API
   useEffect(() => {
-    // axios.get('https://bkpqz1ao2e.execute-api.us-east-1.amazonaws.com/UAT')
-    axios.get('https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT')
+    axios.get('https://bkpqz1ao2e.execute-api.us-east-1.amazonaws.com/UAT')
+    // axios.get('https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT')
       .then(response => {
         setValues(response.data);
       })
@@ -30,14 +30,20 @@ function Dropdown(props) {
     console.log(selectedValue);
   }, [selectedValue]);
 
+  const json = JSON.stringify({
+    request_id: props.selectedRows,
+    const_mgr: selectedValue
+  });
+  
   // handle the form submission
   const handleSubmit = (event) => {
     event.preventDefault();
     axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
     axios.defaults.xsrfCookieName = "csrftoken";
-    axios.post('https://e8cpgg0x5f.execute-api.us-east-1.amazonaws.com/UAT', {
-      request_id: props.selectedRows,
-      const_mgr: selectedValue
+    axios.post('https://e8cpgg0x5f.execute-api.us-east-1.amazonaws.com/UAT', json, {
+      headers: {
+        "Content-Type": "application/json",
+      },
     })
       .then(response => {
         setSubmitSuccess(true);
@@ -46,7 +52,7 @@ function Dropdown(props) {
         console.log(error);
       });
   };
-
+  
   return (
     <div>
       {submitSuccess && <p>Submitted successfully!</p>}
@@ -64,68 +70,3 @@ function Dropdown(props) {
 }
 
 export default Dropdown;
-
-
-// import React from 'react'
-// import { Button } from 'react-bootstrap'
-
-// export const CustomDropdown = (props) => (
-//   <div className="form-group">
-//     <strong>{props.const_mgr}</strong>
-//     <select
-//       className="form-control"
-//       name="{props.const_mgr}"
-//       onChange={props.onChange}
-//     >
-//       <option defaultValue>Select {props.const_mgr}</option>
-//       {props.options.map((item, index) => (
-//         <option key={index} value={item.id}>
-//           {item.const_mgr} 
-//         </option>
-//       ))}
-//     </select>
-//   </div>
-// )
-
-// class CustomListDropDown extends React.Component {
-//   constructor() {
-//     super()
-//     this.state = {
-//       collection: [],
-//       value: '',
-//     }
-//   }
-
-//   componentDidMount() {
-//     fetch('https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT')
-//       .then((response) => response.json())
-//       .then((res) => this.setState({ collection: res }))
-//   }
-
-//   onChange = (event) => {
-//     this.setState({ value: event.target.value })
-//   }
-
-//   handleClick = () => {
-//     const selectedItem = this.state.collection.find(
-//       (item) => item.const_mgr === parseInt(this.state.value)
-//     )
-//     console.log(selectedItem.const_mgr)
-//   }
-
-//   render() {
-//     return (
-//       <div className="container mt-4">
-//         <h3>Construction managers</h3>
-//         <CustomDropdown
-//           name={this.state.const_mgr}
-//           options={this.state.collection}
-//           onChange={this.onChange}
-//         />
-//         <Button onClick={this.handleClick}>Select Construction Manager</Button>
-//       </div>
-//     )
-//   }
-// }
-
-// export default CustomListDropDown;
