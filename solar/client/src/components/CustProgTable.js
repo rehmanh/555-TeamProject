@@ -5,6 +5,7 @@ import CustomListDropDown from './DropDown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@coreui/coreui/dist/css/coreui.min.css';
 
+
 createTheme('solarized', {
   text: {
     primary: 'black',
@@ -52,7 +53,7 @@ function Table() {
   const [selectedRows, setSelectedRows] = useState([]);
 
   useEffect(() => {
-    axios.get('https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT')
+    axios.get('https://m90c2ol29g.execute-api.us-east-1.amazonaws.com/UAT')
       .then(response => {
         setData(response.data);
       })
@@ -66,9 +67,9 @@ function Table() {
     console.log(state.selectedRows)
   }, []);
 
-  useEffect(() => {
-    console.log(selectedRows);
-  }, [selectedRows])
+  // useEffect(() => {
+  //   console.log(selectedRows);
+  // }, [selectedRows])
 
   const columns = [
     {name: 'Name', selector: 'first_name', center: true},
