@@ -1,196 +1,118 @@
 {
   "status": "done",
   "assets": {
-    "frontend-10b80d8a62605de7d5d5.js": {
-      "name": "frontend-10b80d8a62605de7d5d5.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-10b80d8a62605de7d5d5.js",
-      "publicPath": "static/solar/frontend-10b80d8a62605de7d5d5.js"
+    "frontend-009861f815222dae8496.js": {
+      "name": "frontend-009861f815222dae8496.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-009861f815222dae8496.js",
+      "publicPath": "static/solar/frontend-009861f815222dae8496.js"
     },
-    "frontend-2c582622f50ce929d101.js": {
-      "name": "frontend-2c582622f50ce929d101.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-2c582622f50ce929d101.js",
-      "publicPath": "static/solar/frontend-2c582622f50ce929d101.js"
+    "frontend-1d4472b3de871e170e7a.js": {
+      "name": "frontend-1d4472b3de871e170e7a.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-1d4472b3de871e170e7a.js",
+      "publicPath": "static/solar/frontend-1d4472b3de871e170e7a.js"
     },
-    "frontend-2ea9dc1d577eac6ccef0.js": {
-      "name": "frontend-2ea9dc1d577eac6ccef0.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-2ea9dc1d577eac6ccef0.js",
-      "publicPath": "static/solar/frontend-2ea9dc1d577eac6ccef0.js"
+    "frontend-276270193ced4a9cf43c.js": {
+      "name": "frontend-276270193ced4a9cf43c.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-276270193ced4a9cf43c.js",
+      "publicPath": "static/solar/frontend-276270193ced4a9cf43c.js"
     },
-    "frontend-315e869bdfb492d0074b.js": {
-      "name": "frontend-315e869bdfb492d0074b.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-315e869bdfb492d0074b.js",
-      "publicPath": "static/solar/frontend-315e869bdfb492d0074b.js"
+    "frontend-2d71cd47584b91606d8c.js": {
+      "name": "frontend-2d71cd47584b91606d8c.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-2d71cd47584b91606d8c.js",
+      "publicPath": "static/solar/frontend-2d71cd47584b91606d8c.js"
     },
-    "frontend-333fca0ae46d952da0b1.js": {
-      "name": "frontend-333fca0ae46d952da0b1.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-333fca0ae46d952da0b1.js",
-      "publicPath": "static/solar/frontend-333fca0ae46d952da0b1.js"
+    "frontend-2f533c42316e1a1f8e39.js": {
+      "name": "frontend-2f533c42316e1a1f8e39.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-2f533c42316e1a1f8e39.js",
+      "publicPath": "static/solar/frontend-2f533c42316e1a1f8e39.js"
     },
-    "frontend-44c5e3c9a4690f51d8e4.js": {
-      "name": "frontend-44c5e3c9a4690f51d8e4.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-44c5e3c9a4690f51d8e4.js",
-      "publicPath": "static/solar/frontend-44c5e3c9a4690f51d8e4.js"
+    "frontend-32868f5473e48bd36d19.js": {
+      "name": "frontend-32868f5473e48bd36d19.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-32868f5473e48bd36d19.js",
+      "publicPath": "static/solar/frontend-32868f5473e48bd36d19.js"
     },
-    "frontend-5225b0ef4e8fb346099d.js": {
-      "name": "frontend-5225b0ef4e8fb346099d.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-5225b0ef4e8fb346099d.js",
-      "publicPath": "static/solar/frontend-5225b0ef4e8fb346099d.js"
+    "frontend-3802aad00adbcb76ae18.js": {
+      "name": "frontend-3802aad00adbcb76ae18.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-3802aad00adbcb76ae18.js",
+      "publicPath": "static/solar/frontend-3802aad00adbcb76ae18.js"
     },
-    "frontend-5d56cbae86d7c1d5e234.js": {
-      "name": "frontend-5d56cbae86d7c1d5e234.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-5d56cbae86d7c1d5e234.js",
-      "publicPath": "static/solar/frontend-5d56cbae86d7c1d5e234.js"
+    "frontend-3f8726a347c4358e505d.js": {
+      "name": "frontend-3f8726a347c4358e505d.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-3f8726a347c4358e505d.js",
+      "publicPath": "static/solar/frontend-3f8726a347c4358e505d.js"
     },
-    "frontend-73db1e7bb722a9c96c7a.js": {
-      "name": "frontend-73db1e7bb722a9c96c7a.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-73db1e7bb722a9c96c7a.js",
-      "publicPath": "static/solar/frontend-73db1e7bb722a9c96c7a.js"
+    "frontend-45bf8149de3dbb5d5d7e.js": {
+      "name": "frontend-45bf8149de3dbb5d5d7e.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-45bf8149de3dbb5d5d7e.js",
+      "publicPath": "static/solar/frontend-45bf8149de3dbb5d5d7e.js"
     },
-    "frontend-77dd59e7a969f029186d.js": {
-      "name": "frontend-77dd59e7a969f029186d.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-77dd59e7a969f029186d.js",
-      "publicPath": "static/solar/frontend-77dd59e7a969f029186d.js"
+    "frontend-524f59f286fb9a2c2c37.js": {
+      "name": "frontend-524f59f286fb9a2c2c37.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-524f59f286fb9a2c2c37.js",
+      "publicPath": "static/solar/frontend-524f59f286fb9a2c2c37.js"
     },
-    "frontend-799a37a66dfa1032ba1f.js": {
-      "name": "frontend-799a37a66dfa1032ba1f.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-799a37a66dfa1032ba1f.js",
-      "publicPath": "static/solar/frontend-799a37a66dfa1032ba1f.js"
+    "frontend-5ba5aa95aaa2ad94e78f.js": {
+      "name": "frontend-5ba5aa95aaa2ad94e78f.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-5ba5aa95aaa2ad94e78f.js",
+      "publicPath": "static/solar/frontend-5ba5aa95aaa2ad94e78f.js"
     },
-    "frontend-7b12dc363680283ac409.js": {
-      "name": "frontend-7b12dc363680283ac409.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-7b12dc363680283ac409.js",
-      "publicPath": "static/solar/frontend-7b12dc363680283ac409.js"
+    "frontend-5e4568ec1950ac87d7af.js": {
+      "name": "frontend-5e4568ec1950ac87d7af.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-5e4568ec1950ac87d7af.js",
+      "publicPath": "static/solar/frontend-5e4568ec1950ac87d7af.js"
     },
-    "frontend-85422f8b363376725f61.js": {
-      "name": "frontend-85422f8b363376725f61.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-85422f8b363376725f61.js",
-      "publicPath": "static/solar/frontend-85422f8b363376725f61.js"
+    "frontend-8316d0fad235c84b5c03.js": {
+      "name": "frontend-8316d0fad235c84b5c03.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-8316d0fad235c84b5c03.js",
+      "publicPath": "static/solar/frontend-8316d0fad235c84b5c03.js"
     },
-    "frontend-8f260c4eae8c36f83037.js": {
-      "name": "frontend-8f260c4eae8c36f83037.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-8f260c4eae8c36f83037.js",
-      "publicPath": "static/solar/frontend-8f260c4eae8c36f83037.js"
+    "frontend-89dde59d4984c654fcc6.js": {
+      "name": "frontend-89dde59d4984c654fcc6.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-89dde59d4984c654fcc6.js",
+      "publicPath": "static/solar/frontend-89dde59d4984c654fcc6.js"
     },
-    "frontend-95809913ce5fc5dd6984.js": {
-      "name": "frontend-95809913ce5fc5dd6984.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-95809913ce5fc5dd6984.js",
-      "publicPath": "static/solar/frontend-95809913ce5fc5dd6984.js"
+    "frontend-9524677cfad829da9163.js": {
+      "name": "frontend-9524677cfad829da9163.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-9524677cfad829da9163.js",
+      "publicPath": "static/solar/frontend-9524677cfad829da9163.js"
     },
-    "frontend-961e86f465f91ce4d885.js": {
-      "name": "frontend-961e86f465f91ce4d885.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-961e86f465f91ce4d885.js",
-      "publicPath": "static/solar/frontend-961e86f465f91ce4d885.js"
+    "frontend-99cfe140d86396585951.js": {
+      "name": "frontend-99cfe140d86396585951.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-99cfe140d86396585951.js",
+      "publicPath": "static/solar/frontend-99cfe140d86396585951.js"
     },
-    "frontend-969bdd756e205f2998ed.js": {
-      "name": "frontend-969bdd756e205f2998ed.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-969bdd756e205f2998ed.js",
-      "publicPath": "static/solar/frontend-969bdd756e205f2998ed.js"
+    "frontend-b338efd2a2d1e758f199.js": {
+      "name": "frontend-b338efd2a2d1e758f199.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-b338efd2a2d1e758f199.js",
+      "publicPath": "static/solar/frontend-b338efd2a2d1e758f199.js"
     },
-    "frontend-96c91bc4d7b28710aa48.js": {
-      "name": "frontend-96c91bc4d7b28710aa48.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-96c91bc4d7b28710aa48.js",
-      "publicPath": "static/solar/frontend-96c91bc4d7b28710aa48.js"
+    "frontend-c31a53a91e38a4ceeade.js": {
+      "name": "frontend-c31a53a91e38a4ceeade.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-c31a53a91e38a4ceeade.js",
+      "publicPath": "static/solar/frontend-c31a53a91e38a4ceeade.js"
     },
-    "frontend-a078dc3780f371196664.js": {
-      "name": "frontend-a078dc3780f371196664.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-a078dc3780f371196664.js",
-      "publicPath": "static/solar/frontend-a078dc3780f371196664.js"
+    "frontend-c4915dc5434997d4f5bf.js": {
+      "name": "frontend-c4915dc5434997d4f5bf.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-c4915dc5434997d4f5bf.js",
+      "publicPath": "static/solar/frontend-c4915dc5434997d4f5bf.js"
     },
-    "frontend-aab40226ce5c26066915.js": {
-      "name": "frontend-aab40226ce5c26066915.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-aab40226ce5c26066915.js",
-      "publicPath": "static/solar/frontend-aab40226ce5c26066915.js"
+    "frontend-dee9a5a1cadde28dade0.js": {
+      "name": "frontend-dee9a5a1cadde28dade0.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-dee9a5a1cadde28dade0.js",
+      "publicPath": "static/solar/frontend-dee9a5a1cadde28dade0.js"
     },
-    "frontend-af665af3bf15c56c0c8b.js": {
-      "name": "frontend-af665af3bf15c56c0c8b.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-af665af3bf15c56c0c8b.js",
-      "publicPath": "static/solar/frontend-af665af3bf15c56c0c8b.js"
-    },
-    "frontend-b773ce1cd8e0b837de36.js": {
-      "name": "frontend-b773ce1cd8e0b837de36.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-b773ce1cd8e0b837de36.js",
-      "publicPath": "static/solar/frontend-b773ce1cd8e0b837de36.js"
-    },
-    "frontend-b798429453b2fbf017bf.js": {
-      "name": "frontend-b798429453b2fbf017bf.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-b798429453b2fbf017bf.js",
-      "publicPath": "static/solar/frontend-b798429453b2fbf017bf.js"
-    },
-    "frontend-bf036be6a648dc83b8c3.js": {
-      "name": "frontend-bf036be6a648dc83b8c3.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-bf036be6a648dc83b8c3.js",
-      "publicPath": "static/solar/frontend-bf036be6a648dc83b8c3.js"
-    },
-    "frontend-c80d546d33cf2a7bf1b5.js": {
-      "name": "frontend-c80d546d33cf2a7bf1b5.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-c80d546d33cf2a7bf1b5.js",
-      "publicPath": "static/solar/frontend-c80d546d33cf2a7bf1b5.js"
-    },
-    "frontend-c96e3047c0fad162d21c.js": {
-      "name": "frontend-c96e3047c0fad162d21c.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-c96e3047c0fad162d21c.js",
-      "publicPath": "static/solar/frontend-c96e3047c0fad162d21c.js"
-    },
-    "frontend-cfb79769ab08a9c2a4c9.js": {
-      "name": "frontend-cfb79769ab08a9c2a4c9.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-cfb79769ab08a9c2a4c9.js",
-      "publicPath": "static/solar/frontend-cfb79769ab08a9c2a4c9.js"
-    },
-    "frontend-db6a12d108144e7a4ada.js": {
-      "name": "frontend-db6a12d108144e7a4ada.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-db6a12d108144e7a4ada.js",
-      "publicPath": "static/solar/frontend-db6a12d108144e7a4ada.js"
-    },
-    "frontend-e38462235e4f208a17d2.js": {
-      "name": "frontend-e38462235e4f208a17d2.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e38462235e4f208a17d2.js",
-      "publicPath": "static/solar/frontend-e38462235e4f208a17d2.js"
-    },
-    "frontend-e4aa5b531fa253766c56.js": {
-      "name": "frontend-e4aa5b531fa253766c56.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e4aa5b531fa253766c56.js",
-      "publicPath": "static/solar/frontend-e4aa5b531fa253766c56.js"
-    },
-    "frontend-e4e6aaf9866dfda6bf8b.js": {
-      "name": "frontend-e4e6aaf9866dfda6bf8b.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e4e6aaf9866dfda6bf8b.js",
-      "publicPath": "static/solar/frontend-e4e6aaf9866dfda6bf8b.js"
-    },
-    "frontend-e6a107a155adba79bab6.js": {
-      "name": "frontend-e6a107a155adba79bab6.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e6a107a155adba79bab6.js",
-      "publicPath": "static/solar/frontend-e6a107a155adba79bab6.js"
-    },
-    "frontend-e6f24808401f5e54ffb8.js": {
-      "name": "frontend-e6f24808401f5e54ffb8.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e6f24808401f5e54ffb8.js",
-      "publicPath": "static/solar/frontend-e6f24808401f5e54ffb8.js"
-    },
-    "frontend-e991162fa5726aba5fb7.js": {
-      "name": "frontend-e991162fa5726aba5fb7.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e991162fa5726aba5fb7.js",
-      "publicPath": "static/solar/frontend-e991162fa5726aba5fb7.js"
-    },
-    "frontend-f7a83ba931722d5f7e04.js": {
-      "name": "frontend-f7a83ba931722d5f7e04.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-f7a83ba931722d5f7e04.js",
-      "publicPath": "static/solar/frontend-f7a83ba931722d5f7e04.js"
-    },
-    "frontend-fda24f6c86160de95686.js": {
-      "name": "frontend-fda24f6c86160de95686.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-fda24f6c86160de95686.js",
-      "publicPath": "static/solar/frontend-fda24f6c86160de95686.js"
-    },
-    "frontend-ffb6949974b22f3a4c9f.js": {
-      "name": "frontend-ffb6949974b22f3a4c9f.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-ffb6949974b22f3a4c9f.js",
-      "publicPath": "static/solar/frontend-ffb6949974b22f3a4c9f.js"
+    "frontend-fb0cf614a0de84930f00.js": {
+      "name": "frontend-fb0cf614a0de84930f00.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-fb0cf614a0de84930f00.js",
+      "publicPath": "static/solar/frontend-fb0cf614a0de84930f00.js"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-e6a107a155adba79bab6.js"
+      "frontend-276270193ced4a9cf43c.js"
     ]
   },
-  "publicPath": "static/solar/"
+  "publicPath": "static/solar/",
+  "error": "ModuleNotFoundError",
+  "message": "Module not found: Error: Can't resolve './Cart' in '/Users/harrisonshih/Desktop/git/555-TeamProject/solar/client/src/components'"
 }

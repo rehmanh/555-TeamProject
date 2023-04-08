@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./OrderTable.css"
-import Cart from './Cart';
 import { Container, Row, Col, Table } from 'react-bootstrap';
 
 export default function OrderTable() {

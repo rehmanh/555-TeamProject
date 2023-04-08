@@ -15,6 +15,7 @@ import { Operation } from '../client/src/pages/Operation';
 import {ToastContainer, toast} from 'react-toastify';
 import OpManager from '../client/src/pages/OpManager';
 import OrderTable from '../client/src/components/OrderTable';
+import CoCheck from '../client/src/pages/CoCheck';
 
 export default class App extends Component {
     constructor(props) {
@@ -46,7 +47,7 @@ export default class App extends Component {
                 <Route exact path='/userreq' element={<UserRequestForm />}/>
                 <Route exact path= '/userprog' element={<Userprog />}/>
                 <Route exact path= '/oper' element={<Operation />}/>
-                
+                <Route exact path= '/coCheck' element={<CoCheck />}/>
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
         </Router>

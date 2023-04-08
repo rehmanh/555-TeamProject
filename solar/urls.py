@@ -13,6 +13,7 @@ urlpatterns = [
     path('oper',index),
     path('userHome', index),
     path('opManager', index),
-    path('orderTable', index)
+    path('orderTable', index), 
+    path('coCheck', index)
 
 ]

@@ -1,0 +1,15 @@
+.tdinput
+{
+    border:1px solid #000;
+    width: 50% !important;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#textbox
+{
+    width: 1px !important;
+}

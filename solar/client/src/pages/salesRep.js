@@ -30,12 +30,6 @@ export default function App() {
   const [allRequests, setAllRequests] = useState();
   const [userRequests, setUserRequests] = useState();
 
-  const [roleId, setRole] = useState(localStorage.getItem('roleId'));
-  const [isLoggedIn, setIsLoggedIn] = useState(localStorage !== null
-    && localStorage.getItem('token') !== null
-    && localStorage.getItem('roleId') !== null
-    && localStorage.getItem('userId') !== null);
-
   useEffect(() => {
     Promise.all([
       fetch("https://h0pt17fv6g.execute-api.us-east-1.amazonaws.com/UAT"),
