@@ -18,6 +18,7 @@ import { motion } from 'framer-motion';
 import { toast } from 'react-toastify'
 import DataTable from 'react-data-table-component';
 import { Button, Modal, Form } from 'react-bootstrap';
+import { getUserFullName } from '../utils/utils';
 
 
 export default function ConstructionManager() {
@@ -27,6 +28,12 @@ export default function ConstructionManager() {
         && localStorage.getItem('token') !== null
         && localStorage.getItem('roleId') !== null
         && localStorage.getItem('userId') !== null);
+    
+    const [fullUserName, setFullUserName] = useState('');
+    
+    useEffect(() => {
+      setFullUserName(getUserFullName)
+    }, []);
 
     const [verticalActive, setVerticalActive] = useState('tab1');
 
@@ -37,20 +44,23 @@ export default function ConstructionManager() {
 
     // create state variables for the 3 tables that need to be shown, in order
     const [unassignedRequestData, setUnassignedRequestData] = useState();
+    const [inProgressRequestData, setInProgressRequestData] = useState();
     const [siteSurveyors, setSiteSurveyors] = useState();
 
     // function to pre-fetch the table data
     useEffect(() => {
         Promise.all([
           fetch("https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT"), // all requests for THIS conman
-          fetch("https://bkpqz1ao2e.execute-api.us-east-1.amazonaws.com/UAT") // all site surveyors available
+          fetch("https://bkpqz1ao2e.execute-api.us-east-1.amazonaws.com/UAT"), // all site surveyors available
+          fetch("https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT") // all in progress requests that have been assigned to a SS
         ])
-          .then(([unassignedRequestsResponse, siteSurveyorsResponse]) =>
-            Promise.all([unassignedRequestsResponse.json(), siteSurveyorsResponse.json()])
+          .then(([unassignedRequestsResponse, siteSurveyorsResponse, inProgressRequestsResponse]) =>
+            Promise.all([unassignedRequestsResponse.json(), siteSurveyorsResponse.json(), inProgressRequestsResponse.json()])
           )
-          .then(([dataUnassignedRequests, dataSiteSurveyors]) => {
+          .then(([dataUnassignedRequests, dataSiteSurveyors, dataInProgressRequests]) => {
             setUnassignedRequestData(dataUnassignedRequests)
             setSiteSurveyors(dataSiteSurveyors)
+            setInProgressRequestData(dataInProgressRequests)
           })
     }, []);
 
@@ -68,6 +78,13 @@ export default function ConstructionManager() {
       {name: 'Sales Rep Assigned', selector: (row, i) => row.sales_rep_id, center: true},
       {name: 'Date of request', selector: (row, i) => row.created_at_datetime, center: true},
       {name: 'Request Status', selector: (row, i) => row.request_status, center: true},
+    ];
+
+    const inProgressRequestsColumns = [
+      {name: 'Request ID', selector: (row, i) => row.request_id, center: true},
+      {name: 'Site Surveyor', selector: (row, i) => row.site_syr, center: true},
+      {name: 'Date of request', selector: (row, i) => row.created_at_datetime, center: true},
+      {name: 'Request Status', selector: (row, i) => row.request_status, center: true}
     ];
 
     const [selectedValue, setSelectedValue] = useState('');
@@ -120,6 +137,10 @@ export default function ConstructionManager() {
             exit={{opacity: 0}}
         >
         <>
+          <MDBRow className='testMe'>
+            <h1>Welcome Back, {fullUserName}</h1>
+          </MDBRow>
+            
           <MDBRow>
             <MDBCol size='1'></MDBCol>
             <MDBCol size='10'>
@@ -143,6 +164,7 @@ export default function ConstructionManager() {
               </MDBTabs>
 
               <MDBTabsContent>
+                {/* Unassigned Requests */}
                 <MDBTabsPane show={verticalActive === 'tab1'}>
                   <DataTable 
                     title=" "
@@ -154,8 +176,15 @@ export default function ConstructionManager() {
                     />
                 </MDBTabsPane>
 
+                {/* In Progress Requests */}
                 <MDBTabsPane show={verticalActive === 'tab2'}>
-                  show table 2
+                  <DataTable
+                    title=" "
+                    columns={inProgressRequestsColumns}
+                    data={inProgressRequestData}
+                    fixedHeader
+                    expandableRows
+                    />
                 </MDBTabsPane>
                 
                 <MDBTabsPane show={verticalActive === 'tab3'}>
