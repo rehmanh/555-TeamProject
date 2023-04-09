@@ -64,7 +64,6 @@ function Table() {
 
   const handleSelectedRow = useCallback(state => {
     setSelectedRows(state.selectedRows)
-    console.log(state.selectedRows)
   }, []);
 
   // useEffect(() => {
@@ -81,7 +80,7 @@ function Table() {
 
   return (
     <div>
-      <CustomListDropDown selectedRows={selectedRows.request_id}/>
+      <CustomListDropDown selectedRows={selectedRows}/>
       <DataTable
         title="All customers"
         columns={columns}

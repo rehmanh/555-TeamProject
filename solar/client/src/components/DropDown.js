@@ -4,7 +4,7 @@ import { Button, Form } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 
 
-function Dropdown(props) {
+function Dropdown({ selectedRows }) {
   const [values, setValues] = useState([]);
   const [selectedValue, setSelectedValue] = useState('');
 
@@ -21,7 +21,6 @@ function Dropdown(props) {
 
   // handle the selection of a value from the dropdown
   const handleSelect = (event) => {
-    console.log(event.target.value);
     setSelectedValue(event.target.value);
   };
 
@@ -31,11 +30,14 @@ function Dropdown(props) {
   
   // handle the form submission
   const handleSubmit = (event) => {
+    event.preventDefault();
+    const request_ids = selectedRows.map((row) => row.request_id);
+
     const json = JSON.stringify({
-      request_id: props.selectedRows,
+      request_id: request_ids,
       const_mgr: selectedValue
     });
-    event.preventDefault();
+    
     axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
     axios.defaults.xsrfCookieName = "csrftoken";
     axios.post('https://e8cpgg0x5f.execute-api.us-east-1.amazonaws.com/UAT', json, {
