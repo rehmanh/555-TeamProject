@@ -34,13 +34,13 @@ function Dropdown({ selectedRows }) {
     const request_ids = selectedRows.map((row) => row.request_id);
 
     const json = JSON.stringify({
-      request_id: request_ids,
+      request_ids: request_ids,
       const_mgr: selectedValue
     });
     
     axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
     axios.defaults.xsrfCookieName = "csrftoken";
-    axios.post('https://e8cpgg0x5f.execute-api.us-east-1.amazonaws.com/UAT', json, {
+    axios.post('https://c80q5wc5m0.execute-api.us-east-1.amazonaws.com/UAT', json, {
       headers: {
         "Content-Type": "application/json",
       },
