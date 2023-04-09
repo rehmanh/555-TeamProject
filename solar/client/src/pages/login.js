@@ -51,6 +51,8 @@ export default class Login extends Component {
           localStorage.setItem('token', response.data.data.token);
           localStorage.setItem('roleId', response.data.data.roleId);
           localStorage.setItem('userId', response.data.data.userId);
+          localStorage.setItem('firstName', response.data.data.firstName);
+          localStorage.setItem('lastName', response.data.data.lastName);
           toast.success('Login Successful', toastOptions);
         }
         this.setState({
