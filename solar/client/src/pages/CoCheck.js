@@ -118,7 +118,7 @@ export default function CoCheck() {
                                             <span style={{ float: 'left' }}>Customer's First Name</span>
                                         </th>
                                         <th>
-                                            <span style={{ float: 'left' }}>Customer's city</span>
+                                            <span style={{ float: 'left' }}>Customer's City</span>
                                         </th>
                                         <th>
                                             <span style={{ float: 'left' }}>Estimate Cost</span>
