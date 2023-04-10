@@ -10,7 +10,8 @@ import {
     MDBCol,
     MDBCheckbox,
     MDBBtn,
-    MDBTextArea
+    MDBTextArea,
+    MDBRadio
 } from 'mdb-react-ui-kit';
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 import { toast } from 'react-toastify'
@@ -28,16 +29,16 @@ export default function CoCheck() {
     }, []);
 
     const [selectedData, setSelectedData] = useState([]);
-    const [cost, setCost] = useState("");
-    const [duration, setDuration] = useState("");
+    // const [cost, setCost] = useState("");
+    // const [duration, setDuration] = useState("");
 
     const handleChange = (event, requestId) => {
         if (event.target.checked) {
-            selectedData.push({request_id: requestId, cost: null, duration: null });
+            selectedData.push({ request_id: requestId });
             setSelectedData(selectedData);
         } else {
             const index = selectedData.findIndex((r) => r.request_id === requestId)
-            if (index > -1){
+            if (index > -1) {
                 selectedData.splice(index, 1);
             }
         }
@@ -50,32 +51,50 @@ export default function CoCheck() {
 
     const handleCostChange = (event, requestId) => {
         const value = event.target.value;
-        //onst updatedCost = [...selectedData]; // Create a copy of the requests array
         const index = selectedData.findIndex((r) => r.request_id === requestId);
-        selectedData[index] = { ...selectedData[index], cost: value };
+        selectedData[index] = { ...selectedData[index], price_est: value };
     };
 
     const handleDurationChange = (event, requestId) => {
         const value = event.target.value;
-        //const updatedDuration = [...selectedData]; // Create a copy of the requests array
         const index = selectedData.findIndex((r) => r.request_id === requestId);
-        selectedData[index] = { ...selectedData[index], duration: value };
+        selectedData[index] = { ...selectedData[index], duration_est_days: value };
     };
 
 
     const handleSubmit = () => {
-        selectedItems.forEach((item) => {
-            const { request_id } = item;
-            axios.post("https://example.com/api", {
-                request_id: request_id,
-                price_est: cost,
-                duration_est_days: duration
-            }).then((response) => {
-                console.log(response);
-            }).catch((error) => {
-                console.error(error);
-            });
-        });
+        try {
+            validateCoManager();
+        } catch (message) {
+            toast.error(message);
+            return;
+        }
+        selectedData.map((item) => {
+            const json = JSON.stringify({
+                request_id: item.request_id,
+                price_est: parseFloat(item.price_est),
+                duration_est_days: parseInt(item.duration_est_days)
+            })
+            console.log(json)
+            axios
+                .post("https://vlcfbqye7a.execute-api.us-east-1.amazonaws.com/UAT", json, {
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                })
+                .then(response => {console.log(response.data)})
+                .then((selectedData) => console.log(selectedData))
+                .catch((error) => console.log(error))
+        })
+    };
+
+    const validateCoManager = () => {
+        if (localStorage.length === 0
+            || localStorage.getItem('userId') === null
+            || localStorage.getItem('roleId') === null
+            || localStorage.getItem('token') === null) {
+            throw "There was an error with the User for this request, please Log In and try again.";
+        }
     };
 
     return (
@@ -126,7 +145,7 @@ export default function CoCheck() {
                                             <th scope='col'>
                                                 <MDBTextArea
                                                     rows="1"
-                                                    placeholder="Cost Estimation"
+                                                    placeholder="$"
                                                     onChange={(e) => {
                                                         handleCostChange(e, value.request_id);
                                                     }}>
@@ -135,7 +154,7 @@ export default function CoCheck() {
                                             <th scope='col'>
                                                 <MDBTextArea
                                                     rows="1"
-                                                    placeholder="Duration Estimation"
+                                                    placeholder="days"
                                                     onChange={(e) => {
                                                         handleDurationChange(e, value.request_id);
                                                     }}>

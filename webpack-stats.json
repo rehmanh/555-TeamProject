@@ -11,6 +11,11 @@
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-0006a3b0b6b9e285e7d3.js",
       "publicPath": "static/solar/frontend-0006a3b0b6b9e285e7d3.js"
     },
+    "frontend-08cf0f6fac6fdf1d07a1.js": {
+      "name": "frontend-08cf0f6fac6fdf1d07a1.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-08cf0f6fac6fdf1d07a1.js",
+      "publicPath": "static/solar/frontend-08cf0f6fac6fdf1d07a1.js"
+    },
     "frontend-091da1f68f512ac3d366.js": {
       "name": "frontend-091da1f68f512ac3d366.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-091da1f68f512ac3d366.js",
@@ -20,6 +25,11 @@
       "name": "frontend-0c94e69ad753f671b9ea.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-0c94e69ad753f671b9ea.js",
       "publicPath": "static/solar/frontend-0c94e69ad753f671b9ea.js"
+    },
+    "frontend-13fce26910d0f718dc8d.js": {
+      "name": "frontend-13fce26910d0f718dc8d.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-13fce26910d0f718dc8d.js",
+      "publicPath": "static/solar/frontend-13fce26910d0f718dc8d.js"
     },
     "frontend-143a803fea03849ccc86.js": {
       "name": "frontend-143a803fea03849ccc86.js",
@@ -36,10 +46,20 @@
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-15a4566c5b0ac7e5440c.js",
       "publicPath": "static/solar/frontend-15a4566c5b0ac7e5440c.js"
     },
+    "frontend-1741b547d4dc3f703269.js": {
+      "name": "frontend-1741b547d4dc3f703269.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-1741b547d4dc3f703269.js",
+      "publicPath": "static/solar/frontend-1741b547d4dc3f703269.js"
+    },
     "frontend-17f42b00d97783cc9d17.js": {
       "name": "frontend-17f42b00d97783cc9d17.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-17f42b00d97783cc9d17.js",
       "publicPath": "static/solar/frontend-17f42b00d97783cc9d17.js"
+    },
+    "frontend-1ab0b793b55f0c29a71d.js": {
+      "name": "frontend-1ab0b793b55f0c29a71d.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-1ab0b793b55f0c29a71d.js",
+      "publicPath": "static/solar/frontend-1ab0b793b55f0c29a71d.js"
     },
     "frontend-1ab5a719d389a08ebd69.js": {
       "name": "frontend-1ab5a719d389a08ebd69.js",
@@ -50,6 +70,11 @@
       "name": "frontend-1cc90074ee8703d8f045.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-1cc90074ee8703d8f045.js",
       "publicPath": "static/solar/frontend-1cc90074ee8703d8f045.js"
+    },
+    "frontend-1e1cc6f47568d76e3f05.js": {
+      "name": "frontend-1e1cc6f47568d76e3f05.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-1e1cc6f47568d76e3f05.js",
+      "publicPath": "static/solar/frontend-1e1cc6f47568d76e3f05.js"
     },
     "frontend-2204ea2ba2243f9aeb42.js": {
       "name": "frontend-2204ea2ba2243f9aeb42.js",
@@ -176,6 +201,11 @@
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-5267194f855e031b0649.js",
       "publicPath": "static/solar/frontend-5267194f855e031b0649.js"
     },
+    "frontend-5409f6aa5388c8141e6a.js": {
+      "name": "frontend-5409f6aa5388c8141e6a.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-5409f6aa5388c8141e6a.js",
+      "publicPath": "static/solar/frontend-5409f6aa5388c8141e6a.js"
+    },
     "frontend-55ca69d5fca4059e17a9.js": {
       "name": "frontend-55ca69d5fca4059e17a9.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-55ca69d5fca4059e17a9.js",
@@ -221,6 +251,11 @@
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-5f24deeab7f4b244e3c0.js",
       "publicPath": "static/solar/frontend-5f24deeab7f4b244e3c0.js"
     },
+    "frontend-5f264836c40bd22fe96d.js": {
+      "name": "frontend-5f264836c40bd22fe96d.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-5f264836c40bd22fe96d.js",
+      "publicPath": "static/solar/frontend-5f264836c40bd22fe96d.js"
+    },
     "frontend-63950f3d2558f96d4f88.js": {
       "name": "frontend-63950f3d2558f96d4f88.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-63950f3d2558f96d4f88.js",
@@ -246,6 +281,11 @@
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-6d915cf6abf17ec96ebe.js",
       "publicPath": "static/solar/frontend-6d915cf6abf17ec96ebe.js"
     },
+    "frontend-6e898b4a80f628da1ff9.js": {
+      "name": "frontend-6e898b4a80f628da1ff9.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-6e898b4a80f628da1ff9.js",
+      "publicPath": "static/solar/frontend-6e898b4a80f628da1ff9.js"
+    },
     "frontend-6ffa099f7b81788e45e8.js": {
       "name": "frontend-6ffa099f7b81788e45e8.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-6ffa099f7b81788e45e8.js",
@@ -260,6 +300,11 @@
       "name": "frontend-72c98578c674c92c160c.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-72c98578c674c92c160c.js",
       "publicPath": "static/solar/frontend-72c98578c674c92c160c.js"
+    },
+    "frontend-740ce3c1b42de0e8d57f.js": {
+      "name": "frontend-740ce3c1b42de0e8d57f.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-740ce3c1b42de0e8d57f.js",
+      "publicPath": "static/solar/frontend-740ce3c1b42de0e8d57f.js"
     },
     "frontend-74d252ea176e8830f322.js": {
       "name": "frontend-74d252ea176e8830f322.js",
@@ -386,6 +431,11 @@
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-a29bad9ecca5fe363b08.js",
       "publicPath": "static/solar/frontend-a29bad9ecca5fe363b08.js"
     },
+    "frontend-a2de8e85d308c3e33276.js": {
+      "name": "frontend-a2de8e85d308c3e33276.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-a2de8e85d308c3e33276.js",
+      "publicPath": "static/solar/frontend-a2de8e85d308c3e33276.js"
+    },
     "frontend-a302b9f9e15d719a9347.js": {
       "name": "frontend-a302b9f9e15d719a9347.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-a302b9f9e15d719a9347.js",
@@ -425,6 +475,11 @@
       "name": "frontend-af4f2c55fb6340384d3a.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-af4f2c55fb6340384d3a.js",
       "publicPath": "static/solar/frontend-af4f2c55fb6340384d3a.js"
+    },
+    "frontend-b011deac659307c3882a.js": {
+      "name": "frontend-b011deac659307c3882a.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-b011deac659307c3882a.js",
+      "publicPath": "static/solar/frontend-b011deac659307c3882a.js"
     },
     "frontend-b12d6fc56ca0aad32131.js": {
       "name": "frontend-b12d6fc56ca0aad32131.js",
@@ -526,6 +581,11 @@
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-df82a72abb06cc173f99.js",
       "publicPath": "static/solar/frontend-df82a72abb06cc173f99.js"
     },
+    "frontend-dfb4ddf7206aac39afc4.js": {
+      "name": "frontend-dfb4ddf7206aac39afc4.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-dfb4ddf7206aac39afc4.js",
+      "publicPath": "static/solar/frontend-dfb4ddf7206aac39afc4.js"
+    },
     "frontend-e3a34189a2f607cdfcfa.js": {
       "name": "frontend-e3a34189a2f607cdfcfa.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e3a34189a2f607cdfcfa.js",
@@ -571,6 +631,11 @@
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-eeac3ec475dbc14dd5ca.js",
       "publicPath": "static/solar/frontend-eeac3ec475dbc14dd5ca.js"
     },
+    "frontend-ef0c42e0dc6603764063.js": {
+      "name": "frontend-ef0c42e0dc6603764063.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-ef0c42e0dc6603764063.js",
+      "publicPath": "static/solar/frontend-ef0c42e0dc6603764063.js"
+    },
     "frontend-efa1d306bb26285a9ae9.js": {
       "name": "frontend-efa1d306bb26285a9ae9.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-efa1d306bb26285a9ae9.js",
@@ -586,6 +651,16 @@
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-f5affcadd325d860c74d.js",
       "publicPath": "static/solar/frontend-f5affcadd325d860c74d.js"
     },
+    "frontend-f83bd0f82f40445fe4f9.js": {
+      "name": "frontend-f83bd0f82f40445fe4f9.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-f83bd0f82f40445fe4f9.js",
+      "publicPath": "static/solar/frontend-f83bd0f82f40445fe4f9.js"
+    },
+    "frontend-ff14f4d7b99bbae01577.js": {
+      "name": "frontend-ff14f4d7b99bbae01577.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-ff14f4d7b99bbae01577.js",
+      "publicPath": "static/solar/frontend-ff14f4d7b99bbae01577.js"
+    },
     "frontend-ff68ea4217b7e46c7b72.js": {
       "name": "frontend-ff68ea4217b7e46c7b72.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-ff68ea4217b7e46c7b72.js",
@@ -594,10 +669,10 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-3a9a75f099e22ccc58ae.js"
+      "frontend-08cf0f6fac6fdf1d07a1.js"
     ]
   },
   "publicPath": "static/solar/",
   "error": "ModuleBuildError",
-  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/harrisonshih/Desktop/git/555-TeamProject/solar/client/src/pages/CoCheck.js: Missing semicolon. (43:33)\n\n  41 |             setSelectedData(newData);\n  42 |         }\n> 43 |         console.log(selectedData):\n     |                                  ^\n  44 |     };\n  45 |\n  46 |     const handleCheckboxChange = (selectedData) => {\n    at instantiate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:64:32)\n    at constructor (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:364:12)\n    at JSXParserMixin.raise (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:3253:19)\n    at JSXParserMixin.semicolon (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:3624:10)\n    at JSXParserMixin.parseExpressionStatement (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13089:10)\n    at JSXParserMixin.parseStatementContent (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12686:19)\n    at JSXParserMixin.parseStatementLike (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12548:17)\n    at JSXParserMixin.parseStatementListItem (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12528:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13120:61)\n    at JSXParserMixin.parseBlockBody (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13113:10)\n    at JSXParserMixin.parseBlock (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13101:10)\n    at JSXParserMixin.parseFunctionBody (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11911:24)\n    at JSXParserMixin.parseArrowExpression (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11886:10)\n    at JSXParserMixin.parseParenAndDistinguishExpression (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11489:12)\n    at JSXParserMixin.parseExprAtom (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11128:23)\n    at JSXParserMixin.parseExprAtom (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:6992:20)\n    at JSXParserMixin.parseExprSubscripts (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10859:23)\n    at JSXParserMixin.parseUpdate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10656:61)\n    at JSXParserMixin.parseExprOps (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10599:21)\n    at /Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10569:39\n    at JSXParserMixin.allowInAnd (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12239:16)\n    at JSXParserMixin.parseMaybeAssignAllowIn (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10569:17)\n    at JSXParserMixin.parseVar (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13192:91)\n    at JSXParserMixin.parseVarStatement (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13031:10)\n    at JSXParserMixin.parseStatementContent (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12628:23)\n    at JSXParserMixin.parseStatementLike (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12548:17)\n    at JSXParserMixin.parseStatementListItem (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12528:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13120:61)\n    at JSXParserMixin.parseBlockBody (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13113:10)\n    at JSXParserMixin.parseBlock (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13101:10)\n    at JSXParserMixin.parseFunctionBody (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11911:24)\n    at JSXParserMixin.parseFunctionBodyAndFinish (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11897:10)\n    at /Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13256:12\n    at JSXParserMixin.withSmartMixTopicForbiddingContext (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12221:14)\n    at JSXParserMixin.parseFunction (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13255:10)\n    at JSXParserMixin.parseExportDefaultExpression (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13740:19)\n    at JSXParserMixin.parseExport (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13667:25)\n    at JSXParserMixin.parseStatementContent (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12660:27)\n    at JSXParserMixin.parseStatementLike (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12548:17)\n    at JSXParserMixin.parseModuleItem (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12525:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13120:36)\n    at JSXParserMixin.parseBlockBody (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13113:10)\n    at JSXParserMixin.parseProgram (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12439:10)\n    at JSXParserMixin.parseTopLevel (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12429:25)\n    at JSXParserMixin.parse (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:14250:10)\n    at parse (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:14292:38)"
+  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/harrisonshih/Desktop/git/555-TeamProject/solar/client/src/pages/CoCheck.js: Unexpected token, expected \",\" (79:88)\n\n  77 |             })\n  78 |             axios\n> 79 |                 .post(\"https://vlcfbqye7a.execute-api.us-east-1.amazonaws.com/UAT\", json{\n     |                                                                                         ^\n  80 |                     headers: {\n  81 |                         \"Content-Type\": \"application/json\",\n  82 |                     },\n    at instantiate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:64:32)\n    at constructor (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:364:12)\n    at JSXParserMixin.raise (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:3253:19)\n    at JSXParserMixin.unexpected (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:3283:16)\n    at JSXParserMixin.expect (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:3629:28)\n    at JSXParserMixin.parseCallExpressionArguments (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11037:14)\n    at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10966:29)\n    at JSXParserMixin.parseSubscript (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10901:19)\n    at JSXParserMixin.parseSubscripts (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10872:19)\n    at JSXParserMixin.parseExprSubscripts (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10863:17)\n    at JSXParserMixin.parseUpdate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10656:61)\n    at JSXParserMixin.parseExprOps (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10599:21)\n    at JSXParserMixin.parseExpressionBase (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10553:23)\n    at /Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10549:39\n    at JSXParserMixin.allowInAnd (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12239:16)\n    at JSXParserMixin.parseExpression (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10549:17)\n    at JSXParserMixin.parseStatementContent (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12682:23)\n    at JSXParserMixin.parseStatementLike (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12548:17)\n    at JSXParserMixin.parseStatementListItem (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12528:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13120:61)\n    at JSXParserMixin.parseBlockBody (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13113:10)\n    at JSXParserMixin.parseBlock (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:13101:10)\n    at JSXParserMixin.parseFunctionBody (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11911:24)\n    at JSXParserMixin.parseArrowExpression (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11886:10)\n    at JSXParserMixin.parseParenAndDistinguishExpression (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11489:12)\n    at JSXParserMixin.parseExprAtom (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11128:23)\n    at JSXParserMixin.parseExprAtom (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:6992:20)\n    at JSXParserMixin.parseExprSubscripts (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10859:23)\n    at JSXParserMixin.parseUpdate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10656:61)\n    at JSXParserMixin.parseExprOps (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10599:21)\n    at /Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10569:39\n    at JSXParserMixin.allowInAnd (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:12244:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10569:17)\n    at JSXParserMixin.parseExprListItem (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11996:18)\n    at JSXParserMixin.parseCallExpressionArguments (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:11051:22)\n    at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10966:29)\n    at JSXParserMixin.parseSubscript (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10901:19)\n    at JSXParserMixin.parseSubscripts (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10872:19)\n    at JSXParserMixin.parseExprSubscripts (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10863:17)\n    at JSXParserMixin.parseUpdate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/harrisonshih/Desktop/git/555-TeamProject/node_modules/@babel/parser/lib/index.js:10656:61)"
 }
