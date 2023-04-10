@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import {
   MDBTabs,
   MDBTabsItem,
@@ -19,6 +19,7 @@ import { toast } from 'react-toastify'
 import DataTable from 'react-data-table-component';
 import { Button, Modal, Form } from 'react-bootstrap';
 import { getUserFullName } from '../utils/utils';
+import axios from 'axios';
 
 
 export default function ConstructionManager() {
@@ -50,8 +51,14 @@ export default function ConstructionManager() {
     // function to pre-fetch the table data
     useEffect(() => {
         Promise.all([
-          fetch("https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT"), // all requests for THIS conman
-          fetch("https://bkpqz1ao2e.execute-api.us-east-1.amazonaws.com/UAT"), // all site surveyors available
+          fetch("https://szmu1lpz65.execute-api.us-east-1.amazonaws.com/UAT", { // all requests for THIS conman
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ "const_mgr": "C1" }) // TODO change to localStorage userID
+          }), 
+          fetch("https://5qi3g62xfd.execute-api.us-east-1.amazonaws.com/UAT"), // all site surveyors available
           fetch("https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT") // all in progress requests that have been assigned to a SS
         ])
           .then(([unassignedRequestsResponse, siteSurveyorsResponse, inProgressRequestsResponse]) =>
@@ -74,10 +81,8 @@ export default function ConstructionManager() {
     const unassignedRequestsColumns = [
       {name: 'Request ID', selector: (row, i) => row.request_id, center: true },
       {name: 'First Name', selector: (row, i) => row.first_name, center: true},
-      {name: 'Last Name', selector: (row, i) => row.last_name, center: true},
-      {name: 'Sales Rep Assigned', selector: (row, i) => row.sales_rep_id, center: true},
-      {name: 'Date of request', selector: (row, i) => row.created_at_datetime, center: true},
-      {name: 'Request Status', selector: (row, i) => row.request_status, center: true},
+      {name: 'Street Address', selector: (row, i) => row.street_address1, center: true},
+      {name: 'City', selector: (row, i) => row.city, center: true}
     ];
 
     const inProgressRequestsColumns = [
@@ -92,10 +97,33 @@ export default function ConstructionManager() {
       setSelectedValue(event.target.value)
     };
 
+    const [selectedRows, setSelectedRows] = useState([]);
+    const handleRowSelected = (event) => {
+      setSelectedRows(event.selectedRows)
+    };
+
     const unassignedContextActions = useMemo(() => {
       const handleSelection = (val) => {
-        // TODO implement assigning requests to sitesurveyor
-        toast.warn(`You want to assign to ${val} but this feature has not been implemented yet!`)
+        const request_ids = selectedRows.map((row) => row.request_id)
+        const json = JSON.stringify({
+          site_syr: val,
+          request_ids: request_ids
+        });
+        axios
+          .post('https://o9hbedj0ne.execute-api.us-east-1.amazonaws.com/UAT', json, {
+            headers: {
+              "Content-Type": "application/json"
+            }
+          })
+          .then((response) => {
+            if (response && response.status === 200) {
+              toast.success(`Successfully assigned ${request_ids} to Site Surveyor: ${val}!`)
+            } else if (response && response.status in [400, 404]) {
+              toast.error('There was an error with your Request. Please contact IT for support.')
+            } else {
+              toast.error('There was an error with our services. Please try again later.')
+            }
+          })
         setShow(false)
       };
       return (
@@ -110,7 +138,7 @@ export default function ConstructionManager() {
               {
                 siteSurveyors &&
                 siteSurveyors.map(val => (
-                  <option key={val.const_mgr} value={val.const_mgr}> {val.const_mgr} </option>
+                  <option key={val.site_syr} value={val.site_syr}> {val.site_syr} </option>
                 ))
               }
             </Form.Select>
@@ -127,6 +155,16 @@ export default function ConstructionManager() {
       </>
       );
     });
+
+    const rowComponent = () => {
+      return (
+        <>
+          <Button variant="primary">
+            View Customer Pictures
+          </Button>
+        </>
+      );
+    };
 
     return (
         (roleId == 1) && isLoggedIn ?
@@ -171,6 +209,7 @@ export default function ConstructionManager() {
                     columns={unassignedRequestsColumns}
                     data={unassignedRequestData}
                     contextActions={unassignedContextActions}
+                    onSelectedRowsChange={handleRowSelected}
                     selectableRows
                     fixedHeader
                     />
@@ -183,12 +222,18 @@ export default function ConstructionManager() {
                     columns={inProgressRequestsColumns}
                     data={inProgressRequestData}
                     fixedHeader
-                    expandableRows
                     />
                 </MDBTabsPane>
                 
                 <MDBTabsPane show={verticalActive === 'tab3'}>
-                  show table 3
+                  <DataTable
+                    title=" "
+                    columns={unassignedRequestsColumns}
+                    data={unassignedRequestData}
+                    fixedHeader
+                    expandableRows
+                    expandableRowsComponent={rowComponent}
+                    />
                 </MDBTabsPane>
 
               </MDBTabsContent>
