@@ -1,6 +1,16 @@
 {
   "status": "done",
   "assets": {
+    "frontend-0c985d80b0bb3d530be6.js": {
+      "name": "frontend-0c985d80b0bb3d530be6.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-0c985d80b0bb3d530be6.js",
+      "publicPath": "static/solar/frontend-0c985d80b0bb3d530be6.js"
+    },
+    "frontend-483e73c5fe000f2e974f.js": {
+      "name": "frontend-483e73c5fe000f2e974f.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-483e73c5fe000f2e974f.js",
+      "publicPath": "static/solar/frontend-483e73c5fe000f2e974f.js"
+    },
     "frontend-6185ee50c88dfadeffe0.js": {
       "name": "frontend-6185ee50c88dfadeffe0.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-6185ee50c88dfadeffe0.js",
@@ -15,6 +25,11 @@
       "name": "frontend-7a9cde2a0b887791d4b7.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-7a9cde2a0b887791d4b7.js",
       "publicPath": "static/solar/frontend-7a9cde2a0b887791d4b7.js"
+    },
+    "frontend-867f33533ec0aaf8494b.js": {
+      "name": "frontend-867f33533ec0aaf8494b.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-867f33533ec0aaf8494b.js",
+      "publicPath": "static/solar/frontend-867f33533ec0aaf8494b.js"
     },
     "frontend-ab04d496a2918d04ccc9.js": {
       "name": "frontend-ab04d496a2918d04ccc9.js",
@@ -59,7 +74,7 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-7a9cde2a0b887791d4b7.js"
+      "frontend-483e73c5fe000f2e974f.js"
     ]
   },
   "publicPath": "static/solar/",

@@ -10,6 +10,7 @@ import UserRequestForm from '../pages/UserRequestForm';
 import Userprog from '../pages/Userprog';
 import { Operation } from '../pages/Operation';
 import OpManager from '../pages/OpManager';
+import CoCheck from '../pages/coCheck';
 import { AnimatePresence } from 'framer-motion';
 
 
@@ -33,7 +34,7 @@ function AnimatedRoutes() {
                 <Route exact path='/userreq' element={<UserRequestForm />} />
                 <Route exact path='/userprog' element={<Userprog />} />
                 <Route exact path='/oper' element={<Operation />} />
-
+                <Route exact path= '/coCheck' element={<CoCheck />}/>
 
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
