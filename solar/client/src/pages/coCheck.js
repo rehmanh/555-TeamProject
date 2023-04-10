@@ -1,4 +1,4 @@
-import SolarNavbar from '../pages/navbar'
+import SolarNavbar from './navbar'
 import React, { Component, useEffect, useState } from "react";
 import {
     MDBTabs,
