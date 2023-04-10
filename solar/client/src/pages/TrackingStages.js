@@ -38,19 +38,19 @@ export const TrackingStages = (props) => {
 
         <div
           className={`progress-step ${
-            normalizedFormStepsNum === 0 || normalizedFormStepsNum === 1 || normalizedFormStepsNum === 2 || normalizedFormStepsNum === 3 && "progress-step-active"
+            normalizedFormStepsNum === 0 && "progress-step-active" || normalizedFormStepsNum === 1 && "progress-step-active"|| normalizedFormStepsNum === 2 && "progress-step-active"|| normalizedFormStepsNum === 3 && "progress-step-active"
           }`}
           data-title="Stage 1"
         ></div>
         <div
           className={`progress-step ${
-            normalizedFormStepsNum === 1 || normalizedFormStepsNum === 2 || normalizedFormStepsNum === 3 && "progress-step-active"
+            normalizedFormStepsNum === 1 && "progress-step-active" || normalizedFormStepsNum === 2 && "progress-step-active"|| normalizedFormStepsNum === 3 && "progress-step-active"
           }`}
           data-title="Stage 2"
         ></div>
         <div
           className={`progress-step ${
-            normalizedFormStepsNum === 2 || normalizedFormStepsNum === 3 && "progress-step-active"
+            normalizedFormStepsNum === 2 && "progress-step-active" || normalizedFormStepsNum === 3 && "progress-step-active"
           }`}
           data-title="Stage 3"
         ></div>
