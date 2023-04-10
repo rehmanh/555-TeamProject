@@ -11,6 +11,11 @@
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-655a410261f75a5db3cb.js",
       "publicPath": "static/solar/frontend-655a410261f75a5db3cb.js"
     },
+    "frontend-7a9cde2a0b887791d4b7.js": {
+      "name": "frontend-7a9cde2a0b887791d4b7.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-7a9cde2a0b887791d4b7.js",
+      "publicPath": "static/solar/frontend-7a9cde2a0b887791d4b7.js"
+    },
     "frontend-ab04d496a2918d04ccc9.js": {
       "name": "frontend-ab04d496a2918d04ccc9.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-ab04d496a2918d04ccc9.js",
@@ -54,10 +59,10 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-6185ee50c88dfadeffe0.js"
+      "frontend-7a9cde2a0b887791d4b7.js"
     ]
   },
   "publicPath": "static/solar/",
   "error": "ModuleNotFoundError",
-  "message": "Module not found: Error: Can't resolve '../../../src/PrivateRoutes' in '/Users/harrisonshih/Desktop/git/555-TeamProject/solar/client/src/components'"
+  "message": "Module not found: Error: Can't resolve './OrderTable.css' in '/Users/harrisonshih/Desktop/git/555-TeamProject/solar/client/src/components'"
 }

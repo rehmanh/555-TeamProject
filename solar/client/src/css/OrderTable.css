@@ -1,0 +1,9 @@
+.otForm {
+    margin: 0 auto !important;
+    width: 100%;
+}
+
+.line {
+    border-top: 3px solid #ccc;
+    margin: 5px 0;
+}

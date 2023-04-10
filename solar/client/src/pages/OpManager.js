@@ -4,7 +4,7 @@ import axios from "axios";
 import PieChart from "../components/PieChart";
 import BarChart from "../components/BarChart";
 import LineChart from '../components/LineChart'
-import Table from '../components/Table';
+import OrderTable from '../components/OrderTable';
 import { motion } from 'framer-motion';
 import Calender from '../components/Calender';
 
@@ -121,7 +121,7 @@ export default function OpManager() {
           <MDBRow className="mt-4">
             <MDBCol sm={12}>
               <MDBCard>
-                <Table />
+                <OrderTable />
               </MDBCard>
             </MDBCol>
           </MDBRow>
