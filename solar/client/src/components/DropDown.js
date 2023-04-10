@@ -24,37 +24,41 @@ function Dropdown({ selectedRows }) {
     setSelectedValue(event.target.value);
   };
 
-  // useEffect(() => {
-  //   console.log(selectedValue);
-  // }, [selectedValue]);
+  useEffect(() => {
+    console.log(selectedValue);
+  }, [selectedValue]);
   
   // handle the form submission
   const handleSubmit = (event) => {
     event.preventDefault();
     const request_ids = selectedRows.map((row) => row.request_id);
 
-    const json = JSON.stringify({
-      request_ids: request_ids,
-      const_mgr: selectedValue
-    });
-    
-    axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
-    axios.defaults.xsrfCookieName = "csrftoken";
-    axios.post('https://c80q5wc5m0.execute-api.us-east-1.amazonaws.com/UAT', json, {
-      headers: {
-        "Content-Type": "application/json",
-      },
+    if (selectedValue.length > 0 && request_ids !== null && request_ids.length > 0) {
+      const json = JSON.stringify({
+        request_ids: request_ids,
+        const_mgr: selectedValue
+      });
+      
+      axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+      axios.defaults.xsrfCookieName = "csrftoken";
+      axios.post('https://c80q5wc5m0.execute-api.us-east-1.amazonaws.com/UAT', json, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((response) => {
+        console.log(response)
+        if (response && response.status === 200) {
+          toast.success(`Successfully assigned Requests to Construction manager: ${selectedValue}`)
+        } else if (response && response.status in [400, 404]) {
+          toast.error('There was an issue with your Request. Please contact IT for support.')
+        } else {
+          toast.error('There was an issue with the Request API. Please try again later.')
+        }
     })
-    .then((response) => {
-      console.log(response)
-      if (response && response.status === 200) {
-        toast.success(`Successfully assigned Requests to Construction manager: ${selectedValue}`)
-      } else if (response && response.status in [400, 404]) {
-        toast.error('There was an issue with your Request. Please contact IT for support.')
-      } else {
-        toast.error('There was an issue with the Request API. Please try again later.')
-      }
-    })
+  } else {
+    toast.error('Please use the checkboxes to specify which requests and assign the values to a construction manager.')
+  }
   };
   
   return (
@@ -62,7 +66,7 @@ function Dropdown({ selectedRows }) {
       <Form onSubmit={handleSubmit}>
       <h2>Construction managers</h2>
         <Form.Select value={selectedValue} onChange={handleSelect}>
-          <option value={null}>Select</option>
+          <option value={''}>Select</option>
           {values.map(value => (
             <option key={value.id} value={value.const_mgr}>{value.const_mgr}</option>
           ))}
