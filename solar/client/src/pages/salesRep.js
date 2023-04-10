@@ -54,6 +54,7 @@ export default function App() {
 
   const handleCheckboxSelection = (requests) => {
     setRequests(requests);
+    //console.log(requests);
   };
 
   const assignRequestToSalesRep = () => {

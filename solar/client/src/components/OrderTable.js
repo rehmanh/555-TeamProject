@@ -41,6 +41,9 @@ export default function OrderTable() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        const selectedItems = items.filter(item => item.quantity > 0);
+
+        console.log(selectedItems);
 
         // Submit the order to the backend API
         axios.post('/api/orders/', { items: selectedItems })
