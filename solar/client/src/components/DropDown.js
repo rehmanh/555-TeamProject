@@ -49,7 +49,7 @@ function Dropdown({ selectedRows }) {
       .then((response) => {
         console.log(response)
         if (response && response.status === 200) {
-          toast.success(`Successfully assigned Requests to Construction manager: ${selectedValue}`)
+          toast.success(`Successfully assigned ${request_ids} to Construction manager: ${selectedValue}`)
         } else if (response && response.status in [400, 404]) {
           toast.error('There was an issue with your Request. Please contact IT for support.')
         } else {
