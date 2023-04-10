@@ -11,12 +11,10 @@ import {
     MDBCheckbox,
     MDBBtn,
     MDBTextArea,
-    MDBRadio
 } from 'mdb-react-ui-kit';
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 import { toast } from 'react-toastify'
 import axios from 'axios';
-import './CoCheck.css';
 
 export default function CoCheck() {
     const [data, setData] = useState([]);
@@ -29,12 +27,10 @@ export default function CoCheck() {
     }, []);
 
     const [selectedData, setSelectedData] = useState([]);
-    // const [cost, setCost] = useState("");
-    // const [duration, setDuration] = useState("");
 
     const handleChange = (event, requestId) => {
         if (event.target.checked) {
-            selectedData.push({ request_id: requestId });
+            selectedData.push({ request_id: requestId, price_est: null, duration_est_days: null });
             setSelectedData(selectedData);
         } else {
             const index = selectedData.findIndex((r) => r.request_id === requestId)
@@ -70,6 +66,10 @@ export default function CoCheck() {
             return;
         }
         selectedData.map((item) => {
+            if (item.price_est === null || item.duration_est_days === null){
+                toast.error(`There was an issue with your Request ${item.request_id}. Try to enter values again.`);
+                return;
+            }
             const json = JSON.stringify({
                 request_id: item.request_id,
                 price_est: parseFloat(item.price_est),
