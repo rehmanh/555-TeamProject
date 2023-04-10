@@ -1,10 +1,35 @@
 {
   "status": "done",
   "assets": {
+    "frontend-6185ee50c88dfadeffe0.js": {
+      "name": "frontend-6185ee50c88dfadeffe0.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-6185ee50c88dfadeffe0.js",
+      "publicPath": "static/solar/frontend-6185ee50c88dfadeffe0.js"
+    },
+    "frontend-655a410261f75a5db3cb.js": {
+      "name": "frontend-655a410261f75a5db3cb.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-655a410261f75a5db3cb.js",
+      "publicPath": "static/solar/frontend-655a410261f75a5db3cb.js"
+    },
+    "frontend-ab04d496a2918d04ccc9.js": {
+      "name": "frontend-ab04d496a2918d04ccc9.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-ab04d496a2918d04ccc9.js",
+      "publicPath": "static/solar/frontend-ab04d496a2918d04ccc9.js"
+    },
+    "frontend-cd854d8ecdbeff3ff6a9.js": {
+      "name": "frontend-cd854d8ecdbeff3ff6a9.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-cd854d8ecdbeff3ff6a9.js",
+      "publicPath": "static/solar/frontend-cd854d8ecdbeff3ff6a9.js"
+    },
     "frontend-d4d2ead10c6bfbd29c5f.js": {
       "name": "frontend-d4d2ead10c6bfbd29c5f.js",
       "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-d4d2ead10c6bfbd29c5f.js",
       "publicPath": "static/solar/frontend-d4d2ead10c6bfbd29c5f.js"
+    },
+    "frontend-da43f3bba3ef61a44f1c.js": {
+      "name": "frontend-da43f3bba3ef61a44f1c.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-da43f3bba3ef61a44f1c.js",
+      "publicPath": "static/solar/frontend-da43f3bba3ef61a44f1c.js"
     },
     "images/Solar1.svg": {
       "name": "images/Solar1.svg",
@@ -29,8 +54,10 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-d4d2ead10c6bfbd29c5f.js"
+      "frontend-6185ee50c88dfadeffe0.js"
     ]
   },
-  "publicPath": "static/solar/"
+  "publicPath": "static/solar/",
+  "error": "ModuleNotFoundError",
+  "message": "Module not found: Error: Can't resolve '../../../src/PrivateRoutes' in '/Users/harrisonshih/Desktop/git/555-TeamProject/solar/client/src/components'"
 }

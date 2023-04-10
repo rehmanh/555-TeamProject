@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import PrivateRoutes from "../../../src/PrivateRoute"
+import {SaRoute, OpRoute} from "../../../src/PrivateRoute"
 import HomePage from '../pages/home';
 import SignUp from '../pages/signUp';
 import Login from '../pages/login';
@@ -18,9 +18,12 @@ function AnimatedRoutes() {
     return (
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
-                <Route element={<PrivateRoutes />}>
+                <Route element={<SaRoute />}>
                     <Route exact path='/userHome' element={<UserHome />} />
                     <Route exact path='/salesrep' element={<SalesRep />} />
+                </Route>
+                <Route element={<OpRoute />}>
+                    <Route exact path='/userHome' element={<UserHome />} />
                     <Route exact path='/opManager' element={<OpManager />} />
                 </Route>
                 <Route exact path='/' element={<HomePage />} />
