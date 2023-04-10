@@ -66,7 +66,7 @@ export default function CoCheck() {
             return;
         }
         selectedData.map((item) => {
-            if (item.price_est === null || item.duration_est_days === null){
+            if (item.price_est === null || item.duration_est_days === null) {
                 toast.error(`There was an issue with your Request ${item.request_id}. Try to enter values again.`);
                 return;
             }
@@ -82,7 +82,7 @@ export default function CoCheck() {
                         "Content-Type": "application/json",
                     },
                 })
-                .then(response => {console.log(response.data)})
+                .then(response => { console.log(response.data) })
                 .then((selectedData) => console.log(selectedData))
                 .catch((error) => console.log(error))
         })
