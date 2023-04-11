@@ -5,6 +5,7 @@ import Navbar from '../client/src/pages/navbar'
 import { ToastContainer } from 'react-toastify';
 import AnimatedRoutes from '../client/src/components/AnimatedRoutes';
 import UserNav from "../client/src/pages/navBarUser"
+import Footer from '../client/src/components/Footer'
 
 export default class App extends Component {
     constructor(props) {
