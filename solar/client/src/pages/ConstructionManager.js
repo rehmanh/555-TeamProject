@@ -47,6 +47,7 @@ export default function ConstructionManager() {
     const [unassignedRequestData, setUnassignedRequestData] = useState();
     const [inProgressRequestData, setInProgressRequestData] = useState();
     const [siteSurveyors, setSiteSurveyors] = useState();
+    const [completedRequests, setCompletedRequests] = useState()
 
     // function to pre-fetch the table data
     useEffect(() => {
@@ -58,16 +59,30 @@ export default function ConstructionManager() {
             },
             body: JSON.stringify({ "const_mgr": "C1" }) // TODO change to localStorage userID
           }), 
-          fetch("https://5qi3g62xfd.execute-api.us-east-1.amazonaws.com/UAT"), // all site surveyors available
-          fetch("https://8off7ckjwd.execute-api.us-east-1.amazonaws.com/UAT") // all in progress requests that have been assigned to a SS
+          fetch("https://5qi3g62xfd.execute-api.us-east-1.amazonaws.com/UAT"), // get all site surveyors
+          fetch("https://rjfvi098o7.execute-api.us-east-1.amazonaws.com/UAT", { // all requests assigned to SS by this conman
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ "const_mgr": "C1" }) // TODO change to localStorage userID
+          }), 
+          fetch("https://cbayjavixk.execute-api.us-east-1.amazonaws.com/UAT", { // all COMPLETED requests by SS
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ "const_mgr": "C1" })
+          }) 
         ])
-          .then(([unassignedRequestsResponse, siteSurveyorsResponse, inProgressRequestsResponse]) =>
-            Promise.all([unassignedRequestsResponse.json(), siteSurveyorsResponse.json(), inProgressRequestsResponse.json()])
+          .then(([unassignedRequestsResponse, siteSurveyorsResponse, inProgressRequestsResponse, completedRequestsResponse]) =>
+            Promise.all([unassignedRequestsResponse.json(), siteSurveyorsResponse.json(), inProgressRequestsResponse.json(), completedRequestsResponse.json()])
           )
-          .then(([dataUnassignedRequests, dataSiteSurveyors, dataInProgressRequests]) => {
+          .then(([dataUnassignedRequests, dataSiteSurveyors, dataInProgressRequests, dataCompletedRequests]) => {
             setUnassignedRequestData(dataUnassignedRequests)
             setSiteSurveyors(dataSiteSurveyors)
             setInProgressRequestData(dataInProgressRequests)
+            setCompletedRequests(dataCompletedRequests)
           })
     }, []);
 
@@ -81,15 +96,26 @@ export default function ConstructionManager() {
     const unassignedRequestsColumns = [
       {name: 'Request ID', selector: (row, i) => row.request_id, center: true },
       {name: 'First Name', selector: (row, i) => row.first_name, center: true},
-      {name: 'Street Address', selector: (row, i) => row.street_address1, center: true},
+      {name: 'Zip Code', selector: (row, i) => row.zip_code, center: true},
       {name: 'City', selector: (row, i) => row.city, center: true}
     ];
 
     const inProgressRequestsColumns = [
       {name: 'Request ID', selector: (row, i) => row.request_id, center: true},
       {name: 'Site Surveyor', selector: (row, i) => row.site_syr, center: true},
-      {name: 'Date of request', selector: (row, i) => row.created_at_datetime, center: true},
-      {name: 'Request Status', selector: (row, i) => row.request_status, center: true}
+      {name: 'First Name', selector: (row, i) => row.first_name, center: true}, 
+      {name: 'Street Address', selector: (row, i) => row.street_address1, center: true},
+      {name: 'Zip Code', selector: (row, i) => row.zip_code, center: true},
+      {name: 'City', selector: (row, i) => row.city, center: true}
+    ];
+
+    const completedRequestColumns = [
+      {name: 'Request ID', selector: (row, i) => row.request_id, center: true},
+      {name: 'Site Surveyor', selector: (row, i) => row.site_syr, center: true},
+      {name: 'First Name', selector: (row, i) => row.first_name, center: true}, 
+      {name: 'Street Address', selector: (row, i) => row.street_address1, center: true},
+      {name: 'Zip Code', selector: (row, i) => row.zip_code, center: true},
+      {name: 'City', selector: (row, i) => row.city, center: true}
     ];
 
     const [selectedValue, setSelectedValue] = useState('');
@@ -228,8 +254,8 @@ export default function ConstructionManager() {
                 <MDBTabsPane show={verticalActive === 'tab3'}>
                   <DataTable
                     title=" "
-                    columns={unassignedRequestsColumns}
-                    data={unassignedRequestData}
+                    columns={completedRequestColumns}
+                    data={completedRequests}
                     fixedHeader
                     expandableRows
                     expandableRowsComponent={rowComponent}
