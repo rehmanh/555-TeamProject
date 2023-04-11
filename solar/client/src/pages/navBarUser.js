@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Logout from "../components/Logout";
 
 
 export default class SolarNavbar extends Component {
@@ -52,18 +51,6 @@ export default class SolarNavbar extends Component {
                   About Us
                 </NavDropdown.Item>
               </NavDropdown>
-            </Nav>
-            <Nav>
-              {
-              this.state.isLoggedIn
-                ? <Logout />
-                : <Nav.Link href="/login">Log in</Nav.Link>
-              }
-              {
-                this.state.isLoggedIn && this.state.roleId === '1'
-                  ? <Nav.Link href="/admin">Administration</Nav.Link>
-                  : <></>
-              }
             </Nav>
           </Navbar.Collapse>
         </Container>

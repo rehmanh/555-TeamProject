@@ -12,7 +12,7 @@ import Container from 'react-bootstrap/Container'
 import { IconContext } from "react-icons";
 import { BsGoogle, BsFacebook, BsTwitter } from "react-icons/bs";
 import { motion } from 'framer-motion';
-import Navbar from '../pages/navbar';
+// import Navbar from '../pages/navbar';
 
 export default class Login extends Component {
   constructor(props) {
@@ -87,6 +87,7 @@ export default class Login extends Component {
       initial={{opacity: 0}}
       animate={{opacity: 1, transition: {duration: 1}}}
       exit={{opacity: 0 }}
+      style={{ height:'60rem' }}
       >
         
         {/* <div className="background-image"> */}
