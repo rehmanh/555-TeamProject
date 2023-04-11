@@ -1,64 +1,9 @@
 import React, { useState } from "react";
-import Navbar from "./navbar";
-// import { Form, Button, Row, Col } from 'react-bootstrap';
 import "../css/UserRequestForm.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from 'framer-motion'
-// const UserRequestForm = () => {
-//   const [name, setName] = useState('');
-//   const [email, setEmail] = useState('');
-//   const [message, setMessage] = useState('');
 
-//   const handleSubmit = (event) => {
-//     event.preventDefault();
-//     // Handle submission logic here
-//   };
-
-//   return (
-//     <div className="user-request-form">
-//       <h2>Submit a Request</h2>
-//       <Form onSubmit={handleSubmit}>
-//         <Row>
-//           <Col md={6}>
-//             <Form.Group controlId="name">
-//               <Form.Label>Name</Form.Label>
-//               <Form.Control
-//                 className="input-field"
-//                 type="text"
-//                 placeholder="Enter name"
-//                 value={name}
-//                 onChange={(event) => setName(event.target.value)}
-//               />
-//             </Form.Group>
-//           </Col>
-//           <Col md={6}>
-//             <Form.Group controlId="email">
-//               <Form.Label>Email address</Form.Label>
-//               <Form.Control
-//                 className="input-field"
-//                 type="email"
-//                 placeholder="Enter email"
-//                 value={email}
-//                 onChange={(event) => setEmail(event.target.value)}
-//               />
-//             </Form.Group>
-//           </Col>
-//         </Row>
-//         <Form.Group controlId="message">
-//           <Form.Label>Message</Form.Label>
-//           <Form.Control
-//             className="input-field"
-//             as="textarea"
-//             rows={3}
-//             value={message}
-//             onChange={(event) => setMessage(event.target.value)}
-//           />
-//         </Form.Group>
-//         <Button className="submit-btn" variant="primary" type="submit">
-//           Submit
-//         </Button>
-//       </Form>
 export default function UserRequestForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -164,7 +109,7 @@ export default function UserRequestForm() {
               id="firstName"
               name="firstName"
               value={firstName}
-              placeholder="example: John"
+              placeholder="Enter First Name"
               onChange={(e) => setFirstName(e.target.value)}
               required
             />
@@ -175,6 +120,7 @@ export default function UserRequestForm() {
               id="lastName"
               name="lastName"
               value={lastName}
+              placeholder="Enter Last Name"
               onChange={(e) => setLastName(e.target.value)}
               required
             />
@@ -185,6 +131,7 @@ export default function UserRequestForm() {
               id="emailAddress"
               name="emailAddress"
               value={email}
+              placeholder="Enter Email"
               onChange={(e) => setEmail(e.target.value)}
               required
             />
@@ -195,6 +142,7 @@ export default function UserRequestForm() {
               id="phoneNumber"
               name="phoneNumber"
               value={phone}
+              placeholder="Enter Phone Number"
               onChange={(e) => setPhone(e.target.value)}
               required
             />
@@ -205,6 +153,7 @@ export default function UserRequestForm() {
               id="streetAddress1"
               name="streetAddress1"
               value={streetAddress}
+              placeholder="Enter Street Address"
               onChange={(e) => setStreetAddress(e.target.value)}
               required
             />
@@ -215,6 +164,7 @@ export default function UserRequestForm() {
               id="city"
               name="city"
               value={city}
+              placeholder="Enter City"
               onChange={(e) => setCity(e.target.value)}
               required
             />
@@ -225,6 +175,7 @@ export default function UserRequestForm() {
               id="state"
               name="state"
               value={state}
+              placeholder="Enter State"
               onChange={(e) => setState(e.target.value)}
               required
             />
@@ -235,21 +186,11 @@ export default function UserRequestForm() {
               id="zipCode"
               name="zipCode"
               value={zipCode}
+              placeholder="Enter Zip Code"
               onChange={(e) => setZipCode(e.target.value)}
               required
             />
 
-            <label htmlFor="message">Message</label>
-            <textarea
-              type="text"
-              id="message"
-              rows={5}
-              cols={60}
-              name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            />
             <br></br>
             <br></br>
 

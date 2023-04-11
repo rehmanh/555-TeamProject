@@ -16,6 +16,8 @@ function TrackingInfo({ trackingId }) {
           method: "POST",
           body: JSON.stringify(requestData),
         });
+        //console.log(await response.json());
+        //request_id: '18b005ae-ba54-442b-886d-a10d6b175376', request_status: 'STAGE-1', sales_rep_ID: 2}
         const data = await response.json();
         setData(data);
       } catch (error) {
@@ -31,10 +33,10 @@ function TrackingInfo({ trackingId }) {
 
   if (!data) {
     return (
-      <div class="d-flex align-items-center">
+      <div className="d-flex align-items-center">
         <strong>Loading...</strong>
         <div
-          class="spinner-border ml-auto"
+          className="spinner-border ml-auto"
           role="status"
           aria-hidden="true"
         ></div>
