@@ -24,4 +24,5 @@
 ## NOTE
 - If your default `python` version is less than 3.9, then you might have to install a newer version of python. Alternatively you can try running `python3 manage.py runserver` and replace all instances of `python` with `python3`
 
+## AWS Backend
 Our AWS backend resources and code are currently not in sync with our Github repository. To allow the professor access to our AWS environment, we have shared the necessary credentials with them.
