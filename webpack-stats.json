@@ -1,5 +1,5 @@
 {
-  "status": "done",
+  "status": "error",
   "assets": {
     "frontend-047285fb024cba0bc175.js": {
       "name": "frontend-047285fb024cba0bc175.js",
@@ -479,5 +479,5 @@
   },
   "publicPath": "static/solar/",
   "error": "ModuleNotFoundError",
-  "message": "Module not found: Error: Can't resolve 'react-grid-layout' in 'C:\\Users\\user\\Desktop\\Final_project\\solar\\client\\src\\components'"
+  "message": "Module not found: SyntaxError: C:\\Users\\user\\Desktop\\Final_project\\package.json (directory description file): SyntaxError: Unexpected token < in JSON at position 689"
 }
