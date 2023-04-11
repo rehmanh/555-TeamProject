@@ -84,7 +84,11 @@
   },
   "chunks": {
     "frontend": [
+<<<<<<< HEAD
       "frontend-887d821e7d5cbfc316eb.js"
+=======
+      "frontend-8512e300fda86a405779.js"
+>>>>>>> d4b56a7c551b3753fb3ac08c06f6e485748b03d4
     ]
   },
   "publicPath": "static/solar/",
