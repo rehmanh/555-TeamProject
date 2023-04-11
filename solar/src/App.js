@@ -21,6 +21,7 @@ export default class App extends Component {
                 {location.pathname === '/userprog' || location.pathname === '/userreq' ? <UserNav /> : <Navbar />}
                 <Router>
                     <AnimatedRoutes />
+                    <Footer />
                 </Router>
             </>
         )

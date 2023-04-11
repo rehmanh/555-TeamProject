@@ -1,15 +1,75 @@
 {
   "status": "done",
   "assets": {
-    "frontend-2d3b42b27329a6becf9f.js": {
-      "name": "frontend-2d3b42b27329a6becf9f.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\user-progress-branch\\555-TeamProject\\solar\\static\\solar\\frontend-2d3b42b27329a6becf9f.js",
-      "publicPath": "static/solar/frontend-2d3b42b27329a6becf9f.js"
+    "frontend-0c985d80b0bb3d530be6.js": {
+      "name": "frontend-0c985d80b0bb3d530be6.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-0c985d80b0bb3d530be6.js",
+      "publicPath": "static/solar/frontend-0c985d80b0bb3d530be6.js"
     },
-    "frontend-8512e300fda86a405779.js": {
-      "name": "frontend-8512e300fda86a405779.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\user-progress-branch\\555-TeamProject\\solar\\static\\solar\\frontend-8512e300fda86a405779.js",
-      "publicPath": "static/solar/frontend-8512e300fda86a405779.js"
+    "frontend-483e73c5fe000f2e974f.js": {
+      "name": "frontend-483e73c5fe000f2e974f.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-483e73c5fe000f2e974f.js",
+      "publicPath": "static/solar/frontend-483e73c5fe000f2e974f.js"
+    },
+    "frontend-6185ee50c88dfadeffe0.js": {
+      "name": "frontend-6185ee50c88dfadeffe0.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-6185ee50c88dfadeffe0.js",
+      "publicPath": "static/solar/frontend-6185ee50c88dfadeffe0.js"
+    },
+    "frontend-655a410261f75a5db3cb.js": {
+      "name": "frontend-655a410261f75a5db3cb.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-655a410261f75a5db3cb.js",
+      "publicPath": "static/solar/frontend-655a410261f75a5db3cb.js"
+    },
+    "frontend-7a9cde2a0b887791d4b7.js": {
+      "name": "frontend-7a9cde2a0b887791d4b7.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-7a9cde2a0b887791d4b7.js",
+      "publicPath": "static/solar/frontend-7a9cde2a0b887791d4b7.js"
+    },
+    "frontend-867f33533ec0aaf8494b.js": {
+      "name": "frontend-867f33533ec0aaf8494b.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-867f33533ec0aaf8494b.js",
+      "publicPath": "static/solar/frontend-867f33533ec0aaf8494b.js"
+    },
+    "frontend-ab04d496a2918d04ccc9.js": {
+      "name": "frontend-ab04d496a2918d04ccc9.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-ab04d496a2918d04ccc9.js",
+      "publicPath": "static/solar/frontend-ab04d496a2918d04ccc9.js"
+    },
+    "frontend-cd854d8ecdbeff3ff6a9.js": {
+      "name": "frontend-cd854d8ecdbeff3ff6a9.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-cd854d8ecdbeff3ff6a9.js",
+      "publicPath": "static/solar/frontend-cd854d8ecdbeff3ff6a9.js"
+    },
+    "frontend-d4d2ead10c6bfbd29c5f.js": {
+      "name": "frontend-d4d2ead10c6bfbd29c5f.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-d4d2ead10c6bfbd29c5f.js",
+      "publicPath": "static/solar/frontend-d4d2ead10c6bfbd29c5f.js"
+    },
+    "frontend-da43f3bba3ef61a44f1c.js": {
+      "name": "frontend-da43f3bba3ef61a44f1c.js",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-da43f3bba3ef61a44f1c.js",
+      "publicPath": "static/solar/frontend-da43f3bba3ef61a44f1c.js"
+    },
+    "images/Solar1.svg": {
+      "name": "images/Solar1.svg",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/images/Solar1.svg",
+      "publicPath": "static/solar/images/Solar1.svg"
+    },
+    "images/Solar2.svg": {
+      "name": "images/Solar2.svg",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/images/Solar2.svg",
+      "publicPath": "static/solar/images/Solar2.svg"
+    },
+    "images/Solar3.svg": {
+      "name": "images/Solar3.svg",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/images/Solar3.svg",
+      "publicPath": "static/solar/images/Solar3.svg"
+    },
+    "images/Solar4.svg": {
+      "name": "images/Solar4.svg",
+      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/images/Solar4.svg",
+      "publicPath": "static/solar/images/Solar4.svg"
     }
   },
   "chunks": {
@@ -17,5 +77,7 @@
       "frontend-8512e300fda86a405779.js"
     ]
   },
-  "publicPath": "static/solar/"
+  "publicPath": "static/solar/",
+  "error": "ModuleNotFoundError",
+  "message": "Module not found: Error: Can't resolve './OrderTable.css' in '/Users/harrisonshih/Desktop/git/555-TeamProject/solar/client/src/components'"
 }

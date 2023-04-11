@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import PrivateRoutes from "../../../src/PrivateRoute"
+import {SaRoute, OpRoute} from "../../../src/PrivateRoute"
 import HomePage from '../pages/home';
 import SignUp from '../pages/signUp';
 import Login from '../pages/login';
@@ -10,6 +10,7 @@ import UserRequestForm from '../pages/UserRequestForm';
 import Userprog from '../pages/Userprog';
 import { Operation } from '../pages/Operation';
 import OpManager from '../pages/OpManager';
+import CoCheck from '../pages/coCheck';
 import { AnimatePresence } from 'framer-motion';
 
 
@@ -18,9 +19,12 @@ function AnimatedRoutes() {
     return (
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
-                <Route element={<PrivateRoutes />}>
+                <Route element={<SaRoute />}>
                     <Route exact path='/userHome' element={<UserHome />} />
                     <Route exact path='/salesrep' element={<SalesRep />} />
+                </Route>
+                <Route element={<OpRoute />}>
+                    <Route exact path='/userHome' element={<UserHome />} />
                     <Route exact path='/opManager' element={<OpManager />} />
                 </Route>
                 <Route exact path='/' element={<HomePage />} />
@@ -30,7 +34,7 @@ function AnimatedRoutes() {
                 <Route exact path='/userreq' element={<UserRequestForm />} />
                 <Route exact path='/userprog' element={<Userprog />} />
                 <Route exact path='/oper' element={<Operation />} />
-
+                <Route exact path= '/coCheck' element={<CoCheck />}/>
 
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
