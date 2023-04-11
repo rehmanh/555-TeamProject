@@ -34,6 +34,8 @@ import {
   MDBBtn
 } from 'mdb-react-ui-kit';
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
+import Scheduler from '../components/Scheduler';
+
 export default function OpManager() {
 
   return (
@@ -105,7 +107,7 @@ export default function OpManager() {
               <MDBRow >
                 <MDBCol>
                   <MDBCard>
-                    <PieChart />
+                    <Scheduler />
                   </MDBCard>
                 </MDBCol>
               </MDBRow>
