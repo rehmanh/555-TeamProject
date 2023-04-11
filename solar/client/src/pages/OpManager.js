@@ -7,7 +7,7 @@ import LineChart from '../components/LineChart'
 import OrderTable from '../components/OrderTable';
 import { motion } from 'framer-motion';
 import Calender from '../components/Calender';
-
+import CustomerTable from '../components/CustProgTable'
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
@@ -90,7 +90,7 @@ export default function OpManager() {
             </MDBCol>
           </MDBRow>
           <MDBRow className="mt-4">
-            <MDBCol sm='6'>
+            <MDBCol sm='10'>
               <MDBCard>
                 <Calender />
                 {/* <MDBCardBody>
@@ -101,25 +101,25 @@ export default function OpManager() {
               </MDBCardBody> */}
               </MDBCard>
             </MDBCol>
-            <MDBCol sm='6'>
+            <MDBCol sm='11'>
               <MDBRow >
                 <MDBCol>
                   <MDBCard>
-                    <PieChart />
+                    <CustomerTable />
                   </MDBCard>
                 </MDBCol>
               </MDBRow>
               <MDBRow className="mt-4">
                 <MDBCol>
                   <MDBCard>
-                    <LineChart />
+                    {/* <LineChart /> */}
                   </MDBCard>
                 </MDBCol>
               </MDBRow>
             </MDBCol>
           </MDBRow>
           <MDBRow className="mt-4">
-            <MDBCol sm={12}>
+            <MDBCol sm={11}>
               <MDBCard>
                 <OrderTable />
               </MDBCard>
