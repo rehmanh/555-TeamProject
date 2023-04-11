@@ -1,73 +1,36 @@
 {
   "status": "done",
   "assets": {
-    "frontend-229196c27ed4e79c3162.js": {
-      "name": "frontend-229196c27ed4e79c3162.js",
-      "path": "C:\\Users\\Kevin\\Desktop\\FinalProject\\solar\\static\\solar\\frontend-229196c27ed4e79c3162.js",
-      "publicPath": "static/solar/frontend-229196c27ed4e79c3162.js"
-    },
-    "frontend-35a6e8879d858bf16bf9.js": {
-      "name": "frontend-35a6e8879d858bf16bf9.js",
-      "path": "C:\\Users\\Kevin\\Desktop\\FinalProject\\solar\\static\\solar\\frontend-35a6e8879d858bf16bf9.js",
-      "publicPath": "static/solar/frontend-35a6e8879d858bf16bf9.js"
-    },
-    "frontend-45ece67a3f89639c5da5.js": {
-      "name": "frontend-45ece67a3f89639c5da5.js",
-      "path": "C:\\Users\\Kevin\\Desktop\\FinalProject\\solar\\static\\solar\\frontend-45ece67a3f89639c5da5.js",
-      "publicPath": "static/solar/frontend-45ece67a3f89639c5da5.js"
-    },
-    "frontend-701d7f4f89f1ce949e0a.js": {
-      "name": "frontend-701d7f4f89f1ce949e0a.js",
-      "path": "C:\\Users\\Kevin\\Desktop\\FinalProject\\solar\\static\\solar\\frontend-701d7f4f89f1ce949e0a.js",
-      "publicPath": "static/solar/frontend-701d7f4f89f1ce949e0a.js"
-    },
-    "frontend-79b32836ca6fe19934bb.js": {
-      "name": "frontend-79b32836ca6fe19934bb.js",
-      "path": "C:\\Users\\Kevin\\Desktop\\FinalProject\\solar\\static\\solar\\frontend-79b32836ca6fe19934bb.js",
-      "publicPath": "static/solar/frontend-79b32836ca6fe19934bb.js"
-    },
-    "frontend-89ef565fd47435395a2f.js": {
-      "name": "frontend-89ef565fd47435395a2f.js",
-      "path": "C:\\Users\\Kevin\\Desktop\\FinalProject\\solar\\static\\solar\\frontend-89ef565fd47435395a2f.js",
-      "publicPath": "static/solar/frontend-89ef565fd47435395a2f.js"
-    },
-    "frontend-d9b886512b08aa7e85c0.js": {
-      "name": "frontend-d9b886512b08aa7e85c0.js",
-      "path": "C:\\Users\\Kevin\\Desktop\\FinalProject\\solar\\static\\solar\\frontend-d9b886512b08aa7e85c0.js",
-      "publicPath": "static/solar/frontend-d9b886512b08aa7e85c0.js"
-    },
-    "frontend-f4a28187e32e33980772.js": {
-      "name": "frontend-f4a28187e32e33980772.js",
-      "path": "C:\\Users\\Kevin\\Desktop\\FinalProject\\solar\\static\\solar\\frontend-f4a28187e32e33980772.js",
-      "publicPath": "static/solar/frontend-f4a28187e32e33980772.js"
+    "frontend-abc8732297b3a734e25a.js": {
+      "name": "frontend-abc8732297b3a734e25a.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-abc8732297b3a734e25a.js",
+      "publicPath": "static/solar/frontend-abc8732297b3a734e25a.js"
     },
     "images/Solar1.svg": {
       "name": "images/Solar1.svg",
-      "path": "C:\\Users\\Kevin\\Desktop\\FinalProject\\solar\\static\\solar\\images\\Solar1.svg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar1.svg",
       "publicPath": "static/solar/images/Solar1.svg"
     },
     "images/Solar2.svg": {
       "name": "images/Solar2.svg",
-      "path": "C:\\Users\\Kevin\\Desktop\\FinalProject\\solar\\static\\solar\\images\\Solar2.svg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar2.svg",
       "publicPath": "static/solar/images/Solar2.svg"
     },
     "images/Solar3.svg": {
       "name": "images/Solar3.svg",
-      "path": "C:\\Users\\Kevin\\Desktop\\FinalProject\\solar\\static\\solar\\images\\Solar3.svg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar3.svg",
       "publicPath": "static/solar/images/Solar3.svg"
     },
     "images/Solar4.svg": {
       "name": "images/Solar4.svg",
-      "path": "C:\\Users\\Kevin\\Desktop\\FinalProject\\solar\\static\\solar\\images\\Solar4.svg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar4.svg",
       "publicPath": "static/solar/images/Solar4.svg"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-229196c27ed4e79c3162.js"
+      "frontend-abc8732297b3a734e25a.js"
     ]
   },
-  "publicPath": "static/solar/",
-  "error": "ModuleNotFoundError",
-  "message": "Module not found: Error: Package path ./main.css is not exported from package C:\\Users\\Kevin\\Desktop\\FinalProject\\node_modules\\@fullcalendar\\core (see exports field in C:\\Users\\Kevin\\Desktop\\FinalProject\\node_modules\\@fullcalendar\\core\\package.json)"
+  "publicPath": "static/solar/"
 }

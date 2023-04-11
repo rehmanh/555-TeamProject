@@ -4,6 +4,6 @@ import ImageRetrive from '../components/imageRetrive'
 
 export const Operation = () => {
   return (
-    <div><ImageRetrive /></div>
+    <div><ImgUp /></div>
   )
 }

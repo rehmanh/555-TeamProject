@@ -69,7 +69,7 @@ export default function ConstructionManager() {
             body: JSON.stringify({ "const_mgr": "C1" }) // TODO change to localStorage userID
           }), 
           fetch("https://5qi3g62xfd.execute-api.us-east-1.amazonaws.com/UAT"), // get all site surveyors
-          fetch("https://rjfvi098o7.execute-api.us-east-1.amazonaws.com/UAT", { // all requests assigned to SS by this conman
+          fetch("https://8ioy3ejwke.execute-api.us-east-1.amazonaws.com/UAT", { // all requests assigned to SS by this conman
             method: "POST",
             headers: {
               "Content-Type": "application/json"

@@ -31,8 +31,8 @@ export const ImgUp = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const requestData = {
-      request_id: "03b890ee-af19-438c-b8c7-51bce03b331a", // replace with props.request_id, assuming recieve the id from props
-      site_syr: "S22", // replace with props.site_syr , assuming recieve the id from props
+      request_id: "068ea108-87cc-4720-89f8-2aba3f0f4f95", // replace with props.request_id, assuming recieve the id from props
+      site_syr: "SS3", // replace with props.site_syr , assuming recieve the id from props
       site_survey_pic_1: image1,
       site_survey_pic_2: image2,
     };

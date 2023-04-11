@@ -6,7 +6,7 @@ import BarChart from "../components/BarChart";
 import LineChart from '../components/LineChart'
 import OrderTable from '../components/OrderTable';
 import { motion } from 'framer-motion';
-import Calender from '../components/Calender';
+//import Calender from '../components/Calender';
 import CustomerTable from '../components/CustProgTable'
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
@@ -91,10 +91,12 @@ export default function OpManager() {
               </MDBCard>
             </MDBCol>
           </MDBRow>
-          <MDBRow className="mt-4">
-            <MDBCol sm='10'>
+          <MDBRow className="mt-4 text-center">
+            <MDBCol sm='3'></MDBCol>
+            <MDBCol sm='6'>
               <MDBCard>
-                <Calender />
+                <Scheduler />
+                {/* <Calender /> */}
                 {/* <MDBCardBody>
                 <MDBCardTitle>New Requests</MDBCardTitle>
                 <MDBCardText>
@@ -103,31 +105,32 @@ export default function OpManager() {
               </MDBCardBody> */}
               </MDBCard>
             </MDBCol>
-            <MDBCol sm='11'>
+            <MDBCol sm='3'></MDBCol>
+            <MDBRow>&nbsp;</MDBRow>
+            <MDBCol sm='12'>
               <MDBRow >
                 <MDBCol>
                   <MDBCard>
-                    <Scheduler />
-                    {/* <CustomerTable /> */}
+                    <CustomerTable />
                   </MDBCard>
                 </MDBCol>
               </MDBRow>
               <MDBRow className="mt-4">
                 <MDBCol>
                   <MDBCard>
-                    {/* <LineChart /> */}
+                    
                   </MDBCard>
                 </MDBCol>
               </MDBRow>
             </MDBCol>
           </MDBRow>
-          <MDBRow className="mt-4">
+          {/* <MDBRow className="mt-4">
             <MDBCol sm={11}>
               <MDBCard>
                 <OrderTable />
               </MDBCard>
             </MDBCol>
-          </MDBRow>
+          </MDBRow> */}
         </MDBContainer>
       </div>
     </motion.div >
