@@ -362,89 +362,89 @@
 //         </div >
 //     );
 // };
-
+// 
 // export default Calendar;
 
-// import React, { useState, useEffect, useRef } from 'react';
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
-// import FullCalendar from '@fullcalendar/react';
-// import dayGridPlugin from '@fullcalendar/daygrid';
-// import timeGridPlugin from '@fullcalendar/timegrid';
-// // import '@fullcalendar/core/main.css';
-// // import '@fullcalendar/daygrid/main.css';
-// // import '@fullcalendar/timegrid/main.css';
+import React, { useState, useEffect, useRef } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import FullCalendar from '@fullcalendar/react';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import timeGridPlugin from '@fullcalendar/timegrid';
+// import '@fullcalendar/core/main.css';
+// import '@fullcalendar/daygrid/main.css';
+// import '@fullcalendar/timegrid/main.css';
 
-// export default function Scheduler() {
-//     const calendarRef = useRef(null); 
-//     const [requests, setRequests] = useState([]);
+export default function Scheduler() {
+    const calendarRef = useRef(null); 
+    const [requests, setRequests] = useState([]);
 
-//     useEffect(() => {
-//         const fetchRequests = async () => {
-//             try {
-//                 const response = await fetch('https://m90c2ol29g.execute-api.us-east-1.amazonaws.com/UAT');
-//                 if (response.ok) {
-//                     const data = await response.json();
-//                     setRequests(data);
-//                 } else {
-//                     console.error('Failed to fetch requests:', response.statusText);
-//                 }
-//             } catch (error) {
-//                 console.error('Error:', error);
-//             }
-//         };
+    useEffect(() => {
+        const fetchRequests = async () => {
+            try {
+                const response = await fetch('https://5art9sh86i.execute-api.us-east-1.amazonaws.com/UAT');
+                if (response.ok) {
+                    const data = await response.json();
+                    setRequests(data);
+                } else {
+                    console.error('Failed to fetch requests:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        };
 
-//         fetchRequests();
-//     }, []);
-
-
-//     const handleEventClick = (eventInfo) => {
-//         const requestId = eventInfo.event.extendedProps.requestId;
-//         fetch(`https://your-api-endpoint/${requestId}`, {
-//             method: 'PUT',
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             },
-//             body: JSON.stringify({ /* Update request data */ })
-//         })
-//             .then(response => {
-//                 if (response.ok) {
-//                     toast.success('Request modified successfully!');
-//                     // Refresh the FullCalendar to reflect the changes
-//                     calendarRef.current.getApi().refetchEvents();
-//                 } else {
-//                     alert('Failed to modify request. Please try again.');
-//                 }
-//             })
-//             .catch(error => {
-//                 // Error handling
-//                 console.error('Error:', error);
-//                 alert('Failed to modify request. Please try again.');
-//             });
-//     };
-
-//     return (
-//         <div>
-//             <FullCalendar
-//                 ref={calendarRef}
-//                 plugins={[dayGridPlugin, timeGridPlugin]}
-//                 initialView="dayGridMonth"
-//                 events={requests.map(request => ({
-//                     title: `Request ID: ${request.request_id}`,
-//                     start: request.pref_install_start_date,
-//                     end: request.pref_install_end_date,
-//                     extendedProps: {
-//                         requestId: request.request_id
-//                     }
-//                 }))}
-//                 eventClick={handleEventClick}
-//             />
-//             <ToastContainer />
-//         </div>
-//     );
-// }
+        fetchRequests();
+    }, []);
 
 
+    // const handleEventClick = (eventInfo) => {
+    //     const requestId = eventInfo.event.extendedProps.requestId;
+    //     fetch(`https://dummyapi/${requestId}`, {
+    //         method: 'PUT',
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify({ /* Update request data */ })
+    //     })
+    //         .then(response => {
+    //             if (response.ok) {
+    //                 toast.success('Request modified successfully!');
+    //                 // Refresh the FullCalendar to reflect the changes
+    //                 calendarRef.current.getApi().refetchEvents();
+    //             } else {
+    //                 alert('Failed to modify request. Please try again.');
+    //             }
+    //         })
+    //         .catch(error => {
+    //             // Error handling
+    //             console.error('Error:', error);
+    //             alert('Failed to modify request. Please try again.');
+    //         });
+    // };
+
+    return (
+        <div>
+            <FullCalendar
+                ref={calendarRef}
+                plugins={[dayGridPlugin, timeGridPlugin]}
+                initialView="dayGridMonth"
+                events={requests.map(request => ({
+                    title: `Request ID: ${request.request_id}`,
+                    start: request.pref_install_start_date,
+                    end: request.pref_install_end_date,
+                    extendedProps: {
+                        requestId: request.request_id
+                    }
+                }))}
+                eventClick={handleEventClick}
+            />
+            <ToastContainer />
+        </div>
+    );
+}
+
+//Draggaging cards test
 // import React from 'react';
 // import { Responsive, WidthProvider } from 'react-grid-layout';
 // import 'react-grid-layout/css/styles.css';
