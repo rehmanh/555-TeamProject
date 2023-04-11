@@ -20,6 +20,7 @@ import DataTable from 'react-data-table-component';
 import { Button, Modal, Form } from 'react-bootstrap';
 import { getUserFullName } from '../utils/utils';
 import axios from 'axios';
+import ImageRetrieve from '../components/imageRetrive';
 
 
 export default function ConstructionManager() {
@@ -42,6 +43,14 @@ export default function ConstructionManager() {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShowModal = () => setShow(true);
+
+    const [showImages, setShowImages] = useState(false);
+    const handleCloseImages = () => setShowImages(false);
+    const handleShowImages = () => setShowImages(true);
+
+    const [showEstimates, setShowEstimates] = useState(false);
+    const handleCloseEstimates = () => setShowEstimates(false);
+    const handleShowEstimates = () => setShowEstimates(true);
 
     // create state variables for the 3 tables that need to be shown, in order
     const [unassignedRequestData, setUnassignedRequestData] = useState();
@@ -182,15 +191,92 @@ export default function ConstructionManager() {
       );
     });
 
-    const rowComponent = () => {
+    const ExpandedComponent = ({data}) => {
+
+      const json = {
+        request_id: data.request_id
+      }
+
+      const handleEstimateUpdated = () => {
+        axios
+          .post("https://vlcfbqye7a.execute-api.us-east-1.amazonaws.com/UAT", JSON.stringify(json), {
+              headers: {
+                  "Content-Type": "application/json",
+              }
+          })
+          .then((response) => { 
+            if (response && response.status === 200) {
+              toast.success(`Successfully updated price estimate and duration estimate for request: ${data.request_id}!`)
+            } else if (response && response.status in [400, 404]) {
+              toast.error('There was an error with your Request. Please contact IT for support.')
+            } else {
+              toast.error('There was an error with our services. Please try again later.')
+            }
+          })
+          .catch((error) => console.log(error))
+        setShowEstimates(false)
+      }
+
+      const handleCostChange = (event) => {
+        const value = event.target.value;
+        json.price_est = value;
+      };
+
+      const handleDurationChange = (event) => {
+        const value = event.target.value;
+        json.duration_est_days = value;
+      };
+
       return (
         <>
-          <Button variant="primary">
-            View Customer Pictures
-          </Button>
+        <MDBRow center style={{padding: "5px"}}>
+        <MDBCol size='3'></MDBCol>
+        <MDBCol size='6' style={{textAlign: "center"}}>
+          <Button variant="primary" onClick={handleShowImages}>View Customer Images</Button>
+          &nbsp;
+          <Button variant="primary" onClick={handleShowEstimates}>Add Estimates To Request</Button>
+
+          <Modal show={showImages} onHide={handleCloseImages}>
+            <Modal.Body>
+              <ImageRetrieve request={data.request_id} />
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleCloseImages}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
+
+          <Modal show={showEstimates} onHide={handleCloseEstimates}>
+            <Modal.Body>
+              
+                <Form.Group className="mb-3">
+                  <Form.Label>Price Estimate</Form.Label>
+                  <Form.Control type="number" placeholder="Enter price estimate ($)" onChange={(e) => {handleCostChange(e)}} />
+                </Form.Group>
+
+                <Form.Group className="mb-3">
+                  <Form.Label>Duration Estimate</Form.Label>
+                  <Form.Control type="number" placeholder="Enter estimated duration (days)" onChange={(e) => {handleDurationChange(e)}} />
+                </Form.Group>
+              
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleCloseEstimates}>
+                Close
+              </Button>
+              <Button variant="primary" onClick={() => handleEstimateUpdated()}>
+                Submit
+              </Button>
+            </Modal.Footer>
+          </Modal>
+          
+        </MDBCol>
+        <MDBCol size='3'></MDBCol>
+        </MDBRow>
         </>
       );
-    };
+    }; 
 
     return (
         (roleId == 1) && isLoggedIn ?
@@ -258,7 +344,7 @@ export default function ConstructionManager() {
                     data={completedRequests}
                     fixedHeader
                     expandableRows
-                    expandableRowsComponent={rowComponent}
+                    expandableRowsComponent={ ExpandedComponent }
                     />
                 </MDBTabsPane>
 

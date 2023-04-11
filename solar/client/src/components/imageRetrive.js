@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-function ImageRetrieve(props) {
+function ImageRetrieve({request}) {
   const [imageUrls, setImageUrls] = useState([]);
 
   useEffect(() => {
-    const requestData = { request_id: "03b890ee-af19-438c-b8c7-51bce03b331a" }; //use props.request_id, assuming you are recieving the id from props
+    const requestData = { request_id: request}; //use props.request_id, assuming you are recieving the id from props
     fetch("https://z23a6r2xk2.execute-api.us-east-1.amazonaws.com/UAT", {
       method: "POST",
       body: JSON.stringify(requestData),
