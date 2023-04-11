@@ -1,6 +1,7 @@
 from .test_setup import TestSetUp
 from ..models import User
-
+import responses
+import requests
 
 class TestViews(TestSetUp):
     def test_invalid_login(self):
@@ -134,3 +135,14 @@ class TestViews(TestSetUp):
             # Assert
             #self.assertEqual(res.status_code, 200)
             pass
+    
+    def test_get_site_surveyors(self):
+        # assemble
+        res = requests.get("https://bkpqz1ao2e.execute-api.us-east-1.amazonaws.com/UAT")
+        # act
+        # assert
+        self.assertEqual(res.status_code, 200)
+
+    def test_get_construction_managers(self):
+        res = requests.get("https://5qi3g62xfd.execute-api.us-east-1.amazonaws.com/UAT")
+        self.assertEqual(res.status_code, 200)
