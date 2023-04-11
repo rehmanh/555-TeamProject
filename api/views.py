@@ -31,5 +31,7 @@ class UserLoginView(KnoxLoginView):
         resp = super(UserLoginView, self).post(request, format=None)
         resp.data['roleId'] = user.role
         resp.data['userId'] = user.id
+        resp.data['firstName'] = user.first_name
+        resp.data['lastName'] = user.last_name
         return Response({"data": resp.data})
         

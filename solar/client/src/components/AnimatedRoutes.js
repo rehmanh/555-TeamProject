@@ -11,6 +11,7 @@ import Userprog from '../pages/Userprog';
 import { Operation } from '../pages/Operation';
 import OpManager from '../pages/OpManager';
 import CoCheck from '../pages/coCheck';
+import ConstructionManager from '../pages/ConstructionManager';
 import { AnimatePresence } from 'framer-motion';
 
 
@@ -26,6 +27,7 @@ function AnimatedRoutes() {
                 <Route element={<OpRoute />}>
                     <Route exact path='/userHome' element={<UserHome />} />
                     <Route exact path='/opManager' element={<OpManager />} />
+                    <Route exact path='/constructionManager' element={<ConstructionManager />} />
                 </Route>
                 <Route exact path='/' element={<HomePage />} />
                 <Route exact path='/login' element={<Login />} />
