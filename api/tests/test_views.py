@@ -2,6 +2,7 @@ from .test_setup import TestSetUp
 from ..models import User
 import responses
 import requests
+import json
 
 class TestViews(TestSetUp):
     def test_invalid_login(self):
@@ -146,3 +147,31 @@ class TestViews(TestSetUp):
     def test_get_construction_managers(self):
         res = requests.get("https://5qi3g62xfd.execute-api.us-east-1.amazonaws.com/UAT")
         self.assertEqual(res.status_code, 200)
+
+    def test_customer_table(self):
+        res = requests.get("https://m90c2ol29g.execute-api.us-east-1.amazonaws.com/UAT")
+        self.assertEqual(res.status_code, 200)
+
+    def test_assign_const_mgr(self):
+        user_data = {
+            "request_ids": ["a02f325c-9f79-448b-9755-3d8000286b1f", "30d1a685-ba3b-4072-8487-799dc157a552"]
+            }
+        
+        res = self.client.post("https://c80q5wc5m0.execute-api.us-east-1.amazonaws.com/UAT", data=user_data)
+        self.assertEqual(res.status_code, 404)
+
+    def test_assign_const_mgr2(self):
+        user_data = {
+            }
+        
+        res = self.client.post("https://c80q5wc5m0.execute-api.us-east-1.amazonaws.com/UAT", data=user_data)
+        self.assertEqual(res.status_code, 404)
+
+    def test_fecth_const_mgr(self):
+        user_data = {
+            "const_mgr": "C1"
+            }
+        
+        res = self.client.post("https://szmu1lpz65.execute-api.us-east-1.amazonaws.com/UAT", data=user_data)
+        self.assertEqual(res.status_code, 404)
+    
