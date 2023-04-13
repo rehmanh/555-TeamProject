@@ -169,8 +169,11 @@ export default function ConstructionManager() {
 
         <Modal show={show} onHide={handleClose}>
           <Modal.Body>
+            
             <Form.Select value={selectedValue} onChange={handleDropDownChanged}>
+            <option>Select</option>
               {
+
                 siteSurveyors &&
                 siteSurveyors.map(val => (
                   <option key={val.site_syr} value={val.site_syr}> {val.site_syr} </option>
