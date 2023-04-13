@@ -15,7 +15,8 @@ import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 import { toast } from 'react-toastify'
 import axios from 'axios';
 import { Navigate } from 'react-router-dom';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
+import { Button } from 'react-bootstrap';
 
 export default function App() {
   const [verticalActive, setVerticalActive] = useState('tab1');
@@ -147,7 +148,7 @@ export default function App() {
                     <MDBTableHead dark>
                       <tr>
                         <th scope='col'>
-                          <MDBBtn rounded color='success' type='submit' onClick={assignRequestToSalesRep}>Submit</MDBBtn>
+                          <Button variant="primary" type='submit' onClick={assignRequestToSalesRep}>Submit</Button>
                         </th>
                         <th>
                           <span style={{ float: 'left' }}>Customer's Request ID</span>
@@ -157,7 +158,7 @@ export default function App() {
                         </th>
                         <th>
                           <span style={{ float: 'left' }}>Customer's city</span>
-                          <span style={{ float: 'right' }}><MDBBtn>Refresh</MDBBtn></span>
+                          <span style={{ float: 'right' }}><Button variant="success">Refresh</Button></span>
                         </th>
                       </tr>
                     </MDBTableHead>

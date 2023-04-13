@@ -7,9 +7,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { ReactDOM } from "react";
 import { BrowserRouter } from "react-router-dom";
 
-// const root = createRoot(document.getElementById("app"));
-// root.render(<App />);
-
 ReactDOM.render(
     <BrowserRouter>
         <App />

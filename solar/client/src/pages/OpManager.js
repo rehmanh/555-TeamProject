@@ -8,10 +8,6 @@ import OrderTable from '../components/OrderTable';
 import { motion } from 'framer-motion';
 //import Calender from '../components/Calender';
 import CustomerTable from '../components/CustProgTable'
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-// import Card from 'react-bootstrap/Card';
 import '../css/opManager.css'
 import { toast } from 'react-toastify'
 import '../css//UserRequestForm.css'
@@ -29,14 +25,20 @@ import {
   MDBTabsLink,
   MDBTabsContent,
   MDBTabsPane,
-
   MDBCheckbox,
   MDBBtn
 } from 'mdb-react-ui-kit';
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 import Scheduler from '../components/Scheduler';
+import { getUserFullName } from '../utils/utils';
 
 export default function OpManager() {
+
+  const [fullUserName, setFullUserName] = useState('');
+
+  useEffect(() => {
+    setFullUserName(getUserFullName)
+  }, []); 
 
   return (
     <motion.div
@@ -46,7 +48,7 @@ export default function OpManager() {
     >
       {/* <Navbar /> */}
       <h1>
-        Welcome back Operation Manager!
+        Welcome Back {fullUserName}
       </h1>
       <div className='opPage'>
 

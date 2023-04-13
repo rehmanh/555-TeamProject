@@ -1,12 +1,6 @@
 import { Outlet, Navigate } from 'react-router-dom'
 import React, { useState } from "react";
 
-// const [isLoggedIn] = useState(localStorage !== null
-//     && localStorage.getItem('token') !== null
-//     && localStorage.getItem('roleId') !== null
-//     && localStorage.getItem('userId') !== null);
-// const [roleId] = useState(localStorage.getItem('roleId'));
-
 const SaRoute = () => {
     const [isLoggedIn] = useState(localStorage !== null
         && localStorage.getItem('token') !== null
