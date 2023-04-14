@@ -17,7 +17,7 @@ import {
 import { motion } from 'framer-motion';
 import { toast } from 'react-toastify'
 import DataTable from 'react-data-table-component';
-import { Button, Modal, Form } from 'react-bootstrap';
+import { Button, Modal, Form, InputGroup } from 'react-bootstrap';
 import { getUserFullName } from '../utils/utils';
 import axios from 'axios';
 import ImageRetrieve from '../components/imageRetrive';
@@ -195,11 +195,12 @@ export default function ConstructionManager() {
     });
 
     const ExpandedComponent = ({data}) => {
-
       const json = {
-        request_id: data.request_id
+        request_id: data.request_id,
+        email_address: data.email_address,
+        first_name: data.first_name
       }
-
+      
       const handleEstimateUpdated = () => {
         axios
           .post("https://vlcfbqye7a.execute-api.us-east-1.amazonaws.com/UAT", JSON.stringify(json), {
@@ -253,15 +254,15 @@ export default function ConstructionManager() {
           <Modal show={showEstimates} onHide={handleCloseEstimates}>
             <Modal.Body>
               
-                <Form.Group className="mb-3">
-                  <Form.Label>Price Estimate</Form.Label>
-                  <Form.Control type="number" placeholder="Enter price estimate ($)" onChange={(e) => {handleCostChange(e)}} />
-                </Form.Group>
+                <InputGroup className="mb-3">
+                  <Form.Control type="number" placeholder="Enter price estimate" onChange={(e) => {handleCostChange(e)}} />
+                  <InputGroup.Text id="basic-addon2">USD ($)</InputGroup.Text>
+                </InputGroup>
 
-                <Form.Group className="mb-3">
-                  <Form.Label>Duration Estimate</Form.Label>
-                  <Form.Control type="number" placeholder="Enter estimated duration (days)" onChange={(e) => {handleDurationChange(e)}} />
-                </Form.Group>
+                <InputGroup className="mb-3">
+                  <Form.Control type="number" placeholder="Enter estimated duration" onChange={(e) => {handleDurationChange(e)}} />
+                  <InputGroup.Text id="basic-addon2">Num. Working Days</InputGroup.Text>
+                </InputGroup>
               
             </Modal.Body>
             <Modal.Footer>
