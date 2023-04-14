@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
-export const ImgUp = (props) => {
+export const ImgUp = ({request, siteSurveyor}) => {
   const [image1, setImage1] = useState("");
   const [image2, setImage2] = useState("");
 
@@ -14,7 +14,7 @@ export const ImgUp = (props) => {
     reader.readAsDataURL(file);
     reader.onload = () => {
       setImage1(reader.result.split(",")[1]);
-      console.log(reader.result.split(",")[1]);
+      //console.log(reader.result.split(",")[1]);
     };
   };
 
@@ -24,15 +24,15 @@ export const ImgUp = (props) => {
     reader.readAsDataURL(file);
     reader.onload = () => {
       setImage2(reader.result.split(",")[1]);
-      console.log(`Image 2 selected: ${file.name}`);
+      //console.log(`Image 2 selected: ${file.name}`);
     };
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const requestData = {
-      request_id: "51da88cb-6168-4265-aa6b-7549606aba29", // replace with props.request_id, assuming recieve the id from props
-      site_syr: "SS2", // replace with props.site_syr , assuming recieve the id from props
+      request_id: request, 
+      site_syr: siteSurveyor,
       site_survey_pic_1: image1,
       site_survey_pic_2: image2,
     };
@@ -47,14 +47,13 @@ export const ImgUp = (props) => {
         toast.success(data);
       })
       .catch((error) => {
-        console.error(error);
+        console.log(error);
         toast.error(error);
       });
   };
 
   return (
     <>
-      <Form onSubmit={handleSubmit}>
         <Form.Group controlId="image1" className="mb-3">
           <Form.Label>Image 1</Form.Label>
           <Form.Control
@@ -71,11 +70,9 @@ export const ImgUp = (props) => {
             onChange={handleImage2Change}
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" onClick={handleSubmit}>
           Submit
         </Button>
-      </Form>
-      <ToastContainer />
     </>
   );
 };

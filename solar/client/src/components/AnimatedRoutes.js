@@ -12,6 +12,7 @@ import { Operation } from '../pages/Operation';
 import OpManager from '../pages/OpManager';
 import CoCheck from '../pages/coCheck';
 import ConstructionManager from '../pages/ConstructionManager';
+import SiteSurveyor from '../pages/SiteSurveyor';
 import { AnimatePresence } from 'framer-motion';
 
 
@@ -37,6 +38,7 @@ function AnimatedRoutes() {
                 <Route exact path='/userprog' element={<Userprog />} />
                 <Route exact path='/oper' element={<Operation />} />
                 <Route exact path= '/coCheck' element={<CoCheck />}/>
+                <Route exact path= '/siteSurveyor' element={<SiteSurveyor />}/>
 
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
