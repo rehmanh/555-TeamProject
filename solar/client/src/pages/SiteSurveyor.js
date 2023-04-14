@@ -14,6 +14,7 @@ import DataTable from 'react-data-table-component';
 import { Button, Modal, Form, InputGroup } from 'react-bootstrap';
 import { getUserFullName } from '../utils/utils';
 import { ImgUp } from '../components/imageUpload';
+import ImageRetrieve from '../components/imageRetrive'
 
 
 export default function SiteSurveyor() {
@@ -38,8 +39,16 @@ export default function SiteSurveyor() {
     const handleCloseImages = () => setShowImages(false);
     const handleShowImages = () => setShowImages(true);
 
+    // modal 2 stuff
+    const [showImages2, setShowImages2] = useState(false);
+    const handleCloseImages2 = () => setShowImages2(false);
+    const handleShowImages2 = () => setShowImages2(true);
+
     // data for table 1
     const [newRequestData, setNewRequestData] = useState();
+
+    // data for table 2
+    const [updateRequestData, setUpdatedRequestData] = useState();
 
 
     // function to pre-fetch the table data
@@ -51,14 +60,22 @@ export default function SiteSurveyor() {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({ "site_syr": "SS1" }) //TODO: change this to userID
+            }),
+            fetch("https://xzddl2hpsg.execute-api.us-east-1.amazonaws.com/UAT", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify({ "site_syr": "SS1" }) //TODO: change this to userID
             })
         ])
-        .then(([newRequestsDataResponse]) => 
-            Promise.all([newRequestsDataResponse.json()])
+        .then(([newRequestsDataResponse, updateRequestDataResponse]) => 
+            Promise.all([newRequestsDataResponse.json(), updateRequestDataResponse.json()])
         )
-        .then(([dataNewRequests]) =>
+        .then(([dataNewRequests, dataUpdateRequest]) => {
             setNewRequestData(dataNewRequests)
-        )
+            setUpdatedRequestData(dataUpdateRequest)
+    })
     }, []);
 
     const handleVerticalClick = (value = String) => {
@@ -76,6 +93,14 @@ export default function SiteSurveyor() {
         {name: 'Zip Code', selector: (row, i) => row.zip_code, center: true}
     ];
 
+    const updatedRequestsColumns = [
+      {name: 'Request ID', selector: (row, i) => row.request_id, center: true },
+      {name: 'First Name', selector: (row, i) => row.first_name, center: true},
+      {name: 'Status', selector: (row, i) => row.request_status, center: true},
+      {name: 'Street Address', selector: (row, i) => row.street_address1, center: true},
+      {name: 'Zip Code', selector: (row, i) => row.zip_code, center: true}
+  ];
+
     const ExpandedComponent = ({data}) => {
       return (
         <>
@@ -87,6 +112,27 @@ export default function SiteSurveyor() {
           <Modal show={showImages} onHide={handleCloseImages}>
             <Modal.Body>
               <ImgUp request={data.request_id} siteSurveyor={"SS1"} /> {/* TODO change hardcoded value */}
+            </Modal.Body>
+          </Modal>
+          
+        </MDBCol>
+        <MDBCol size='3'></MDBCol>
+        </MDBRow>
+        </>
+      );
+    }; 
+
+    const ExpandedComponent2 = ({data}) => {
+      return (
+        <>
+        <MDBRow center style={{padding: "5px"}}>
+        <MDBCol size='3'></MDBCol>
+        <MDBCol size='6' style={{textAlign: "center"}}>
+          <Button variant="primary" onClick={handleShowImages2}>View Customer Images</Button>
+
+          <Modal show={showImages2} onHide={handleCloseImages2}>
+            <Modal.Body>
+              <ImageRetrieve request={data.request_id} /> {/* TODO change hardcoded value */}
             </Modal.Body>
           </Modal>
           
@@ -142,13 +188,14 @@ export default function SiteSurveyor() {
 
                 {/* Completed Requests*/}
                 <MDBTabsPane show={verticalActive === 'tab2'}>
-                    Completed Requests
-                  {/* <DataTable
+                  <DataTable
                     title=" "
-                    columns={inProgressRequestsColumns}
-                    data={inProgressRequestData}
+                    columns={updatedRequestsColumns}
+                    data={updateRequestData}
                     fixedHeader
-                    /> */}
+                    expandableRows
+                    expandableRowsComponent={ExpandedComponent2}
+                    />
                 </MDBTabsPane>
 
               </MDBTabsContent>
