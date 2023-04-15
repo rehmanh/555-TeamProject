@@ -13,7 +13,7 @@ import OpManager from '../pages/OpManager';
 import CoCheck from '../pages/coCheck';
 import ConstructionManager from '../pages/ConstructionManager';
 import { AnimatePresence } from 'framer-motion';
-
+import Scheduling from '../pages/scheduling';
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -37,7 +37,7 @@ function AnimatedRoutes() {
                 <Route exact path='/userprog' element={<Userprog />} />
                 <Route exact path='/oper' element={<Operation />} />
                 <Route exact path= '/coCheck' element={<CoCheck />}/>
-
+                <Route exact path= '/scheduling' element={<Scheduling />}/>
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
         </AnimatePresence>
