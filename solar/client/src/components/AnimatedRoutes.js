@@ -14,7 +14,9 @@ import CoCheck from '../pages/coCheck';
 import ConstructionManager from '../pages/ConstructionManager';
 import { AnimatePresence } from 'framer-motion';
 import Payment from '../pages/payment';
-
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+const stripePromise = loadStripe('your_stripe_public_key');
 function AnimatedRoutes() {
     const location = useLocation();
     return (
@@ -37,7 +39,7 @@ function AnimatedRoutes() {
                 <Route exact path='/userprog' element={<Userprog />} />
                 <Route exact path='/oper' element={<Operation />} />
                 <Route exact path= '/coCheck' element={<CoCheck />}/>
-                <Route exact path= '/payments' element={<Payment />}/>
+                <Route exact path= '/payments' element={<Elements stripe={stripePromise}><Payment /></Elements>}/>
 
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
