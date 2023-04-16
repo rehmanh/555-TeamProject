@@ -21,7 +21,7 @@ const OpRoute = () => {
     const [roleId] = useState(localStorage.getItem('roleId'));
 
     return (
-        isLoggedIn && (roleId == 1 || roleId == 3) ? <Outlet /> : <Navigate to='/login' />
+        isLoggedIn && (roleId == 1 || roleId == 3 || roleId === '6') ? <Outlet /> : <Navigate to='/login' />
     )
 }
 

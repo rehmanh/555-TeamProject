@@ -11,6 +11,12 @@ const getUserId = () => {
     }
 }
 
+const getUserRole = () => {
+    if (isUserLoggedIn) {
+        return localStorage.getItem('roleId')
+    }
+}
+
 const isUserLoggedIn = () => {
     return (localStorage 
         && localStorage.getItem('firstName').length !== 0 
@@ -19,4 +25,4 @@ const isUserLoggedIn = () => {
         && localStorage.getItem('userId').length !== 0)
 }
 
-export { getUserFullName, getUserId };
+export { getUserFullName, getUserId, getUserRole };

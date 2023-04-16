@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 import axios from "axios";
 import {ToastContainer, toast} from 'react-toastify';
-import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 export default class Logout extends Component {
 
@@ -39,9 +39,9 @@ export default class Logout extends Component {
 
     render() {
         return (
-            <Nav.Link onClick={this.logout}>
+            <NavDropdown.Item onClick={this.logout}>
                 Log out
-            </Nav.Link>
+            </NavDropdown.Item>
         )
     }
 }
