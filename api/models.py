@@ -50,8 +50,10 @@ class User(AbstractUser):
         (1, 'Admin'),
         (2, 'SalesRep'),
         (3, 'OpsManager'),
-        (4, 'Contractor'),
-        (5, 'Customer')
+        (4, 'Contractor'), # not currently in use
+        (5, 'Customer'),
+        (6, 'ConstructionManager'),
+        (7, 'SiteSurveyor')
     )
 
     role = models.PositiveSmallIntegerField(choices=USER_ROLES, null=False, default=5)
