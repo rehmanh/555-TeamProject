@@ -379,84 +379,89 @@
 // 
 // export default Calendar;
 
-// import React, { useState, useEffect, useRef } from 'react';
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
-// import FullCalendar from '@fullcalendar/react';
-// import dayGridPlugin from '@fullcalendar/daygrid';
-// import timeGridPlugin from '@fullcalendar/timegrid';
-// // import '@fullcalendar/core/main.css';
-// // import '@fullcalendar/daygrid/main.css';
-// // import '@fullcalendar/timegrid/main.css';
+import React, { useState, useEffect, useRef } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import FullCalendar from '@fullcalendar/react';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import timeGridPlugin from '@fullcalendar/timegrid';
+// import '@fullcalendar/core/main.css';
+// import '@fullcalendar/daygrid/main.css';
+// import '@fullcalendar/timegrid/main.css';
 
-// export default function Scheduler() {
-//     const calendarRef = useRef(null); 
-//     const [requests, setRequests] = useState([]);
+export default function Scheduler() {
+    const calendarRef = useRef(null); 
+    const [requests, setRequests] = useState([]);
 
-//     useEffect(() => {
-//         const fetchRequests = async () => {
-//             try {
-//                 const response = await fetch('https://5art9sh86i.execute-api.us-east-1.amazonaws.com/UAT');
-//                 if (response.ok) {
-//                     const data = await response.json();
-//                     setRequests(data);
-//                 } else {
-//                     console.error('Failed to fetch requests:', response.statusText);
-//                 }
-//             } catch (error) {
-//                 console.error('Error:', error);
-//             }
-//         };
+    useEffect(() => {
+        const fetchRequests = async () => {
+            try {
+                const response = await fetch('https://5art9sh86i.execute-api.us-east-1.amazonaws.com/UAT');
+                if (response.ok) {
+                    const data = await response.json();
+                    setRequests(data);
+                } else {
+                    console.error('Failed to fetch requests:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        };
 
-//         fetchRequests();
-//     }, []);
+        fetchRequests();
+    }, []);
 
 
-//     // const handleEventClick = (eventInfo) => {
-//     //     const requestId = eventInfo.event.extendedProps.requestId;
-//     //     fetch(`https://dummyapi/${requestId}`, {
-//     //         method: 'PUT',
-//     //         headers: {
-//     //             'Content-Type': 'application/json'
-//     //         },
-//     //         body: JSON.stringify({ /* Update request data */ })
-//     //     })
-//     //         .then(response => {
-//     //             if (response.ok) {
-//     //                 toast.success('Request modified successfully!');
-//     //                 // Refresh the FullCalendar to reflect the changes
-//     //                 calendarRef.current.getApi().refetchEvents();
-//     //             } else {
-//     //                 alert('Failed to modify request. Please try again.');
-//     //             }
-//     //         })
-//     //         .catch(error => {
-//     //             // Error handling
-//     //             console.error('Error:', error);
-//     //             alert('Failed to modify request. Please try again.');
-//     //         });
-//     // };
+    const handleEventClick = (eventInfo) => {
+        const requestId = eventInfo.event.extendedProps.requestId;
+        const start = eventInfo.event.extendedProps.pref_install_start_date;
+        const end = eventInfo.event.extendedProps.pref_install_end_date;
+        console.log(requestId, start, end)
+        // fetch(`https://dummyapi/${requestId}`, {
+        //     method: 'PUT',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify({ /* Update request data */ })
+        // })
+        //     .then(response => {
+        //         if (response.ok) {
+        //             toast.success('Request modified successfully!');
+        //             // Refresh the FullCalendar to reflect the changes
+        //             calendarRef.current.getApi().refetchEvents();
+        //         } else {
+        //             alert('Failed to modify request. Please try again.');
+        //         }
+        //     })
+        //     .catch(error => {
+        //         // Error handling
+        //         console.error('Error:', error);
+        //         alert('Failed to modify request. Please try again.');
+        //     });
+    };
 
-//     return (
-//         <div>
-//             <FullCalendar
-//                 ref={calendarRef}
-//                 plugins={[dayGridPlugin, timeGridPlugin]}
-//                 initialView="dayGridMonth"
-//                 events={requests.map(request => ({
-//                     title: `Request ID: ${request.request_id}`,
-//                     start: request.pref_install_start_date,
-//                     end: request.pref_install_end_date,
-//                     extendedProps: {
-//                         requestId: request.request_id
-//                     }
-//                 }))}
-//                 eventClick={handleEventClick}
-//             />
-//             <ToastContainer />
-//         </div>
-//     );
-// }
+    return (
+        <div>
+            <FullCalendar
+                ref={calendarRef}
+                plugins={[dayGridPlugin, timeGridPlugin]}
+                initialView="dayGridMonth"
+                events={requests.map(request => ({
+                    title: `Request ID: ${request.request_id}`,
+                    start: request.pref_install_start_date,
+                    end: request.pref_install_end_date,
+                    extendedProps: {
+                        requestId: request.request_id,
+                        pref_install_start_date: request.pref_install_start_date, // include start date in extendedProps
+                        pref_install_end_date: request.pref_install_end_date // include end date in extendedProps
+                    }
+                }))}
+                eventClick={handleEventClick}
+            />
+            <ToastContainer />
+        </div>
+    );
+}
 
 //Draggaging cards test
 // import React from 'react';
@@ -532,214 +537,215 @@
 // export default App;
 
 
-import React, { useRef, useEffect, useState } from "react";
-import FullCalendar from "@fullcalendar/react";
-import dayGridPlugin from "@fullcalendar/daygrid";
-import timeGridPlugin from "@fullcalendar/timegrid";
-import interactionPlugin from "@fullcalendar/interaction";
+//Test calendar not done
+// import React, { useRef, useEffect, useState } from "react";
+// import FullCalendar from "@fullcalendar/react";
+// import dayGridPlugin from "@fullcalendar/daygrid";
+// import timeGridPlugin from "@fullcalendar/timegrid";
+// import interactionPlugin from "@fullcalendar/interaction";
 
-export default function MyCalendar() {
-    const calendarRef = useRef(null);
-    const [events, setEvents] = useState([]);
-    const [eventDetails, setEventDetails] = useState(null);
+// export default function MyCalendar() {
+//     const calendarRef = useRef(null);
+//     const [events, setEvents] = useState([]);
+//     const [eventDetails, setEventDetails] = useState(null);
 
-    useEffect(() => {
-        const calendarApi = calendarRef.current.getApi();
-        const fetchEvents = async () => {
-            try {
-                const response = await fetch(
-                    "https://5art9sh86i.execute-api.us-east-1.amazonaws.com/UAT"
-                );
-                const data = await response.json();
-                // Map the API response to FullCalendar event objects
-                const events = data.map((event) => ({
-                    id: event.request_id,
-                    title: event.title,
-                    start: event.pref_install_start_date,
-                    end: event.pref_install_end_date,
-                    backgroundColor: getRandomColor(),
-                }));
-                calendarApi.addEventSource(events);
-            } catch (error) {
-                console.error("Failed to fetch events:", error);
-            }
-        };
+//     useEffect(() => {
+//         const calendarApi = calendarRef.current.getApi();
+//         const fetchEvents = async () => {
+//             try {
+//                 const response = await fetch(
+//                     "https://5art9sh86i.execute-api.us-east-1.amazonaws.com/UAT"
+//                 );
+//                 const data = await response.json();
+//                 // Map the API response to FullCalendar event objects
+//                 const events = data.map((event) => ({
+//                     id: event.request_id,
+//                     title: event.title,
+//                     start: event.pref_install_start_date,
+//                     end: event.pref_install_end_date,
+//                     backgroundColor: getRandomColor(),
+//                 }));
+//                 calendarApi.addEventSource(events);
+//             } catch (error) {
+//                 console.error("Failed to fetch events:", error);
+//             }
+//         };
 
-        fetchEvents();
+//         fetchEvents();
 
-        // Destroy FullCalendar instance when the component is unmounted
-        return () => {
-            calendarApi.destroy();
-        };
-    }, []);
+//         // Destroy FullCalendar instance when the component is unmounted
+//         return () => {
+//             calendarApi.destroy();
+//         };
+//     }, []);
 
-    // Handler for when an event is clicked
-    const handleEventClick = async ({ event }) => {
-        console.log("Event clicked:", event);
+//     // Handler for when an event is clicked
+//     const handleEventClick = async ({ event }) => {
+//         console.log("Event clicked:", event);
     
-        try {
-            const response = await fetch(
-                `https://5art9sh86i.execute-api.us-east-1.amazonaws.com/UAT/${event.id}`
-            );
-            const data = await response.json();
+//         try {
+//             const response = await fetch(
+//                 `https://5art9sh86i.execute-api.us-east-1.amazonaws.com/UAT/${event.id}`
+//             );
+//             const data = await response.json();
     
-            // Update the event details state with the fetched data
-            setEventDetails({
-                id: event.id,
-                title: event.title,
-                start: event.start,
-                end: event.end,
-                pref_install_start_date: data.pref_install_start_date,
-                pref_install_end_date: data.pref_install_end_date,
-                editable: true,
-            });
-        } catch (error) {
-            console.error("Failed to fetch event details:", error);
-        }
-    };
+//             // Update the event details state with the fetched data
+//             setEventDetails({
+//                 id: event.id,
+//                 title: event.title,
+//                 start: event.start,
+//                 end: event.end,
+//                 pref_install_start_date: data.pref_install_start_date,
+//                 pref_install_end_date: data.pref_install_end_date,
+//                 editable: true,
+//             });
+//         } catch (error) {
+//             console.error("Failed to fetch event details:", error);
+//         }
+//     };
 
-    const handleEventChange = (arg) => {
-        const { event, oldEvent } = arg;
-        const updatedEvent = { ...event, backgroundColor: getRandomColor() };
-        setEvents((prevEvents) => {
-            return prevEvents.map((prevEvent) => {
-                if (prevEvent.id === oldEvent.id) {
-                    return updatedEvent;
-                } else {
-                    return prevEvent;
-                }
-            });
-        });
-    };
+//     const handleEventChange = (arg) => {
+//         const { event, oldEvent } = arg;
+//         const updatedEvent = { ...event, backgroundColor: getRandomColor() };
+//         setEvents((prevEvents) => {
+//             return prevEvents.map((prevEvent) => {
+//                 if (prevEvent.id === oldEvent.id) {
+//                     return updatedEvent;
+//                 } else {
+//                     return prevEvent;
+//                 }
+//             });
+//         });
+//     };
 
-    const handleEventSubmit = (e) => {
-        e.preventDefault();
-        if (e.nativeEvent.submitter.id === "cancel-button") {
-            setEventDetails(null);
-            return;
-        }
-        const { id, title, start, end } = eventDetails || {};
-        if (id) {
-            setEvents((prevEvents) =>
-                prevEvents.map((event) => {
-                    if (event.id === id) {
-                        return {
-                            ...event,
-                            title,
-                            start,
-                            end,
-                        };
-                    }
-                    return event;
-                })
-            );
-        } else {
-            setEvents((prevEvents) => [
-                ...prevEvents,
-                {
-                    id: new Date().toISOString(),
-                    title,
-                    start,
-                    end,
-                    backgroundColor: getRandomColor(),
-                },
-            ]);
-        }
-        setEventDetails(null);
-    };
+//     const handleEventSubmit = (e) => {
+//         e.preventDefault();
+//         if (e.nativeEvent.submitter.id === "cancel-button") {
+//             setEventDetails(null);
+//             return;
+//         }
+//         const { id, title, start, end } = eventDetails || {};
+//         if (id) {
+//             setEvents((prevEvents) =>
+//                 prevEvents.map((event) => {
+//                     if (event.id === id) {
+//                         return {
+//                             ...event,
+//                             title,
+//                             start,
+//                             end,
+//                         };
+//                     }
+//                     return event;
+//                 })
+//             );
+//         } else {
+//             setEvents((prevEvents) => [
+//                 ...prevEvents,
+//                 {
+//                     id: new Date().toISOString(),
+//                     title,
+//                     start,
+//                     end,
+//                     backgroundColor: getRandomColor(),
+//                 },
+//             ]);
+//         }
+//         setEventDetails(null);
+//     };
 
-    // Handler for when a date is clicked
-    const handleDateClick = (arg) => {
+//     // Handler for when a date is clicked
+//     const handleDateClick = (arg) => {
 
-        console.log("Date clicked:", arg.date);
-    };
+//         console.log("Date clicked:", arg.date);
+//     };
 
-    // Helper function to generate random color codes
-    const getRandomColor = () => {
-        const letters = "0123456789ABCDEF";
-        let color = "#";
-        for (let i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    };
+//     // Helper function to generate random color codes
+//     const getRandomColor = () => {
+//         const letters = "0123456789ABCDEF";
+//         let color = "#";
+//         for (let i = 0; i < 6; i++) {
+//             color += letters[Math.floor(Math.random() * 16)];
+//         }
+//         return color;
+//     };
 
-    // Custom event rendering callback
-    const eventRender = (info) => {
-        const { event, el } = info;
-        const eventButton = document.createElement("button");
-        eventButton.className = "event-button";
-        eventButton.textContent = `+${event._def.extendedProps.events.length} more`;
-        el.appendChild(eventButton);
-        eventButton.addEventListener("click", () => {
-            const eventList = document.createElement("ul");
-            eventList.className = "event-collapse";
-            event._def.extendedProps.events.forEach((ev) => {
-                const eventListItem = document.createElement("li");
-                eventListItem.textContent = ev.title;
-                eventList.appendChild(eventListItem);
-            });
-            el.appendChild(eventList);
-            eventButton.style.display = "none";
-        });
-    };
+//     // Custom event rendering callback
+//     const eventRender = (info) => {
+//         const { event, el } = info;
+//         const eventButton = document.createElement("button");
+//         eventButton.className = "event-button";
+//         eventButton.textContent = `+${event._def.extendedProps.events.length} more`;
+//         el.appendChild(eventButton);
+//         eventButton.addEventListener("click", () => {
+//             const eventList = document.createElement("ul");
+//             eventList.className = "event-collapse";
+//             event._def.extendedProps.events.forEach((ev) => {
+//                 const eventListItem = document.createElement("li");
+//                 eventListItem.textContent = ev.title;
+//                 eventList.appendChild(eventListItem);
+//             });
+//             el.appendChild(eventList);
+//             eventButton.style.display = "none";
+//         });
+//     };
 
-    return (
-        <div>
-            <FullCalendar
-                plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-                headerToolbar={{
-                    left: "prev,next today",
-                    center: "title",
-                    right: "dayGridMonth,timeGridWeek,timeGridDay",
-                }}
-                initialView="dayGridMonth"
-                ref={calendarRef}
-                events={events}
-                eventClick={handleEventClick}
-                dateClick={handleDateClick}
-                eventChange={handleEventChange}
-                eventRender={eventRender}
-            />
+//     return (
+//         <div>
+//             <FullCalendar
+//                 plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+//                 headerToolbar={{
+//                     left: "prev,next today",
+//                     center: "title",
+//                     right: "dayGridMonth,timeGridWeek,timeGridDay",
+//                 }}
+//                 initialView="dayGridMonth"
+//                 ref={calendarRef}
+//                 events={events}
+//                 eventClick={handleEventClick}
+//                 dateClick={handleDateClick}
+//                 eventChange={handleEventChange}
+//                 eventRender={eventRender}
+//             />
 
-            {/* Render event form */}
-            {eventDetails && (
-                <form onSubmit={handleEventSubmit} className="event-form">
-                    <label>
-                        Request ID:
-                        <input
-                            type="text"
-                            name="request_id"
-                            value={eventDetails.id} 
-                            onChange={handleEventChange}
-                        />
-                    </label>
-                    <label>
-                        Start Date:
-                        <input
-                            type="text"
-                            name="start"
-                            value={eventDetails.start ? eventDetails.start.toISOString() : ""} 
-                            onChange={handleEventChange}
-                        />
-                    </label>
-                    <label>
-                        End Date:
-                        <input
-                            type="text"
-                            name="end"
-                            value={eventDetails.end ? eventDetails.end.toISOString() : ""}
-                            onChange={handleEventChange}
-                        />
-                    </label>
-                    <div>
-                        <button type="submit">Submit</button>
-                        <button type="button" id="cancel-button" onClick={handleEventSubmit}>
-                            Cancel
-                        </button>
-                    </div>
-                </form>
-            )}
-        </div>
-    );
-}
+//             {/* Render event form */}
+//             {eventDetails && (
+//                 <form onSubmit={handleEventSubmit} className="event-form">
+//                     <label>
+//                         Request ID:
+//                         <input
+//                             type="text"
+//                             name="request_id"
+//                             value={eventDetails.id} 
+//                             onChange={handleEventChange}
+//                         />
+//                     </label>
+//                     <label>
+//                         Start Date:
+//                         <input
+//                             type="text"
+//                             name="start"
+//                             value={eventDetails.start ? eventDetails.start.toISOString() : ""} 
+//                             onChange={handleEventChange}
+//                         />
+//                     </label>
+//                     <label>
+//                         End Date:
+//                         <input
+//                             type="text"
+//                             name="end"
+//                             value={eventDetails.end ? eventDetails.end.toISOString() : ""}
+//                             onChange={handleEventChange}
+//                         />
+//                     </label>
+//                     <div>
+//                         <button type="submit">Submit</button>
+//                         <button type="button" id="cancel-button" onClick={handleEventSubmit}>
+//                             Cancel
+//                         </button>
+//                     </div>
+//                 </form>
+//             )}
+//         </div>
+//     );
+// }
