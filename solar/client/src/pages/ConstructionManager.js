@@ -18,7 +18,7 @@ import { motion } from 'framer-motion';
 import { toast } from 'react-toastify'
 import DataTable from 'react-data-table-component';
 import { Button, Modal, Form, InputGroup } from 'react-bootstrap';
-import { getUserFullName } from '../utils/utils';
+import { getUserFullName, getUserId } from '../utils/utils';
 import axios from 'axios';
 import ImageRetrieve from '../components/imageRetrive';
 
@@ -32,9 +32,11 @@ export default function ConstructionManager() {
         && localStorage.getItem('userId') !== null);
     
     const [fullUserName, setFullUserName] = useState('');
+    const [userId, setUserId] = useState('');
     
     useEffect(() => {
       setFullUserName(getUserFullName)
+      setUserId(getUserId)
     }, []);
 
     const [verticalActive, setVerticalActive] = useState('tab1');
@@ -66,7 +68,7 @@ export default function ConstructionManager() {
             headers: {
               "Content-Type": "application/json"
             },
-            body: JSON.stringify({ "const_mgr": "C1" }) // TODO change to localStorage userID
+            body: JSON.stringify({ "const_mgr": userId })
           }), 
           fetch("https://5qi3g62xfd.execute-api.us-east-1.amazonaws.com/UAT"), // get all site surveyors
           fetch("https://8ioy3ejwke.execute-api.us-east-1.amazonaws.com/UAT", { // all requests assigned to SS by this conman
@@ -74,14 +76,14 @@ export default function ConstructionManager() {
             headers: {
               "Content-Type": "application/json"
             },
-            body: JSON.stringify({ "const_mgr": "C1" }) // TODO change to localStorage userID
+            body: JSON.stringify({ "const_mgr": userId })
           }), 
           fetch("https://cbayjavixk.execute-api.us-east-1.amazonaws.com/UAT", { // all COMPLETED requests by SS
             method: "POST",
             headers: {
               "Content-Type": "application/json"
             },
-            body: JSON.stringify({ "const_mgr": "C1" })
+            body: JSON.stringify({ "const_mgr": userId })
           }) 
         ])
           .then(([unassignedRequestsResponse, siteSurveyorsResponse, inProgressRequestsResponse, completedRequestsResponse]) =>
