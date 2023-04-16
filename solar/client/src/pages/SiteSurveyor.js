@@ -27,9 +27,11 @@ export default function SiteSurveyor() {
         && localStorage.getItem('userId') !== null);
     
     const [fullUserName, setFullUserName] = useState('');
+    const [userId, setUserId] = useState('')
     
     useEffect(() => {
       setFullUserName(getUserFullName)
+      setUserId(userId)
     }, []);
 
     const [verticalActive, setVerticalActive] = useState('tab1');
@@ -59,14 +61,14 @@ export default function SiteSurveyor() {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({ "site_syr": "SS1" }) //TODO: change this to userID
+                body: JSON.stringify({ "site_syr": userId }) 
             }),
             fetch("https://xzddl2hpsg.execute-api.us-east-1.amazonaws.com/UAT", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json"
               },
-              body: JSON.stringify({ "site_syr": "SS1" }) //TODO: change this to userID
+              body: JSON.stringify({ "site_syr": userId })
             })
         ])
         .then(([newRequestsDataResponse, updateRequestDataResponse]) => 
@@ -111,7 +113,7 @@ export default function SiteSurveyor() {
 
           <Modal show={showImages} onHide={handleCloseImages}>
             <Modal.Body>
-              <ImgUp request={data.request_id} siteSurveyor={"SS1"} /> {/* TODO change hardcoded value */}
+              <ImgUp request={data.request_id} siteSurveyor={userId} />
             </Modal.Body>
           </Modal>
           
@@ -132,7 +134,7 @@ export default function SiteSurveyor() {
 
           <Modal show={showImages2} onHide={handleCloseImages2}>
             <Modal.Body>
-              <ImageRetrieve request={data.request_id} /> {/* TODO change hardcoded value */}
+              <ImageRetrieve request={data.request_id} />
             </Modal.Body>
           </Modal>
           

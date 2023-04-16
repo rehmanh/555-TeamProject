@@ -36,7 +36,6 @@ export const ImgUp = ({request, siteSurveyor}) => {
       site_survey_pic_1: image1,
       site_survey_pic_2: image2,
     };
-    console.log(JSON.stringify(requestData));
     fetch("https://2vodj8q2z4.execute-api.us-east-1.amazonaws.com/UAT", {
       method: "POST",
       body: JSON.stringify(requestData),
