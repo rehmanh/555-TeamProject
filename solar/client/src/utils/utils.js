@@ -25,4 +25,18 @@ const isUserLoggedIn = () => {
         && localStorage.getItem('userId').length !== 0)
 }
 
-export { getUserFullName, getUserId, getUserRole };
+const redirectToUserDashboard = () => {
+    if (getUserRole() === '2') {
+      window.location.href = "/salesrep"
+    } else if (getUserRole() === '3') {
+      window.location.href = "/opsManager"
+    } else if (getUserRole() === '6') {
+      window.location.href = "/constructionManager"
+    } else if (getUserRole() === '7') {
+      window.location.href = "/siteSurveyor"
+    } else {
+      window.location.href = "/"
+    }
+  };
+
+export { getUserFullName, getUserId, getUserRole, redirectToUserDashboard };

@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Logout from "../components/Logout";
-import { getUserFullName, getUserId, getUserRole } from "../utils/utils";
+import { getUserFullName, getUserId, getUserRole, redirectToUserDashboard } from "../utils/utils";
 
 
 export default function SolarNavbar() {
@@ -17,20 +17,6 @@ export default function SolarNavbar() {
     setUserId(getUserId)
     setUserRole(getUserRole)
   }, [])
-
-  const redirectToUserDashboard = () => {
-    if (userRole === '2') {
-      window.location.href = "/salesrep"
-    } else if (userRole === '3') {
-      window.location.href = "/opsManager"
-    } else if (userRole === '6') {
-      window.location.href = "/constructionManager"
-    } else if (userRole === '7') {
-      window.location.href = "/siteSurveyor"
-    } else {
-      window.location.href = "/"
-    }
-  };
 
   return (
     <Navbar bg="light" expand="lg">

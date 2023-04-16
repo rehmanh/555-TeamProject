@@ -1,10 +1,10 @@
 {
   "status": "done",
   "assets": {
-    "frontend-d7cd9d7cb15540beb9dd.js": {
-      "name": "frontend-d7cd9d7cb15540beb9dd.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-d7cd9d7cb15540beb9dd.js",
-      "publicPath": "static/solar/frontend-d7cd9d7cb15540beb9dd.js"
+    "frontend-00f5807511257b5181c7.js": {
+      "name": "frontend-00f5807511257b5181c7.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-00f5807511257b5181c7.js",
+      "publicPath": "static/solar/frontend-00f5807511257b5181c7.js"
     },
     "images/Solar1.svg": {
       "name": "images/Solar1.svg",
@@ -29,7 +29,7 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-d7cd9d7cb15540beb9dd.js"
+      "frontend-00f5807511257b5181c7.js"
     ]
   },
   "publicPath": "static/solar/"
