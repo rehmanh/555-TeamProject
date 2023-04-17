@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import {SaRoute, OpRoute} from "../../../src/PrivateRoute"
+import { SaRoute, OpRoute, CoRoute } from "../../../src/PrivateRoute"
 import HomePage from '../pages/home';
 import SignUp from '../pages/signUp';
 import Login from '../pages/login';
@@ -30,16 +30,19 @@ function AnimatedRoutes() {
                     <Route exact path='/opManager' element={<OpManager />} />
                     <Route exact path='/constructionManager' element={<ConstructionManager />} />
                 </Route>
+                <Route element={<CoRoute />}>
+                    <Route exact path='/userHome' element={<UserHome />} />
+                    <Route exact path='/constructionManager' element={<ConstructionManager />} />
+                    <Route exact path='/coCheck' element={<CoCheck />} />
+                </Route>
                 <Route exact path='/' element={<HomePage />} />
                 <Route exact path='/login' element={<Login />} />
                 <Route exact path='/signup' element={<SignUp />} />
-                <Route exact path='/salesrep' element={<SalesRep />} />
                 <Route exact path='/userreq' element={<UserRequestForm />} />
                 <Route exact path='/userprog' element={<Userprog />} />
                 <Route exact path='/oper' element={<Operation />} />
-                <Route exact path= '/coCheck' element={<CoCheck />}/>
-                <Route exact path= '/siteSurveyor' element={<SiteSurveyor />}/>
-                <Route exact path= '/scheduling' element={<Scheduling />}/>
+                <Route exact path='/siteSurveyor' element={<SiteSurveyor />} />
+                <Route exact path='/scheduling' element={<Scheduling />} />
                 {/* <Route exact path='/nav' element={<Navbar />}/> */}
             </Routes>
         </AnimatePresence>
