@@ -34,16 +34,4 @@ const SiteSurveyorRoute = () => {
     )
 }
 
-const CoRoute = () => {
-    const [isLoggedIn] = useState(localStorage !== null
-        && localStorage.getItem('token') !== null
-        && localStorage.getItem('roleId') !== null
-        && localStorage.getItem('userId') !== null);
-    const [roleId] = useState(localStorage.getItem('roleId'));
-
-    return (
-        isLoggedIn && (roleId == 1 || roleId == 6) ? <Outlet /> : <Navigate to='/login' />
-    )
-}
-
-export { SaRoute, OpRoute, CoRoute, ConstructionManagerRoute, SiteSurveyorRoute }
+export { SaRoute, OpRoute, ConstructionManagerRoute, SiteSurveyorRoute }

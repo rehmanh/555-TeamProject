@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import { SaRoute, OpRoute, ConstructionManagerRoute, SiteSurveyorRoute, CoRoute } from "../../../src/PrivateRoute"
+import { SaRoute, OpRoute, ConstructionManagerRoute, SiteSurveyorRoute} from "../../../src/PrivateRoute"
 import HomePage from '../pages/home';
 import SignUp from '../pages/signUp';
 import Login from '../pages/login';
@@ -33,10 +33,6 @@ function AnimatedRoutes() {
                 <Route element={<ConstructionManagerRoute />}> 
                     <Route exact path='/userHome' element={<UserHome />} />
                     <Route exact path= '/siteSurveyor' element={<SiteSurveyor />}/>
-                    <Route exact path='/constructionManager' element={<ConstructionManager />} />
-                </Route>
-                <Route element={<CoRoute />}>
-                    <Route exact path='/userHome' element={<UserHome />} />
                     <Route exact path='/constructionManager' element={<ConstructionManager />} />
                     <Route exact path='/coCheck' element={<CoCheck />} />
                 </Route>
