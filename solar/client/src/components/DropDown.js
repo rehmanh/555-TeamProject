@@ -2,21 +2,39 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Button, Form } from 'react-bootstrap';
 import { toast } from 'react-toastify';
+import { getAuthToken } from '../utils/utils';
 
 
 function Dropdown({ selectedRows }) {
-  const [values, setValues] = useState([]);
+  const [values, setValues] = useState();
   const [selectedValue, setSelectedValue] = useState('');
+
+  const token = "Token " + getAuthToken()
 
   // fetch the list of values from the API
   useEffect(() => {
-    axios.get('https://bkpqz1ao2e.execute-api.us-east-1.amazonaws.com/UAT')
-      .then(response => {
-        setValues(response.data);
+      axios.get('/api/construction-managers/', {
+        headers: {
+          "Authorization": token
+        }
       })
-      .catch(error => {
-        console.log(error);
-      });
+        .then(response => {
+          console.log(response)
+          setValues(response.data);
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    // fetch("", {
+    //   method: "GET",
+      
+    // })
+    // .then(response => {
+    //   setValues(response.json())
+    // })
+    // .catch(error => {
+    //   console.log(error)
+    // })
   }, []);
 
   // handle the selection of a value from the dropdown
@@ -67,9 +85,12 @@ function Dropdown({ selectedRows }) {
       <h2>Construction managers</h2>
         <Form.Select value={selectedValue} onChange={handleSelect}>
           <option value={''}>Select</option>
-          {values.map(value => (
-            <option key={value.id} value={value.const_mgr}>{value.const_mgr}</option>
-          ))}
+          {
+            values &&
+            values.map(val => (
+              <option key={val.id} value={val.id}> {val.first_name + " " + val.last_name} </option>
+            ))
+          }
         </Form.Select>
         <Button type="submit" variant='success'>Submit</Button>
       </Form>

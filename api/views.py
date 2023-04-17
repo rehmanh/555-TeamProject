@@ -4,6 +4,7 @@ from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
+from rest_framework.decorators import api_view
 
 from knox.views import LoginView as KnoxLoginView
 from knox.auth import TokenAuthentication
@@ -35,3 +36,24 @@ class UserLoginView(KnoxLoginView):
         resp.data['lastName'] = user.last_name
         return Response({"data": resp.data})
         
+class ConstructionManagerList(viewsets.ModelViewSet):
+    serializer_class = UserSerializer
+    queryset = User.objects.filter(role = 6)
+    permissions_classes = (AllowAny,)
+    
+    @api_view(['GET'])
+    def get_construction_managers(self, request):
+        queryset = self.queryset
+        serializer = UserSerializer(queryset, many=True)
+        return Response(serializer.data)
+    
+class SiteSurveyorList(viewsets.ModelViewSet):
+    serializer_class = UserSerializer
+    queryset = User.objects.filter(role = 7)
+    permissions_classes = (AllowAny,)
+    
+    @api_view(['GET'])
+    def get_site_surveyors(self, request):
+        queryset = self.queryset
+        serializer = UserSerializer(queryset, many=True)
+        return Response(serializer.data)

@@ -17,11 +17,13 @@ from django.contrib import admin
 from django.urls import path, include, re_path, reverse_lazy
 from django.views.generic.base import RedirectView
 from rest_framework import routers
-from api.views import UserView, UserLoginView
+from api.views import UserView, UserLoginView, ConstructionManagerList, SiteSurveyorList
 from knox import views as knox_views
 
 router = routers.DefaultRouter()
 router.register(r'users', UserView, 'user')
+router.register(r'construction-managers', ConstructionManagerList, 'construction-manager')
+router.register(r'site-surveyors', SiteSurveyorList, 'site-surveyor')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,6 +31,7 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('api-login/', UserLoginView.as_view(), name='knox_login'),
     path('logout/', knox_views.LogoutView.as_view(), name='knox_logout'),
+    path('users/constructionManagers/', ConstructionManagerList.as_view({'get': 'get_construction_managers'}), name='construction-managers'),
+    path('users/siteSurveyors/', SiteSurveyorList.as_view({'get': 'get_site_surveyors'}), name='site-surveyors'),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
-    #re_path(r'^$', RedirectView.as_view(url=reverse_lazy('api-root'), permanent=False))
 ]
