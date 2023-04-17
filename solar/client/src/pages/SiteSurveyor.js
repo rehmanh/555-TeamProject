@@ -12,7 +12,7 @@ import {
 import { motion } from 'framer-motion';
 import DataTable from 'react-data-table-component';
 import { Button, Modal, Form, InputGroup } from 'react-bootstrap';
-import { getUserFullName } from '../utils/utils';
+import { getUserFullName, getUserId } from '../utils/utils';
 import { ImgUp } from '../components/imageUpload';
 import ImageRetrieve from '../components/imageRetrive'
 
@@ -31,7 +31,7 @@ export default function SiteSurveyor() {
     
     useEffect(() => {
       setFullUserName(getUserFullName)
-      setUserId(userId)
+      setUserId(getUserId)
     }, []);
 
     const [verticalActive, setVerticalActive] = useState('tab1');

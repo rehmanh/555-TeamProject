@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import { SaRoute, OpRoute, CoRoute } from "../../../src/PrivateRoute"
+import { SaRoute, OpRoute, ConstructionManagerRoute, SiteSurveyorRoute} from "../../../src/PrivateRoute"
 import HomePage from '../pages/home';
 import SignUp from '../pages/signUp';
 import Login from '../pages/login';
@@ -21,19 +21,24 @@ function AnimatedRoutes() {
     return (
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
-                <Route element={<SaRoute />}>
+                <Route element={<SaRoute />}> 
                     <Route exact path='/userHome' element={<UserHome />} />
                     <Route exact path='/salesrep' element={<SalesRep />} />
                 </Route>
                 <Route element={<OpRoute />}>
                     <Route exact path='/userHome' element={<UserHome />} />
                     <Route exact path='/opManager' element={<OpManager />} />
-                    <Route exact path='/constructionManager' element={<ConstructionManager />} />
+                    <Route exact path='/salesrep' element={<SalesRep />} />
                 </Route>
-                <Route element={<CoRoute />}>
+                <Route element={<ConstructionManagerRoute />}> 
                     <Route exact path='/userHome' element={<UserHome />} />
+                    <Route exact path= '/siteSurveyor' element={<SiteSurveyor />}/>
                     <Route exact path='/constructionManager' element={<ConstructionManager />} />
                     <Route exact path='/coCheck' element={<CoCheck />} />
+                </Route>
+                <Route element={<SiteSurveyorRoute />}> 
+                    <Route exact path='/userHome' element={<UserHome />} />
+                    <Route exact path='/siteSurveyor' element={<SiteSurveyor />} />
                 </Route>
                 <Route exact path='/' element={<HomePage />} />
                 <Route exact path='/login' element={<Login />} />
@@ -41,9 +46,9 @@ function AnimatedRoutes() {
                 <Route exact path='/userreq' element={<UserRequestForm />} />
                 <Route exact path='/userprog' element={<Userprog />} />
                 <Route exact path='/oper' element={<Operation />} />
-                <Route exact path='/siteSurveyor' element={<SiteSurveyor />} />
-                <Route exact path='/scheduling' element={<Scheduling />} />
-                {/* <Route exact path='/nav' element={<Navbar />}/> */}
+                <Route exact path= '/coCheck' element={<CoCheck />}/>
+                <Route exact path= '/siteSurveyor' element={<SiteSurveyor />}/>
+                <Route exact path= '/scheduling' element={<Scheduling />}/>
             </Routes>
         </AnimatePresence>
     )
