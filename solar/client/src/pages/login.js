@@ -12,7 +12,7 @@ import Container from 'react-bootstrap/Container'
 import { IconContext } from "react-icons";
 import { BsGoogle, BsFacebook, BsTwitter } from "react-icons/bs";
 import { motion } from 'framer-motion';
-// import Navbar from '../pages/navbar';
+import { redirectToUserDashboard }  from "../utils/utils";
 
 export default class Login extends Component {
   constructor(props) {
@@ -33,7 +33,7 @@ export default class Login extends Component {
     });
 
     const toastOptions = {
-      onClose: props => window.location.href = "/"
+      onClose: props => redirectToUserDashboard()
     };
 
     axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";

@@ -285,7 +285,7 @@ export default function ConstructionManager() {
     }; 
 
     return (
-        (roleId == 1) && isLoggedIn ?
+        (roleId === '1' || roleId === '6') && isLoggedIn ?
         (    
         <motion.div
             initial={{opacity: 0}}

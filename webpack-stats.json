@@ -1,35 +1,35 @@
 {
   "status": "done",
   "assets": {
-    "frontend-f6e6a63c7a4ca76d6330.js": {
-      "name": "frontend-f6e6a63c7a4ca76d6330.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-f6e6a63c7a4ca76d6330.js",
-      "publicPath": "static/solar/frontend-f6e6a63c7a4ca76d6330.js"
+    "frontend-00f5807511257b5181c7.js": {
+      "name": "frontend-00f5807511257b5181c7.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-00f5807511257b5181c7.js",
+      "publicPath": "static/solar/frontend-00f5807511257b5181c7.js"
     },
     "images/Solar1.svg": {
       "name": "images/Solar1.svg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Solar1.svg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar1.svg",
       "publicPath": "static/solar/images/Solar1.svg"
     },
     "images/Solar2.svg": {
       "name": "images/Solar2.svg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Solar2.svg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar2.svg",
       "publicPath": "static/solar/images/Solar2.svg"
     },
     "images/Solar3.svg": {
       "name": "images/Solar3.svg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Solar3.svg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar3.svg",
       "publicPath": "static/solar/images/Solar3.svg"
     },
     "images/Solar4.svg": {
       "name": "images/Solar4.svg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Solar4.svg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar4.svg",
       "publicPath": "static/solar/images/Solar4.svg"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-f6e6a63c7a4ca76d6330.js"
+      "frontend-00f5807511257b5181c7.js"
     ]
   },
   "publicPath": "static/solar/"
