@@ -1,35 +1,40 @@
 {
   "status": "done",
   "assets": {
-    "frontend-00f5807511257b5181c7.js": {
-      "name": "frontend-00f5807511257b5181c7.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-00f5807511257b5181c7.js",
-      "publicPath": "static/solar/frontend-00f5807511257b5181c7.js"
+    "frontend-255fc042d54774819b3c.js": {
+      "name": "frontend-255fc042d54774819b3c.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-255fc042d54774819b3c.js",
+      "publicPath": "static/solar/frontend-255fc042d54774819b3c.js"
+    },
+    "frontend-98cde24035b8d54700bc.js": {
+      "name": "frontend-98cde24035b8d54700bc.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-98cde24035b8d54700bc.js",
+      "publicPath": "static/solar/frontend-98cde24035b8d54700bc.js"
     },
     "images/Solar1.svg": {
       "name": "images/Solar1.svg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar1.svg",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Solar1.svg",
       "publicPath": "static/solar/images/Solar1.svg"
     },
     "images/Solar2.svg": {
       "name": "images/Solar2.svg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar2.svg",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Solar2.svg",
       "publicPath": "static/solar/images/Solar2.svg"
     },
     "images/Solar3.svg": {
       "name": "images/Solar3.svg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar3.svg",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Solar3.svg",
       "publicPath": "static/solar/images/Solar3.svg"
     },
     "images/Solar4.svg": {
       "name": "images/Solar4.svg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar4.svg",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Solar4.svg",
       "publicPath": "static/solar/images/Solar4.svg"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-00f5807511257b5181c7.js"
+      "frontend-255fc042d54774819b3c.js"
     ]
   },
   "publicPath": "static/solar/"

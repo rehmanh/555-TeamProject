@@ -158,7 +158,6 @@ export default function App() {
                         </th>
                         <th>
                           <span style={{ float: 'left' }}>Customer's city</span>
-                          <span style={{ float: 'right' }}><Button variant="success">Refresh</Button></span>
                         </th>
                       </tr>
                     </MDBTableHead>
