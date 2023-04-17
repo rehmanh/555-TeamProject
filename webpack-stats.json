@@ -1,45 +1,35 @@
 {
   "status": "done",
   "assets": {
-    "frontend-5e9162a1ffbfca4c607b.js": {
-      "name": "frontend-5e9162a1ffbfca4c607b.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-5e9162a1ffbfca4c607b.js",
-      "publicPath": "static/solar/frontend-5e9162a1ffbfca4c607b.js"
-    },
-    "frontend-603411d3fbf5d487104b.js": {
-      "name": "frontend-603411d3fbf5d487104b.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-603411d3fbf5d487104b.js",
-      "publicPath": "static/solar/frontend-603411d3fbf5d487104b.js"
-    },
-    "frontend-e10488fd5cc2d0ed63ed.js": {
-      "name": "frontend-e10488fd5cc2d0ed63ed.js",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/frontend-e10488fd5cc2d0ed63ed.js",
-      "publicPath": "static/solar/frontend-e10488fd5cc2d0ed63ed.js"
+    "frontend-f6e6a63c7a4ca76d6330.js": {
+      "name": "frontend-f6e6a63c7a4ca76d6330.js",
+      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-f6e6a63c7a4ca76d6330.js",
+      "publicPath": "static/solar/frontend-f6e6a63c7a4ca76d6330.js"
     },
     "images/Solar1.svg": {
       "name": "images/Solar1.svg",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/images/Solar1.svg",
+      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Solar1.svg",
       "publicPath": "static/solar/images/Solar1.svg"
     },
     "images/Solar2.svg": {
       "name": "images/Solar2.svg",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/images/Solar2.svg",
+      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Solar2.svg",
       "publicPath": "static/solar/images/Solar2.svg"
     },
     "images/Solar3.svg": {
       "name": "images/Solar3.svg",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/images/Solar3.svg",
+      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Solar3.svg",
       "publicPath": "static/solar/images/Solar3.svg"
     },
     "images/Solar4.svg": {
       "name": "images/Solar4.svg",
-      "path": "/Users/harrisonshih/Desktop/git/555-TeamProject/solar/static/solar/images/Solar4.svg",
+      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Solar4.svg",
       "publicPath": "static/solar/images/Solar4.svg"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-e10488fd5cc2d0ed63ed.js"
+      "frontend-f6e6a63c7a4ca76d6330.js"
     ]
   },
   "publicPath": "static/solar/"
