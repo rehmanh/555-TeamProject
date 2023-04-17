@@ -25,16 +25,6 @@ function Dropdown({ selectedRows }) {
         .catch(error => {
           console.log(error);
         });
-    // fetch("", {
-    //   method: "GET",
-      
-    // })
-    // .then(response => {
-    //   setValues(response.json())
-    // })
-    // .catch(error => {
-    //   console.log(error)
-    // })
   }, []);
 
   // handle the selection of a value from the dropdown
