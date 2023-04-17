@@ -1,10 +1,30 @@
 {
   "status": "done",
   "assets": {
-    "frontend-f6e6a63c7a4ca76d6330.js": {
-      "name": "frontend-f6e6a63c7a4ca76d6330.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-f6e6a63c7a4ca76d6330.js",
-      "publicPath": "static/solar/frontend-f6e6a63c7a4ca76d6330.js"
+    "frontend-fe0a71ebca031a726ac0.js": {
+      "name": "frontend-fe0a71ebca031a726ac0.js",
+      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-fe0a71ebca031a726ac0.js",
+      "publicPath": "static/solar/frontend-fe0a71ebca031a726ac0.js"
+    },
+    "images/portfolio-1.jpg": {
+      "name": "images/portfolio-1.jpg",
+      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\portfolio-1.jpg",
+      "publicPath": "static/solar/images/portfolio-1.jpg"
+    },
+    "images/portfolio-2.jpg": {
+      "name": "images/portfolio-2.jpg",
+      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\portfolio-2.jpg",
+      "publicPath": "static/solar/images/portfolio-2.jpg"
+    },
+    "images/portfolio-3.jpg": {
+      "name": "images/portfolio-3.jpg",
+      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\portfolio-3.jpg",
+      "publicPath": "static/solar/images/portfolio-3.jpg"
+    },
+    "images/portfolio-4.jpg": {
+      "name": "images/portfolio-4.jpg",
+      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\portfolio-4.jpg",
+      "publicPath": "static/solar/images/portfolio-4.jpg"
     },
     "images/Solar1.svg": {
       "name": "images/Solar1.svg",
@@ -29,7 +49,7 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-f6e6a63c7a4ca76d6330.js"
+      "frontend-fe0a71ebca031a726ac0.js"
     ]
   },
   "publicPath": "static/solar/"
