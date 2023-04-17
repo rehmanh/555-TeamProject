@@ -18,7 +18,7 @@ import { motion } from 'framer-motion';
 import { toast } from 'react-toastify'
 import DataTable from 'react-data-table-component';
 import { Button, Modal, Form, InputGroup } from 'react-bootstrap';
-import { getUserFullName, getUserId } from '../utils/utils';
+import { getUserFullName, getUserId, getAuthToken } from '../utils/utils';
 import axios from 'axios';
 import ImageRetrieve from '../components/imageRetrive';
 
@@ -60,6 +60,8 @@ export default function ConstructionManager() {
     const [siteSurveyors, setSiteSurveyors] = useState();
     const [completedRequests, setCompletedRequests] = useState()
 
+    const token = "Token " + getAuthToken()
+
     // function to pre-fetch the table data
     useEffect(() => {
         Promise.all([
@@ -70,7 +72,12 @@ export default function ConstructionManager() {
             },
             body: JSON.stringify({ "const_mgr": userId })
           }), 
-          fetch("https://5qi3g62xfd.execute-api.us-east-1.amazonaws.com/UAT"), // get all site surveyors
+          fetch("/api/site-surveyors/", { // get all site surveyors
+            method: "GET",
+            headers: {
+              "Authorization": token
+            }
+          }), 
           fetch("https://8ioy3ejwke.execute-api.us-east-1.amazonaws.com/UAT", { // all requests assigned to SS by this conman
             method: "POST",
             headers: {
@@ -175,10 +182,9 @@ export default function ConstructionManager() {
             <Form.Select value={selectedValue} onChange={handleDropDownChanged}>
             <option>Select</option>
               {
-
                 siteSurveyors &&
                 siteSurveyors.map(val => (
-                  <option key={val.site_syr} value={val.site_syr}> {val.site_syr} </option>
+                  <option key={val.id} value={val.id}> {val.first_name + " " + val.last_name} </option>
                 ))
               }
             </Form.Select>

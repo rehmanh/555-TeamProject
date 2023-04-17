@@ -17,6 +17,12 @@ const getUserRole = () => {
     }
 }
 
+const getAuthToken = () => {
+    if (isUserLoggedIn) {
+        return localStorage.getItem('token')
+    }
+}
+
 const isUserLoggedIn = () => {
     return (localStorage 
         && localStorage.getItem('firstName').length !== 0 
@@ -39,4 +45,4 @@ const redirectToUserDashboard = () => {
     }
   };
 
-export { getUserFullName, getUserId, getUserRole, redirectToUserDashboard };
+export { getUserFullName, getUserId, getUserRole, redirectToUserDashboard, getAuthToken };
