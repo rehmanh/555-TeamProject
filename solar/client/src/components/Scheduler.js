@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Button from 'react-bootstrap/Button';
-
+import axios from 'axios';
 export default function Scheduler() {
     const [requestId, setRequestId] = useState('');
     const [prefInstallStartDate, setPrefInstallStartDate] = useState('');
@@ -12,9 +12,9 @@ export default function Scheduler() {
     useEffect(() => {
         const fetchRequests = async () => {
             try {
-                const response = await fetch('https://m90c2ol29g.execute-api.us-east-1.amazonaws.com/UAT');
-                if (response.ok) {
-                    const data = await response.json();
+                const response = await axios.get('https://m90c2ol29g.execute-api.us-east-1.amazonaws.com/UAT');
+                if (response.status === 200) {
+                    const data = response.data;
                     setRequests(data);
                 } else {
                     console.error('Failed to fetch requests:', response.statusText);
@@ -46,15 +46,13 @@ export default function Scheduler() {
         console.log('Submitting request data:', requestData);
 
         try {
-            const response = await fetch('https://mtd7u2mqfg.execute-api.us-east-1.amazonaws.com/UAT', {
-                method: 'POST',
+            const response = await axios.post('https://mtd7u2mqfg.execute-api.us-east-1.amazonaws.com/UAT', requestData, {
                 headers: {
                     'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(requestData)
+                }
             });
 
-            if (response.ok) {
+            if (response.status === 200) {
                 toast.success('Request submitted successfully!');
                 setRequestId('');
                 setPrefInstallStartDate('');
@@ -90,7 +88,7 @@ export default function Scheduler() {
             <label>
                 Preferred Install Start Date:
                 <input
-                    type="date"
+                    type="datetime-local"
                     value={prefInstallStartDate}
                     onChange={(e) => setPrefInstallStartDate(e.target.value)}
                 />
@@ -99,7 +97,7 @@ export default function Scheduler() {
             <label>
                 Preferred Install End Date:
                 <input
-                    type="date"
+                    type="datetime-local"
                     value={prefInstallEndDate}
                     onChange={(e) => setPrefInstallEndDate(e.target.value)}
                 />
