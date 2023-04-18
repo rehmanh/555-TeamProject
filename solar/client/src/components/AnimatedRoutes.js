@@ -32,7 +32,6 @@ function AnimatedRoutes() {
                 </Route>
                 <Route element={<ConstructionManagerRoute />}> 
                     <Route exact path='/userHome' element={<UserHome />} />
-                    <Route exact path= '/siteSurveyor' element={<SiteSurveyor />}/>
                     <Route exact path='/constructionManager' element={<ConstructionManager />} />
                     <Route exact path='/coCheck' element={<CoCheck />} />
                 </Route>

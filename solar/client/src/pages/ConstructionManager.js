@@ -18,7 +18,7 @@ import { motion } from 'framer-motion';
 import { toast } from 'react-toastify'
 import DataTable from 'react-data-table-component';
 import { Button, Modal, Form, InputGroup } from 'react-bootstrap';
-import { getUserFullName, getUserId, getAuthToken } from '../utils/utils';
+import { getUserFullName, getAuthToken } from '../utils/utils';
 import axios from 'axios';
 import ImageRetrieve from '../components/imageRetrive';
 
@@ -32,11 +32,9 @@ export default function ConstructionManager() {
         && localStorage.getItem('userId') !== null);
     
     const [fullUserName, setFullUserName] = useState('');
-    const [userId, setUserId] = useState('');
     
     useEffect(() => {
-      setFullUserName(getUserFullName)
-      setUserId(getUserId)
+      setFullUserName(getUserFullName())
     }, []);
 
     const [verticalActive, setVerticalActive] = useState('tab1');
@@ -64,6 +62,7 @@ export default function ConstructionManager() {
 
     // function to pre-fetch the table data
     useEffect(() => {
+        const userId = localStorage.getItem('userId');
         Promise.all([
           fetch("https://szmu1lpz65.execute-api.us-east-1.amazonaws.com/UAT", { // all requests for THIS conman
             method: "POST",
