@@ -8,7 +8,10 @@ import {
 import { toast } from 'react-toastify';
 import { motion } from 'framer-motion';
 import About from '../components/About';
-
+import port1 from '../img/portfolio-1.jpg'
+import port2 from '../img/portfolio-2.jpg'
+import port3 from '../img/portfolio-3.jpg'
+import port4 from '../img/portfolio-4.jpg'
 export default function HomePage() {
 
   const toastOptions = {
@@ -35,7 +38,7 @@ export default function HomePage() {
           <MDBCarouselItem
             className='w-100 d-block'
             itemId={1}
-            src="http://www.newdawnenergy.co.uk/assets/img/portfolio/portfolio-2.jpg"
+            src= {port1}
             alt=''
             style={{ height:'70rem' }}>
             <h5>First slide</h5>
@@ -45,7 +48,7 @@ export default function HomePage() {
           <MDBCarouselItem
             className='w-100 d-block'
             itemId={2}
-            src="http://www.newdawnenergy.co.uk/assets/img/portfolio/portfolio-5.jpg"
+            src= {port2}
             alt=''
             style={{ height:'70rem' }}>
             <h5>Second slide</h5>
@@ -55,7 +58,7 @@ export default function HomePage() {
           <MDBCarouselItem
             className='w-100 d-block'
             itemId={3}
-            src="https://cdn.shortpixel.ai/spai/q_glossy+w_960+h_1011+to_auto+ret_img/https://onehome.org.uk/wp-content/uploads/2018/04/wedmore-green-solar-panels.jpg"
+            src= {port3}
             alt=""
             style={{ height:'70rem' }}>
             <h5>Third slide</h5>
@@ -65,7 +68,7 @@ export default function HomePage() {
           <MDBCarouselItem
             className='w-100 d-block'
             itemId={4}
-            src="https://www.responceenergy.com/images/slider-2.jpg"
+            src= {port4}
             alt=""
             style={{ height:'70rem' }}>
             <h5>Fourth slide</h5>

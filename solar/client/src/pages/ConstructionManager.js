@@ -17,8 +17,8 @@ import {
 import { motion } from 'framer-motion';
 import { toast } from 'react-toastify'
 import DataTable from 'react-data-table-component';
-import { Button, Modal, Form } from 'react-bootstrap';
-import { getUserFullName } from '../utils/utils';
+import { Button, Modal, Form, InputGroup } from 'react-bootstrap';
+import { getUserFullName, getUserId, getAuthToken } from '../utils/utils';
 import axios from 'axios';
 import ImageRetrieve from '../components/imageRetrive';
 
@@ -32,9 +32,11 @@ export default function ConstructionManager() {
         && localStorage.getItem('userId') !== null);
     
     const [fullUserName, setFullUserName] = useState('');
+    const [userId, setUserId] = useState('');
     
     useEffect(() => {
       setFullUserName(getUserFullName)
+      setUserId(getUserId)
     }, []);
 
     const [verticalActive, setVerticalActive] = useState('tab1');
@@ -58,6 +60,8 @@ export default function ConstructionManager() {
     const [siteSurveyors, setSiteSurveyors] = useState();
     const [completedRequests, setCompletedRequests] = useState()
 
+    const token = "Token " + getAuthToken()
+
     // function to pre-fetch the table data
     useEffect(() => {
         Promise.all([
@@ -66,22 +70,27 @@ export default function ConstructionManager() {
             headers: {
               "Content-Type": "application/json"
             },
-            body: JSON.stringify({ "const_mgr": "C1" }) // TODO change to localStorage userID
+            body: JSON.stringify({ "const_mgr": userId })
           }), 
-          fetch("https://5qi3g62xfd.execute-api.us-east-1.amazonaws.com/UAT"), // get all site surveyors
+          fetch("/api/site-surveyors/", { // get all site surveyors
+            method: "GET",
+            headers: {
+              "Authorization": token
+            }
+          }), 
           fetch("https://8ioy3ejwke.execute-api.us-east-1.amazonaws.com/UAT", { // all requests assigned to SS by this conman
             method: "POST",
             headers: {
               "Content-Type": "application/json"
             },
-            body: JSON.stringify({ "const_mgr": "C1" }) // TODO change to localStorage userID
+            body: JSON.stringify({ "const_mgr": userId })
           }), 
           fetch("https://cbayjavixk.execute-api.us-east-1.amazonaws.com/UAT", { // all COMPLETED requests by SS
             method: "POST",
             headers: {
               "Content-Type": "application/json"
             },
-            body: JSON.stringify({ "const_mgr": "C1" })
+            body: JSON.stringify({ "const_mgr": userId })
           }) 
         ])
           .then(([unassignedRequestsResponse, siteSurveyorsResponse, inProgressRequestsResponse, completedRequestsResponse]) =>
@@ -173,10 +182,9 @@ export default function ConstructionManager() {
             <Form.Select value={selectedValue} onChange={handleDropDownChanged}>
             <option>Select</option>
               {
-
                 siteSurveyors &&
                 siteSurveyors.map(val => (
-                  <option key={val.site_syr} value={val.site_syr}> {val.site_syr} </option>
+                  <option key={val.id} value={val.id}> {val.first_name + " " + val.last_name} </option>
                 ))
               }
             </Form.Select>
@@ -195,11 +203,12 @@ export default function ConstructionManager() {
     });
 
     const ExpandedComponent = ({data}) => {
-
       const json = {
-        request_id: data.request_id
+        request_id: data.request_id,
+        email_address: data.email_address,
+        first_name: data.first_name
       }
-
+      
       const handleEstimateUpdated = () => {
         axios
           .post("https://vlcfbqye7a.execute-api.us-east-1.amazonaws.com/UAT", JSON.stringify(json), {
@@ -253,15 +262,15 @@ export default function ConstructionManager() {
           <Modal show={showEstimates} onHide={handleCloseEstimates}>
             <Modal.Body>
               
-                <Form.Group className="mb-3">
-                  <Form.Label>Price Estimate</Form.Label>
-                  <Form.Control type="number" placeholder="Enter price estimate ($)" onChange={(e) => {handleCostChange(e)}} />
-                </Form.Group>
+                <InputGroup className="mb-3">
+                  <Form.Control type="number" placeholder="Enter price estimate" onChange={(e) => {handleCostChange(e)}} />
+                  <InputGroup.Text id="basic-addon2">USD ($)</InputGroup.Text>
+                </InputGroup>
 
-                <Form.Group className="mb-3">
-                  <Form.Label>Duration Estimate</Form.Label>
-                  <Form.Control type="number" placeholder="Enter estimated duration (days)" onChange={(e) => {handleDurationChange(e)}} />
-                </Form.Group>
+                <InputGroup className="mb-3">
+                  <Form.Control type="number" placeholder="Enter estimated duration" onChange={(e) => {handleDurationChange(e)}} />
+                  <InputGroup.Text id="basic-addon2">Num. Working Days</InputGroup.Text>
+                </InputGroup>
               
             </Modal.Body>
             <Modal.Footer>
@@ -282,7 +291,7 @@ export default function ConstructionManager() {
     }; 
 
     return (
-        (roleId == 1) && isLoggedIn ?
+        (roleId === '1' || roleId === '6') && isLoggedIn ?
         (    
         <motion.div
             initial={{opacity: 0}}

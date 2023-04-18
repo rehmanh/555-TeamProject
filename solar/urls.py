@@ -16,6 +16,7 @@ urlpatterns = [
     path('constructionManager', index),
     path('orderTable', index),
     path('coCheck', index),
-    path('payments', index)
-
+    path('payments', index),
+    path('siteSurveyor', index),
+    path('scheduling', index)
 ]

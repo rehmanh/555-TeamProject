@@ -153,3 +153,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
    )
 }
+
+REST_KNOX = {
+    'TOKEN_TTL': None
+}

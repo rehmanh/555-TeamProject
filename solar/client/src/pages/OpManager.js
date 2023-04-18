@@ -8,10 +8,6 @@ import OrderTable from '../components/OrderTable';
 import { motion } from 'framer-motion';
 //import Calender from '../components/Calender';
 import CustomerTable from '../components/CustProgTable'
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-// import Card from 'react-bootstrap/Card';
 import '../css/opManager.css'
 import { toast } from 'react-toastify'
 import '../css//UserRequestForm.css'
@@ -29,96 +25,140 @@ import {
   MDBTabsLink,
   MDBTabsContent,
   MDBTabsPane,
-
   MDBCheckbox,
   MDBBtn
 } from 'mdb-react-ui-kit';
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 import Scheduler from '../components/Scheduler';
+import { getUserFullName } from '../utils/utils';
 
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+  hidden: { opacity: 0, scale: 0 },
+};
 export default function OpManager() {
+
+  const [fullUserName, setFullUserName] = useState('');
+
+  useEffect(() => {
+    setFullUserName(getUserFullName)
+  }, []);
 
   return (
     <motion.div
-    initial={{opacity: 0}}
-    animate={{opacity: 1}}
-    exit={{opacity: 0}}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
       {/* <Navbar /> */}
       <h1>
-        Welcome back Operation Manager!
+        Welcome Back {fullUserName}
       </h1>
       <div className='opPage'>
 
         <MDBContainer breakpoint="sm">
           <MDBRow className="mt-4">
             <MDBCol sm='4'>
-              <MDBCard>
-
-
-                <MDBCardBody>
-                  <MDBCardTitle><BsClipboard2CheckFill />  Sales Obtained</MDBCardTitle>
-                  <MDBCardText>
-                    <span>
-                      211
-                    </span>
-                  </MDBCardText>
-                </MDBCardBody>
-              </MDBCard>
+              <motion.div
+                className="box"
+                variants={boxVariant}
+                initial="hidden"
+                animate="visible"
+              >
+                <MDBCard>
+                  <MDBCardBody>
+                    <MDBCardTitle><BsClipboard2CheckFill />  Sales Obtained</MDBCardTitle>
+                    <MDBCardText>
+                      <span>
+                        211
+                      </span>
+                    </MDBCardText>
+                  </MDBCardBody>
+                </MDBCard>
+              </motion.div >
             </MDBCol>
             <MDBCol sm='4'>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBCardTitle><BsClipboard2PlusFill />  New Clients</MDBCardTitle>
-                  <MDBCardText>
-                    <span>
-                      313
-                    </span>
-                  </MDBCardText>
-                </MDBCardBody>
-              </MDBCard>
+              <motion.div
+                className="box"
+                variants={boxVariant}
+                initial="hidden"
+                animate="visible"
+              >
+                <MDBCard>
+                  <MDBCardBody>
+                    <MDBCardTitle><BsClipboard2PlusFill />  New Clients</MDBCardTitle>
+                    <MDBCardText>
+                      <span>
+                        313
+                      </span>
+                    </MDBCardText>
+                  </MDBCardBody>
+                </MDBCard>
+              </motion.div >
             </MDBCol>
             <MDBCol sm='4'>
-              <MDBCard>
-                <MDBCardBody>
-                  <MDBCardTitle> <BsHammer />  Projects</MDBCardTitle>
-                  <MDBCardText>
-                    <span>
-                      212
-                    </span>
-                  </MDBCardText>
-                </MDBCardBody>
-              </MDBCard>
+              <motion.div
+                className="box"
+                variants={boxVariant}
+                initial="hidden"
+                animate="visible"
+              >
+                <MDBCard>
+                  <MDBCardBody>
+                    <MDBCardTitle> <BsHammer />  Projects</MDBCardTitle>
+                    <MDBCardText>
+                      <span>
+                        212
+                      </span>
+                    </MDBCardText>
+                  </MDBCardBody>
+                </MDBCard>
+              </motion.div >
             </MDBCol>
           </MDBRow>
           <MDBRow className="mt-4 text-center">
             <MDBCol sm='3'></MDBCol>
             <MDBCol sm='6'>
-              <MDBCard>
-                <Scheduler />
-                {/* <Calender /> */}
-                {/* <MDBCardBody>
+              <motion.div
+                className="box"
+                variants={boxVariant}
+                initial="hidden"
+                animate="visible"
+              >
+                <MDBCard>
+                  <Scheduler />
+                  {/* <Calender /> */}
+                  {/* <MDBCardBody>
                 <MDBCardTitle>New Requests</MDBCardTitle>
                 <MDBCardText>
                   1
                 </MDBCardText>
               </MDBCardBody> */}
-              </MDBCard>
+                </MDBCard>
+              </motion.div>
             </MDBCol>
             <MDBCol sm='3'></MDBCol>
+
             <MDBRow>&nbsp;</MDBRow>
             <MDBCol sm='12'>
               <MDBRow >
                 <MDBCol>
-                  <MDBCard>
-                    <CustomerTable />
-                  </MDBCard>
+                  <motion.div
+                    className="box"
+                    variants={boxVariant}
+                    initial="hidden"
+                    animate="visible"
+                  >
+                    <MDBCard>
+                      <CustomerTable />
+                    </MDBCard>
+                  </motion.div>
                 </MDBCol>
               </MDBRow>
               <MDBRow className="mt-4">
                 <MDBCol>
                   <MDBCard>
-                    
+
                   </MDBCard>
                 </MDBCol>
               </MDBRow>
