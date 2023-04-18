@@ -1,30 +1,10 @@
 {
   "status": "done",
   "assets": {
-    "frontend-2d0871421794fda7c4ea.js": {
-      "name": "frontend-2d0871421794fda7c4ea.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\Payments-branch\\555-TeamProject\\solar\\static\\solar\\frontend-2d0871421794fda7c4ea.js",
-      "publicPath": "static/solar/frontend-2d0871421794fda7c4ea.js"
-    },
-    "frontend-4339cdd76849454a4bb8.js": {
-      "name": "frontend-4339cdd76849454a4bb8.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\Payments-branch\\555-TeamProject\\solar\\static\\solar\\frontend-4339cdd76849454a4bb8.js",
-      "publicPath": "static/solar/frontend-4339cdd76849454a4bb8.js"
-    },
-    "frontend-5b75362af380e3cf1e5a.js": {
-      "name": "frontend-5b75362af380e3cf1e5a.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\Payments-branch\\555-TeamProject\\solar\\static\\solar\\frontend-5b75362af380e3cf1e5a.js",
-      "publicPath": "static/solar/frontend-5b75362af380e3cf1e5a.js"
-    },
-    "frontend-fa8048ffa33821470e94.js": {
-      "name": "frontend-fa8048ffa33821470e94.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\Payments-branch\\555-TeamProject\\solar\\static\\solar\\frontend-fa8048ffa33821470e94.js",
-      "publicPath": "static/solar/frontend-fa8048ffa33821470e94.js"
-    },
-    "frontend-fe6dc2aa3e65b1502889.js": {
-      "name": "frontend-fe6dc2aa3e65b1502889.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\Payments-branch\\555-TeamProject\\solar\\static\\solar\\frontend-fe6dc2aa3e65b1502889.js",
-      "publicPath": "static/solar/frontend-fe6dc2aa3e65b1502889.js"
+    "frontend-664404c8b98d35717c8c.js": {
+      "name": "frontend-664404c8b98d35717c8c.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\Payments-branch\\555-TeamProject\\solar\\static\\solar\\frontend-664404c8b98d35717c8c.js",
+      "publicPath": "static/solar/frontend-664404c8b98d35717c8c.js"
     },
     "images/Solar1.svg": {
       "name": "images/Solar1.svg",
@@ -49,7 +29,7 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-5b75362af380e3cf1e5a.js"
+      "frontend-664404c8b98d35717c8c.js"
     ]
   },
   "publicPath": "static/solar/"
