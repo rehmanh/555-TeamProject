@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { ImHome, ImFileText2, ImUserCheck, ImEnter, ImSun, ImInfo, ImCoinDollar, ImStatsBars } from "react-icons/im";
+import { ImHome, ImFileText2, ImUserCheck, ImEnter, ImSun, ImInfo, ImCoinDollar, ImNewspaper } from "react-icons/im";
 
 
 export default class SolarNavbar extends Component {
@@ -48,8 +48,8 @@ export default class SolarNavbar extends Component {
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#payment/3.3">{<ImCoinDollar />} Payment</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#aboutus/3.4">
-                  About Us
+                <NavDropdown.Item href="/aboutUs">
+                {<ImNewspaper />} About Us
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>

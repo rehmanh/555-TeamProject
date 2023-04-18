@@ -37,7 +37,7 @@ export default function App() {
                                 </a>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <a href='/userreq' className='text-reset'>
                                     Pricing
                                 </a>
                             </p>
