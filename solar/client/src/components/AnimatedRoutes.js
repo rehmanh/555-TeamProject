@@ -15,6 +15,7 @@ import ConstructionManager from '../pages/ConstructionManager';
 import SiteSurveyor from '../pages/SiteSurveyor';
 import { AnimatePresence } from 'framer-motion';
 import Scheduling from '../pages/scheduling';
+import AboutUs from '../pages/aboutUs';
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -49,6 +50,7 @@ function AnimatedRoutes() {
                 <Route exact path= '/coCheck' element={<CoCheck />}/>
                 <Route exact path= '/siteSurveyor' element={<SiteSurveyor />}/>
                 <Route exact path= '/scheduling' element={<Scheduling />}/>
+                <Route exact path='/aboutUs' element={<AboutUs />} />
             </Routes>
         </AnimatePresence>
     )
