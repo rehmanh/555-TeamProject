@@ -66,8 +66,6 @@ export default function OpManager() {
                 animate="visible"
               >
                 <MDBCard>
-
-
                   <MDBCardBody>
                     <MDBCardTitle><BsClipboard2CheckFill />  Sales Obtained</MDBCardTitle>
                     <MDBCardText>
