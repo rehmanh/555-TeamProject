@@ -4,6 +4,7 @@ import axios from 'axios';
 import CustomListDropDown from './DropDown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@coreui/coreui/dist/css/coreui.min.css';
+import { getAuthToken } from '../utils/utils';
 
 
 createTheme('solarized', {
@@ -50,32 +51,43 @@ const customStyles = {
 
 function Table() {
   const [data, setData] = useState([]);
+  const [salesReps, setSalesReps] = useState();
   const [selectedRows, setSelectedRows] = useState([]);
 
+  const token = "Token " + getAuthToken()
+
   useEffect(() => {
-    axios.get('https://m90c2ol29g.execute-api.us-east-1.amazonaws.com/UAT')
-      .then(response => {
-        setData(response.data);
+    Promise.all([
+      fetch("https://m90c2ol29g.execute-api.us-east-1.amazonaws.com/UAT", {
+        method: "GET"
+      }),
+      fetch("/api/salesreps/", {
+        method: "GET",
+        "Authorization": token
       })
-      .catch(error => {
-        console.error(error);
-      });
+    ])
+    .then(([allDataResponse, salesRepResponse]) => 
+      Promise.all([allDataResponse.json(), salesRepResponse.json()])
+    )
+    .then(([dataAll, dataSalesReps]) => {
+      setData(dataAll)
+      setSalesReps(dataSalesReps)
+    })
   }, []);
 
   const handleSelectedRow = useCallback(state => {
     setSelectedRows(state.selectedRows)
   }, []);
 
-  // useEffect(() => {
-  //   console.log(selectedRows);
-  // }, [selectedRows])
-
   const columns = [
-    {name: 'Name', selector: 'first_name', center: true},
-    {name: 'Request ID', selector: 'request_id', center: true },
-    {name: 'Sales Rep Assigned', selector: 'sales_rep_id', center: true},
-    {name: 'Date of request', selector: 'created_at_datetime', center: true},
-    {name: 'Request Status', selector: 'request_status', center: true},
+    {name: 'Name', selector: (row, i) => row.first_name, center: true},
+    {name: 'Request ID', selector: (row, i) => row.request_id, center: true },
+    {name: 'Sales Rep Assigned', selector: (row, i) => 
+      (salesReps && salesReps.filter((s) => s.id == row.sales_rep_id)[0].first_name + ' ' + salesReps.filter((s) => s.id == row.sales_rep_id)[0].last_name),
+      center: true
+    },
+    {name: 'Date of request', selector: (row, i) => row.created_at_datetime, center: true},
+    {name: 'Request Status', selector: (row, i) => row.request_status, center: true},
   ];
 
   return (

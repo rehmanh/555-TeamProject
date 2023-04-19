@@ -119,7 +119,10 @@ export default function ConstructionManager() {
 
     const inProgressRequestsColumns = [
       {name: 'Request ID', selector: (row, i) => row.request_id, center: true},
-      {name: 'Site Surveyor', selector: (row, i) => row.site_syr, center: true},
+      {name: 'Site Surveyor', selector: (row, i) => 
+        (siteSurveyors && siteSurveyors.filter((s) => s.id == row.site_syr)[0].first_name + ' ' + siteSurveyors.filter((s) => s.id == row.site_syr)[0].last_name),
+        center: true
+      },
       {name: 'First Name', selector: (row, i) => row.first_name, center: true}, 
       {name: 'Street Address', selector: (row, i) => row.street_address1, center: true},
       {name: 'Zip Code', selector: (row, i) => row.zip_code, center: true},
@@ -128,7 +131,10 @@ export default function ConstructionManager() {
 
     const completedRequestColumns = [
       {name: 'Request ID', selector: (row, i) => row.request_id, center: true},
-      {name: 'Site Surveyor', selector: (row, i) => row.site_syr, center: true},
+      {name: 'Site Surveyor', selector: (row, i) => 
+        (siteSurveyors && siteSurveyors.filter((s) => s.id == row.site_syr)[0].first_name + ' ' + siteSurveyors.filter((s) => s.id == row.site_syr)[0].last_name),
+        center: true
+      },
       {name: 'First Name', selector: (row, i) => row.first_name, center: true}, 
       {name: 'Street Address', selector: (row, i) => row.street_address1, center: true},
       {name: 'Zip Code', selector: (row, i) => row.zip_code, center: true},
