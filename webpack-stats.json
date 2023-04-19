@@ -1,240 +1,55 @@
 {
   "status": "done",
   "assets": {
-    "frontend-0042884993411775fb79.js": {
-      "name": "frontend-0042884993411775fb79.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-0042884993411775fb79.js",
-      "publicPath": "static/solar/frontend-0042884993411775fb79.js"
+    "frontend-0b302972a49c4a113560.js": {
+      "name": "frontend-0b302972a49c4a113560.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-0b302972a49c4a113560.js",
+      "publicPath": "static/solar/frontend-0b302972a49c4a113560.js"
     },
-    "frontend-04daa59d0786b5d94168.js": {
-      "name": "frontend-04daa59d0786b5d94168.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-04daa59d0786b5d94168.js",
-      "publicPath": "static/solar/frontend-04daa59d0786b5d94168.js"
+    "frontend-24e15e7c3820a1288455.js": {
+      "name": "frontend-24e15e7c3820a1288455.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-24e15e7c3820a1288455.js",
+      "publicPath": "static/solar/frontend-24e15e7c3820a1288455.js"
     },
-    "frontend-063b40a5b603d113df64.js": {
-      "name": "frontend-063b40a5b603d113df64.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-063b40a5b603d113df64.js",
-      "publicPath": "static/solar/frontend-063b40a5b603d113df64.js"
+    "frontend-2b5c937c88327d799b54.js": {
+      "name": "frontend-2b5c937c88327d799b54.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-2b5c937c88327d799b54.js",
+      "publicPath": "static/solar/frontend-2b5c937c88327d799b54.js"
     },
-    "frontend-06b151d04404d9633eb3.js": {
-      "name": "frontend-06b151d04404d9633eb3.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-06b151d04404d9633eb3.js",
-      "publicPath": "static/solar/frontend-06b151d04404d9633eb3.js"
+    "frontend-2e0eca2b5e2a16c31699.js": {
+      "name": "frontend-2e0eca2b5e2a16c31699.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-2e0eca2b5e2a16c31699.js",
+      "publicPath": "static/solar/frontend-2e0eca2b5e2a16c31699.js"
     },
-    "frontend-0e00dd39a8a8dcb32c4c.js": {
-      "name": "frontend-0e00dd39a8a8dcb32c4c.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-0e00dd39a8a8dcb32c4c.js",
-      "publicPath": "static/solar/frontend-0e00dd39a8a8dcb32c4c.js"
+    "frontend-364b9361d8745a3d3aea.js": {
+      "name": "frontend-364b9361d8745a3d3aea.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-364b9361d8745a3d3aea.js",
+      "publicPath": "static/solar/frontend-364b9361d8745a3d3aea.js"
     },
-    "frontend-156f1412e78e795673cf.js": {
-      "name": "frontend-156f1412e78e795673cf.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-156f1412e78e795673cf.js",
-      "publicPath": "static/solar/frontend-156f1412e78e795673cf.js"
+    "frontend-47cecebb0dd3f7ad0b54.js": {
+      "name": "frontend-47cecebb0dd3f7ad0b54.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-47cecebb0dd3f7ad0b54.js",
+      "publicPath": "static/solar/frontend-47cecebb0dd3f7ad0b54.js"
     },
-    "frontend-19dc87596c20fb53f105.js": {
-      "name": "frontend-19dc87596c20fb53f105.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-19dc87596c20fb53f105.js",
-      "publicPath": "static/solar/frontend-19dc87596c20fb53f105.js"
+    "frontend-57c5449310b6390e241d.js": {
+      "name": "frontend-57c5449310b6390e241d.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-57c5449310b6390e241d.js",
+      "publicPath": "static/solar/frontend-57c5449310b6390e241d.js"
     },
-    "frontend-1e212e2c4c80e4ecb50a.js": {
-      "name": "frontend-1e212e2c4c80e4ecb50a.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-1e212e2c4c80e4ecb50a.js",
-      "publicPath": "static/solar/frontend-1e212e2c4c80e4ecb50a.js"
-    },
-    "frontend-206b0d051aa854505c54.js": {
-      "name": "frontend-206b0d051aa854505c54.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-206b0d051aa854505c54.js",
-      "publicPath": "static/solar/frontend-206b0d051aa854505c54.js"
-    },
-    "frontend-21fed17dec1ee936eec4.js": {
-      "name": "frontend-21fed17dec1ee936eec4.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-21fed17dec1ee936eec4.js",
-      "publicPath": "static/solar/frontend-21fed17dec1ee936eec4.js"
-    },
-    "frontend-29f1a031e20f492e1d1b.js": {
-      "name": "frontend-29f1a031e20f492e1d1b.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-29f1a031e20f492e1d1b.js",
-      "publicPath": "static/solar/frontend-29f1a031e20f492e1d1b.js"
-    },
-    "frontend-2c1e39bbc0a430ca79d5.js": {
-      "name": "frontend-2c1e39bbc0a430ca79d5.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-2c1e39bbc0a430ca79d5.js",
-      "publicPath": "static/solar/frontend-2c1e39bbc0a430ca79d5.js"
-    },
-    "frontend-3418ad5cc8b942011ad4.js": {
-      "name": "frontend-3418ad5cc8b942011ad4.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-3418ad5cc8b942011ad4.js",
-      "publicPath": "static/solar/frontend-3418ad5cc8b942011ad4.js"
-    },
-    "frontend-39944552162b8c393bbc.js": {
-      "name": "frontend-39944552162b8c393bbc.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-39944552162b8c393bbc.js",
-      "publicPath": "static/solar/frontend-39944552162b8c393bbc.js"
-    },
-    "frontend-399bf717be93a516c708.js": {
-      "name": "frontend-399bf717be93a516c708.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-399bf717be93a516c708.js",
-      "publicPath": "static/solar/frontend-399bf717be93a516c708.js"
-    },
-    "frontend-3b0eb795ac6af7f5f3b4.js": {
-      "name": "frontend-3b0eb795ac6af7f5f3b4.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-3b0eb795ac6af7f5f3b4.js",
-      "publicPath": "static/solar/frontend-3b0eb795ac6af7f5f3b4.js"
-    },
-    "frontend-44bc380d3a18f3a67ee2.js": {
-      "name": "frontend-44bc380d3a18f3a67ee2.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-44bc380d3a18f3a67ee2.js",
-      "publicPath": "static/solar/frontend-44bc380d3a18f3a67ee2.js"
-    },
-    "frontend-52d431c03115b7a79c0a.js": {
-      "name": "frontend-52d431c03115b7a79c0a.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-52d431c03115b7a79c0a.js",
-      "publicPath": "static/solar/frontend-52d431c03115b7a79c0a.js"
-    },
-    "frontend-58ace8587f261d83da40.js": {
-      "name": "frontend-58ace8587f261d83da40.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-58ace8587f261d83da40.js",
-      "publicPath": "static/solar/frontend-58ace8587f261d83da40.js"
-    },
-    "frontend-754f90f828f3f45713b9.js": {
-      "name": "frontend-754f90f828f3f45713b9.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-754f90f828f3f45713b9.js",
-      "publicPath": "static/solar/frontend-754f90f828f3f45713b9.js"
-    },
-    "frontend-7885cc06f5b0f059adeb.js": {
-      "name": "frontend-7885cc06f5b0f059adeb.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-7885cc06f5b0f059adeb.js",
-      "publicPath": "static/solar/frontend-7885cc06f5b0f059adeb.js"
-    },
-    "frontend-7ced3c920710ab5d262c.js": {
-      "name": "frontend-7ced3c920710ab5d262c.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-7ced3c920710ab5d262c.js",
-      "publicPath": "static/solar/frontend-7ced3c920710ab5d262c.js"
+    "frontend-61b22b2d0e6686bc460f.js": {
+      "name": "frontend-61b22b2d0e6686bc460f.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-61b22b2d0e6686bc460f.js",
+      "publicPath": "static/solar/frontend-61b22b2d0e6686bc460f.js"
     },
     "frontend-7e4db041674e743fa964.js": {
       "name": "frontend-7e4db041674e743fa964.js",
       "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-7e4db041674e743fa964.js",
       "publicPath": "static/solar/frontend-7e4db041674e743fa964.js"
     },
-    "frontend-7e767ac60ffa14b1cf1d.js": {
-      "name": "frontend-7e767ac60ffa14b1cf1d.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-7e767ac60ffa14b1cf1d.js",
-      "publicPath": "static/solar/frontend-7e767ac60ffa14b1cf1d.js"
-    },
-    "frontend-7f60225718bead3434b2.js": {
-      "name": "frontend-7f60225718bead3434b2.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-7f60225718bead3434b2.js",
-      "publicPath": "static/solar/frontend-7f60225718bead3434b2.js"
-    },
-    "frontend-868a8cfd6ee25fcdafcb.js": {
-      "name": "frontend-868a8cfd6ee25fcdafcb.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-868a8cfd6ee25fcdafcb.js",
-      "publicPath": "static/solar/frontend-868a8cfd6ee25fcdafcb.js"
-    },
-    "frontend-8743fc7159277962f57e.js": {
-      "name": "frontend-8743fc7159277962f57e.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-8743fc7159277962f57e.js",
-      "publicPath": "static/solar/frontend-8743fc7159277962f57e.js"
-    },
-    "frontend-937782b89025789051ae.js": {
-      "name": "frontend-937782b89025789051ae.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-937782b89025789051ae.js",
-      "publicPath": "static/solar/frontend-937782b89025789051ae.js"
-    },
-    "frontend-96d3c2de70dbab55ed84.js": {
-      "name": "frontend-96d3c2de70dbab55ed84.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-96d3c2de70dbab55ed84.js",
-      "publicPath": "static/solar/frontend-96d3c2de70dbab55ed84.js"
-    },
-    "frontend-a115bc3b18a07845fdad.js": {
-      "name": "frontend-a115bc3b18a07845fdad.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-a115bc3b18a07845fdad.js",
-      "publicPath": "static/solar/frontend-a115bc3b18a07845fdad.js"
-    },
-    "frontend-ac13c44a9c51209ee34e.js": {
-      "name": "frontend-ac13c44a9c51209ee34e.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-ac13c44a9c51209ee34e.js",
-      "publicPath": "static/solar/frontend-ac13c44a9c51209ee34e.js"
-    },
-    "frontend-b7ace341cbbe89fd3ecb.js": {
-      "name": "frontend-b7ace341cbbe89fd3ecb.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-b7ace341cbbe89fd3ecb.js",
-      "publicPath": "static/solar/frontend-b7ace341cbbe89fd3ecb.js"
-    },
-    "frontend-be84f63de64b12a371b8.js": {
-      "name": "frontend-be84f63de64b12a371b8.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-be84f63de64b12a371b8.js",
-      "publicPath": "static/solar/frontend-be84f63de64b12a371b8.js"
-    },
-    "frontend-c0486efa367186505409.js": {
-      "name": "frontend-c0486efa367186505409.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-c0486efa367186505409.js",
-      "publicPath": "static/solar/frontend-c0486efa367186505409.js"
-    },
-    "frontend-c4b8f8f8ba662840b07b.js": {
-      "name": "frontend-c4b8f8f8ba662840b07b.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-c4b8f8f8ba662840b07b.js",
-      "publicPath": "static/solar/frontend-c4b8f8f8ba662840b07b.js"
-    },
-    "frontend-c6881d8fd0a5a24b4195.js": {
-      "name": "frontend-c6881d8fd0a5a24b4195.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-c6881d8fd0a5a24b4195.js",
-      "publicPath": "static/solar/frontend-c6881d8fd0a5a24b4195.js"
-    },
-    "frontend-cea636e326319ec85439.js": {
-      "name": "frontend-cea636e326319ec85439.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-cea636e326319ec85439.js",
-      "publicPath": "static/solar/frontend-cea636e326319ec85439.js"
-    },
-    "frontend-d0813941caa638d5c069.js": {
-      "name": "frontend-d0813941caa638d5c069.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-d0813941caa638d5c069.js",
-      "publicPath": "static/solar/frontend-d0813941caa638d5c069.js"
-    },
-    "frontend-d634dff4f328c2c3ac98.js": {
-      "name": "frontend-d634dff4f328c2c3ac98.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-d634dff4f328c2c3ac98.js",
-      "publicPath": "static/solar/frontend-d634dff4f328c2c3ac98.js"
-    },
-    "frontend-d8362ed87dcbee029d16.js": {
-      "name": "frontend-d8362ed87dcbee029d16.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-d8362ed87dcbee029d16.js",
-      "publicPath": "static/solar/frontend-d8362ed87dcbee029d16.js"
-    },
-    "frontend-ea018a50784edcfd844d.js": {
-      "name": "frontend-ea018a50784edcfd844d.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-ea018a50784edcfd844d.js",
-      "publicPath": "static/solar/frontend-ea018a50784edcfd844d.js"
-    },
-    "frontend-eb03076230dcab3c412f.js": {
-      "name": "frontend-eb03076230dcab3c412f.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-eb03076230dcab3c412f.js",
-      "publicPath": "static/solar/frontend-eb03076230dcab3c412f.js"
-    },
-    "frontend-f9cabbf17532b5fa87b7.js": {
-      "name": "frontend-f9cabbf17532b5fa87b7.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-f9cabbf17532b5fa87b7.js",
-      "publicPath": "static/solar/frontend-f9cabbf17532b5fa87b7.js"
-    },
-    "frontend-fa8665f06d777a681633.js": {
-      "name": "frontend-fa8665f06d777a681633.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-fa8665f06d777a681633.js",
-      "publicPath": "static/solar/frontend-fa8665f06d777a681633.js"
-    },
-    "frontend-fda5f8afbc5aa94770a3.js": {
-      "name": "frontend-fda5f8afbc5aa94770a3.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-fda5f8afbc5aa94770a3.js",
-      "publicPath": "static/solar/frontend-fda5f8afbc5aa94770a3.js"
-    },
-    "frontend-fe4d73bd2aa704ef671d.js": {
-      "name": "frontend-fe4d73bd2aa704ef671d.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-fe4d73bd2aa704ef671d.js",
-      "publicPath": "static/solar/frontend-fe4d73bd2aa704ef671d.js"
-    },
-    "frontend-ff38186985328f90cf84.js": {
-      "name": "frontend-ff38186985328f90cf84.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-ff38186985328f90cf84.js",
-      "publicPath": "static/solar/frontend-ff38186985328f90cf84.js"
+    "frontend-c4dba7f2ae4a84dcb2e5.js": {
+      "name": "frontend-c4dba7f2ae4a84dcb2e5.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-c4dba7f2ae4a84dcb2e5.js",
+      "publicPath": "static/solar/frontend-c4dba7f2ae4a84dcb2e5.js"
     },
     "images/Luis.jpg": {
       "name": "images/Luis.jpg",
@@ -294,7 +109,7 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-7e4db041674e743fa964.js"
+      "frontend-24e15e7c3820a1288455.js"
     ]
   },
   "publicPath": "static/solar/"

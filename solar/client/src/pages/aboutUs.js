@@ -22,6 +22,7 @@ const Luis = () => {
                     <MDBCardImage
                         src={LuisImg}
                         position="top"
+                        className="image"
                     />
                     <MDBCardBody className='d-flex flex-column'>
                         <MDBCardTitle>Luis</MDBCardTitle>
@@ -40,6 +41,7 @@ const Ravi = () => {
                     <MDBCardImage
                         src={RaviImg}
                         position="top"
+                        className="image"
                     />
                     <MDBCardBody className='d-flex flex-column'>
                         <MDBCardTitle>Ravi Kiran</MDBCardTitle>
@@ -60,23 +62,23 @@ export default function AboutUs(){
             <br />
                 <center>
                     <MDBRow className="mb-3 d-flex align-items-stretch">
-                        <MDBCol className="mb-3 d-flex align-items-stretch">
+                        <MDBCol sm="3">
                             <Luis />
                         </MDBCol>
-                        <MDBCol className="mb-3 d-flex align-items-stretch">
+                        <MDBCol sm="3">
                             <Ravi />
                         </MDBCol>
-                        <MDBCol className="mb-3 d-flex align-items-stretch">
+                        <MDBCol sm="3">
                             <Luis />
                         </MDBCol>
-                        <MDBCol className="mb-3 d-flex align-items-stretch">
+                        <MDBCol sm="3">
                             <Luis />
                         </MDBCol>
                     </MDBRow>
                 </center>
                 <br />
                 <center>
-                    <MDBRow className="mt-4">
+                    <MDBRow className="mt-4 d-flex align-items-stretch">
                         <MDBCol sm='4'>
                             <Luis />
                         </MDBCol>
