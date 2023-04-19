@@ -13,8 +13,16 @@ import {
 } from 'mdb-react-ui-kit';
 import LuisImg from '../img/Luis.jpg'
 import RaviImg from '../img/Ravi.png'
-import '../css/style.css'
+import KevinImg from '../img/Kevin.jpg'
+import HabibImg from '../img/Habib.jpeg'
+import '../css/aboutUs.css'
 
+const mystyle = {
+    color: "black",
+    padding: "10px",
+    fontFamily: "monospace",
+    fontSize: "80px"
+  };
 
 const Luis = () => {
     return(
@@ -25,8 +33,8 @@ const Luis = () => {
                         className="image"
                     />
                     <MDBCardBody className='d-flex flex-column'>
-                        <MDBCardTitle>Luis</MDBCardTitle>
-                        <MDBCardText>
+                        <MDBCardTitle className='fontTitle'>Luis Ng Tang</MDBCardTitle>
+                        <MDBCardText className='fontBody'>
                             Graduate Student at Stevens Institute of Tecnology pursing a Masters in Software Engineering. 
                             Contributed with the frontend of this project.
                         </MDBCardText>
@@ -44,9 +52,46 @@ const Ravi = () => {
                         className="image"
                     />
                     <MDBCardBody className='d-flex flex-column'>
-                        <MDBCardTitle>Ravi Kiran</MDBCardTitle>
-                        <MDBCardText>
+                        <MDBCardTitle className='fontTitle'>Ravi Kiran</MDBCardTitle>
+                        <MDBCardText className='fontBody'>
                            Description
+                        </MDBCardText>
+                    </MDBCardBody>
+                </MDBCard>
+    )
+}
+
+const Kevin = () => {
+    return(
+        <MDBCard style={{ maxWidth: "18rem"}} className='card mb-3 border-dark'>
+                    <MDBCardImage
+                        src={KevinImg}
+                        position="top"
+                        className="image"
+                    />
+                    <MDBCardBody className='d-flex flex-column'>
+                        <MDBCardTitle className='fontTitle'>Yu-Cheng</MDBCardTitle>
+                        <MDBCardText className='fontBody'>
+                            Hi I'm Yu-Cheng. I helped with the front end of the project.
+                        </MDBCardText>
+                    </MDBCardBody>
+                </MDBCard>
+    )
+}
+
+const Habib = () => {
+    return(
+        <MDBCard style={{ maxWidth: "18rem"}} className='card mb-3 border-dark'>
+                    <MDBCardImage
+                        src={HabibImg}
+                        position="top"
+                        className="image"
+                    />
+                    <MDBCardBody className='d-flex flex-column'>
+                        <MDBCardTitle className='fontTitle'>Habib</MDBCardTitle>
+                        <MDBCardText className='fontBody'>
+                        I am a M.S. Software Engineering student at Stevens Institute of Technology. 
+                        Prior to joining Stevens, he worked in industry as a full-stack software engineer for a GPS tracking and telematics company. 
                         </MDBCardText>
                     </MDBCardBody>
                 </MDBCard>
@@ -56,7 +101,7 @@ const Ravi = () => {
 export default function AboutUs(){
     return(
         <div>
-            <h1>MEET THE TEAM!</h1>
+            <h1 style={mystyle}>Meet the Team!</h1>
             <br />
             <MDBContainer>
             <br />
@@ -69,10 +114,10 @@ export default function AboutUs(){
                             <Ravi />
                         </MDBCol>
                         <MDBCol sm="3">
-                            <Luis />
+                            <Kevin />
                         </MDBCol>
                         <MDBCol sm="3">
-                            <Luis />
+                            <Habib />
                         </MDBCol>
                     </MDBRow>
                 </center>
