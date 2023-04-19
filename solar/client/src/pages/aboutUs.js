@@ -26,7 +26,7 @@ const mystyle = {
 
 const Luis = () => {
     return(
-        <MDBCard style={{ maxWidth: "18rem"}} className='card mb-3 border-dark'>
+        <MDBCard style={{ maxWidth: "18rem"}} className='Usercard mb-3 border-dark'>
                     <MDBCardImage
                         src={LuisImg}
                         position="top"
@@ -45,7 +45,7 @@ const Luis = () => {
 
 const Ravi = () => {
     return(
-        <MDBCard style={{ maxWidth: "18rem"}} className='card mb-3 border-dark'>
+        <MDBCard style={{ maxWidth: "18rem"}} className='Usercard mb-3 border-dark'>
                     <MDBCardImage
                         src={RaviImg}
                         position="top"
@@ -54,7 +54,9 @@ const Ravi = () => {
                     <MDBCardBody className='d-flex flex-column'>
                         <MDBCardTitle className='fontTitle'>Ravi Kiran</MDBCardTitle>
                         <MDBCardText className='fontBody'>
-                           Description
+                            Ravi Kiran contributed to working on the backend of our project deployed on AWS. 
+                            He is an Electrical Engineering graduate from IIT Bombay, pursuing a Master's in Software Engineering.
+                            He is an AWS-certified cloud solutions architect with experience in Python and Javascript. 
                         </MDBCardText>
                     </MDBCardBody>
                 </MDBCard>
@@ -63,7 +65,7 @@ const Ravi = () => {
 
 const Kevin = () => {
     return(
-        <MDBCard style={{ maxWidth: "18rem"}} className='card mb-3 border-dark'>
+        <MDBCard style={{ maxWidth: "18rem"}} className='Usercard mb-3 border-dark'>
                     <MDBCardImage
                         src={KevinImg}
                         position="top"
@@ -81,7 +83,7 @@ const Kevin = () => {
 
 const Habib = () => {
     return(
-        <MDBCard style={{ maxWidth: "18rem"}} className='card mb-3 border-dark'>
+        <MDBCard style={{ maxWidth: "18rem"}} className='Usercard mb-3 border-dark'>
                     <MDBCardImage
                         src={HabibImg}
                         position="top"
