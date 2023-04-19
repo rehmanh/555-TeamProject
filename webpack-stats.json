@@ -1,10 +1,10 @@
 {
   "status": "done",
   "assets": {
-    "frontend-f7c053c4f5919e1b51fa.js": {
-      "name": "frontend-f7c053c4f5919e1b51fa.js",
-      "path": "C:\\Users\\Lenovo Legion\\Desktop\\Payments-branch\\555-TeamProject\\solar\\static\\solar\\frontend-f7c053c4f5919e1b51fa.js",
-      "publicPath": "static/solar/frontend-f7c053c4f5919e1b51fa.js"
+    "frontend-e0569bd7f4ecb94b6091.js": {
+      "name": "frontend-e0569bd7f4ecb94b6091.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\Payments-branch\\555-TeamProject\\solar\\static\\solar\\frontend-e0569bd7f4ecb94b6091.js",
+      "publicPath": "static/solar/frontend-e0569bd7f4ecb94b6091.js"
     },
     "images/Habib.jpeg": {
       "name": "images/Habib.jpeg",
@@ -74,7 +74,7 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-f7c053c4f5919e1b51fa.js"
+      "frontend-e0569bd7f4ecb94b6091.js"
     ]
   },
   "publicPath": "static/solar/"
