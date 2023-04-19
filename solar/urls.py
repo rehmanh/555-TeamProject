@@ -17,5 +17,6 @@ urlpatterns = [
     path('orderTable', index),
     path('coCheck', index),
     path('siteSurveyor', index),
-    path('scheduling', index)
+    path('scheduling', index),
+    path('aboutUs', index)
 ]

@@ -1,0 +1,28 @@
+.card{
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+.image{
+    object-fit: cover;
+    height: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+.fontTitle {
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.fontBody {
+    font-family: monospace;
+}

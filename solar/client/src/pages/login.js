@@ -147,7 +147,7 @@ export default class Login extends Component {
                 Sign in
               </Button>
             </Form.Group>
-            <Form.Group>
+            {/* <Form.Group>
               <div className="text-center mt-5">
                 <p>
                   Not a member? <a href="/signup">Register</a>
@@ -173,7 +173,7 @@ export default class Login extends Component {
                   </Row>
                 </Container>
               </div>
-            </Form.Group>
+            </Form.Group> */}
           </Form>
         {/* </div> */}
       </motion.div>

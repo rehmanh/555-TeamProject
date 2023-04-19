@@ -4,6 +4,7 @@ import axios from "axios";
 import {ToastContainer, toast} from 'react-toastify';
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { ImExit } from "react-icons/im";
 
 export default class Logout extends Component {
 
@@ -40,6 +41,7 @@ export default class Logout extends Component {
     render() {
         return (
             <NavDropdown.Item onClick={this.logout}>
+                {<ImExit />}
                 Log out
             </NavDropdown.Item>
         )
