@@ -1,10 +1,15 @@
 {
   "status": "done",
   "assets": {
-    "frontend-35ac2b92afdc1e621286.js": {
-      "name": "frontend-35ac2b92afdc1e621286.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-35ac2b92afdc1e621286.js",
-      "publicPath": "static/solar/frontend-35ac2b92afdc1e621286.js"
+    "frontend-6d2a53a0f691ee94a275.js": {
+      "name": "frontend-6d2a53a0f691ee94a275.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-6d2a53a0f691ee94a275.js",
+      "publicPath": "static/solar/frontend-6d2a53a0f691ee94a275.js"
+    },
+    "frontend-eae3c4bed8e02883470a.js": {
+      "name": "frontend-eae3c4bed8e02883470a.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-eae3c4bed8e02883470a.js",
+      "publicPath": "static/solar/frontend-eae3c4bed8e02883470a.js"
     },
     "images/Habib.jpeg": {
       "name": "images/Habib.jpeg",
@@ -74,7 +79,7 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-35ac2b92afdc1e621286.js"
+      "frontend-6d2a53a0f691ee94a275.js"
     ]
   },
   "publicPath": "static/solar/"
