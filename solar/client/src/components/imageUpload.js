@@ -4,44 +4,68 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
-export const ImgUp = ({request, siteSurveyor}) => {
+export const ImgUp = ({ request, siteSurveyor }) => {
   const [image1, setImage1] = useState("");
   const [image2, setImage2] = useState("");
   const [comments, setComments] = useState("");
 
-  const handleImage1Change = (e) => {
-    const file = e.target.files[0];
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => {
-      setImage1(reader.result.split(",")[1]);
-      //console.log(reader.result.split(",")[1]);
-    };
+  const compressImage = (file, maxWidth, maxHeight) => {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.src = URL.createObjectURL(file);
+      img.onload = () => {
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+
+        let width = img.width;
+        let height = img.height;
+
+        if (width > height) {
+          if (width > maxWidth) {
+            height *= maxWidth / width;
+            width = maxWidth;
+          }
+        } else {
+          if (height > maxHeight) {
+            width *= maxHeight / height;
+            height = maxHeight;
+          }
+        }
+
+        canvas.width = width;
+        canvas.height = height;
+        ctx.drawImage(img, 0, 0, width, height);
+        resolve(canvas.toDataURL());
+      };
+      img.onerror = (error) => reject(error);
+    });
   };
 
-  const handleImage2Change = (e) => {
+  const handleImage1Change = async (e) => {
     const file = e.target.files[0];
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => {
-      setImage2(reader.result.split(",")[1]);
-      //console.log(`Image 2 selected: ${file.name}`);
-    };
+    const compressedImage = await compressImage(file, 800, 800);
+    setImage1(compressedImage.split(",")[1]);
+  };
+
+  const handleImage2Change = async (e) => {
+    const file = e.target.files[0];
+    const compressedImage = await compressImage(file, 800, 800);
+    setImage2(compressedImage.split(",")[1]);
   };
 
   const handleCommentChange = (e) => {
-    const comment = e.target.value
-    setComments(comment)
+    const comment = e.target.value;
+    setComments(comment);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const requestData = {
-      request_id: request, 
+      request_id: request,
       site_syr: siteSurveyor,
       site_survey_pic_1: image1,
       site_survey_pic_2: image2,
-      site_svr_comm: comments
+      site_svr_comm: comments,
     };
     fetch("https://2vodj8q2z4.execute-api.us-east-1.amazonaws.com/UAT", {
       method: "POST",
