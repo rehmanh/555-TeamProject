@@ -32,6 +32,7 @@ export default function ConstructionManager() {
         && localStorage.getItem('userId') !== null);
     
     const [fullUserName, setFullUserName] = useState('');
+    const userId = localStorage.getItem('userId');
     
     useEffect(() => {
       setFullUserName(getUserFullName())
@@ -62,7 +63,6 @@ export default function ConstructionManager() {
 
     // function to pre-fetch the table data
     useEffect(() => {
-        const userId = localStorage.getItem('userId');
         Promise.all([
           fetch("https://szmu1lpz65.execute-api.us-east-1.amazonaws.com/UAT", { // all requests for THIS conman
             method: "POST",
