@@ -7,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 export const ImgUp = ({request, siteSurveyor}) => {
   const [image1, setImage1] = useState("");
   const [image2, setImage2] = useState("");
+  const [comments, setComments] = useState("");
 
   const handleImage1Change = (e) => {
     const file = e.target.files[0];
@@ -28,6 +29,11 @@ export const ImgUp = ({request, siteSurveyor}) => {
     };
   };
 
+  const handleCommentChange = (e) => {
+    const comment = e.target.value
+    setComments(comment)
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const requestData = {
@@ -35,6 +41,7 @@ export const ImgUp = ({request, siteSurveyor}) => {
       site_syr: siteSurveyor,
       site_survey_pic_1: image1,
       site_survey_pic_2: image2,
+      site_svr_comm: comments
     };
     fetch("https://2vodj8q2z4.execute-api.us-east-1.amazonaws.com/UAT", {
       method: "POST",
@@ -68,6 +75,10 @@ export const ImgUp = ({request, siteSurveyor}) => {
             accept="image/*"
             onChange={handleImage2Change}
           />
+        </Form.Group>
+        <Form.Group controlId="comments" className="mb-3">
+          <Form.Label>Comments</Form.Label>
+          <Form.Control type="text" placeholder="Please enter some comments" onChange={handleCommentChange} />
         </Form.Group>
         <Button variant="primary" type="submit" onClick={handleSubmit}>
           Submit

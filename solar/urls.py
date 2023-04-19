@@ -18,5 +18,6 @@ urlpatterns = [
     path('coCheck', index),
     path('payments', index),
     path('siteSurveyor', index),
-    path('scheduling', index)
+    path('scheduling', index),
+    path('aboutUs', index)
 ]

@@ -57,3 +57,14 @@ class SiteSurveyorList(viewsets.ModelViewSet):
         queryset = self.queryset
         serializer = UserSerializer(queryset, many=True)
         return Response(serializer.data)
+
+class SalesRepList(viewsets.ModelViewSet):
+    serializer_class = UserSerializer
+    queryset = User.objects.filter(role = 2)
+    permissions_classes = (AllowAny,)
+    
+    @api_view(['GET'])
+    def get_salesreps(self, request):
+        queryset = self.queryset
+        serializer = UserSerializer(queryset, many=True)
+        return Response(serializer.data)

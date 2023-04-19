@@ -35,7 +35,7 @@ const redirectToUserDashboard = () => {
     if (getUserRole() === '2') {
       window.location.href = "/salesrep"
     } else if (getUserRole() === '3') {
-      window.location.href = "/opsManager"
+      window.location.href = "/opManager"
     } else if (getUserRole() === '6') {
       window.location.href = "/constructionManager"
     } else if (getUserRole() === '7') {
