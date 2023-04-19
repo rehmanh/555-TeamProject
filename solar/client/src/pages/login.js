@@ -8,9 +8,6 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container'
-import { IconContext } from "react-icons";
-import { BsGoogle, BsFacebook, BsTwitter } from "react-icons/bs";
 import { motion } from 'framer-motion';
 import { redirectToUserDashboard }  from "../utils/utils";
 
@@ -147,33 +144,6 @@ export default class Login extends Component {
                 Sign in
               </Button>
             </Form.Group>
-            {/* <Form.Group>
-              <div className="text-center mt-5">
-                <p>
-                  Not a member? <a href="/signup">Register</a>
-                </p>
-                <p>or sign up with:</p>
-                <Container className="w-75 mb-4">
-                  <Row xs="auto" className="justify-content-md-center">
-                    <Col xs>
-                      <IconContext.Provider value={{ size: "2em", color: "#de5246" }}>
-                        <a className="iconBtn" href="!#"><BsGoogle /></a>
-                      </IconContext.Provider>
-                    </Col>
-                    <Col xs>
-                      <IconContext.Provider value={{ size: "2em", color: "#4267B2" }}>
-                        <a href="!#"><BsFacebook /></a>
-                      </IconContext.Provider>
-                    </Col>
-                    <Col xs>
-                      <IconContext.Provider value={{ size: "2em", color: "#1DA1F2" }}>
-                        <a href="!#"><BsTwitter /></a>
-                      </IconContext.Provider>
-                    </Col>
-                  </Row>
-                </Container>
-              </div>
-            </Form.Group> */}
           </Form>
         {/* </div> */}
       </motion.div>
