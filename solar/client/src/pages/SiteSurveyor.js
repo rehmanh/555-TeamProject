@@ -27,11 +27,9 @@ export default function SiteSurveyor() {
         && localStorage.getItem('userId') !== null);
     
     const [fullUserName, setFullUserName] = useState('');
-    const [userId, setUserId] = useState('')
     
     useEffect(() => {
       setFullUserName(getUserFullName)
-      setUserId(getUserId)
     }, []);
 
     const [verticalActive, setVerticalActive] = useState('tab1');
@@ -52,6 +50,7 @@ export default function SiteSurveyor() {
     // data for table 2
     const [updateRequestData, setUpdatedRequestData] = useState();
 
+    const userId = localStorage.getItem('userId')
 
     // function to pre-fetch the table data
     useEffect(() => {
@@ -146,7 +145,7 @@ export default function SiteSurveyor() {
     }; 
 
     return (
-        (roleId == 1) && isLoggedIn ?
+        (roleId == 1 || roleId == 6 || roleId == 7) && isLoggedIn ?
         (    
         <motion.div
             initial={{opacity: 0}}
