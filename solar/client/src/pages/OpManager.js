@@ -125,8 +125,8 @@ export default function OpManager() {
                 initial="hidden"
                 animate="visible"
               >
-                <MDBCard>
-                  <Scheduler />
+                {/* <MDBCard> */}
+                  {/* <Scheduler /> */}
                   {/* <Calender /> */}
                   {/* <MDBCardBody>
                 <MDBCardTitle>New Requests</MDBCardTitle>
@@ -134,7 +134,7 @@ export default function OpManager() {
                   1
                 </MDBCardText>
               </MDBCardBody> */}
-                </MDBCard>
+                {/* </MDBCard> */}
               </motion.div>
             </MDBCol>
             <MDBCol sm='3'></MDBCol>

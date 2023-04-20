@@ -167,11 +167,43 @@ class TestViews(TestSetUp):
         res = self.client.post("https://c80q5wc5m0.execute-api.us-east-1.amazonaws.com/UAT", data=user_data)
         self.assertEqual(res.status_code, 404)
 
-    def test_fecth_const_mgr(self):
+    def test_fetch_const_mgr(self):
         user_data = {
             "const_mgr": "C1"
             }
         
         res = self.client.post("https://szmu1lpz65.execute-api.us-east-1.amazonaws.com/UAT", data=user_data)
         self.assertEqual(res.status_code, 404)
+
+    def test_salesrep_get(self):
+        # assemble
+        res = self.client.post(self.login_url, {'email_address': 'harry@harry.com', 'password': 'test'})
+        json = res.json()
+        token = json['data']['token']
+        token_str = "Token {}".format(token)
+        # act
+        r = self.client.get(self.salesreps_url, headers={"Authorization": token_str})
+        # assert
+        self.assertEqual(r.status_code, 401)
     
+    def test_ss_get(self):
+        # assemble
+        res = self.client.post(self.login_url, {'email_address': 'harry@harry.com', 'password': 'test'})
+        json = res.json()
+        token = json['data']['token']
+        token_str = "Token {}".format(token)
+        # act
+        r = self.client.get(self.site_surveyors_url, headers={"Authorization": token_str})
+        # assert
+        self.assertEqual(r.status_code, 401)
+
+    def test_conman_get(self):
+        # assemble
+        res = self.client.post(self.login_url, {'email_address': 'harry@harry.com', 'password': 'test'})
+        json = res.json()
+        token = json['data']['token']
+        token_str = "Token {}".format(token)
+        # act
+        r = self.client.get(self.construction_managers_url, headers={"Authorization": token_str})
+        # assert
+        self.assertEqual(r.status_code, 401)

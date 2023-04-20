@@ -43,11 +43,11 @@ export default class SolarNavbar extends Component {
               }
               <NavDropdown title="Service" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/userprog">{<ImInfo/>} Request Status</NavDropdown.Item>
-                <NavDropdown.Item href="#billinginfo/3.2">
+                {/* <NavDropdown.Item href="#billinginfo/3.2">
                   Billing Info
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#payment/3.3">{<ImCoinDollar />} Payment</NavDropdown.Item>
-                <NavDropdown.Divider />
+                <NavDropdown.Divider /> */}
                 <NavDropdown.Item href="/aboutUs">
                 {<ImNewspaper />} About Us
                 </NavDropdown.Item>

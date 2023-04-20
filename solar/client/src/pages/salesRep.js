@@ -17,6 +17,7 @@ import axios from 'axios';
 import { Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button } from 'react-bootstrap';
+import { isUserLoggedIn } from '../utils/utils';
 
 export default function App() {
   const [verticalActive, setVerticalActive] = useState('tab1');
@@ -33,10 +34,7 @@ export default function App() {
   const [userRequests, setUserRequests] = useState();
 
   const [roleId, setRole] = useState(localStorage.getItem('roleId'));
-  const [isLoggedIn, setIsLoggedIn] = useState(localStorage !== null
-    && localStorage.getItem('token') !== null
-    && localStorage.getItem('roleId') !== null
-    && localStorage.getItem('userId') !== null);
+  const [isLoggedIn, setIsLoggedIn] = useState(isUserLoggedIn());
 
   useEffect(() => {
     Promise.all([
@@ -98,10 +96,7 @@ export default function App() {
   };
 
   const validateSalesRepUser = () => {
-    if (localStorage.length === 0
-      || localStorage.getItem('userId') === null
-      || localStorage.getItem('roleId') === null
-      || localStorage.getItem('token') === null) {
+    if (!isLoggedIn) {
       throw "There was an error with the User for this request, please Log In and try again.";
     }
   };

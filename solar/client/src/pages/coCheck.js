@@ -15,9 +15,11 @@ import {
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 import { toast } from 'react-toastify'
 import axios from 'axios';
+import { isUserLoggedIn } from '../utils/utils';
 
 export default function CoCheck() {
     const [data, setData] = useState([]);
+    const [isLoggedIn, setIsLoggedIn] = useState(isUserLoggedIn())
 
     useEffect(() => {
         fetch('https://m90c2ol29g.execute-api.us-east-1.amazonaws.com/UAT')
@@ -89,10 +91,7 @@ export default function CoCheck() {
     };
 
     const validateCoManager = () => {
-        if (localStorage.length === 0
-            || localStorage.getItem('userId') === null
-            || localStorage.getItem('roleId') === null
-            || localStorage.getItem('token') === null) {
+        if (!isLoggedIn) {
             throw "There was an error with the User for this request, please Log In and try again.";
         }
     };
