@@ -18,5 +18,6 @@ urlpatterns = [
     path('payments', index),
     path('siteSurveyor', index),
     path('scheduling', index),
-    path('aboutUs', index)
+    path('aboutUs', index),
+    path('payment',index),
 ]
