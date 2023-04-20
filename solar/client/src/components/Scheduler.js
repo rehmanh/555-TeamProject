@@ -40,8 +40,8 @@ export default function Scheduler() {
 
         const requestData = {
             request_id: requestId,
-            pref_install_start_date: prefInstallStartDate,
-            pref_install_end_date: prefInstallEndDate
+            pref_install_start_date: new Date(prefInstallStartDate).toISOString().slice(0, 19).replace('T', ' '),
+            pref_install_end_date: new Date(prefInstallEndDate).toISOString().slice(0, 19).replace('T', ' ')
         };
         console.log('Submitting request data:', requestData);
 
