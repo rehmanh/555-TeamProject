@@ -24,13 +24,6 @@ export default function SolarNavbar() {
     <Navbar bg="light" expand="md" sticky="top">
       <Container>
         <Navbar.Brand href="/">{<ImSun />}
-        {/* <img
-              src= {Sun}
-              width="40"
-              height="40"
-              className="d-inline-block align-top"
-              loading="lazy"
-            /> */}
             Solar
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

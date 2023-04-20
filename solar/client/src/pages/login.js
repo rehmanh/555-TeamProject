@@ -87,7 +87,6 @@ export default class Login extends Component {
       style={{ height:'60rem' }}
       >
         
-        {/* <div className="background-image"> */}
           <img
           className="background-image"
             src={
@@ -145,7 +144,6 @@ export default class Login extends Component {
               </Button>
             </Form.Group>
           </Form>
-        {/* </div> */}
       </motion.div>
     );
   }

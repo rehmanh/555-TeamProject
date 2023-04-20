@@ -1,17 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React, { Component, useState, useEffect } from "react";
-import axios from "axios";
-import PieChart from "../components/PieChart";
-import BarChart from "../components/BarChart";
-import LineChart from '../components/LineChart'
 import OrderTable from '../components/OrderTable';
 import { motion } from 'framer-motion';
 //import Calender from '../components/Calender';
 import CustomerTable from '../components/CustProgTable'
 import '../css/opManager.css'
-import { toast } from 'react-toastify'
 import '../css//UserRequestForm.css'
-import { BsHammer, BsFlagFill, BsClipboard2CheckFill, BsClipboard2PlusFill } from "react-icons/bs";
+import { BsHammer, BsClipboard2CheckFill, BsClipboard2PlusFill } from "react-icons/bs";
 import {
   MDBContainer,
   MDBCard,
@@ -19,14 +14,7 @@ import {
   MDBCardTitle,
   MDBCardText,
   MDBRow,
-  MDBCol,
-  MDBTabs,
-  MDBTabsItem,
-  MDBTabsLink,
-  MDBTabsContent,
-  MDBTabsPane,
-  MDBCheckbox,
-  MDBBtn
+  MDBCol
 } from 'mdb-react-ui-kit';
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 import Scheduler from '../components/Scheduler';

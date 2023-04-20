@@ -35,7 +35,7 @@ const Luis = () => {
                     <MDBCardBody className='d-flex flex-column'>
                         <MDBCardTitle className='fontTitle'>Luis Ng Tang</MDBCardTitle>
                         <MDBCardText className='fontBody'>
-                            Graduate Student at Stevens Institute of Tecnology pursing a Masters in Software Engineering. 
+                            Graduate Student at Stevens Institute of Technology pursing a Masters in Software Engineering. 
                             Contributed with the frontend of this project.
                         </MDBCardText>
                     </MDBCardBody>
@@ -93,7 +93,7 @@ const Habib = () => {
                         <MDBCardTitle className='fontTitle'>Habib</MDBCardTitle>
                         <MDBCardText className='fontBody'>
                         I am a M.S. Software Engineering student at Stevens Institute of Technology. 
-                        Prior to joining Stevens, he worked in industry as a full-stack software engineer for a GPS tracking and telematics company. 
+                        Prior to joining Stevens, I worked in industry as a full-stack software engineer for a GPS tracking and telematics company. 
                         </MDBCardText>
                     </MDBCardBody>
                 </MDBCard>
