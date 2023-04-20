@@ -1,85 +1,100 @@
 {
   "status": "done",
   "assets": {
-    "frontend-6d2a53a0f691ee94a275.js": {
-      "name": "frontend-6d2a53a0f691ee94a275.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-6d2a53a0f691ee94a275.js",
-      "publicPath": "static/solar/frontend-6d2a53a0f691ee94a275.js"
+    "frontend-1955e5036df83462a31b.js": {
+      "name": "frontend-1955e5036df83462a31b.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-1955e5036df83462a31b.js",
+      "publicPath": "static/solar/frontend-1955e5036df83462a31b.js"
     },
-    "frontend-eae3c4bed8e02883470a.js": {
-      "name": "frontend-eae3c4bed8e02883470a.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-eae3c4bed8e02883470a.js",
-      "publicPath": "static/solar/frontend-eae3c4bed8e02883470a.js"
+    "frontend-32468a146ec8971a221e.js": {
+      "name": "frontend-32468a146ec8971a221e.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-32468a146ec8971a221e.js",
+      "publicPath": "static/solar/frontend-32468a146ec8971a221e.js"
+    },
+    "frontend-7d1a366f1928f3c4baba.js": {
+      "name": "frontend-7d1a366f1928f3c4baba.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-7d1a366f1928f3c4baba.js",
+      "publicPath": "static/solar/frontend-7d1a366f1928f3c4baba.js"
+    },
+    "frontend-850c5c2559921195c98d.js": {
+      "name": "frontend-850c5c2559921195c98d.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-850c5c2559921195c98d.js",
+      "publicPath": "static/solar/frontend-850c5c2559921195c98d.js"
+    },
+    "frontend-beb8f3f0ff1cf3bc00e4.js": {
+      "name": "frontend-beb8f3f0ff1cf3bc00e4.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-beb8f3f0ff1cf3bc00e4.js",
+      "publicPath": "static/solar/frontend-beb8f3f0ff1cf3bc00e4.js"
     },
     "images/Habib.jpeg": {
       "name": "images/Habib.jpeg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Habib.jpeg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Habib.jpeg",
       "publicPath": "static/solar/images/Habib.jpeg"
     },
     "images/Kevin.jpg": {
       "name": "images/Kevin.jpg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Kevin.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Kevin.jpg",
       "publicPath": "static/solar/images/Kevin.jpg"
     },
     "images/Luis.jpg": {
       "name": "images/Luis.jpg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Luis.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Luis.jpg",
       "publicPath": "static/solar/images/Luis.jpg"
     },
     "images/portfolio-1.jpg": {
       "name": "images/portfolio-1.jpg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/portfolio-1.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\portfolio-1.jpg",
       "publicPath": "static/solar/images/portfolio-1.jpg"
     },
     "images/portfolio-2.jpg": {
       "name": "images/portfolio-2.jpg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/portfolio-2.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\portfolio-2.jpg",
       "publicPath": "static/solar/images/portfolio-2.jpg"
     },
     "images/portfolio-3.jpg": {
       "name": "images/portfolio-3.jpg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/portfolio-3.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\portfolio-3.jpg",
       "publicPath": "static/solar/images/portfolio-3.jpg"
     },
     "images/portfolio-4.jpg": {
       "name": "images/portfolio-4.jpg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/portfolio-4.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\portfolio-4.jpg",
       "publicPath": "static/solar/images/portfolio-4.jpg"
     },
     "images/Ravi.png": {
       "name": "images/Ravi.png",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Ravi.png",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Ravi.png",
       "publicPath": "static/solar/images/Ravi.png"
     },
     "images/Solar1.svg": {
       "name": "images/Solar1.svg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar1.svg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Solar1.svg",
       "publicPath": "static/solar/images/Solar1.svg"
     },
     "images/Solar2.svg": {
       "name": "images/Solar2.svg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar2.svg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Solar2.svg",
       "publicPath": "static/solar/images/Solar2.svg"
     },
     "images/Solar3.svg": {
       "name": "images/Solar3.svg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar3.svg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Solar3.svg",
       "publicPath": "static/solar/images/Solar3.svg"
     },
     "images/Solar4.svg": {
       "name": "images/Solar4.svg",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar4.svg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Solar4.svg",
       "publicPath": "static/solar/images/Solar4.svg"
     },
     "images/sun.png": {
       "name": "images/sun.png",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/sun.png",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\sun.png",
       "publicPath": "static/solar/images/sun.png"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-6d2a53a0f691ee94a275.js"
+      "frontend-beb8f3f0ff1cf3bc00e4.js"
     ]
   },
   "publicPath": "static/solar/"

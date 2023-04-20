@@ -55,7 +55,7 @@ export default function SiteSurveyor() {
     // function to pre-fetch the table data
     useEffect(() => {
         Promise.all([
-            fetch("https://fkj7pxrlob.execute-api.us-east-1.amazonaws.com/UAT", {
+            fetch("https://f3gpqtg8zb.execute-api.us-east-1.amazonaws.com/UAT", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
