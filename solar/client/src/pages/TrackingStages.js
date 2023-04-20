@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./TrackingStages.css";
+import "../css/TrackingStages.css";
 import { useState } from "react";
 
 export const TrackingStages = (props) => {
