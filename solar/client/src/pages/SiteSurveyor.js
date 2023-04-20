@@ -12,7 +12,7 @@ import {
 import { motion } from 'framer-motion';
 import DataTable from 'react-data-table-component';
 import { Button, Modal, Form, InputGroup } from 'react-bootstrap';
-import { getUserFullName, getUserId } from '../utils/utils';
+import { getUserFullName, getUserId, isUserLoggedIn } from '../utils/utils';
 import { ImgUp } from '../components/imageUpload';
 import ImageRetrieve from '../components/imageRetrive'
 
@@ -21,10 +21,7 @@ export default function SiteSurveyor() {
 
     const [roleId, setRole] = useState(localStorage.getItem('roleId'));
     
-    const [isLoggedIn, setIsLoggedIn] = useState(localStorage !== null
-        && localStorage.getItem('token') !== null
-        && localStorage.getItem('roleId') !== null
-        && localStorage.getItem('userId') !== null);
+    const [isLoggedIn, setIsLoggedIn] = useState(isUserLoggedIn());
     
     const [fullUserName, setFullUserName] = useState('');
     
