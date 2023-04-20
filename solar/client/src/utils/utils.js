@@ -45,4 +45,4 @@ const redirectToUserDashboard = () => {
     }
   };
 
-export { getUserFullName, getUserId, getUserRole, redirectToUserDashboard, getAuthToken };
+export { getUserFullName, getUserId, getUserRole, redirectToUserDashboard, getAuthToken, isUserLoggedIn };

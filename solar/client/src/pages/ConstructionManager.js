@@ -18,7 +18,7 @@ import { motion } from 'framer-motion';
 import { toast } from 'react-toastify'
 import DataTable from 'react-data-table-component';
 import { Button, Modal, Form, InputGroup } from 'react-bootstrap';
-import { getUserFullName, getAuthToken } from '../utils/utils';
+import { getUserFullName, getAuthToken, isUserLoggedIn } from '../utils/utils';
 import axios from 'axios';
 import ImageRetrieve from '../components/imageRetrive';
 
@@ -26,10 +26,8 @@ import ImageRetrieve from '../components/imageRetrive';
 export default function ConstructionManager() {
 
     const [roleId, setRole] = useState(localStorage.getItem('roleId'));
-    const [isLoggedIn, setIsLoggedIn] = useState(localStorage !== null
-        && localStorage.getItem('token') !== null
-        && localStorage.getItem('roleId') !== null
-        && localStorage.getItem('userId') !== null);
+    
+    const [isLoggedIn, setIsLoggedIn] = useState(isUserLoggedIn());
     
     const [fullUserName, setFullUserName] = useState('');
     const userId = localStorage.getItem('userId');
@@ -58,6 +56,7 @@ export default function ConstructionManager() {
     const [inProgressRequestData, setInProgressRequestData] = useState();
     const [siteSurveyors, setSiteSurveyors] = useState();
     const [completedRequests, setCompletedRequests] = useState()
+    const [scheduledRequests, setScheduledRequests] = useState()
 
     const token = "Token " + getAuthToken()
 
@@ -90,16 +89,24 @@ export default function ConstructionManager() {
               "Content-Type": "application/json"
             },
             body: JSON.stringify({ "const_mgr": userId })
+          }),
+          fetch("https://f44c8lswdj.execute-api.us-east-1.amazonaws.com/UAT", { // all scheduled requests for customers
+            method: "POST",
+            headers: {
+              "Content-Type": "application.json"
+            },
+            body: JSON.stringify({ "const_mgr": userId })
           }) 
         ])
-          .then(([unassignedRequestsResponse, siteSurveyorsResponse, inProgressRequestsResponse, completedRequestsResponse]) =>
-            Promise.all([unassignedRequestsResponse.json(), siteSurveyorsResponse.json(), inProgressRequestsResponse.json(), completedRequestsResponse.json()])
+          .then(([unassignedRequestsResponse, siteSurveyorsResponse, inProgressRequestsResponse, completedRequestsResponse, scheduledRequestsResponse]) =>
+            Promise.all([unassignedRequestsResponse.json(), siteSurveyorsResponse.json(), inProgressRequestsResponse.json(), completedRequestsResponse.json(), scheduledRequestsResponse.json()])
           )
-          .then(([dataUnassignedRequests, dataSiteSurveyors, dataInProgressRequests, dataCompletedRequests]) => {
+          .then(([dataUnassignedRequests, dataSiteSurveyors, dataInProgressRequests, dataCompletedRequests, dataScheduledRequests]) => {
             setUnassignedRequestData(dataUnassignedRequests)
             setSiteSurveyors(dataSiteSurveyors)
             setInProgressRequestData(dataInProgressRequests)
             setCompletedRequests(dataCompletedRequests)
+            setScheduledRequests(dataScheduledRequests)
           })
     }, []);
 
@@ -130,6 +137,18 @@ export default function ConstructionManager() {
     ];
 
     const completedRequestColumns = [
+      {name: 'Request ID', selector: (row, i) => row.request_id, center: true},
+      {name: 'Site Surveyor', selector: (row, i) => 
+        (siteSurveyors && siteSurveyors.filter((s) => s.id == row.site_syr)[0].first_name + ' ' + siteSurveyors.filter((s) => s.id == row.site_syr)[0].last_name),
+        center: true
+      },
+      {name: 'First Name', selector: (row, i) => row.first_name, center: true}, 
+      {name: 'Street Address', selector: (row, i) => row.street_address1, center: true},
+      {name: 'Zip Code', selector: (row, i) => row.zip_code, center: true},
+      {name: 'City', selector: (row, i) => row.city, center: true}
+    ];
+
+    const scheduledRequestsColumns = [
       {name: 'Request ID', selector: (row, i) => row.request_id, center: true},
       {name: 'Site Surveyor', selector: (row, i) => 
         (siteSurveyors && siteSurveyors.filter((s) => s.id == row.site_syr)[0].first_name + ' ' + siteSurveyors.filter((s) => s.id == row.site_syr)[0].last_name),
@@ -207,7 +226,7 @@ export default function ConstructionManager() {
       );
     });
 
-    const ExpandedComponent = ({data}) => {
+    const SiteSurveyorCompletedComponent = ({data}) => {
       const json = {
         request_id: data.request_id,
         email_address: data.email_address,
@@ -295,6 +314,43 @@ export default function ConstructionManager() {
       );
     }; 
 
+    const CustomerScheduledComponent = ({data}) => {
+      const json = {
+        request_id: data.request_id
+      }
+
+      const markRequestDone = () => {
+        axios.post("https://4ilts8r4oa.execute-api.us-east-1.amazonaws.com/UAT", JSON.stringify(json), {
+          headers: {
+            "Content-Type": "application/json"
+          }
+        })
+        .then((response) => {
+          if (response && response.status === 200) {
+            toast.success(`Successfully marked the request ${data.request_id} as Done!`)
+          } else if (response && response.status in [400, 404]) {
+            toast.error('There was an error with your request. Please contact IT for support.')
+          } else {
+            toast.error('There was an error with our services. Please try again later.')
+          }
+        })
+        .catch((error) => console.log(error))
+      }
+
+      return (
+        <>
+        <MDBRow center style={{padding: "5px"}}>
+          <MDBCol size='3'></MDBCol>
+          <MDBCol size='6' style={{textAlign: "center"}}>
+            <Button variant="primary" onClick={markRequestDone}>Mark Request as Done</Button>
+          </MDBCol>
+          <MDBCol size='3'></MDBCol>
+        </MDBRow>
+        </>
+      );
+
+    };
+
     return (
         (roleId === '1' || roleId === '6') && isLoggedIn ?
         (    
@@ -328,6 +384,11 @@ export default function ConstructionManager() {
                     Site Surveyor &#8212; Completed Requests
                   </MDBTabsLink>
                 </MDBTabsItem>
+                <MDBTabsItem>
+                  <MDBTabsLink onClick={() => handleVerticalClick('tab4')} active={verticalActive === 'tab4'}>
+                    Customer &#8212; Scheduled Requests
+                  </MDBTabsLink>
+                </MDBTabsItem>
               </MDBTabs>
 
               <MDBTabsContent>
@@ -354,6 +415,7 @@ export default function ConstructionManager() {
                     />
                 </MDBTabsPane>
                 
+                { /* Site Surveyor Completed Requests */ }
                 <MDBTabsPane show={verticalActive === 'tab3'}>
                   <DataTable
                     title=" "
@@ -361,7 +423,19 @@ export default function ConstructionManager() {
                     data={completedRequests}
                     fixedHeader
                     expandableRows
-                    expandableRowsComponent={ ExpandedComponent }
+                    expandableRowsComponent={ SiteSurveyorCompletedComponent }
+                    />
+                </MDBTabsPane>
+
+                {/* Customer Scheduled Requests */}
+                <MDBTabsPane show={verticalActive === 'tab4'}>
+                  <DataTable
+                    title=" "
+                    columns={scheduledRequestsColumns}
+                    data={scheduledRequests}
+                    fixedHeader
+                    expandableRows
+                    expandableRowsComponent={ CustomerScheduledComponent }
                     />
                 </MDBTabsPane>
 

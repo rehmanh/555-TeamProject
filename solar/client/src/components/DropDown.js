@@ -31,10 +31,6 @@ function Dropdown({ selectedRows }) {
   const handleSelect = (event) => {
     setSelectedValue(event.target.value);
   };
-
-  // useEffect(() => {
-  //   console.log(selectedValue);
-  // }, [selectedValue]);
   
   // handle the form submission
   const handleSubmit = (event) => {
