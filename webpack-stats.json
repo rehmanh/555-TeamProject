@@ -1,10 +1,30 @@
 {
   "status": "done",
   "assets": {
-    "frontend-b3a49bf6c3008b349511.js": {
-      "name": "frontend-b3a49bf6c3008b349511.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-b3a49bf6c3008b349511.js",
-      "publicPath": "static/solar/frontend-b3a49bf6c3008b349511.js"
+    "frontend-3f043edc5e0126fdb44d.js": {
+      "name": "frontend-3f043edc5e0126fdb44d.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-3f043edc5e0126fdb44d.js",
+      "publicPath": "static/solar/frontend-3f043edc5e0126fdb44d.js"
+    },
+    "frontend-8a5a92480ca3b97c7caa.js": {
+      "name": "frontend-8a5a92480ca3b97c7caa.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-8a5a92480ca3b97c7caa.js",
+      "publicPath": "static/solar/frontend-8a5a92480ca3b97c7caa.js"
+    },
+    "frontend-9184cecef543fb26703e.js": {
+      "name": "frontend-9184cecef543fb26703e.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-9184cecef543fb26703e.js",
+      "publicPath": "static/solar/frontend-9184cecef543fb26703e.js"
+    },
+    "frontend-9d50b1eba37ce16506e1.js": {
+      "name": "frontend-9d50b1eba37ce16506e1.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-9d50b1eba37ce16506e1.js",
+      "publicPath": "static/solar/frontend-9d50b1eba37ce16506e1.js"
+    },
+    "frontend-bf8a47c5dab229408825.js": {
+      "name": "frontend-bf8a47c5dab229408825.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-bf8a47c5dab229408825.js",
+      "publicPath": "static/solar/frontend-bf8a47c5dab229408825.js"
     },
     "images/Habib.jpeg": {
       "name": "images/Habib.jpeg",
@@ -74,8 +94,10 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-b3a49bf6c3008b349511.js"
+      "frontend-bf8a47c5dab229408825.js"
     ]
   },
-  "publicPath": "static/solar/"
+  "publicPath": "static/solar/",
+  "error": "ModuleNotFoundError",
+  "message": "Module not found: Error: Can't resolve '../pages/signUp' in '/Users/rehmanh/Desktop/555FinalProject/solar/client/src/components'"
 }

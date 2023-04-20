@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { ImHome, ImFileText2, ImUserCheck, ImEnter, ImSun, ImInfo, ImCoinDollar, ImNewspaper } from "react-icons/im";
+import { isUserLoggedIn } from "../utils/utils";
 
 
 export default class SolarNavbar extends Component {
@@ -15,10 +16,7 @@ export default class SolarNavbar extends Component {
       userId: null
     };
     
-    this.state.isLoggedIn = localStorage !== null 
-      && localStorage.getItem('token') !== null 
-      && localStorage.getItem('roleId') !== null 
-      && localStorage.getItem('userId') !== null;
+    this.state.isLoggedIn = isUserLoggedIn()
 
     if (this.state.isLoggedIn) {
       this.state.roleId = localStorage.getItem('roleId');

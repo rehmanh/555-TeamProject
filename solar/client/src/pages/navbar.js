@@ -24,13 +24,6 @@ export default function SolarNavbar() {
     <Navbar bg="light" expand="md" sticky="top">
       <Container>
         <Navbar.Brand href="/">{<ImSun />}
-        {/* <img
-              src= {Sun}
-              width="40"
-              height="40"
-              className="d-inline-block align-top"
-              loading="lazy"
-            /> */}
             Solar
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -46,10 +39,6 @@ export default function SolarNavbar() {
               <NavDropdown.Item href="/userprog">
                 {<ImInfo/>} Request Status
                 </NavDropdown.Item>
-              {/* <NavDropdown.Item href="#billinginfo/3.2">
-                Billing Info
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#payment/3.3">{<ImCoinDollar />} Payment</NavDropdown.Item> */}
               <NavDropdown.Divider />
               <NavDropdown.Item href="/aboutUs">
                 {<ImNewspaper />} About Us
