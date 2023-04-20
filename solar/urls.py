@@ -1,5 +1,4 @@
 from django.urls import path
-
 from .views import index
 
 urlpatterns = [
@@ -18,5 +17,5 @@ urlpatterns = [
     path('siteSurveyor', index),
     path('scheduling', index),
     path('aboutUs', index),
-    path('payment',index),
+    path('payment',index)
 ]

@@ -20,6 +20,7 @@ export default class App extends Component {
                     closeOnClick
                 />
                 {location.pathname === '/userprog' || location.pathname === '/userreq' ? <UserNav /> : <Navbar />}
+                
                 <Router>
                     <AnimatedRoutes />
                     <Footer />

@@ -13,7 +13,6 @@ import CoCheck from '../pages/coCheck';
 import ConstructionManager from '../pages/ConstructionManager';
 import SiteSurveyor from '../pages/SiteSurveyor';
 import { AnimatePresence } from 'framer-motion';
-import { loadStripe } from '@stripe/stripe-js';
 import Scheduling from '../pages/scheduling';
 import AboutUs from '../pages/aboutUs';
 import Payment from '../pages/payment';

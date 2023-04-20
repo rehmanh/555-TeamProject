@@ -39,9 +39,6 @@ export default function SolarNavbar() {
               <NavDropdown.Item href="/userprog">
                 {<ImInfo/>} Request Status
                 </NavDropdown.Item>
-              {/* <NavDropdown.Item href="#billinginfo/3.2">
-                Billing Info
-              </NavDropdown.Item> */}
               <NavDropdown.Item href="/payment">{<ImCoinDollar />} Payment</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/aboutUs">
