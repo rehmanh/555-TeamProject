@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Button, Container, TextField } from "@mui/material";
+import { Button } from "@mui/material";
+import { CContainer, CForm, CFormInput } from "@coreui/react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -83,10 +84,10 @@ const Payment = () => {
   };
 
   return (
-    <Container maxWidth="sm">
+    <CContainer maxWidth="sm">
       <h1 className="text-center">Payment Details</h1>
-      <form onSubmit={handleSubmit}>
-        <TextField
+      <CForm onSubmit={handleSubmit}>
+        <CFormInput
           label="Tracking ID"
           value={trackingId}
           onChange={handleTrackingIdChange}
@@ -98,7 +99,7 @@ const Payment = () => {
           }}
         />
 
-        <TextField
+        <CFormInput
           label="Cardholder Name"
           value={cardName}
           onChange={handleCardNameChange}
@@ -110,7 +111,7 @@ const Payment = () => {
           }}
         />
 
-        <TextField
+        <CFormInput
           label="Card Number"
           value={cardNumber}
           onChange={handleCardNumberChange}
@@ -124,7 +125,7 @@ const Payment = () => {
 
         <div className="form-row">
           <div className="form-group col-md-6">
-            <TextField
+            <CFormInput
               label="Expiry Month"
               value={expiryMonth}
               onChange={handleExpiryMonthChange}
@@ -138,7 +139,7 @@ const Payment = () => {
             />
           </div>
           <div className="form-group col-md-6">
-            <TextField
+            <CFormInput
               label="Expiry Year"
               value={expiryYear}
               onChange={handleExpiryYearChange}
@@ -153,7 +154,7 @@ const Payment = () => {
           </div>
         </div>
 
-        <TextField
+        <CFormInput
           label="CVV"
           value={cvv}
           onChange={handleCvvChange}
@@ -165,7 +166,7 @@ const Payment = () => {
           }}
         />
 
-        <TextField
+        <CFormInput
           label="Amount"
           type="number"
           value={amount}
@@ -188,8 +189,8 @@ const Payment = () => {
         >
           Submit Payment
         </Button>
-      </form>
-    </Container>
+      </CForm>
+    </CContainer>
     
   );
 };
