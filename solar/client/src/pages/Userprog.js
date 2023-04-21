@@ -31,6 +31,7 @@ function Userprog() {
                 className="form-control"
                 aria-describedby="passwordHelpBlock"
                 name="trackingId"
+                required
               />
               <div id="passwordHelpBlock" className="form-text">
                 Your Tracking Id will be 10 characters long, contain letters and

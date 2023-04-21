@@ -8,9 +8,6 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container'
-import { IconContext } from "react-icons";
-import { BsGoogle, BsFacebook, BsTwitter } from "react-icons/bs";
 import { motion } from 'framer-motion';
 import { redirectToUserDashboard }  from "../utils/utils";
 
