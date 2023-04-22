@@ -28,3 +28,25 @@
 .card-title {
     padding-top: 1px!important;
 }
+
+
+.carouselimg{
+    object-fit: cover;
+    height :70rem
+}
+
+.carousel{
+    height: 70rem;
+}
+
+
+@media(max-width: 414px) {
+    .carouselimg{
+        object-fit: cover;
+        height :20rem
+    }
+    .carousel{
+        height: 20rem;
+    }
+
+}
