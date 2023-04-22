@@ -4,8 +4,6 @@ import OrderTable from '../components/OrderTable';
 import { motion } from 'framer-motion';
 //import Calender from '../components/Calender';
 import CustomerTable from '../components/CustProgTable'
-import '../css/opManager.css'
-import '../css//UserRequestForm.css'
 import { BsHammer, BsClipboard2CheckFill, BsClipboard2PlusFill } from "react-icons/bs";
 import {
   MDBContainer,

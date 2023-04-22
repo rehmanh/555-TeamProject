@@ -6,7 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import AnimatedRoutes from '../client/src/components/AnimatedRoutes';
 import UserNav from "../client/src/pages/navBarUser"
 import Footer from '../client/src/components/Footer'
-
+import './App.css'
 export default class App extends Component {
     constructor(props) {
         super(props);
