@@ -28,13 +28,13 @@ export default function HomePage() {
         exit={{ opacity: 0 }}
       >
         <div style={{ position: 'relative' }}>
-          
+          <ParticleBackground />
           <Carousel />
           <motion.div
             className='modiv'
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1 }}
           >
             <div className='homepageWelcome'>
               <h1 className="welcome">Welcome to Solar</h1>

@@ -84,7 +84,7 @@ export default class Login extends Component {
       initial={{opacity: 0}}
       animate={{opacity: 1, transition: {duration: 1}}}
       exit={{opacity: 0 }}
-      style={{ height:'60rem' }}
+      style={{ height:'70rem' }}
       >
         
           <img
