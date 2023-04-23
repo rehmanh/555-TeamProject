@@ -21,7 +21,7 @@ export default function SolarNavbar() {
   }, [])
 
   return (
-    <Navbar bg="light" expand="md" sticky="top">
+    <Navbar className="fixed-top" bg="light" expand="md">
       <Container>
         <Navbar.Brand href="/">{<ImSun />}
             Solar

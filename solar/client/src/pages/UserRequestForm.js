@@ -1,8 +1,21 @@
 import React, { useState } from "react";
-import "../css/UserRequestForm.css";
+// import "../css/UserRequestForm.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from 'framer-motion'
+import {
+  MDBContainer,
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBRow,
+  MDBCol
+} from 'mdb-react-ui-kit';
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+  hidden: { opacity: 0, scale: 0 },
+};
 
 export default function UserRequestForm() {
   const [firstName, setFirstName] = useState("");
@@ -94,111 +107,120 @@ export default function UserRequestForm() {
 
   return (
     <motion.div
-    initial={{opacity: 0}}
-    animate={{opacity: 1}}
-    exit={{opacity: 0}}
-    >
-      <div>
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    ><div className="background-image"></div>
+      <motion.div
+        className="box"
+        variants={boxVariant}
+        initial="hidden"
+        animate="visible"
+      >
         {/* <Navbar /> */}
-        <h1>Customer Request Form</h1>
-        <ToastContainer />
-        <div>
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="firstName">First Name:</label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              value={firstName}
-              placeholder="Enter First Name"
-              onChange={(e) => setFirstName(e.target.value)}
-              required
-            />
+        <MDBContainer>
 
-            <label htmlFor="lastName">Last Name:</label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              value={lastName}
-              placeholder="Enter Last Name"
-              onChange={(e) => setLastName(e.target.value)}
-              required
-            />
+          <ToastContainer />
+          <div>
+            
+            <form onSubmit={handleSubmit}>
+              <h1>Request Form</h1>
+              <label htmlFor="firstName">First Name:</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                value={firstName}
+                placeholder="Enter First Name"
+                onChange={(e) => setFirstName(e.target.value)}
+                required
+              />
 
-            <label htmlFor="emailAddress">Email Address:</label>
-            <input
-              type="email"
-              id="emailAddress"
-              name="emailAddress"
-              value={email}
-              placeholder="Enter Email"
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
+              <label htmlFor="lastName">Last Name:</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                value={lastName}
+                placeholder="Enter Last Name"
+                onChange={(e) => setLastName(e.target.value)}
+                required
+              />
 
-            <label htmlFor="phoneNumber">Phone Number:</label>
-            <input
-              type="tel"
-              id="phoneNumber"
-              name="phoneNumber"
-              value={phone}
-              placeholder="Enter Phone Number"
-              onChange={(e) => setPhone(e.target.value)}
-              required
-            />
+              <label htmlFor="emailAddress">Email Address:</label>
+              <input
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+                value={email}
+                placeholder="Enter Email"
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
 
-            <label htmlFor="streetAddress1">Street Address 1:</label>
-            <input
-              type="text"
-              id="streetAddress1"
-              name="streetAddress1"
-              value={streetAddress}
-              placeholder="Enter Street Address"
-              onChange={(e) => setStreetAddress(e.target.value)}
-              required
-            />
+              <label htmlFor="phoneNumber">Phone Number:</label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                value={phone}
+                placeholder="Enter Phone Number"
+                onChange={(e) => setPhone(e.target.value)}
+                required
+              />
 
-            <label htmlFor="city">City:</label>
-            <input
-              type="text"
-              id="city"
-              name="city"
-              value={city}
-              placeholder="Enter City"
-              onChange={(e) => setCity(e.target.value)}
-              required
-            />
+              <label htmlFor="streetAddress1">Street Address 1:</label>
+              <input
+                type="text"
+                id="streetAddress1"
+                name="streetAddress1"
+                value={streetAddress}
+                placeholder="Enter Street Address"
+                onChange={(e) => setStreetAddress(e.target.value)}
+                required
+              />
 
-            <label htmlFor="state">State:</label>
-            <input
-              type="text"
-              id="state"
-              name="state"
-              value={state}
-              placeholder="Enter State"
-              onChange={(e) => setState(e.target.value)}
-              required
-            />
+              <label htmlFor="city">City:</label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                value={city}
+                placeholder="Enter City"
+                onChange={(e) => setCity(e.target.value)}
+                required
+              />
 
-            <label htmlFor="zipCode">Zip Code:</label>
-            <input
-              type="text"
-              id="zipCode"
-              name="zipCode"
-              value={zipCode}
-              placeholder="Enter Zip Code"
-              onChange={(e) => setZipCode(e.target.value)}
-              required
-            />
+              <label htmlFor="state">State:</label>
+              <input
+                type="text"
+                id="state"
+                name="state"
+                value={state}
+                placeholder="Enter State"
+                onChange={(e) => setState(e.target.value)}
+                required
+              />
 
-            <br></br>
-            <br></br>
+              <label htmlFor="zipCode">Zip Code:</label>
+              <input
+                type="text"
+                id="zipCode"
+                name="zipCode"
+                value={zipCode}
+                placeholder="Enter Zip Code"
+                onChange={(e) => setZipCode(e.target.value)}
+                required
+              />
 
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
-      </div>
+              <br></br>
+              <br></br>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </MDBContainer>
+      </motion.div>
     </motion.div>
   );
 }
