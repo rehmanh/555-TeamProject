@@ -139,7 +139,7 @@ export default class Login extends Component {
               </Row>
             </Form.Group>
             <Form.Group className="d-grid gap-2">
-              <Button type="submit" variant="primary" size="lg">
+              <Button className="mb-5" type="submit" variant="primary" size="lg">
                 Sign in
               </Button>
             </Form.Group>

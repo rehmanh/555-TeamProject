@@ -4,6 +4,7 @@ import { toast } from 'react-toastify';
 import { motion } from 'framer-motion';
 import About from '../components/About';
 import Carousel from '../components/Carousel';
+import ParticleBackground from '../components/particleBackground';
 
 export default function HomePage() {
 
@@ -27,17 +28,19 @@ export default function HomePage() {
         exit={{ opacity: 0 }}
       >
         <div style={{ position: 'relative' }}>
+          
           <Carousel />
           <motion.div
-            style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1 }}
+            className='modiv'
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
           >
-            <h1>Hello, World!</h1>
+            <div className='homepageWelcome'>
+              <h1 className="welcome">Welcome to Solar</h1>
+            </div>
           </motion.div>
         </div>
-        {/* <Carousel /> */}
         <About />
       </motion.div>
     </div>
