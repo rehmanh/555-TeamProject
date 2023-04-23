@@ -10,6 +10,7 @@ from knox.views import LoginView as KnoxLoginView
 from knox.auth import TokenAuthentication
 
 from django.contrib.auth import authenticate, login, logout
+from django.db.models import Q 
 from .serializers import UserSerializer, LoginSerializer
 from .models import User
 
@@ -38,7 +39,7 @@ class UserLoginView(KnoxLoginView):
         
 class ConstructionManagerList(viewsets.ModelViewSet):
     serializer_class = UserSerializer
-    queryset = User.objects.filter(role = 6)
+    queryset = User.objects.filter(Q(role = 6) | Q(is_superuser = True))
     permissions_classes = (AllowAny,)
     
     @api_view(['GET'])
@@ -49,7 +50,7 @@ class ConstructionManagerList(viewsets.ModelViewSet):
     
 class SiteSurveyorList(viewsets.ModelViewSet):
     serializer_class = UserSerializer
-    queryset = User.objects.filter(role = 7)
+    queryset = User.objects.filter(Q(role = 7) | Q(is_superuser = True))
     permissions_classes = (AllowAny,)
     
     @api_view(['GET'])
@@ -60,7 +61,7 @@ class SiteSurveyorList(viewsets.ModelViewSet):
 
 class SalesRepList(viewsets.ModelViewSet):
     serializer_class = UserSerializer
-    queryset = User.objects.filter(role = 2)
+    queryset = User.objects.filter(Q(role = 2) | Q(is_superuser = True))
     permissions_classes = (AllowAny,)
     
     @api_view(['GET'])

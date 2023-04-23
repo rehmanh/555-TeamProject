@@ -19,7 +19,6 @@ function Dropdown({ selectedRows }) {
         }
       })
         .then(response => {
-          console.log(response)
           setValues(response.data);
         })
         .catch(error => {

@@ -1,138 +1,81 @@
 {
   "status": "done",
   "assets": {
-    "frontend-09a7daafa0b5bf3d8d89.js": {
-      "name": "frontend-09a7daafa0b5bf3d8d89.js",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/frontend-09a7daafa0b5bf3d8d89.js",
-      "publicPath": "static/solar/frontend-09a7daafa0b5bf3d8d89.js"
-    },
-    "frontend-2b572c74c68907b2f279.js": {
-      "name": "frontend-2b572c74c68907b2f279.js",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/frontend-2b572c74c68907b2f279.js",
-      "publicPath": "static/solar/frontend-2b572c74c68907b2f279.js"
-    },
-    "frontend-3795a00ab5813026c391.js": {
-      "name": "frontend-3795a00ab5813026c391.js",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/frontend-3795a00ab5813026c391.js",
-      "publicPath": "static/solar/frontend-3795a00ab5813026c391.js"
-    },
-    "frontend-44e078ad4ef79d35fd48.js": {
-      "name": "frontend-44e078ad4ef79d35fd48.js",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/frontend-44e078ad4ef79d35fd48.js",
-      "publicPath": "static/solar/frontend-44e078ad4ef79d35fd48.js"
-    },
-    "frontend-6d27aed0963f4c5b915c.js": {
-      "name": "frontend-6d27aed0963f4c5b915c.js",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/frontend-6d27aed0963f4c5b915c.js",
-      "publicPath": "static/solar/frontend-6d27aed0963f4c5b915c.js"
-    },
-    "frontend-90dcce6961b71c786e1e.js": {
-      "name": "frontend-90dcce6961b71c786e1e.js",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/frontend-90dcce6961b71c786e1e.js",
-      "publicPath": "static/solar/frontend-90dcce6961b71c786e1e.js"
-    },
-    "frontend-9a8d5f932d7751e548d0.js": {
-      "name": "frontend-9a8d5f932d7751e548d0.js",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/frontend-9a8d5f932d7751e548d0.js",
-      "publicPath": "static/solar/frontend-9a8d5f932d7751e548d0.js"
-    },
-    "frontend-ab67cbdad5aa69a64d92.js": {
-      "name": "frontend-ab67cbdad5aa69a64d92.js",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/frontend-ab67cbdad5aa69a64d92.js",
-      "publicPath": "static/solar/frontend-ab67cbdad5aa69a64d92.js"
-    },
-    "frontend-bbeab962a30f0ec91200.js": {
-      "name": "frontend-bbeab962a30f0ec91200.js",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/frontend-bbeab962a30f0ec91200.js",
-      "publicPath": "static/solar/frontend-bbeab962a30f0ec91200.js"
-    },
-    "frontend-bca02298842ff0f7ec9e.js": {
-      "name": "frontend-bca02298842ff0f7ec9e.js",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/frontend-bca02298842ff0f7ec9e.js",
-      "publicPath": "static/solar/frontend-bca02298842ff0f7ec9e.js"
-    },
-    "frontend-c6e5f319c9f190edb3aa.js": {
-      "name": "frontend-c6e5f319c9f190edb3aa.js",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/frontend-c6e5f319c9f190edb3aa.js",
-      "publicPath": "static/solar/frontend-c6e5f319c9f190edb3aa.js"
-    },
-    "frontend-faf4a9c89f4252d2be75.js": {
-      "name": "frontend-faf4a9c89f4252d2be75.js",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/frontend-faf4a9c89f4252d2be75.js",
-      "publicPath": "static/solar/frontend-faf4a9c89f4252d2be75.js"
+    "frontend-ad556df1b365cd00376d.js": {
+      "name": "frontend-ad556df1b365cd00376d.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-ad556df1b365cd00376d.js",
+      "publicPath": "static/solar/frontend-ad556df1b365cd00376d.js"
     },
     "images/Habib.jpeg": {
       "name": "images/Habib.jpeg",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/Habib.jpeg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Habib.jpeg",
       "publicPath": "static/solar/images/Habib.jpeg"
     },
     "images/Kevin.jpg": {
       "name": "images/Kevin.jpg",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/Kevin.jpg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Kevin.jpg",
       "publicPath": "static/solar/images/Kevin.jpg"
     },
     "images/Luis.jpg": {
       "name": "images/Luis.jpg",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/Luis.jpg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Luis.jpg",
       "publicPath": "static/solar/images/Luis.jpg"
     },
     "images/portfolio-1.jpg": {
       "name": "images/portfolio-1.jpg",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/portfolio-1.jpg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/portfolio-1.jpg",
       "publicPath": "static/solar/images/portfolio-1.jpg"
     },
     "images/portfolio-2.jpg": {
       "name": "images/portfolio-2.jpg",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/portfolio-2.jpg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/portfolio-2.jpg",
       "publicPath": "static/solar/images/portfolio-2.jpg"
     },
     "images/portfolio-3.jpg": {
       "name": "images/portfolio-3.jpg",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/portfolio-3.jpg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/portfolio-3.jpg",
       "publicPath": "static/solar/images/portfolio-3.jpg"
     },
     "images/portfolio-4.jpg": {
       "name": "images/portfolio-4.jpg",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/portfolio-4.jpg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/portfolio-4.jpg",
       "publicPath": "static/solar/images/portfolio-4.jpg"
     },
     "images/Ravi.png": {
       "name": "images/Ravi.png",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/Ravi.png",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Ravi.png",
       "publicPath": "static/solar/images/Ravi.png"
     },
     "images/Solar1.svg": {
       "name": "images/Solar1.svg",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/Solar1.svg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar1.svg",
       "publicPath": "static/solar/images/Solar1.svg"
     },
     "images/Solar2.svg": {
       "name": "images/Solar2.svg",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/Solar2.svg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar2.svg",
       "publicPath": "static/solar/images/Solar2.svg"
     },
     "images/Solar3.svg": {
       "name": "images/Solar3.svg",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/Solar3.svg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar3.svg",
       "publicPath": "static/solar/images/Solar3.svg"
     },
     "images/Solar4.svg": {
       "name": "images/Solar4.svg",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/Solar4.svg",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Solar4.svg",
       "publicPath": "static/solar/images/Solar4.svg"
     },
     "images/sun.png": {
       "name": "images/sun.png",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/sun.png",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/sun.png",
       "publicPath": "static/solar/images/sun.png"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-09a7daafa0b5bf3d8d89.js"
+      "frontend-ad556df1b365cd00376d.js"
     ]
   },
-  "publicPath": "static/solar/",
-  "error": "ModuleBuildError",
-  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/djay/Code/agile/555-TeamProject/solar/client/src/pages/TrackingStages.js: Unterminated JSX contents. (121:10)\n\n  119 |       </h1>\n  120 |     </div> */}\n> 121 |     </div>\n      |           ^\n  122 |   );\n  123 | };\n  124 |\n    at instantiate (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:64:32)\n    at constructor (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:364:12)\n    at JSXParserMixin.raise (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:3253:19)\n    at JSXParserMixin.jsxReadToken (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:6663:20)\n    at JSXParserMixin.getTokenFromCode (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:7002:19)\n    at JSXParserMixin.nextToken (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:2376:10)\n    at JSXParserMixin.next (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:2297:10)\n    at JSXParserMixin.eat (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:2301:12)\n    at JSXParserMixin.expect (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:3629:10)\n    at JSXParserMixin.jsxParseClosingElementAt (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:6900:10)\n    at JSXParserMixin.jsxParseElementAt (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:6915:37)\n    at JSXParserMixin.jsxParseElementAt (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:6918:32)\n    at JSXParserMixin.jsxParseElement (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:6975:17)\n    at JSXParserMixin.parseExprAtom (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:6987:19)\n    at JSXParserMixin.parseExprSubscripts (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10859:23)\n    at JSXParserMixin.parseUpdate (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10656:61)\n    at JSXParserMixin.parseExprOps (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10599:21)\n    at /Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10569:39\n    at JSXParserMixin.allowInAnd (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:12244:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10569:17)\n    at JSXParserMixin.parseParenAndDistinguishExpression (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:11477:28)\n    at JSXParserMixin.parseExprAtom (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:11128:23)\n    at JSXParserMixin.parseExprAtom (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:6992:20)\n    at JSXParserMixin.parseExprSubscripts (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10859:23)\n    at JSXParserMixin.parseUpdate (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10656:61)\n    at JSXParserMixin.parseExprOps (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10599:21)\n    at JSXParserMixin.parseExpressionBase (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10553:23)\n    at /Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10549:39\n    at JSXParserMixin.allowInAnd (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:12239:16)\n    at JSXParserMixin.parseExpression (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:10549:17)\n    at JSXParserMixin.parseReturnStatement (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:12934:28)\n    at JSXParserMixin.parseStatementContent (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:12581:21)\n    at JSXParserMixin.parseStatementLike (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:12548:17)\n    at JSXParserMixin.parseStatementListItem (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:12528:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:13120:61)\n    at JSXParserMixin.parseBlockBody (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:13113:10)\n    at JSXParserMixin.parseBlock (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:13101:10)\n    at JSXParserMixin.parseFunctionBody (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:11911:24)\n    at JSXParserMixin.parseArrowExpression (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:11886:10)\n    at JSXParserMixin.parseParenAndDistinguishExpression (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:11489:12)\n    at JSXParserMixin.parseExprAtom (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:11128:23)\n    at JSXParserMixin.parseExprAtom (/Users/djay/Code/agile/555-TeamProject/node_modules/@babel/parser/lib/index.js:6992:20)"
+  "publicPath": "static/solar/"
 }

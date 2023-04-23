@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { flushSync } from 'react-dom';
 import DataTable, { createTheme } from 'react-data-table-component';
-import axios from 'axios';
 import CustomListDropDown from './DropDown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@coreui/coreui/dist/css/coreui.min.css';
@@ -71,7 +71,7 @@ function Table() {
     )
     .then(([dataAll, dataSalesReps]) => {
       setData(dataAll)
-      setSalesReps(dataSalesReps)
+      flushSync(() => { setSalesReps(dataSalesReps) })
     })
   }, []);
 
@@ -79,11 +79,19 @@ function Table() {
     setSelectedRows(state.selectedRows)
   }, []);
 
+  const filterSalesRepName = (rowData) => {
+    if (rowData == undefined || salesReps == undefined) {
+      return 'N/A'
+    } else {
+      return salesReps.filter((s) => s.id == rowData.sales_rep_id)[0].first_name + ' ' + salesReps.filter((s) => s.id == rowData.sales_rep_id)[0].last_name
+    }
+  };
+
   const columns = [
     {name: 'Name', selector: (row, i) => row.first_name, center: true},
     {name: 'Request ID', selector: (row, i) => row.request_id, center: true },
     {name: 'Sales Rep Assigned', selector: (row, i) => 
-      (salesReps && salesReps.filter((s) => s.id == row.sales_rep_id)[0].first_name + ' ' + salesReps.filter((s) => s.id == row.sales_rep_id)[0].last_name),
+      filterSalesRepName(row),
       center: true
     },
     {name: 'Date of request', selector: (row, i) => row.created_at_datetime, center: true},
