@@ -1,77 +1,25 @@
 {
   "status": "done",
   "assets": {
-    "frontend-050522c9e8aa574bca8d.js": {
-      "name": "frontend-050522c9e8aa574bca8d.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-050522c9e8aa574bca8d.js",
-      "publicPath": "static/solar/frontend-050522c9e8aa574bca8d.js"
-    },
-    "frontend-0f8fded17e8884394cca.js": {
-      "name": "frontend-0f8fded17e8884394cca.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-0f8fded17e8884394cca.js",
-      "publicPath": "static/solar/frontend-0f8fded17e8884394cca.js"
-    },
-    "frontend-35c8e2a9b0304d42be75.js": {
-      "name": "frontend-35c8e2a9b0304d42be75.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-35c8e2a9b0304d42be75.js",
-      "publicPath": "static/solar/frontend-35c8e2a9b0304d42be75.js"
-    },
-    "frontend-372019b9e316aca3e28f.js": {
-      "name": "frontend-372019b9e316aca3e28f.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-372019b9e316aca3e28f.js",
-      "publicPath": "static/solar/frontend-372019b9e316aca3e28f.js"
-    },
-    "frontend-3b99b51e2d1858bc879f.js": {
-      "name": "frontend-3b99b51e2d1858bc879f.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-3b99b51e2d1858bc879f.js",
-      "publicPath": "static/solar/frontend-3b99b51e2d1858bc879f.js"
-    },
-    "frontend-5c87d91a8b9b4c939dcb.js": {
-      "name": "frontend-5c87d91a8b9b4c939dcb.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-5c87d91a8b9b4c939dcb.js",
-      "publicPath": "static/solar/frontend-5c87d91a8b9b4c939dcb.js"
-    },
-    "frontend-5fac6126682c13a15005.js": {
-      "name": "frontend-5fac6126682c13a15005.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-5fac6126682c13a15005.js",
-      "publicPath": "static/solar/frontend-5fac6126682c13a15005.js"
-    },
-    "frontend-61ded24def99214d7b01.js": {
-      "name": "frontend-61ded24def99214d7b01.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-61ded24def99214d7b01.js",
-      "publicPath": "static/solar/frontend-61ded24def99214d7b01.js"
-    },
-    "frontend-9b7686314b35a8d14cb1.js": {
-      "name": "frontend-9b7686314b35a8d14cb1.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-9b7686314b35a8d14cb1.js",
-      "publicPath": "static/solar/frontend-9b7686314b35a8d14cb1.js"
-    },
-    "frontend-ae3702700d905230056c.js": {
-      "name": "frontend-ae3702700d905230056c.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-ae3702700d905230056c.js",
-      "publicPath": "static/solar/frontend-ae3702700d905230056c.js"
-    },
-    "frontend-cdc9c2806e6e6d509de9.js": {
-      "name": "frontend-cdc9c2806e6e6d509de9.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-cdc9c2806e6e6d509de9.js",
-      "publicPath": "static/solar/frontend-cdc9c2806e6e6d509de9.js"
+    "frontend-2d76cde520adf498b108.js": {
+      "name": "frontend-2d76cde520adf498b108.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-2d76cde520adf498b108.js",
+      "publicPath": "static/solar/frontend-2d76cde520adf498b108.js"
     },
     "images/Habib.jpeg": {
       "name": "images/Habib.jpeg",
       "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Habib.jpeg",
       "publicPath": "static/solar/images/Habib.jpeg"
     },
-<<<<<<< Updated upstream
     "images/Harrison.jpg": {
       "name": "images/Harrison.jpg",
       "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Harrison.jpg",
       "publicPath": "static/solar/images/Harrison.jpg"
-=======
+    },
     "images/Jayanth.JPG": {
       "name": "images/Jayanth.JPG",
-      "path": "/Users/djay/Code/agile/555-TeamProject/solar/static/solar/images/Jayanth.JPG",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/images/Jayanth.JPG",
       "publicPath": "static/solar/images/Jayanth.JPG"
->>>>>>> Stashed changes
     },
     "images/Kevin.jpg": {
       "name": "images/Kevin.jpg",
@@ -141,7 +89,7 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-cdc9c2806e6e6d509de9.js"
+      "frontend-2d76cde520adf498b108.js"
     ]
   },
   "publicPath": "static/solar/"
