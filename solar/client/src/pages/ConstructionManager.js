@@ -37,6 +37,8 @@ export default function ConstructionManager() {
     }, []);
 
     const [verticalActive, setVerticalActive] = useState('tab1');
+    const [currentRow, setCurrentRow] = useState(null);
+    const [table4Row, setTable4Row] = useState(null);
 
     // modal related stuff
     const [show, setShow] = useState(false);
@@ -234,6 +236,7 @@ export default function ConstructionManager() {
       }
       
       const handleEstimateUpdated = () => {
+        handleCloseEstimates()
         axios
           .post("https://vlcfbqye7a.execute-api.us-east-1.amazonaws.com/UAT", JSON.stringify(json), {
               headers: {
@@ -250,7 +253,6 @@ export default function ConstructionManager() {
             }
           })
           .catch((error) => console.log(error))
-        setShowEstimates(false)
       }
 
       const handleCostChange = (event) => {
@@ -423,7 +425,10 @@ export default function ConstructionManager() {
                     data={completedRequests}
                     fixedHeader
                     expandableRows
+                    expandableRowExpanded={(row) => (row === currentRow)}
+                    onRowClicked={(row) => setCurrentRow(row)}
                     expandableRowsComponent={ SiteSurveyorCompletedComponent }
+                    onRowExpandToggled={(bool, row) => setCurrentRow(row)}
                     />
                 </MDBTabsPane>
 
@@ -435,7 +440,10 @@ export default function ConstructionManager() {
                     data={scheduledRequests}
                     fixedHeader
                     expandableRows
+                    expandableRowExpanded={(row) => (row === table4Row)}
+                    onRowClicked={(row) => setTable4Row(row)}
                     expandableRowsComponent={ CustomerScheduledComponent }
+                    onRowExpandToggled={(bool, row) => setTable4Row(row)}
                     />
                 </MDBTabsPane>
 

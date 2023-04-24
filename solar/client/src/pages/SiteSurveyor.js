@@ -34,6 +34,8 @@ export default function SiteSurveyor() {
   }, []);
 
   const [verticalActive, setVerticalActive] = useState('tab1');
+  const [table1Row, setTable1Row] = useState(null);
+  const [table2Row, setTable2Row] = useState(null);
 
   // modal related stuff
   const [showImages, setShowImages] = useState(false);
@@ -191,7 +193,10 @@ export default function SiteSurveyor() {
                         columns={newRequestsColumns}
                         data={newRequestData}
                         expandableRows
+                        expandableRowExpanded={(row) => (row === table1Row)}
+                        onRowClicked={(row) => setTable1Row(row)}
                         expandableRowsComponent={ExpandedComponent}
+                        onRowExpandToggled={(bool, row) => setTable1Row(row)}
                         fixedHeader
                       />
                     </MDBTabsPane>
@@ -204,7 +209,10 @@ export default function SiteSurveyor() {
                         data={updateRequestData}
                         fixedHeader
                         expandableRows
+                        expandableRowExpanded={(row) => (row === table2Row)}
+                        onRowClicked={(row) => setTable2Row(row)}
                         expandableRowsComponent={ExpandedComponent2}
+                        onRowExpandToggled={(bool, row) => setTable2Row(row)}
                       />
                     </MDBTabsPane>
 
