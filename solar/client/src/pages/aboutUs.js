@@ -16,6 +16,7 @@ import KevinImg from '../img/Kevin.jpg'
 import HabibImg from '../img/Habib.jpeg'
 import VamsiImg from '../img/Vamsi.jpg'
 import HarrisonImg from '../img/Harrison.jpg'
+import JayanthImg from '../img/Jayanth.JPG'
 import '../css/aboutUs.css'
 
 const mystyle = {
@@ -120,6 +121,24 @@ const Vamsi = () => {
                 </MDBCard>
     )
 }
+const Jayanth = () => {
+    return(
+        <MDBCard style={{ maxWidth: "18rem"}} className='Usercard mb-3 border-dark'>
+                    <MDBCardImage
+                        src={JayanthImg}
+                        position="top"
+                        className="image"
+                    />
+                    <MDBCardBody className='d-flex flex-column'>
+                        <MDBCardTitle className='fontTitle'>Jayanth Dannana</MDBCardTitle>
+                        <MDBCardText className='fontBody'>
+                        I helped out with the frontend part of the project. I am a Chemical Engineer Graduate from IIT Ropar, decided to follow my dream of becoming a Software Developer.
+                        I'm pursing Master's in Computer Science at Stevens Institute of Technology. 
+                        </MDBCardText>
+                    </MDBCardBody>
+                </MDBCard>
+    )
+}
 
 const Harrison = () => {
     return(
@@ -174,7 +193,7 @@ export default function AboutUs(){
                             <Harrison />
                         </MDBCol>
                         <MDBCol sm='4'>
-                            <Luis />
+                            <Jayanth />
                         </MDBCol>
                     </MDBRow>
                 </center>
