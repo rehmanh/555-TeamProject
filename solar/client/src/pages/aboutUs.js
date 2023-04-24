@@ -16,7 +16,7 @@ import KevinImg from '../img/Kevin.jpg'
 import HabibImg from '../img/Habib.jpeg'
 import VamsiImg from '../img/Vamsi.jpg'
 import HarrisonImg from '../img/Harrison.jpg'
-import JayanthImg from '../img/Jayanth.JPG'
+import JayanthImg from '../img/Jayanth.jpg'
 import '../css/aboutUs.css'
 
 const mystyle = {
