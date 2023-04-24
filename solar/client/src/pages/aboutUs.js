@@ -1,7 +1,6 @@
 import React from 'react';
 // import { render } from "react-dom"
 import {
-    MDBFooter,
     MDBContainer,
     MDBCard,
     MDBCardBody,
@@ -15,6 +14,7 @@ import LuisImg from '../img/Luis.jpg'
 import RaviImg from '../img/Ravi.png'
 import KevinImg from '../img/Kevin.jpg'
 import HabibImg from '../img/Habib.jpeg'
+import VamsiImg from '../img/Vamsi.jpg'
 import '../css/aboutUs.css'
 
 const mystyle = {
@@ -100,6 +100,26 @@ const Habib = () => {
     )
 }
 
+const Vamsi = () => {
+    return(
+        <MDBCard style={{ maxWidth: "18rem"}} className='Usercard mb-3 border-dark'>
+                    <MDBCardImage
+                        src={VamsiImg}
+                        position="top"
+                        className="image"
+                    />
+                    <MDBCardBody className='d-flex flex-column'>
+                        <MDBCardTitle className='fontTitle'>Vamsi</MDBCardTitle>
+                        <MDBCardText className='fontBody'>
+                        Hey! I'm an M.S. student in Computer Science at Stevens Institute of Technology. 
+                        I helped out with the frontend of this cool project. 
+                        Fun fact - I used to be a civil engineer before I decided to switch things up!
+                        </MDBCardText>
+                    </MDBCardBody>
+                </MDBCard>
+    )
+}
+
 export default function AboutUs(){
     return(
         <div>
@@ -127,7 +147,7 @@ export default function AboutUs(){
                 <center>
                     <MDBRow className="mt-4 d-flex align-items-stretch">
                         <MDBCol sm='4'>
-                            <Luis />
+                            <Vamsi />
                         </MDBCol>
                         <MDBCol sm='4'>
                             <Luis />
