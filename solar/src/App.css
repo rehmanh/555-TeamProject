@@ -10,14 +10,24 @@
     box-shadow: 0px 0px 10px grey;
 }
 
-.salePage {
+.Page {
     width: 70%;
-    margin: 50px auto;
+    margin: 150px auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px grey;
-    height: 40rem;
+    height: 50rem;
     overflow-y: auto;
+}
+
+.track {
+    align-items: center;
+    height: 60rem;
+}
+
+.kpicard:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
 }
 
 .container {
@@ -30,6 +40,14 @@
 
 .card-title {
     padding-top: 1px !important;
+}
+
+.bbox {
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    background: var(--accent);
+    cursor: pointer;
 }
 
 
@@ -156,9 +174,9 @@ input[type="submit"]:hover {
     }
 
     .background-image {
-        background-image:none;
+        background-image: none;
         background-size: cover;
-        background-repeat:repeat;
+        background-repeat: repeat;
         min-height: 100%;
     }
 

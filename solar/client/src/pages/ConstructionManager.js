@@ -359,7 +359,7 @@ export default function ConstructionManager() {
             animate={{opacity: 1}}
             exit={{opacity: 0}}
         >
-        <>
+        <div className='Page'>
           <MDBRow style={{ marginTop: '50px' }}>
             <h1>Welcome Back {fullUserName}</h1>
           </MDBRow>
@@ -443,7 +443,7 @@ export default function ConstructionManager() {
             </MDBCol>
             <MDBCol size='1'></MDBCol>
           </MDBRow>
-        </>
+        </div>
       </motion.div>) : (<div>Invalid</div>)
     );
 }

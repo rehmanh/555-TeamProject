@@ -17,6 +17,7 @@ import {
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 import Scheduler from '../components/Scheduler';
 import { getUserFullName } from '../utils/utils';
+import KpiCards from '../components/kpi';
 
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
@@ -24,8 +25,8 @@ const boxVariant = {
 };
 
 export default function OpManager() {
-
   const [fullUserName, setFullUserName] = useState('');
+
 
   useEffect(() => {
     setFullUserName(getUserFullName)
@@ -44,65 +45,9 @@ export default function OpManager() {
       <div className='opPage'>
 
         <MDBContainer breakpoint="sm">
-          <MDBRow className="mt-4">
-            <MDBCol sm='4'>
-              <motion.div
-                className="box"
-                variants={boxVariant}
-                initial="hidden"
-                animate="visible"
-              >
-                <MDBCard>
-                  <MDBCardBody>
-                    <MDBCardTitle><BsClipboard2CheckFill />  Sales Obtained</MDBCardTitle>
-                    <MDBCardText>
-                      <span>
-                        211
-                      </span>
-                    </MDBCardText>
-                  </MDBCardBody>
-                </MDBCard>
-              </motion.div >
-            </MDBCol>
-            <MDBCol sm='4'>
-              <motion.div
-                className="box"
-                variants={boxVariant}
-                initial="hidden"
-                animate="visible"
-              >
-                <MDBCard>
-                  <MDBCardBody>
-                    <MDBCardTitle><BsClipboard2PlusFill />  New Clients</MDBCardTitle>
-                    <MDBCardText>
-                      <span>
-                        313
-                      </span>
-                    </MDBCardText>
-                  </MDBCardBody>
-                </MDBCard>
-              </motion.div >
-            </MDBCol>
-            <MDBCol sm='4'>
-              <motion.div
-                className="box"
-                variants={boxVariant}
-                initial="hidden"
-                animate="visible"
-              >
-                <MDBCard>
-                  <MDBCardBody>
-                    <MDBCardTitle> <BsHammer />  Projects</MDBCardTitle>
-                    <MDBCardText>
-                      <span>
-                        212
-                      </span>
-                    </MDBCardText>
-                  </MDBCardBody>
-                </MDBCard>
-              </motion.div >
-            </MDBCol>
-          </MDBRow>
+
+          <KpiCards />
+
           <MDBRow className="mt-4 text-center">
             <MDBCol sm='3'></MDBCol>
             <MDBCol sm='6'>
@@ -112,16 +57,6 @@ export default function OpManager() {
                 initial="hidden"
                 animate="visible"
               >
-                {/* <MDBCard> */}
-                  {/* <Scheduler /> */}
-                  {/* <Calender /> */}
-                  {/* <MDBCardBody>
-                <MDBCardTitle>New Requests</MDBCardTitle>
-                <MDBCardText>
-                  1
-                </MDBCardText>
-              </MDBCardBody> */}
-                {/* </MDBCard> */}
               </motion.div>
             </MDBCol>
             <MDBCol sm='3'></MDBCol>
