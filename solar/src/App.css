@@ -25,6 +25,11 @@
     height: 60rem;
 }
 
+.kpicard:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
 .container {
     align-items: center;
 }
@@ -35,6 +40,14 @@
 
 .card-title {
     padding-top: 1px !important;
+}
+
+.bbox {
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    background: var(--accent);
+    cursor: pointer;
 }
 
 
