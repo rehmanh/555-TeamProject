@@ -22,8 +22,8 @@ function Userprog() {
       {showTracking ? (
         <TrackingInfo trackingId={trackingId} />
       ) : (
-        <>
-          <form onSubmit={handleSubmit}>
+        <div className="track">
+          <form style={{ margin: '50px auto', marginTop:'15rem' }} onSubmit={handleSubmit}>
             <div className="container my-auto">
               <label className="form-label">Tracking ID</label>
               <input
@@ -42,7 +42,7 @@ function Userprog() {
               </button>
             </div>
           </form>
-        </>
+        </div>
       )}
     </motion.div>
   );
