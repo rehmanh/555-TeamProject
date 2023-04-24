@@ -6,10 +6,20 @@
       "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-510564b407591fa193e2.js",
       "publicPath": "static/solar/frontend-510564b407591fa193e2.js"
     },
+    "frontend-5fac6126682c13a15005.js": {
+      "name": "frontend-5fac6126682c13a15005.js",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-5fac6126682c13a15005.js",
+      "publicPath": "static/solar/frontend-5fac6126682c13a15005.js"
+    },
     "images/Habib.jpeg": {
       "name": "images/Habib.jpeg",
       "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Habib.jpeg",
       "publicPath": "static/solar/images/Habib.jpeg"
+    },
+    "images/Harrison.jpg": {
+      "name": "images/Harrison.jpg",
+      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Harrison.jpg",
+      "publicPath": "static/solar/images/Harrison.jpg"
     },
     "images/Kevin.jpg": {
       "name": "images/Kevin.jpg",
@@ -79,7 +89,7 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-510564b407591fa193e2.js"
+      "frontend-5fac6126682c13a15005.js"
     ]
   },
   "publicPath": "static/solar/"

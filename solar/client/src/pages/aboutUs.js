@@ -15,6 +15,7 @@ import RaviImg from '../img/Ravi.png'
 import KevinImg from '../img/Kevin.jpg'
 import HabibImg from '../img/Habib.jpeg'
 import VamsiImg from '../img/Vamsi.jpg'
+import HarrisonImg from '../img/Harrison.jpg'
 import '../css/aboutUs.css'
 
 const mystyle = {
@@ -120,6 +121,26 @@ const Vamsi = () => {
     )
 }
 
+const Harrison = () => {
+    return(
+        <MDBCard style={{ maxWidth: "18rem"}} className='Usercard mb-3 border-dark'>
+                    <MDBCardImage
+                        src={HarrisonImg}
+                        position="top"
+                        className="image"
+                    />
+                    <MDBCardBody className='d-flex flex-column'>
+                        <MDBCardTitle className='fontTitle'>Harrison</MDBCardTitle>
+                        <MDBCardText className='fontBody'>
+                            Harrison is a M.S. Computer Science student at Stevens Institute of Technology. 
+                            His background is interdisciplinary with Biomedical Engineering and Machine Learning, and he is also interested in AI with software engineering. 
+                            He has two dogs, whose name is Haru and Aki, they are very cute and always accompany their dad when dad was working.
+                        </MDBCardText>
+                    </MDBCardBody>
+                </MDBCard>
+    )
+}
+
 export default function AboutUs(){
     return(
         <div>
@@ -150,7 +171,7 @@ export default function AboutUs(){
                             <Vamsi />
                         </MDBCol>
                         <MDBCol sm='4'>
-                            <Luis />
+                            <Harrison />
                         </MDBCol>
                         <MDBCol sm='4'>
                             <Luis />
