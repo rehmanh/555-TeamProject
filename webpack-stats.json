@@ -1,10 +1,10 @@
 {
   "status": "done",
   "assets": {
-    "frontend-ad556df1b365cd00376d.js": {
-      "name": "frontend-ad556df1b365cd00376d.js",
-      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-ad556df1b365cd00376d.js",
-      "publicPath": "static/solar/frontend-ad556df1b365cd00376d.js"
+    "frontend-6644663c5eeb14855d13.js": {
+      "name": "frontend-6644663c5eeb14855d13.js",
+      "path": "/Users/rehmanh/Desktop/555FinalProject/solar/static/solar/frontend-6644663c5eeb14855d13.js",
+      "publicPath": "static/solar/frontend-6644663c5eeb14855d13.js"
     },
     "images/Habib.jpeg": {
       "name": "images/Habib.jpeg",
@@ -74,7 +74,7 @@
   },
   "chunks": {
     "frontend": [
-      "frontend-ad556df1b365cd00376d.js"
+      "frontend-6644663c5eeb14855d13.js"
     ]
   },
   "publicPath": "static/solar/"
