@@ -4,7 +4,7 @@ from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes, authentication_classes
 
 from knox.views import LoginView as KnoxLoginView
 from knox.auth import TokenAuthentication
@@ -26,7 +26,7 @@ class UserLoginView(KnoxLoginView):
     serializer_class = LoginSerializer
     permission_classes = (AllowAny,)
     def post(self, request, format=None):
-        serializer = self.serializer_class(data=self.request.data) # , context={'request': request}
+        serializer = self.serializer_class(data=self.request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.validated_data['user']
         login(request, user)
@@ -40,9 +40,9 @@ class UserLoginView(KnoxLoginView):
 class ConstructionManagerList(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     queryset = User.objects.filter(Q(role = 6) | Q(is_superuser = True))
-    permissions_classes = (AllowAny,)
     
     @api_view(['GET'])
+    @permission_classes([AllowAny])
     def get_construction_managers(self, request):
         queryset = self.queryset
         serializer = UserSerializer(queryset, many=True)
@@ -51,9 +51,9 @@ class ConstructionManagerList(viewsets.ModelViewSet):
 class SiteSurveyorList(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     queryset = User.objects.filter(Q(role = 7) | Q(is_superuser = True))
-    permissions_classes = (AllowAny,)
     
     @api_view(['GET'])
+    @permission_classes([AllowAny])
     def get_site_surveyors(self, request):
         queryset = self.queryset
         serializer = UserSerializer(queryset, many=True)
@@ -62,9 +62,10 @@ class SiteSurveyorList(viewsets.ModelViewSet):
 class SalesRepList(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     queryset = User.objects.filter(Q(role = 2) | Q(is_superuser = True))
-    permissions_classes = (AllowAny,)
     
     @api_view(['GET'])
+    @permission_classes([AllowAny])
+    @authentication_classes([])
     def get_salesreps(self, request):
         queryset = self.queryset
         serializer = UserSerializer(queryset, many=True)
