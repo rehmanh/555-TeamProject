@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { TrackingStages } from "./TrackingStages";
 import { motion } from 'framer-motion';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function TrackingInfo({ trackingId }) {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -16,19 +19,27 @@ function TrackingInfo({ trackingId }) {
           method: "POST",
           body: JSON.stringify(requestData),
         });
-        //console.log(await response.json());
-        //request_id: '18b005ae-ba54-442b-886d-a10d6b175376', request_status: 'STAGE-1', sales_rep_ID: 2}
         const data = await response.json();
-        setData(data);
+        if (data && data.request_status) {
+          setData(data);
+        } else {
+          toast.error('Enter valid tracking ID');
+        }
       } catch (error) {
         setError(error);
+        toast.error('Error fetching data');
       }
     }
     fetchData();
   }, [trackingId]);
 
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return (
+      <div>
+        <div>Error: {error.message}</div>
+        <ToastContainer />
+      </div>
+    );
   }
 
   if (!data) {
@@ -50,7 +61,8 @@ function TrackingInfo({ trackingId }) {
     animate={{opacity: 1}}
     exit={{opacity: 0}}
     >
-      <h1><TrackingStages Tstatus = {data.request_status}/></h1>
+      {data.request_status && <h1><TrackingStages Tstatus = {data.request_status}/></h1>}
+      <ToastContainer />
     </motion.div>
   );
 }
