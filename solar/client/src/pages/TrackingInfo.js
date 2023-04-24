@@ -50,12 +50,7 @@ function TrackingInfo({ trackingId }) {
     animate={{opacity: 1}}
     exit={{opacity: 0}}
     >
-      {/* <Navbar /> */}
-      <h1><TrackingStages Tstatus = {"PAYMENT-DONE"}/></h1>
-      {/* <h1><TrackingStages Tstatus = "Sales Rep Appointed"/></h1> */}
-      {/* <h1><TrackingStages Tstatus = "Operation Manger"/></h1>
-      <h1><TrackingStages Tstatus = "Contrators on the way"/></h1>
-      <h1><TrackingStages Tstatus = "Completed Enjoy the Energy"/></h1> */}
+      <h1><TrackingStages Tstatus = {data.request_status}/></h1>
     </motion.div>
   );
 }
