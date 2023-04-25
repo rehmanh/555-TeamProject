@@ -22,5 +22,5 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    re_path(r'^.*$', index, name='catch-all'),
+    re_path(r'^(?!admin\/|api\/|api-login\/|logout\/|users\/constructionManagers\/|users\/siteSurveyors\/|users\/salesreps\/|api-auth\/|login|salesrep|userreq|userprog|opManager|constructionManager|payments|siteSurveyor|aboutUs|payment).*$', index, name='catch-all'),
 ]

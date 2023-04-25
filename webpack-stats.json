@@ -1,151 +1,103 @@
 {
-  "status": "done",
+  "status": "error",
   "assets": {
-    "frontend-0afcafb6d83d1e9c6e9a.js": {
-      "name": "frontend-0afcafb6d83d1e9c6e9a.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-0afcafb6d83d1e9c6e9a.js",
-      "publicPath": "static/solar/frontend-0afcafb6d83d1e9c6e9a.js"
-    },
-    "frontend-0bddf9b79179c89dc105.js": {
-      "name": "frontend-0bddf9b79179c89dc105.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-0bddf9b79179c89dc105.js",
-      "publicPath": "static/solar/frontend-0bddf9b79179c89dc105.js"
-    },
-    "frontend-16d1ea31b47d1b6254c7.js": {
-      "name": "frontend-16d1ea31b47d1b6254c7.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-16d1ea31b47d1b6254c7.js",
-      "publicPath": "static/solar/frontend-16d1ea31b47d1b6254c7.js"
-    },
-    "frontend-1d10a0af17f4a2150223.js": {
-      "name": "frontend-1d10a0af17f4a2150223.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-1d10a0af17f4a2150223.js",
-      "publicPath": "static/solar/frontend-1d10a0af17f4a2150223.js"
-    },
-    "frontend-997f3c64e1dd47fb4896.js": {
-      "name": "frontend-997f3c64e1dd47fb4896.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-997f3c64e1dd47fb4896.js",
-      "publicPath": "static/solar/frontend-997f3c64e1dd47fb4896.js"
-    },
-    "frontend-abe1ef263f9df6199f87.js": {
-      "name": "frontend-abe1ef263f9df6199f87.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-abe1ef263f9df6199f87.js",
-      "publicPath": "static/solar/frontend-abe1ef263f9df6199f87.js"
-    },
-    "frontend-af35b5db5bcec3080d62.js": {
-      "name": "frontend-af35b5db5bcec3080d62.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-af35b5db5bcec3080d62.js",
-      "publicPath": "static/solar/frontend-af35b5db5bcec3080d62.js"
-    },
-    "frontend-b76d0cdba5b151a72b77.js": {
-      "name": "frontend-b76d0cdba5b151a72b77.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-b76d0cdba5b151a72b77.js",
-      "publicPath": "static/solar/frontend-b76d0cdba5b151a72b77.js"
-    },
-    "frontend-cc6e33d2b5f59f4eee59.js": {
-      "name": "frontend-cc6e33d2b5f59f4eee59.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-cc6e33d2b5f59f4eee59.js",
-      "publicPath": "static/solar/frontend-cc6e33d2b5f59f4eee59.js"
-    },
-    "frontend-d6aee22f39aac6820b1e.js": {
-      "name": "frontend-d6aee22f39aac6820b1e.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-d6aee22f39aac6820b1e.js",
-      "publicPath": "static/solar/frontend-d6aee22f39aac6820b1e.js"
-    },
-    "frontend-f7e2bd9c4934f743fd27.js": {
-      "name": "frontend-f7e2bd9c4934f743fd27.js",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/frontend-f7e2bd9c4934f743fd27.js",
-      "publicPath": "static/solar/frontend-f7e2bd9c4934f743fd27.js"
+    "frontend-3098a3c1ccbbc6d33f01.js": {
+      "name": "frontend-3098a3c1ccbbc6d33f01.js",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\frontend-3098a3c1ccbbc6d33f01.js",
+      "publicPath": "static/solar/frontend-3098a3c1ccbbc6d33f01.js"
     },
     "images/Habib.jpeg": {
       "name": "images/Habib.jpeg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Habib.jpeg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\Habib.jpeg",
       "publicPath": "static/solar/images/Habib.jpeg"
     },
     "images/Harrison.jpg": {
       "name": "images/Harrison.jpg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Harrison.jpg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\Harrison.jpg",
       "publicPath": "static/solar/images/Harrison.jpg"
     },
     "images/Jayanth.jpg": {
       "name": "images/Jayanth.jpg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Jayanth.jpg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\Jayanth.jpg",
       "publicPath": "static/solar/images/Jayanth.jpg"
     },
     "images/Kevin.jpg": {
       "name": "images/Kevin.jpg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Kevin.jpg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\Kevin.jpg",
       "publicPath": "static/solar/images/Kevin.jpg"
     },
     "images/login.jpeg": {
       "name": "images/login.jpeg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/login.jpeg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\login.jpeg",
       "publicPath": "static/solar/images/login.jpeg"
     },
     "images/Luis.jpg": {
       "name": "images/Luis.jpg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Luis.jpg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\Luis.jpg",
       "publicPath": "static/solar/images/Luis.jpg"
     },
     "images/portfolio-1.jpg": {
       "name": "images/portfolio-1.jpg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/portfolio-1.jpg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\portfolio-1.jpg",
       "publicPath": "static/solar/images/portfolio-1.jpg"
     },
     "images/portfolio-2.jpg": {
       "name": "images/portfolio-2.jpg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/portfolio-2.jpg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\portfolio-2.jpg",
       "publicPath": "static/solar/images/portfolio-2.jpg"
     },
     "images/portfolio-3.jpg": {
       "name": "images/portfolio-3.jpg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/portfolio-3.jpg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\portfolio-3.jpg",
       "publicPath": "static/solar/images/portfolio-3.jpg"
     },
     "images/portfolio-4.jpg": {
       "name": "images/portfolio-4.jpg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/portfolio-4.jpg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\portfolio-4.jpg",
       "publicPath": "static/solar/images/portfolio-4.jpg"
     },
     "images/Ravi.png": {
       "name": "images/Ravi.png",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Ravi.png",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\Ravi.png",
       "publicPath": "static/solar/images/Ravi.png"
     },
     "images/Solar1.svg": {
       "name": "images/Solar1.svg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Solar1.svg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\Solar1.svg",
       "publicPath": "static/solar/images/Solar1.svg"
     },
     "images/Solar2.svg": {
       "name": "images/Solar2.svg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Solar2.svg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\Solar2.svg",
       "publicPath": "static/solar/images/Solar2.svg"
     },
     "images/Solar3.svg": {
       "name": "images/Solar3.svg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Solar3.svg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\Solar3.svg",
       "publicPath": "static/solar/images/Solar3.svg"
     },
     "images/Solar4.svg": {
       "name": "images/Solar4.svg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Solar4.svg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\Solar4.svg",
       "publicPath": "static/solar/images/Solar4.svg"
     },
     "images/sun.png": {
       "name": "images/sun.png",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/sun.png",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\sun.png",
       "publicPath": "static/solar/images/sun.png"
     },
     "images/Vamsi.jpg": {
       "name": "images/Vamsi.jpg",
-      "path": "/Users/luisng/Desktop/555-TeamProject/solar/static/solar/images/Vamsi.jpg",
+      "path": "C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\static\\solar\\images\\Vamsi.jpg",
       "publicPath": "static/solar/images/Vamsi.jpg"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-abe1ef263f9df6199f87.js"
+      "frontend-3098a3c1ccbbc6d33f01.js"
     ]
   },
-  "publicPath": "static/solar/"
+  "publicPath": "static/solar/",
+  "error": "ModuleNotFoundError",
+  "message": "Module not found: Error: Can't resolve '@material-ui/core' in 'C:\\Users\\Lenovo Legion\\Desktop\\FinalAgile\\555-TeamProject\\solar\\client\\src\\components'"
 }
