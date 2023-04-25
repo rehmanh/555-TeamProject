@@ -120,10 +120,10 @@ export default function ConstructionManager() {
     };
 
     const unassignedRequestsColumns = [
-      {name: 'Request ID', selector: (row, i) => row.request_id, center: true },
-      {name: 'First Name', selector: (row, i) => row.first_name, center: true},
-      {name: 'Zip Code', selector: (row, i) => row.zip_code, center: true},
-      {name: 'City', selector: (row, i) => row.city, center: true}
+      {name: 'Request ID', selector: (row, i) => row.request_id, center: true, cell: (row) => <div className="col-text">{row.request_id}</div> },
+      {name: 'First Name', selector: (row, i) => row.first_name, center: true, cell: (row) => <div className="col-text">{row.first_name}</div>},
+      {name: 'Zip Code', selector: (row, i) => row.zip_code, center: true, cell: (row) => <div className="col-text">{row.zip_code}</div>},
+      {name: 'City', selector: (row, i) => row.city, center: true, cell: (row) => <div className="col-text">{row.city}</div>}
     ];
 
     const inProgressRequestsColumns = [
@@ -367,28 +367,28 @@ export default function ConstructionManager() {
           </MDBRow>
             
           <MDBRow>
-            <MDBCol size='1'></MDBCol>
-            <MDBCol size='10'>
+
+            <MDBCol size='12'>
 
               <MDBTabs fill className='mt-3'>
                 <MDBTabsItem>
-                  <MDBTabsLink onClick={() => handleVerticalClick('tab1')} active={verticalActive === 'tab1'}>
+                  <MDBTabsLink className='cm-text' onClick={() => handleVerticalClick('tab1')} active={verticalActive === 'tab1'}>
                     Unassigned Requests
                   </MDBTabsLink>
                 </MDBTabsItem>
                 <MDBTabsItem>
-                  <MDBTabsLink onClick={() => handleVerticalClick('tab2')} active={verticalActive === 'tab2'}>
-                    Site Surveyor &#8212; In Progress Requests
+                  <MDBTabsLink className='cm-text' onClick={() => handleVerticalClick('tab2')} active={verticalActive === 'tab2'}>
+                    Site Surveyor In-Progress Requests
                   </MDBTabsLink>
                 </MDBTabsItem>
                 <MDBTabsItem>
-                  <MDBTabsLink onClick={() => handleVerticalClick('tab3')} active={verticalActive === 'tab3'}>
-                    Site Surveyor &#8212; Completed Requests
+                  <MDBTabsLink className='cm-text' onClick={() => handleVerticalClick('tab3')} active={verticalActive === 'tab3'}>
+                    Site Surveyor Completed Requests
                   </MDBTabsLink>
                 </MDBTabsItem>
                 <MDBTabsItem>
-                  <MDBTabsLink onClick={() => handleVerticalClick('tab4')} active={verticalActive === 'tab4'}>
-                    Customer &#8212; Scheduled Requests
+                  <MDBTabsLink className='cm-text' onClick={() => handleVerticalClick('tab4')} active={verticalActive === 'tab4'}>
+                    Customer Scheduled Requests
                   </MDBTabsLink>
                 </MDBTabsItem>
               </MDBTabs>
@@ -414,6 +414,7 @@ export default function ConstructionManager() {
                     columns={inProgressRequestsColumns}
                     data={inProgressRequestData}
                     fixedHeader
+                    
                     />
                 </MDBTabsPane>
                 

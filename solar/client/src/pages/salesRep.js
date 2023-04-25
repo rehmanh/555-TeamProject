@@ -135,23 +135,23 @@ export default function App() {
               >
 
                 <MDBRow>
-
-                  <MDBCol size='1'></MDBCol>
-                  <MDBCol size='10'>
-
+                  <MDBCol size='12'>
                     <MDBTabs fill className='mt-3'>
                       <MDBTabsItem>
-                        <MDBTabsLink onClick={() => handleVerticalClick('tab1')} active={verticalActive === 'tab1'}>
-                          All Requests
+                        <MDBTabsLink className='tab-text' onClick={() => handleVerticalClick('tab1')} active={verticalActive === 'tab1'}>
+                          <span>
+
+                            All Requests
+                          </span>
                         </MDBTabsLink>
                       </MDBTabsItem>
                       <MDBTabsItem>
-                        <MDBTabsLink onClick={() => handleVerticalClick('tab2')} active={verticalActive === 'tab2'}>
+                        <MDBTabsLink className='tab-text' onClick={() => handleVerticalClick('tab2')} active={verticalActive === 'tab2'}>
                           Your Requests
                         </MDBTabsLink>
                       </MDBTabsItem>
                       <MDBTabsItem>
-                        <MDBTabsLink onClick={() => handleVerticalClick('tab3')} active={verticalActive === 'tab3'}>
+                        <MDBTabsLink className='tab-text' onClick={() => handleVerticalClick('tab3')} active={verticalActive === 'tab3'}>
                           Active Requests
                         </MDBTabsLink>
                       </MDBTabsItem>
@@ -163,16 +163,16 @@ export default function App() {
                           <MDBTableHead dark>
                             <tr>
                               <th scope='col'>
-                                <Button variant="primary" type='submit' onClick={assignRequestToSalesRep}>Submit</Button>
+                                <Button className='tab-text' variant="primary" type='submit' onClick={assignRequestToSalesRep}>Submit</Button>
                               </th>
                               <th>
-                                <span style={{ float: 'left' }}>Customer's Request ID</span>
+                                <span className='tab-text' style={{ float: 'left' }}>Customer's Request ID</span>
                               </th>
                               <th>
-                                <span style={{ float: 'left' }}>Customer's First Name</span>
+                                <span className='tab-text' style={{ float: 'left' }}>Customer's First Name</span>
                               </th>
                               <th>
-                                <span style={{ float: 'left' }}>Customer's city</span>
+                                <span className='tab-text' style={{ float: 'left' }}>Customer's city</span>
                               </th>
                             </tr>
                           </MDBTableHead>
@@ -195,10 +195,10 @@ export default function App() {
                               <th scope='col'>
 
                               </th>
-                              <th>Customer's Request ID</th>
-                              <th>Customer's First Name</th>
-                              <th>Customer's City</th>
-                              <th>Request Status</th>
+                              <th className='tab-text'>Customer's Request ID</th>
+                              <th className='tab-text'>Customer's First Name</th>
+                              <th className='tab-text'>Customer's City</th>
+                              <th className='tab-text'>Request Status</th>
                             </tr>
                           </MDBTableHead>
                           <MDBTableBody>
@@ -217,7 +217,7 @@ export default function App() {
                         }
                       </MDBTabsPane>
 
-                      <MDBTabsPane show={verticalActive === 'tab3'}>On going Projects</MDBTabsPane>
+                      <MDBTabsPane className='tab-text' show={verticalActive === 'tab3'}>On going Projects</MDBTabsPane>
                     </MDBTabsContent>
                   </MDBCol>
                   <MDBCol size='1'></MDBCol>
@@ -299,14 +299,14 @@ function SalesRepTable({ data, handleCheckboxSelection, isUsersRequests }) {
           className={selectedRequests.includes(value.request_id) ? "table-primary" : ""}
         >
           <th scope="col">
-            <MDBCheckbox
+            <MDBCheckbox 
               checked={selectedRequests.includes(value.request_id)}
               onChange={() => { }}
             ></MDBCheckbox>
           </th>
-          <td>{value.request_id}</td>
-          <td>{value.first_name}</td>
-          <td>{value.city}</td>
+          <td className='tab-text'>{value.request_id}</td>
+          <td className='tab-text'>{value.first_name}</td>
+          <td className='tab-text'>{value.city}</td>
           {isUsersRequests ? <td>{value.current_stage}</td> : <></>}
         </tr>
       ))}

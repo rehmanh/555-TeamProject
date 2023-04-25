@@ -141,8 +141,70 @@ input[type="submit"]:hover {
     background-size: cover;
 }
 
+.cm-text {
+    height: 60px;
+    width: 200px !important;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* .col-text {
+ font-size: .5rem;
+} */
+
+
+@media(max-width: 1450px) {
+    .Page {
+        width: 100%;
+        margin: 90px auto;
+    }
+}
+
+
+@media(max-width: 860px) {
+    .Page {
+        width: 100%;
+        margin: 90px auto;
+    }
+
+    .tab-text {
+        font-size: 1rem;
+    }
+
+    .cm-text {
+        font-size: .8rem;
+        width: 10rem !important;
+    }
+
+}
+
+@media(max-width: 700px) {
+    .cm-text {
+        font-size: .5rem;
+        width: 7rem !important;
+        height: 40px;
+    }
+
+    .col-text {
+        font-size: .5rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .cm-text {
+        font-size: .5rem;
+        width: 5rem !important;
+        height: 60px;
+    }
+}
+
 
 @media(max-width: 414px) {
+    .tab-text {
+        font-size: .5rem;
+    }
+
     .carouselimg {
         object-fit: cover;
         height: 20rem
@@ -178,6 +240,15 @@ input[type="submit"]:hover {
         background-size: cover;
         background-repeat: repeat;
         min-height: 100%;
+    }
+
+    .cm-text {
+        font-size: .5rem;
+        /* height: 60px;
+        width: 200px !important ;
+        display: inline-block;
+        overflow: hidden; 
+        text-overflow: ellipsis; */
     }
 
 }
