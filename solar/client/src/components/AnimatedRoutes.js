@@ -16,7 +16,7 @@ import { AnimatePresence } from 'framer-motion';
 import Scheduling from '../pages/scheduling';
 import AboutUs from '../pages/aboutUs';
 import Payment from '../pages/payment';
-
+import NotFound from './NotFound';
 function AnimatedRoutes() {
     const location = useLocation();
     return (
@@ -50,6 +50,7 @@ function AnimatedRoutes() {
                 <Route exact path= '/scheduling' element={<Scheduling />}/>
                 <Route exact path='/aboutUs' element={<AboutUs />} />
                 <Route exact path='/payment' element={<Payment />} />
+                <Route path = "*" element={<NotFound />} />
             </Routes>
         </AnimatePresence>
     )

@@ -1,5 +1,6 @@
 from django.urls import path
 from .views import index
+from django.urls import re_path
 
 urlpatterns = [
     path('', index),
@@ -18,4 +19,8 @@ urlpatterns = [
     path('scheduling', index),
     path('aboutUs', index),
     path('payment',index)
+]
+
+urlpatterns += [
+    re_path(r'^.*$', index, name='catch-all'),
 ]
