@@ -375,7 +375,7 @@ export default function ConstructionManager() {
         >
           <div className='Page'>
             <MDBRow style={{ marginTop: '50px' }}>
-              <h1>Welcome Back {fullUserName}!</h1>
+              <h1>Welcome Back, {fullUserName}!</h1>
             </MDBRow>
 
             <MDBRow>
