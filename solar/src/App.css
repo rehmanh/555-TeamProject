@@ -20,6 +20,15 @@
     overflow-y: auto;
 }
 
+.rqform {
+    width: 70%;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px grey;
+    height: 70rem;
+}
+
 .track {
     align-items: center;
     height: 60rem;
@@ -153,19 +162,33 @@ input[type="submit"]:hover {
  font-size: .5rem;
 } */
 
-
 @media(max-width: 1450px) {
+    .opPage {
+        width: 100%;
+        margin: 90px auto;
+    }
+    
     .Page {
         width: 100%;
         margin: 90px auto;
     }
+    .kpicard {
+        width: auto;
+        height: 6rem;
+    }
+    .kpitext {
+        font-size: 1rem;
+    }
 }
 
 
-@media(max-width: 860px) {
+@media(max-width: 890px) {
     .Page {
         width: 100%;
         margin: 90px auto;
+    }
+    .rqform {
+        width: 100%;
     }
 
     .tab-text {
@@ -177,6 +200,14 @@ input[type="submit"]:hover {
         width: 10rem !important;
     }
 
+    .kpicard {
+        width: auto;
+        height: 5rem;
+    }
+    .kpitext {
+        font-size: .8rem;
+    }
+
 }
 
 @media(max-width: 700px) {
@@ -184,6 +215,10 @@ input[type="submit"]:hover {
         font-size: .5rem;
         width: 7rem !important;
         height: 40px;
+    }
+    .rqform{
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
     }
 
     .col-text {
@@ -196,6 +231,9 @@ input[type="submit"]:hover {
         font-size: .5rem;
         width: 5rem !important;
         height: 60px;
+    }
+    .kpicard {
+        margin-top: 1rem;
     }
 }
 
