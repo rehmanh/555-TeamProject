@@ -19,6 +19,7 @@ import { Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button } from 'react-bootstrap';
 import { isUserLoggedIn } from '../utils/utils';
+import { getUserFullName } from '../utils/utils';
 
 
 const boxVariant = {
@@ -33,6 +34,7 @@ export default function App() {
   const [requests, setRequests] = useState([]);
   const [roleId, setRole] = useState(localStorage.getItem('roleId'));
   const [isLoggedIn, setIsLoggedIn] = useState(isUserLoggedIn());
+  const [fullUserName, setFullUserName] = useState('');
 
   const handleVerticalClick = (value = String) => {
     if (value === verticalActive) {
@@ -41,6 +43,10 @@ export default function App() {
 
     setVerticalActive(value);
   };
+
+  useEffect(() => {
+    setFullUserName(getUserFullName)
+  }, []);
 
   useEffect(() => {
     Promise.all([
@@ -133,14 +139,15 @@ export default function App() {
                 initial="hidden"
                 animate="visible"
               >
-
+                <h1>
+                  Welcome Back {fullUserName}!
+                </h1>
                 <MDBRow>
                   <MDBCol size='12'>
                     <MDBTabs fill className='mt-3'>
                       <MDBTabsItem>
                         <MDBTabsLink className='tab-text' onClick={() => handleVerticalClick('tab1')} active={verticalActive === 'tab1'}>
                           <span>
-
                             All Requests
                           </span>
                         </MDBTabsLink>
