@@ -39,13 +39,12 @@ export default function OpManager() {
       exit={{ opacity: 0 }}
     >
       {/* <Navbar /> */}
-      <h1>
-        Welcome Back {fullUserName}
-      </h1>
       <div className='opPage'>
 
         <MDBContainer breakpoint="sm">
-
+          <h1>
+            Welcome Back {fullUserName}!
+          </h1>
           <KpiCards />
 
           <MDBRow className="mt-4 text-center">
