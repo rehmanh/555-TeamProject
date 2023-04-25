@@ -1,973 +1,163 @@
 {
   "status": "done",
   "assets": {
-    "frontend-005a7077051031c8a783.js": {
-      "name": "frontend-005a7077051031c8a783.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-005a7077051031c8a783.js",
-      "publicPath": "static/solar/frontend-005a7077051031c8a783.js"
-    },
-    "frontend-05c96887078016f10cff.js": {
-      "name": "frontend-05c96887078016f10cff.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-05c96887078016f10cff.js",
-      "publicPath": "static/solar/frontend-05c96887078016f10cff.js"
-    },
-    "frontend-062c8b9f6cf88df3322e.js": {
-      "name": "frontend-062c8b9f6cf88df3322e.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-062c8b9f6cf88df3322e.js",
-      "publicPath": "static/solar/frontend-062c8b9f6cf88df3322e.js"
-    },
-    "frontend-06869e88f68641591f72.js": {
-      "name": "frontend-06869e88f68641591f72.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-06869e88f68641591f72.js",
-      "publicPath": "static/solar/frontend-06869e88f68641591f72.js"
-    },
-    "frontend-06bc26b693fcfbb0b1e3.js": {
-      "name": "frontend-06bc26b693fcfbb0b1e3.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-06bc26b693fcfbb0b1e3.js",
-      "publicPath": "static/solar/frontend-06bc26b693fcfbb0b1e3.js"
-    },
-    "frontend-071ab84fbb7657d93882.js": {
-      "name": "frontend-071ab84fbb7657d93882.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-071ab84fbb7657d93882.js",
-      "publicPath": "static/solar/frontend-071ab84fbb7657d93882.js"
-    },
-    "frontend-07e87135c51dd3d7d578.js": {
-      "name": "frontend-07e87135c51dd3d7d578.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-07e87135c51dd3d7d578.js",
-      "publicPath": "static/solar/frontend-07e87135c51dd3d7d578.js"
-    },
-    "frontend-0b4020a18898f093474b.js": {
-      "name": "frontend-0b4020a18898f093474b.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-0b4020a18898f093474b.js",
-      "publicPath": "static/solar/frontend-0b4020a18898f093474b.js"
-    },
-    "frontend-0bf95b2c2c0e04198f03.js": {
-      "name": "frontend-0bf95b2c2c0e04198f03.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-0bf95b2c2c0e04198f03.js",
-      "publicPath": "static/solar/frontend-0bf95b2c2c0e04198f03.js"
-    },
-    "frontend-0c15652af6fb32fc51cb.js": {
-      "name": "frontend-0c15652af6fb32fc51cb.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-0c15652af6fb32fc51cb.js",
-      "publicPath": "static/solar/frontend-0c15652af6fb32fc51cb.js"
-    },
-    "frontend-0d7b602319a91bb47dde.js": {
-      "name": "frontend-0d7b602319a91bb47dde.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-0d7b602319a91bb47dde.js",
-      "publicPath": "static/solar/frontend-0d7b602319a91bb47dde.js"
-    },
-    "frontend-0de9a1511fc1308b706f.js": {
-      "name": "frontend-0de9a1511fc1308b706f.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-0de9a1511fc1308b706f.js",
-      "publicPath": "static/solar/frontend-0de9a1511fc1308b706f.js"
-    },
-    "frontend-105b1b8e1c56f254d648.js": {
-      "name": "frontend-105b1b8e1c56f254d648.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-105b1b8e1c56f254d648.js",
-      "publicPath": "static/solar/frontend-105b1b8e1c56f254d648.js"
-    },
-    "frontend-126a5f4eb7996c0508f6.js": {
-      "name": "frontend-126a5f4eb7996c0508f6.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-126a5f4eb7996c0508f6.js",
-      "publicPath": "static/solar/frontend-126a5f4eb7996c0508f6.js"
-    },
-    "frontend-13b0d0bdd92f0febf0cd.js": {
-      "name": "frontend-13b0d0bdd92f0febf0cd.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-13b0d0bdd92f0febf0cd.js",
-      "publicPath": "static/solar/frontend-13b0d0bdd92f0febf0cd.js"
-    },
-    "frontend-14b73c280b6c5f98d1e5.js": {
-      "name": "frontend-14b73c280b6c5f98d1e5.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-14b73c280b6c5f98d1e5.js",
-      "publicPath": "static/solar/frontend-14b73c280b6c5f98d1e5.js"
-    },
-    "frontend-18143857b58eeb97bf4f.js": {
-      "name": "frontend-18143857b58eeb97bf4f.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-18143857b58eeb97bf4f.js",
-      "publicPath": "static/solar/frontend-18143857b58eeb97bf4f.js"
-    },
-    "frontend-1b23402674034904faf2.js": {
-      "name": "frontend-1b23402674034904faf2.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-1b23402674034904faf2.js",
-      "publicPath": "static/solar/frontend-1b23402674034904faf2.js"
-    },
-    "frontend-1c59bcb7d3219cb9f840.js": {
-      "name": "frontend-1c59bcb7d3219cb9f840.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-1c59bcb7d3219cb9f840.js",
-      "publicPath": "static/solar/frontend-1c59bcb7d3219cb9f840.js"
-    },
-    "frontend-1d6a75509d118dc2823f.js": {
-      "name": "frontend-1d6a75509d118dc2823f.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-1d6a75509d118dc2823f.js",
-      "publicPath": "static/solar/frontend-1d6a75509d118dc2823f.js"
-    },
-    "frontend-1e082604d7c3411e0967.js": {
-      "name": "frontend-1e082604d7c3411e0967.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-1e082604d7c3411e0967.js",
-      "publicPath": "static/solar/frontend-1e082604d7c3411e0967.js"
-    },
-    "frontend-1ebe0c58220652aecabf.js": {
-      "name": "frontend-1ebe0c58220652aecabf.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-1ebe0c58220652aecabf.js",
-      "publicPath": "static/solar/frontend-1ebe0c58220652aecabf.js"
-    },
-    "frontend-1f101a41011c8862a47d.js": {
-      "name": "frontend-1f101a41011c8862a47d.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-1f101a41011c8862a47d.js",
-      "publicPath": "static/solar/frontend-1f101a41011c8862a47d.js"
-    },
-    "frontend-22aa4bcb2b98ba003fa2.js": {
-      "name": "frontend-22aa4bcb2b98ba003fa2.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-22aa4bcb2b98ba003fa2.js",
-      "publicPath": "static/solar/frontend-22aa4bcb2b98ba003fa2.js"
-    },
-    "frontend-232f29b2bedb5f9af2fb.js": {
-      "name": "frontend-232f29b2bedb5f9af2fb.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-232f29b2bedb5f9af2fb.js",
-      "publicPath": "static/solar/frontend-232f29b2bedb5f9af2fb.js"
-    },
-    "frontend-243f05b8f00ce70ae16e.js": {
-      "name": "frontend-243f05b8f00ce70ae16e.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-243f05b8f00ce70ae16e.js",
-      "publicPath": "static/solar/frontend-243f05b8f00ce70ae16e.js"
-    },
-    "frontend-2906503bb60136519270.js": {
-      "name": "frontend-2906503bb60136519270.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-2906503bb60136519270.js",
-      "publicPath": "static/solar/frontend-2906503bb60136519270.js"
-    },
-    "frontend-2927cd1bf5dbf04aaef7.js": {
-      "name": "frontend-2927cd1bf5dbf04aaef7.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-2927cd1bf5dbf04aaef7.js",
-      "publicPath": "static/solar/frontend-2927cd1bf5dbf04aaef7.js"
-    },
-    "frontend-29550168582a9dc5aa4a.js": {
-      "name": "frontend-29550168582a9dc5aa4a.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-29550168582a9dc5aa4a.js",
-      "publicPath": "static/solar/frontend-29550168582a9dc5aa4a.js"
-    },
-    "frontend-2cc8817bf5061339fb57.js": {
-      "name": "frontend-2cc8817bf5061339fb57.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-2cc8817bf5061339fb57.js",
-      "publicPath": "static/solar/frontend-2cc8817bf5061339fb57.js"
-    },
-    "frontend-2fe703abaa2e3ab118b5.js": {
-      "name": "frontend-2fe703abaa2e3ab118b5.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-2fe703abaa2e3ab118b5.js",
-      "publicPath": "static/solar/frontend-2fe703abaa2e3ab118b5.js"
-    },
-    "frontend-307a9f186a00e99a1a49.js": {
-      "name": "frontend-307a9f186a00e99a1a49.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-307a9f186a00e99a1a49.js",
-      "publicPath": "static/solar/frontend-307a9f186a00e99a1a49.js"
-    },
-    "frontend-31d46eb485b6d3b0810b.js": {
-      "name": "frontend-31d46eb485b6d3b0810b.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-31d46eb485b6d3b0810b.js",
-      "publicPath": "static/solar/frontend-31d46eb485b6d3b0810b.js"
-    },
-    "frontend-3262af248d5d64e3d1b3.js": {
-      "name": "frontend-3262af248d5d64e3d1b3.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-3262af248d5d64e3d1b3.js",
-      "publicPath": "static/solar/frontend-3262af248d5d64e3d1b3.js"
-    },
-    "frontend-32661be59f0e98812031.js": {
-      "name": "frontend-32661be59f0e98812031.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-32661be59f0e98812031.js",
-      "publicPath": "static/solar/frontend-32661be59f0e98812031.js"
-    },
-    "frontend-3416aacb6b8c551562ad.js": {
-      "name": "frontend-3416aacb6b8c551562ad.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-3416aacb6b8c551562ad.js",
-      "publicPath": "static/solar/frontend-3416aacb6b8c551562ad.js"
-    },
-    "frontend-3684320b1e4424d090e7.js": {
-      "name": "frontend-3684320b1e4424d090e7.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-3684320b1e4424d090e7.js",
-      "publicPath": "static/solar/frontend-3684320b1e4424d090e7.js"
-    },
-    "frontend-392cb9d63dc6042b60ae.js": {
-      "name": "frontend-392cb9d63dc6042b60ae.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-392cb9d63dc6042b60ae.js",
-      "publicPath": "static/solar/frontend-392cb9d63dc6042b60ae.js"
-    },
-    "frontend-3b37a9c45435003ea405.js": {
-      "name": "frontend-3b37a9c45435003ea405.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-3b37a9c45435003ea405.js",
-      "publicPath": "static/solar/frontend-3b37a9c45435003ea405.js"
-    },
-    "frontend-3be9dc316d8316cf8d03.js": {
-      "name": "frontend-3be9dc316d8316cf8d03.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-3be9dc316d8316cf8d03.js",
-      "publicPath": "static/solar/frontend-3be9dc316d8316cf8d03.js"
-    },
-    "frontend-3beae72a5ff5ce21881a.js": {
-      "name": "frontend-3beae72a5ff5ce21881a.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-3beae72a5ff5ce21881a.js",
-      "publicPath": "static/solar/frontend-3beae72a5ff5ce21881a.js"
-    },
-    "frontend-3e5f1ff689607bb7754c.js": {
-      "name": "frontend-3e5f1ff689607bb7754c.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-3e5f1ff689607bb7754c.js",
-      "publicPath": "static/solar/frontend-3e5f1ff689607bb7754c.js"
-    },
-    "frontend-3fb528f8d697eb36c811.js": {
-      "name": "frontend-3fb528f8d697eb36c811.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-3fb528f8d697eb36c811.js",
-      "publicPath": "static/solar/frontend-3fb528f8d697eb36c811.js"
-    },
-    "frontend-4088f60062975c036681.js": {
-      "name": "frontend-4088f60062975c036681.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-4088f60062975c036681.js",
-      "publicPath": "static/solar/frontend-4088f60062975c036681.js"
-    },
-    "frontend-413401c2fef7c7c8f477.js": {
-      "name": "frontend-413401c2fef7c7c8f477.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-413401c2fef7c7c8f477.js",
-      "publicPath": "static/solar/frontend-413401c2fef7c7c8f477.js"
-    },
-    "frontend-419551e6aee37622c58f.js": {
-      "name": "frontend-419551e6aee37622c58f.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-419551e6aee37622c58f.js",
-      "publicPath": "static/solar/frontend-419551e6aee37622c58f.js"
-    },
-    "frontend-4597bf5538599bbe99d1.js": {
-      "name": "frontend-4597bf5538599bbe99d1.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-4597bf5538599bbe99d1.js",
-      "publicPath": "static/solar/frontend-4597bf5538599bbe99d1.js"
-    },
-    "frontend-46a03c371c98018006b8.js": {
-      "name": "frontend-46a03c371c98018006b8.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-46a03c371c98018006b8.js",
-      "publicPath": "static/solar/frontend-46a03c371c98018006b8.js"
-    },
-    "frontend-47a125f67c62bcc54bcc.js": {
-      "name": "frontend-47a125f67c62bcc54bcc.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-47a125f67c62bcc54bcc.js",
-      "publicPath": "static/solar/frontend-47a125f67c62bcc54bcc.js"
-    },
-    "frontend-480533ac4dbf13fa2dbb.js": {
-      "name": "frontend-480533ac4dbf13fa2dbb.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-480533ac4dbf13fa2dbb.js",
-      "publicPath": "static/solar/frontend-480533ac4dbf13fa2dbb.js"
-    },
-    "frontend-4bccabe36cdb7029f841.js": {
-      "name": "frontend-4bccabe36cdb7029f841.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-4bccabe36cdb7029f841.js",
-      "publicPath": "static/solar/frontend-4bccabe36cdb7029f841.js"
-    },
-    "frontend-4c7d03eff4111fa20d8b.js": {
-      "name": "frontend-4c7d03eff4111fa20d8b.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-4c7d03eff4111fa20d8b.js",
-      "publicPath": "static/solar/frontend-4c7d03eff4111fa20d8b.js"
-    },
-    "frontend-4cacea4f161cf5def141.js": {
-      "name": "frontend-4cacea4f161cf5def141.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-4cacea4f161cf5def141.js",
-      "publicPath": "static/solar/frontend-4cacea4f161cf5def141.js"
-    },
-    "frontend-4f4b768b31fb3c1fd818.js": {
-      "name": "frontend-4f4b768b31fb3c1fd818.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-4f4b768b31fb3c1fd818.js",
-      "publicPath": "static/solar/frontend-4f4b768b31fb3c1fd818.js"
-    },
-    "frontend-5095f997bd8bbb922c34.js": {
-      "name": "frontend-5095f997bd8bbb922c34.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-5095f997bd8bbb922c34.js",
-      "publicPath": "static/solar/frontend-5095f997bd8bbb922c34.js"
-    },
-    "frontend-51ad8abbbf2d1bb4036e.js": {
-      "name": "frontend-51ad8abbbf2d1bb4036e.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-51ad8abbbf2d1bb4036e.js",
-      "publicPath": "static/solar/frontend-51ad8abbbf2d1bb4036e.js"
-    },
-    "frontend-56cbba0d5809cd712426.js": {
-      "name": "frontend-56cbba0d5809cd712426.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-56cbba0d5809cd712426.js",
-      "publicPath": "static/solar/frontend-56cbba0d5809cd712426.js"
-    },
-    "frontend-592eea0144464d040b56.js": {
-      "name": "frontend-592eea0144464d040b56.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-592eea0144464d040b56.js",
-      "publicPath": "static/solar/frontend-592eea0144464d040b56.js"
-    },
-    "frontend-59daead7680b828e01b1.js": {
-      "name": "frontend-59daead7680b828e01b1.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-59daead7680b828e01b1.js",
-      "publicPath": "static/solar/frontend-59daead7680b828e01b1.js"
-    },
-    "frontend-5b41637b17ceee2e0438.js": {
-      "name": "frontend-5b41637b17ceee2e0438.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-5b41637b17ceee2e0438.js",
-      "publicPath": "static/solar/frontend-5b41637b17ceee2e0438.js"
-    },
-    "frontend-5c28008d265df624d4a6.js": {
-      "name": "frontend-5c28008d265df624d4a6.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-5c28008d265df624d4a6.js",
-      "publicPath": "static/solar/frontend-5c28008d265df624d4a6.js"
-    },
-    "frontend-6033d157c3d07dc01c3b.js": {
-      "name": "frontend-6033d157c3d07dc01c3b.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-6033d157c3d07dc01c3b.js",
-      "publicPath": "static/solar/frontend-6033d157c3d07dc01c3b.js"
-    },
-    "frontend-6049ccd0bdd19fdf4d06.js": {
-      "name": "frontend-6049ccd0bdd19fdf4d06.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-6049ccd0bdd19fdf4d06.js",
-      "publicPath": "static/solar/frontend-6049ccd0bdd19fdf4d06.js"
-    },
-    "frontend-6204fa4189ba5eb6fe81.js": {
-      "name": "frontend-6204fa4189ba5eb6fe81.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-6204fa4189ba5eb6fe81.js",
-      "publicPath": "static/solar/frontend-6204fa4189ba5eb6fe81.js"
-    },
-    "frontend-62c2791a0ce7d90c6b4e.js": {
-      "name": "frontend-62c2791a0ce7d90c6b4e.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-62c2791a0ce7d90c6b4e.js",
-      "publicPath": "static/solar/frontend-62c2791a0ce7d90c6b4e.js"
-    },
-    "frontend-6313e7858aa78b74cd98.js": {
-      "name": "frontend-6313e7858aa78b74cd98.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-6313e7858aa78b74cd98.js",
-      "publicPath": "static/solar/frontend-6313e7858aa78b74cd98.js"
-    },
-    "frontend-63f93489212d3e67d6d8.js": {
-      "name": "frontend-63f93489212d3e67d6d8.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-63f93489212d3e67d6d8.js",
-      "publicPath": "static/solar/frontend-63f93489212d3e67d6d8.js"
-    },
-    "frontend-6884f3e2a179a5297262.js": {
-      "name": "frontend-6884f3e2a179a5297262.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-6884f3e2a179a5297262.js",
-      "publicPath": "static/solar/frontend-6884f3e2a179a5297262.js"
-    },
-    "frontend-68c5bfdb71365c39cb9d.js": {
-      "name": "frontend-68c5bfdb71365c39cb9d.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-68c5bfdb71365c39cb9d.js",
-      "publicPath": "static/solar/frontend-68c5bfdb71365c39cb9d.js"
-    },
-    "frontend-6c50b7649c691d877d9e.js": {
-      "name": "frontend-6c50b7649c691d877d9e.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-6c50b7649c691d877d9e.js",
-      "publicPath": "static/solar/frontend-6c50b7649c691d877d9e.js"
-    },
-    "frontend-6d2e6a1d232f19893f45.js": {
-      "name": "frontend-6d2e6a1d232f19893f45.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-6d2e6a1d232f19893f45.js",
-      "publicPath": "static/solar/frontend-6d2e6a1d232f19893f45.js"
-    },
-    "frontend-6d8b1e7aa25b23832bc3.js": {
-      "name": "frontend-6d8b1e7aa25b23832bc3.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-6d8b1e7aa25b23832bc3.js",
-      "publicPath": "static/solar/frontend-6d8b1e7aa25b23832bc3.js"
-    },
-    "frontend-6e31e6d9bf6aa2792665.js": {
-      "name": "frontend-6e31e6d9bf6aa2792665.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-6e31e6d9bf6aa2792665.js",
-      "publicPath": "static/solar/frontend-6e31e6d9bf6aa2792665.js"
-    },
-    "frontend-6f10c92c97168a78de2b.js": {
-      "name": "frontend-6f10c92c97168a78de2b.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-6f10c92c97168a78de2b.js",
-      "publicPath": "static/solar/frontend-6f10c92c97168a78de2b.js"
-    },
-    "frontend-7174d5caeaeeb14b1f44.js": {
-      "name": "frontend-7174d5caeaeeb14b1f44.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-7174d5caeaeeb14b1f44.js",
-      "publicPath": "static/solar/frontend-7174d5caeaeeb14b1f44.js"
-    },
-    "frontend-75272da58624073007a7.js": {
-      "name": "frontend-75272da58624073007a7.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-75272da58624073007a7.js",
-      "publicPath": "static/solar/frontend-75272da58624073007a7.js"
-    },
-    "frontend-7714e9a07732427857ce.js": {
-      "name": "frontend-7714e9a07732427857ce.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-7714e9a07732427857ce.js",
-      "publicPath": "static/solar/frontend-7714e9a07732427857ce.js"
-    },
-    "frontend-785d557f4190e7ec6c54.js": {
-      "name": "frontend-785d557f4190e7ec6c54.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-785d557f4190e7ec6c54.js",
-      "publicPath": "static/solar/frontend-785d557f4190e7ec6c54.js"
-    },
-    "frontend-78c64e4ebff45e916643.js": {
-      "name": "frontend-78c64e4ebff45e916643.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-78c64e4ebff45e916643.js",
-      "publicPath": "static/solar/frontend-78c64e4ebff45e916643.js"
-    },
-    "frontend-79a251276ccf67d73de4.js": {
-      "name": "frontend-79a251276ccf67d73de4.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-79a251276ccf67d73de4.js",
-      "publicPath": "static/solar/frontend-79a251276ccf67d73de4.js"
-    },
-    "frontend-7bad55c4631c14e796be.js": {
-      "name": "frontend-7bad55c4631c14e796be.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-7bad55c4631c14e796be.js",
-      "publicPath": "static/solar/frontend-7bad55c4631c14e796be.js"
-    },
-    "frontend-7bbe0e4f5fca44574db5.js": {
-      "name": "frontend-7bbe0e4f5fca44574db5.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-7bbe0e4f5fca44574db5.js",
-      "publicPath": "static/solar/frontend-7bbe0e4f5fca44574db5.js"
-    },
-    "frontend-7e60ef4436180beefc7e.js": {
-      "name": "frontend-7e60ef4436180beefc7e.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-7e60ef4436180beefc7e.js",
-      "publicPath": "static/solar/frontend-7e60ef4436180beefc7e.js"
-    },
-    "frontend-7e95a37e5da34e1af24e.js": {
-      "name": "frontend-7e95a37e5da34e1af24e.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-7e95a37e5da34e1af24e.js",
-      "publicPath": "static/solar/frontend-7e95a37e5da34e1af24e.js"
-    },
-    "frontend-8006eab5b8e4e9214ebf.js": {
-      "name": "frontend-8006eab5b8e4e9214ebf.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-8006eab5b8e4e9214ebf.js",
-      "publicPath": "static/solar/frontend-8006eab5b8e4e9214ebf.js"
-    },
-    "frontend-8097d75754557edc8a4a.js": {
-      "name": "frontend-8097d75754557edc8a4a.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-8097d75754557edc8a4a.js",
-      "publicPath": "static/solar/frontend-8097d75754557edc8a4a.js"
-    },
-    "frontend-8142cf530c8aa2ab93a9.js": {
-      "name": "frontend-8142cf530c8aa2ab93a9.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-8142cf530c8aa2ab93a9.js",
-      "publicPath": "static/solar/frontend-8142cf530c8aa2ab93a9.js"
-    },
-    "frontend-81dc4bfa9d3b14ddd670.js": {
-      "name": "frontend-81dc4bfa9d3b14ddd670.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-81dc4bfa9d3b14ddd670.js",
-      "publicPath": "static/solar/frontend-81dc4bfa9d3b14ddd670.js"
-    },
-    "frontend-8258a1a08cc119c6a858.js": {
-      "name": "frontend-8258a1a08cc119c6a858.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-8258a1a08cc119c6a858.js",
-      "publicPath": "static/solar/frontend-8258a1a08cc119c6a858.js"
-    },
-    "frontend-851492484124b8fa0ebc.js": {
-      "name": "frontend-851492484124b8fa0ebc.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-851492484124b8fa0ebc.js",
-      "publicPath": "static/solar/frontend-851492484124b8fa0ebc.js"
-    },
-    "frontend-85ec5bcf43e83cf8d18d.js": {
-      "name": "frontend-85ec5bcf43e83cf8d18d.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-85ec5bcf43e83cf8d18d.js",
-      "publicPath": "static/solar/frontend-85ec5bcf43e83cf8d18d.js"
-    },
-    "frontend-86950a4f340d59b8735c.js": {
-      "name": "frontend-86950a4f340d59b8735c.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-86950a4f340d59b8735c.js",
-      "publicPath": "static/solar/frontend-86950a4f340d59b8735c.js"
-    },
-    "frontend-87a9552ca3ee8cd32741.js": {
-      "name": "frontend-87a9552ca3ee8cd32741.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-87a9552ca3ee8cd32741.js",
-      "publicPath": "static/solar/frontend-87a9552ca3ee8cd32741.js"
-    },
-    "frontend-88d6c46d40d7e7b3ddfc.js": {
-      "name": "frontend-88d6c46d40d7e7b3ddfc.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-88d6c46d40d7e7b3ddfc.js",
-      "publicPath": "static/solar/frontend-88d6c46d40d7e7b3ddfc.js"
-    },
-    "frontend-88fc76775086dca2dbf9.js": {
-      "name": "frontend-88fc76775086dca2dbf9.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-88fc76775086dca2dbf9.js",
-      "publicPath": "static/solar/frontend-88fc76775086dca2dbf9.js"
-    },
-    "frontend-8a617bb10ccacedb743f.js": {
-      "name": "frontend-8a617bb10ccacedb743f.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-8a617bb10ccacedb743f.js",
-      "publicPath": "static/solar/frontend-8a617bb10ccacedb743f.js"
-    },
-    "frontend-8cd58f2e7e4d151080f7.js": {
-      "name": "frontend-8cd58f2e7e4d151080f7.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-8cd58f2e7e4d151080f7.js",
-      "publicPath": "static/solar/frontend-8cd58f2e7e4d151080f7.js"
-    },
-    "frontend-91346325ecfb1c8740a3.js": {
-      "name": "frontend-91346325ecfb1c8740a3.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-91346325ecfb1c8740a3.js",
-      "publicPath": "static/solar/frontend-91346325ecfb1c8740a3.js"
-    },
-    "frontend-926b9352887268e4290d.js": {
-      "name": "frontend-926b9352887268e4290d.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-926b9352887268e4290d.js",
-      "publicPath": "static/solar/frontend-926b9352887268e4290d.js"
-    },
-    "frontend-93875f1eeede30ea8d42.js": {
-      "name": "frontend-93875f1eeede30ea8d42.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-93875f1eeede30ea8d42.js",
-      "publicPath": "static/solar/frontend-93875f1eeede30ea8d42.js"
-    },
-    "frontend-94c9e902f0395f6c7996.js": {
-      "name": "frontend-94c9e902f0395f6c7996.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-94c9e902f0395f6c7996.js",
-      "publicPath": "static/solar/frontend-94c9e902f0395f6c7996.js"
-    },
-    "frontend-968587a680f8adf03c50.js": {
-      "name": "frontend-968587a680f8adf03c50.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-968587a680f8adf03c50.js",
-      "publicPath": "static/solar/frontend-968587a680f8adf03c50.js"
-    },
-    "frontend-96a08fe36bc59fc3fa26.js": {
-      "name": "frontend-96a08fe36bc59fc3fa26.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-96a08fe36bc59fc3fa26.js",
-      "publicPath": "static/solar/frontend-96a08fe36bc59fc3fa26.js"
-    },
-    "frontend-971f93264e158c9837c0.js": {
-      "name": "frontend-971f93264e158c9837c0.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-971f93264e158c9837c0.js",
-      "publicPath": "static/solar/frontend-971f93264e158c9837c0.js"
-    },
-    "frontend-972e55f00616f1e07bfa.js": {
-      "name": "frontend-972e55f00616f1e07bfa.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-972e55f00616f1e07bfa.js",
-      "publicPath": "static/solar/frontend-972e55f00616f1e07bfa.js"
-    },
-    "frontend-97aefd3638a69b064b8e.js": {
-      "name": "frontend-97aefd3638a69b064b8e.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-97aefd3638a69b064b8e.js",
-      "publicPath": "static/solar/frontend-97aefd3638a69b064b8e.js"
-    },
-    "frontend-984bbd7a4637a93f00bb.js": {
-      "name": "frontend-984bbd7a4637a93f00bb.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-984bbd7a4637a93f00bb.js",
-      "publicPath": "static/solar/frontend-984bbd7a4637a93f00bb.js"
-    },
-    "frontend-99bfbe1d4ee43187957d.js": {
-      "name": "frontend-99bfbe1d4ee43187957d.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-99bfbe1d4ee43187957d.js",
-      "publicPath": "static/solar/frontend-99bfbe1d4ee43187957d.js"
-    },
-    "frontend-9cf1f75ca0546fe2dedd.js": {
-      "name": "frontend-9cf1f75ca0546fe2dedd.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-9cf1f75ca0546fe2dedd.js",
-      "publicPath": "static/solar/frontend-9cf1f75ca0546fe2dedd.js"
-    },
-    "frontend-9d5278488b9f67e1e99f.js": {
-      "name": "frontend-9d5278488b9f67e1e99f.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-9d5278488b9f67e1e99f.js",
-      "publicPath": "static/solar/frontend-9d5278488b9f67e1e99f.js"
-    },
-    "frontend-9ed3ac3802b20c15c475.js": {
-      "name": "frontend-9ed3ac3802b20c15c475.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-9ed3ac3802b20c15c475.js",
-      "publicPath": "static/solar/frontend-9ed3ac3802b20c15c475.js"
-    },
-    "frontend-a1ebcb814de7e395d218.js": {
-      "name": "frontend-a1ebcb814de7e395d218.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-a1ebcb814de7e395d218.js",
-      "publicPath": "static/solar/frontend-a1ebcb814de7e395d218.js"
-    },
-    "frontend-a20db2cab0269fca43b7.js": {
-      "name": "frontend-a20db2cab0269fca43b7.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-a20db2cab0269fca43b7.js",
-      "publicPath": "static/solar/frontend-a20db2cab0269fca43b7.js"
-    },
-    "frontend-a2c40fb7b573ef617438.js": {
-      "name": "frontend-a2c40fb7b573ef617438.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-a2c40fb7b573ef617438.js",
-      "publicPath": "static/solar/frontend-a2c40fb7b573ef617438.js"
-    },
-    "frontend-a3b22bac8febd38b0168.js": {
-      "name": "frontend-a3b22bac8febd38b0168.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-a3b22bac8febd38b0168.js",
-      "publicPath": "static/solar/frontend-a3b22bac8febd38b0168.js"
-    },
-    "frontend-a69ee0b37708ee9a7523.js": {
-      "name": "frontend-a69ee0b37708ee9a7523.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-a69ee0b37708ee9a7523.js",
-      "publicPath": "static/solar/frontend-a69ee0b37708ee9a7523.js"
-    },
-    "frontend-a72f2c7e8261db9800ea.js": {
-      "name": "frontend-a72f2c7e8261db9800ea.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-a72f2c7e8261db9800ea.js",
-      "publicPath": "static/solar/frontend-a72f2c7e8261db9800ea.js"
-    },
-    "frontend-ab9f18272b5d6a06d0b5.js": {
-      "name": "frontend-ab9f18272b5d6a06d0b5.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-ab9f18272b5d6a06d0b5.js",
-      "publicPath": "static/solar/frontend-ab9f18272b5d6a06d0b5.js"
-    },
-    "frontend-ad0e44e4fed81fa70263.js": {
-      "name": "frontend-ad0e44e4fed81fa70263.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-ad0e44e4fed81fa70263.js",
-      "publicPath": "static/solar/frontend-ad0e44e4fed81fa70263.js"
-    },
-    "frontend-afb707d19418263f216d.js": {
-      "name": "frontend-afb707d19418263f216d.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-afb707d19418263f216d.js",
-      "publicPath": "static/solar/frontend-afb707d19418263f216d.js"
-    },
-    "frontend-b0ea2c3509dc6b81390c.js": {
-      "name": "frontend-b0ea2c3509dc6b81390c.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-b0ea2c3509dc6b81390c.js",
-      "publicPath": "static/solar/frontend-b0ea2c3509dc6b81390c.js"
-    },
-    "frontend-b0edec8a61f775fb5e9e.js": {
-      "name": "frontend-b0edec8a61f775fb5e9e.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-b0edec8a61f775fb5e9e.js",
-      "publicPath": "static/solar/frontend-b0edec8a61f775fb5e9e.js"
-    },
-    "frontend-b4a23154cfbb36525bfe.js": {
-      "name": "frontend-b4a23154cfbb36525bfe.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-b4a23154cfbb36525bfe.js",
-      "publicPath": "static/solar/frontend-b4a23154cfbb36525bfe.js"
-    },
-    "frontend-b6faa6ad95caf3f1083b.js": {
-      "name": "frontend-b6faa6ad95caf3f1083b.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-b6faa6ad95caf3f1083b.js",
-      "publicPath": "static/solar/frontend-b6faa6ad95caf3f1083b.js"
-    },
-    "frontend-b76744da819855756948.js": {
-      "name": "frontend-b76744da819855756948.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-b76744da819855756948.js",
-      "publicPath": "static/solar/frontend-b76744da819855756948.js"
-    },
-    "frontend-b895e9102d6f5ec62baa.js": {
-      "name": "frontend-b895e9102d6f5ec62baa.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-b895e9102d6f5ec62baa.js",
-      "publicPath": "static/solar/frontend-b895e9102d6f5ec62baa.js"
-    },
-    "frontend-b9b442421ad14e2480f0.js": {
-      "name": "frontend-b9b442421ad14e2480f0.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-b9b442421ad14e2480f0.js",
-      "publicPath": "static/solar/frontend-b9b442421ad14e2480f0.js"
-    },
-    "frontend-bb2db9183c3dd4361d9b.js": {
-      "name": "frontend-bb2db9183c3dd4361d9b.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-bb2db9183c3dd4361d9b.js",
-      "publicPath": "static/solar/frontend-bb2db9183c3dd4361d9b.js"
-    },
-    "frontend-bb5639dab5338889c783.js": {
-      "name": "frontend-bb5639dab5338889c783.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-bb5639dab5338889c783.js",
-      "publicPath": "static/solar/frontend-bb5639dab5338889c783.js"
-    },
-    "frontend-bd203f6d9998d1d448a9.js": {
-      "name": "frontend-bd203f6d9998d1d448a9.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-bd203f6d9998d1d448a9.js",
-      "publicPath": "static/solar/frontend-bd203f6d9998d1d448a9.js"
-    },
-    "frontend-be8d69465cad533cf482.js": {
-      "name": "frontend-be8d69465cad533cf482.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-be8d69465cad533cf482.js",
-      "publicPath": "static/solar/frontend-be8d69465cad533cf482.js"
-    },
-    "frontend-c44a35f012fed6ff8f85.js": {
-      "name": "frontend-c44a35f012fed6ff8f85.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-c44a35f012fed6ff8f85.js",
-      "publicPath": "static/solar/frontend-c44a35f012fed6ff8f85.js"
-    },
-    "frontend-c5991e48b19a41fd527b.js": {
-      "name": "frontend-c5991e48b19a41fd527b.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-c5991e48b19a41fd527b.js",
-      "publicPath": "static/solar/frontend-c5991e48b19a41fd527b.js"
-    },
-    "frontend-c61f4b017dd5ecb1bdcc.js": {
-      "name": "frontend-c61f4b017dd5ecb1bdcc.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-c61f4b017dd5ecb1bdcc.js",
-      "publicPath": "static/solar/frontend-c61f4b017dd5ecb1bdcc.js"
-    },
-    "frontend-ca8e41ba64058ce89ef0.js": {
-      "name": "frontend-ca8e41ba64058ce89ef0.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-ca8e41ba64058ce89ef0.js",
-      "publicPath": "static/solar/frontend-ca8e41ba64058ce89ef0.js"
-    },
-    "frontend-cbf723ad50bd8f3a0c05.js": {
-      "name": "frontend-cbf723ad50bd8f3a0c05.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-cbf723ad50bd8f3a0c05.js",
-      "publicPath": "static/solar/frontend-cbf723ad50bd8f3a0c05.js"
-    },
-    "frontend-cc198581eb00e417d886.js": {
-      "name": "frontend-cc198581eb00e417d886.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-cc198581eb00e417d886.js",
-      "publicPath": "static/solar/frontend-cc198581eb00e417d886.js"
-    },
-    "frontend-ceddcd5c78092f433fd9.js": {
-      "name": "frontend-ceddcd5c78092f433fd9.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-ceddcd5c78092f433fd9.js",
-      "publicPath": "static/solar/frontend-ceddcd5c78092f433fd9.js"
-    },
-    "frontend-d2fe909f0f3f3f37ca6b.js": {
-      "name": "frontend-d2fe909f0f3f3f37ca6b.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-d2fe909f0f3f3f37ca6b.js",
-      "publicPath": "static/solar/frontend-d2fe909f0f3f3f37ca6b.js"
-    },
-    "frontend-d355db7d6dc326d9ff7d.js": {
-      "name": "frontend-d355db7d6dc326d9ff7d.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-d355db7d6dc326d9ff7d.js",
-      "publicPath": "static/solar/frontend-d355db7d6dc326d9ff7d.js"
-    },
-    "frontend-d5e06a078c0dd7627337.js": {
-      "name": "frontend-d5e06a078c0dd7627337.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-d5e06a078c0dd7627337.js",
-      "publicPath": "static/solar/frontend-d5e06a078c0dd7627337.js"
-    },
-    "frontend-d7d0213d8a81880c229f.js": {
-      "name": "frontend-d7d0213d8a81880c229f.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-d7d0213d8a81880c229f.js",
-      "publicPath": "static/solar/frontend-d7d0213d8a81880c229f.js"
-    },
-    "frontend-d869e3db3a9734c4dc1a.js": {
-      "name": "frontend-d869e3db3a9734c4dc1a.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-d869e3db3a9734c4dc1a.js",
-      "publicPath": "static/solar/frontend-d869e3db3a9734c4dc1a.js"
-    },
-    "frontend-d93d23c908afae01d5e0.js": {
-      "name": "frontend-d93d23c908afae01d5e0.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-d93d23c908afae01d5e0.js",
-      "publicPath": "static/solar/frontend-d93d23c908afae01d5e0.js"
-    },
-    "frontend-da9cc28671d2a3f0d865.js": {
-      "name": "frontend-da9cc28671d2a3f0d865.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-da9cc28671d2a3f0d865.js",
-      "publicPath": "static/solar/frontend-da9cc28671d2a3f0d865.js"
-    },
-    "frontend-dadd39275438aed035a0.js": {
-      "name": "frontend-dadd39275438aed035a0.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-dadd39275438aed035a0.js",
-      "publicPath": "static/solar/frontend-dadd39275438aed035a0.js"
-    },
-    "frontend-de6a7b7ba348c333f02c.js": {
-      "name": "frontend-de6a7b7ba348c333f02c.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-de6a7b7ba348c333f02c.js",
-      "publicPath": "static/solar/frontend-de6a7b7ba348c333f02c.js"
-    },
-    "frontend-de77e014e22bc470ccc8.js": {
-      "name": "frontend-de77e014e22bc470ccc8.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-de77e014e22bc470ccc8.js",
-      "publicPath": "static/solar/frontend-de77e014e22bc470ccc8.js"
-    },
-    "frontend-deed3316c2215dc9dbbe.js": {
-      "name": "frontend-deed3316c2215dc9dbbe.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-deed3316c2215dc9dbbe.js",
-      "publicPath": "static/solar/frontend-deed3316c2215dc9dbbe.js"
-    },
-    "frontend-df01db108c9cbc0ac124.js": {
-      "name": "frontend-df01db108c9cbc0ac124.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-df01db108c9cbc0ac124.js",
-      "publicPath": "static/solar/frontend-df01db108c9cbc0ac124.js"
-    },
-    "frontend-e0aa71c01e93ccc9cbe2.js": {
-      "name": "frontend-e0aa71c01e93ccc9cbe2.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-e0aa71c01e93ccc9cbe2.js",
-      "publicPath": "static/solar/frontend-e0aa71c01e93ccc9cbe2.js"
-    },
-    "frontend-e2ce27dc3423cdd65c8c.js": {
-      "name": "frontend-e2ce27dc3423cdd65c8c.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-e2ce27dc3423cdd65c8c.js",
-      "publicPath": "static/solar/frontend-e2ce27dc3423cdd65c8c.js"
-    },
-    "frontend-e3b3ffcaedcfd8abf0c3.js": {
-      "name": "frontend-e3b3ffcaedcfd8abf0c3.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-e3b3ffcaedcfd8abf0c3.js",
-      "publicPath": "static/solar/frontend-e3b3ffcaedcfd8abf0c3.js"
-    },
-    "frontend-e4325308356397978e8a.js": {
-      "name": "frontend-e4325308356397978e8a.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-e4325308356397978e8a.js",
-      "publicPath": "static/solar/frontend-e4325308356397978e8a.js"
-    },
-    "frontend-e4842899cb30f5d7c431.js": {
-      "name": "frontend-e4842899cb30f5d7c431.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-e4842899cb30f5d7c431.js",
-      "publicPath": "static/solar/frontend-e4842899cb30f5d7c431.js"
-    },
-    "frontend-e86a8b5fcb8f2a5946f5.js": {
-      "name": "frontend-e86a8b5fcb8f2a5946f5.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-e86a8b5fcb8f2a5946f5.js",
-      "publicPath": "static/solar/frontend-e86a8b5fcb8f2a5946f5.js"
-    },
-    "frontend-e93f5a2f14d93810edfc.js": {
-      "name": "frontend-e93f5a2f14d93810edfc.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-e93f5a2f14d93810edfc.js",
-      "publicPath": "static/solar/frontend-e93f5a2f14d93810edfc.js"
-    },
-    "frontend-e9e8ef902f9e6c61df25.js": {
-      "name": "frontend-e9e8ef902f9e6c61df25.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-e9e8ef902f9e6c61df25.js",
-      "publicPath": "static/solar/frontend-e9e8ef902f9e6c61df25.js"
-    },
-    "frontend-eb6d80195b0eb643d04e.js": {
-      "name": "frontend-eb6d80195b0eb643d04e.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-eb6d80195b0eb643d04e.js",
-      "publicPath": "static/solar/frontend-eb6d80195b0eb643d04e.js"
-    },
-    "frontend-ed4de523be3c391b85cf.js": {
-      "name": "frontend-ed4de523be3c391b85cf.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-ed4de523be3c391b85cf.js",
-      "publicPath": "static/solar/frontend-ed4de523be3c391b85cf.js"
-    },
-    "frontend-ed5baa716e55569da911.js": {
-      "name": "frontend-ed5baa716e55569da911.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-ed5baa716e55569da911.js",
-      "publicPath": "static/solar/frontend-ed5baa716e55569da911.js"
-    },
-    "frontend-ee426eaeec809758e892.js": {
-      "name": "frontend-ee426eaeec809758e892.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-ee426eaeec809758e892.js",
-      "publicPath": "static/solar/frontend-ee426eaeec809758e892.js"
-    },
-    "frontend-eec59587297b21e7bdd4.js": {
-      "name": "frontend-eec59587297b21e7bdd4.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-eec59587297b21e7bdd4.js",
-      "publicPath": "static/solar/frontend-eec59587297b21e7bdd4.js"
-    },
-    "frontend-eef2c125ebdb1cd28fad.js": {
-      "name": "frontend-eef2c125ebdb1cd28fad.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-eef2c125ebdb1cd28fad.js",
-      "publicPath": "static/solar/frontend-eef2c125ebdb1cd28fad.js"
-    },
-    "frontend-ef34a817e36aff147ee2.js": {
-      "name": "frontend-ef34a817e36aff147ee2.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-ef34a817e36aff147ee2.js",
-      "publicPath": "static/solar/frontend-ef34a817e36aff147ee2.js"
-    },
-    "frontend-f01bf649ca489981a24c.js": {
-      "name": "frontend-f01bf649ca489981a24c.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-f01bf649ca489981a24c.js",
-      "publicPath": "static/solar/frontend-f01bf649ca489981a24c.js"
-    },
-    "frontend-f36eda9249443abf9e75.js": {
-      "name": "frontend-f36eda9249443abf9e75.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-f36eda9249443abf9e75.js",
-      "publicPath": "static/solar/frontend-f36eda9249443abf9e75.js"
-    },
-    "frontend-f4a63ccd65031cd89585.js": {
-      "name": "frontend-f4a63ccd65031cd89585.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-f4a63ccd65031cd89585.js",
-      "publicPath": "static/solar/frontend-f4a63ccd65031cd89585.js"
-    },
-    "frontend-f81d1ceac7c4dd5baf42.js": {
-      "name": "frontend-f81d1ceac7c4dd5baf42.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-f81d1ceac7c4dd5baf42.js",
-      "publicPath": "static/solar/frontend-f81d1ceac7c4dd5baf42.js"
-    },
-    "frontend-f860dcbd35ab868bdc56.js": {
-      "name": "frontend-f860dcbd35ab868bdc56.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-f860dcbd35ab868bdc56.js",
-      "publicPath": "static/solar/frontend-f860dcbd35ab868bdc56.js"
-    },
-    "frontend-f8a6514559ea80102c53.js": {
-      "name": "frontend-f8a6514559ea80102c53.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-f8a6514559ea80102c53.js",
-      "publicPath": "static/solar/frontend-f8a6514559ea80102c53.js"
-    },
-    "frontend-fa0664fc396a608d9d6e.js": {
-      "name": "frontend-fa0664fc396a608d9d6e.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-fa0664fc396a608d9d6e.js",
-      "publicPath": "static/solar/frontend-fa0664fc396a608d9d6e.js"
-    },
-    "frontend-fbae2a9b04eec2b44ef2.js": {
-      "name": "frontend-fbae2a9b04eec2b44ef2.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-fbae2a9b04eec2b44ef2.js",
-      "publicPath": "static/solar/frontend-fbae2a9b04eec2b44ef2.js"
-    },
-    "frontend-fd8a143b1e9e863d88e1.js": {
-      "name": "frontend-fd8a143b1e9e863d88e1.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-fd8a143b1e9e863d88e1.js",
-      "publicPath": "static/solar/frontend-fd8a143b1e9e863d88e1.js"
-    },
-    "frontend-fe9a4b4c1dee96735383.js": {
-      "name": "frontend-fe9a4b4c1dee96735383.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-fe9a4b4c1dee96735383.js",
-      "publicPath": "static/solar/frontend-fe9a4b4c1dee96735383.js"
-    },
-    "frontend-ff3437e5876d960ed366.js": {
-      "name": "frontend-ff3437e5876d960ed366.js",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\frontend-ff3437e5876d960ed366.js",
-      "publicPath": "static/solar/frontend-ff3437e5876d960ed366.js"
+    "frontend-200cbea29e38f2e8b849.js": {
+      "name": "frontend-200cbea29e38f2e8b849.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-200cbea29e38f2e8b849.js",
+      "publicPath": "static/solar/frontend-200cbea29e38f2e8b849.js"
+    },
+    "frontend-3f867c7a0c6963ece28b.js": {
+      "name": "frontend-3f867c7a0c6963ece28b.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-3f867c7a0c6963ece28b.js",
+      "publicPath": "static/solar/frontend-3f867c7a0c6963ece28b.js"
+    },
+    "frontend-43ac10e13e0488513200.js": {
+      "name": "frontend-43ac10e13e0488513200.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-43ac10e13e0488513200.js",
+      "publicPath": "static/solar/frontend-43ac10e13e0488513200.js"
+    },
+    "frontend-4e428e5196f844209634.js": {
+      "name": "frontend-4e428e5196f844209634.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-4e428e5196f844209634.js",
+      "publicPath": "static/solar/frontend-4e428e5196f844209634.js"
+    },
+    "frontend-58ba7568a57d8daeae25.js": {
+      "name": "frontend-58ba7568a57d8daeae25.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-58ba7568a57d8daeae25.js",
+      "publicPath": "static/solar/frontend-58ba7568a57d8daeae25.js"
+    },
+    "frontend-94a975f766aa8a3dc7c2.js": {
+      "name": "frontend-94a975f766aa8a3dc7c2.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-94a975f766aa8a3dc7c2.js",
+      "publicPath": "static/solar/frontend-94a975f766aa8a3dc7c2.js"
+    },
+    "frontend-968f65705c0ea87a7689.js": {
+      "name": "frontend-968f65705c0ea87a7689.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-968f65705c0ea87a7689.js",
+      "publicPath": "static/solar/frontend-968f65705c0ea87a7689.js"
+    },
+    "frontend-a15f31018f807f70ebce.js": {
+      "name": "frontend-a15f31018f807f70ebce.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-a15f31018f807f70ebce.js",
+      "publicPath": "static/solar/frontend-a15f31018f807f70ebce.js"
+    },
+    "frontend-aee2be3259540f8c66a1.js": {
+      "name": "frontend-aee2be3259540f8c66a1.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-aee2be3259540f8c66a1.js",
+      "publicPath": "static/solar/frontend-aee2be3259540f8c66a1.js"
+    },
+    "frontend-af9db5ec08623c56ecaa.js": {
+      "name": "frontend-af9db5ec08623c56ecaa.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-af9db5ec08623c56ecaa.js",
+      "publicPath": "static/solar/frontend-af9db5ec08623c56ecaa.js"
+    },
+    "frontend-b1e9d322f16976eacae4.js": {
+      "name": "frontend-b1e9d322f16976eacae4.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-b1e9d322f16976eacae4.js",
+      "publicPath": "static/solar/frontend-b1e9d322f16976eacae4.js"
+    },
+    "frontend-bfad4f62150ac9a83740.js": {
+      "name": "frontend-bfad4f62150ac9a83740.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-bfad4f62150ac9a83740.js",
+      "publicPath": "static/solar/frontend-bfad4f62150ac9a83740.js"
+    },
+    "frontend-f80573253e80d1fdad71.js": {
+      "name": "frontend-f80573253e80d1fdad71.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-f80573253e80d1fdad71.js",
+      "publicPath": "static/solar/frontend-f80573253e80d1fdad71.js"
+    },
+    "frontend-fc1ff32e6554f4cba7c9.js": {
+      "name": "frontend-fc1ff32e6554f4cba7c9.js",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\frontend-fc1ff32e6554f4cba7c9.js",
+      "publicPath": "static/solar/frontend-fc1ff32e6554f4cba7c9.js"
     },
     "images/Habib.jpeg": {
       "name": "images/Habib.jpeg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Habib.jpeg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Habib.jpeg",
       "publicPath": "static/solar/images/Habib.jpeg"
     },
     "images/Harrison.jpg": {
       "name": "images/Harrison.jpg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Harrison.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Harrison.jpg",
       "publicPath": "static/solar/images/Harrison.jpg"
     },
     "images/Jayanth.jpg": {
       "name": "images/Jayanth.jpg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Jayanth.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Jayanth.jpg",
       "publicPath": "static/solar/images/Jayanth.jpg"
     },
     "images/Kevin.jpg": {
       "name": "images/Kevin.jpg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Kevin.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Kevin.jpg",
       "publicPath": "static/solar/images/Kevin.jpg"
     },
     "images/Luis.jpg": {
       "name": "images/Luis.jpg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Luis.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Luis.jpg",
       "publicPath": "static/solar/images/Luis.jpg"
     },
     "images/portfolio-1.jpg": {
       "name": "images/portfolio-1.jpg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\portfolio-1.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\portfolio-1.jpg",
       "publicPath": "static/solar/images/portfolio-1.jpg"
     },
     "images/portfolio-2.jpg": {
       "name": "images/portfolio-2.jpg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\portfolio-2.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\portfolio-2.jpg",
       "publicPath": "static/solar/images/portfolio-2.jpg"
     },
     "images/portfolio-3.jpg": {
       "name": "images/portfolio-3.jpg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\portfolio-3.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\portfolio-3.jpg",
       "publicPath": "static/solar/images/portfolio-3.jpg"
     },
     "images/portfolio-4.jpg": {
       "name": "images/portfolio-4.jpg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\portfolio-4.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\portfolio-4.jpg",
       "publicPath": "static/solar/images/portfolio-4.jpg"
     },
     "images/Ravi.png": {
       "name": "images/Ravi.png",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Ravi.png",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Ravi.png",
       "publicPath": "static/solar/images/Ravi.png"
     },
     "images/Solar1.svg": {
       "name": "images/Solar1.svg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Solar1.svg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Solar1.svg",
       "publicPath": "static/solar/images/Solar1.svg"
     },
     "images/Solar2.svg": {
       "name": "images/Solar2.svg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Solar2.svg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Solar2.svg",
       "publicPath": "static/solar/images/Solar2.svg"
     },
     "images/Solar3.svg": {
       "name": "images/Solar3.svg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Solar3.svg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Solar3.svg",
       "publicPath": "static/solar/images/Solar3.svg"
     },
     "images/Solar4.svg": {
       "name": "images/Solar4.svg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Solar4.svg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Solar4.svg",
       "publicPath": "static/solar/images/Solar4.svg"
     },
     "images/sun.png": {
       "name": "images/sun.png",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\sun.png",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\sun.png",
       "publicPath": "static/solar/images/sun.png"
     },
     "images/Vamsi.jpg": {
       "name": "images/Vamsi.jpg",
-      "path": "C:\\Users\\user\\Desktop\\Final_project\\solar\\static\\solar\\images\\Vamsi.jpg",
+      "path": "C:\\Users\\lcngt\\555-TeamProject\\solar\\static\\solar\\images\\Vamsi.jpg",
       "publicPath": "static/solar/images/Vamsi.jpg"
     }
   },
   "chunks": {
     "frontend": [
-      "frontend-6e31e6d9bf6aa2792665.js"
+      "frontend-4e428e5196f844209634.js"
     ]
   },
   "publicPath": "static/solar/",
   "error": "ModuleBuildError",
-  "message": "Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nCssSyntaxError\n\n(153:2) C:\\Users\\user\\Desktop\\Final_project\\solar\\src\\App.css Unknown word\n\n  151 | \n  152 | .col-text {\n> 153 |  fon\n      |  ^\n  154 | }\n  155 | \n"
+  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\lcngt\\555-TeamProject\\solar\\client\\src\\pages\\ConstructionManager.js: Unexpected token, expected \",\" (151:6)\n\n  149 |       {name: 'Zip Code', selector: (row, i) => row.zip_code, center: true},\n  150 |       {name: 'City', selector: (row, i) => row.city, center: true}\n> 151 |       {name: 'Comments', selector: (row, i) => row.site_svr_comm, center: true}\n      |       ^\n  152 |     ];\n  153 |\n  154 |     const scheduledRequestsColumns = [\n    at instantiate (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:64:32)\n    at constructor (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:364:12)\n    at JSXParserMixin.raise (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:3253:19)\n    at JSXParserMixin.unexpected (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:3283:16)\n    at JSXParserMixin.expect (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:3629:28)\n    at JSXParserMixin.parseExprList (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:11959:14)\n    at JSXParserMixin.parseArrayLike (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:11868:26)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:11137:23)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:6992:20)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10859:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10842:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10818:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10656:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10661:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10638:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10599:21)\n    at C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10569:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12239:16)\n    at JSXParserMixin.parseMaybeAssignAllowIn (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:10569:17)\n    at JSXParserMixin.parseVar (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13192:91)\n    at JSXParserMixin.parseVarStatement (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13031:10)\n    at JSXParserMixin.parseStatementContent (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12628:23)\n    at JSXParserMixin.parseStatementLike (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12548:17)\n    at JSXParserMixin.parseStatementListItem (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12528:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13120:61)\n    at JSXParserMixin.parseBlockBody (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13113:10)\n    at JSXParserMixin.parseBlock (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13101:10)\n    at JSXParserMixin.parseFunctionBody (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:11911:24)\n    at JSXParserMixin.parseFunctionBodyAndFinish (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:11897:10)\n    at C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13256:12\n    at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12221:14)\n    at JSXParserMixin.parseFunction (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13255:10)\n    at JSXParserMixin.parseExportDefaultExpression (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13740:19)\n    at JSXParserMixin.parseExport (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13667:25)\n    at JSXParserMixin.parseStatementContent (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12660:27)\n    at JSXParserMixin.parseStatementLike (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12548:17)\n    at JSXParserMixin.parseModuleItem (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12525:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13120:36)\n    at JSXParserMixin.parseBlockBody (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:13113:10)\n    at JSXParserMixin.parseProgram (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12439:10)\n    at JSXParserMixin.parseTopLevel (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:12429:25)\n    at JSXParserMixin.parse (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:14250:10)\n    at parse (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\parser\\lib\\index.js:14292:38)\n    at parser (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\core\\lib\\parser\\index.js:41:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:64:38)\n    at normalizeFile.next (<anonymous>)\n    at run (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\core\\lib\\transformation\\index.js:21:50)\n    at run.next (<anonymous>)\n    at transform (C:\\Users\\lcngt\\555-TeamProject\\node_modules\\@babel\\core\\lib\\transform.js:22:41)"
 }

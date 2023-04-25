@@ -146,8 +146,7 @@ export default function ConstructionManager() {
       },
       {name: 'First Name', selector: (row, i) => row.first_name, center: true}, 
       {name: 'Street Address', selector: (row, i) => row.street_address1, center: true},
-      {name: 'Zip Code', selector: (row, i) => row.zip_code, center: true},
-      {name: 'City', selector: (row, i) => row.city, center: true}
+      {name: 'Site Surveyor Comments', selector: (row, i) => row.site_svr_comm, center: true}
     ];
 
     const scheduledRequestsColumns = [

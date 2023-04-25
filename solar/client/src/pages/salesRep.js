@@ -150,11 +150,6 @@ export default function App() {
                           Your Requests
                         </MDBTabsLink>
                       </MDBTabsItem>
-                      <MDBTabsItem>
-                        <MDBTabsLink className='tab-text' onClick={() => handleVerticalClick('tab3')} active={verticalActive === 'tab3'}>
-                          Active Requests
-                        </MDBTabsLink>
-                      </MDBTabsItem>
                     </MDBTabs>
 
                     <MDBTabsContent>
@@ -182,7 +177,9 @@ export default function App() {
                               <SalesRepTable
                                 data={allRequests}
                                 handleCheckboxSelection={handleCheckboxSelection}
-                                isUsersRequests={false} />
+                                isUsersRequests={false} 
+                                isSecondTable={false}/>
+                                
                             }
                           </MDBTableBody>
                         </MDBTable>
@@ -192,9 +189,9 @@ export default function App() {
                         <MDBTable className="table table-light table-bordered table-responsive table-hover">
                           <MDBTableHead dark>
                             <tr>
-                              <th scope='col'>
+                              {/* <th scope='col'>
 
-                              </th>
+                              </th> */}
                               <th className='tab-text'>Customer's Request ID</th>
                               <th className='tab-text'>Customer's First Name</th>
                               <th className='tab-text'>Customer's City</th>
@@ -204,7 +201,7 @@ export default function App() {
                           <MDBTableBody>
                             {
                               userRequests && userRequests.length !== 0
-                                ? <SalesRepTable data={userRequests} handleCheckboxSelection={handleCheckboxSelection} isUsersRequests={true} />
+                                ? <SalesRepTable data={userRequests} handleCheckboxSelection={handleCheckboxSelection} isUsersRequests={true} isSecondTable={true}/>
                                 : <></>
                             }
                           </MDBTableBody>
@@ -217,7 +214,7 @@ export default function App() {
                         }
                       </MDBTabsPane>
 
-                      <MDBTabsPane className='tab-text' show={verticalActive === 'tab3'}>On going Projects</MDBTabsPane>
+                      {/* <MDBTabsPane className='tab-text' show={verticalActive === 'tab3'}>On going Projects</MDBTabsPane> */}
                     </MDBTabsContent>
                   </MDBCol>
                   <MDBCol size='1'></MDBCol>
@@ -271,7 +268,7 @@ export default function App() {
 //   );
 // }
 
-function SalesRepTable({ data, handleCheckboxSelection, isUsersRequests }) {
+function SalesRepTable({ data, handleCheckboxSelection, isUsersRequests, isSecondTable }) {
   const [selectedRequests, setSelectedRequests] = useState([]);
 
   const handleRowClick = (requestId) => {
@@ -298,12 +295,19 @@ function SalesRepTable({ data, handleCheckboxSelection, isUsersRequests }) {
           onClick={() => handleRowClick(value.request_id)}
           className={selectedRequests.includes(value.request_id) ? "table-primary" : ""}
         >
+          { !isSecondTable ? 
           <th scope="col">
             <MDBCheckbox 
               checked={selectedRequests.includes(value.request_id)}
               onChange={() => { }}
             ></MDBCheckbox>
-          </th>
+          </th> : <></> }
+          {/* <th scope="col">
+            <MDBCheckbox 
+              checked={selectedRequests.includes(value.request_id)}
+              onChange={() => { }}
+            ></MDBCheckbox>
+          </th> */}
           <td className='tab-text'>{value.request_id}</td>
           <td className='tab-text'>{value.first_name}</td>
           <td className='tab-text'>{value.city}</td>
@@ -313,4 +317,6 @@ function SalesRepTable({ data, handleCheckboxSelection, isUsersRequests }) {
     </>
   );
 }
+
+
 
