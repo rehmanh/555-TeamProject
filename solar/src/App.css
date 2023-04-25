@@ -10,14 +10,33 @@
     box-shadow: 0px 0px 10px grey;
 }
 
-.salePage {
+.Page {
     width: 70%;
-    margin: 50px auto;
+    margin: 150px auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px grey;
-    height: 40rem;
+    height: 50rem;
     overflow-y: auto;
+}
+
+.rqform {
+    width: 70%;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px grey;
+    height: 70rem;
+}
+
+.track {
+    align-items: center;
+    height: 60rem;
+}
+
+.kpicard:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
 }
 
 .container {
@@ -30,6 +49,14 @@
 
 .card-title {
     padding-top: 1px !important;
+}
+
+.bbox {
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    background: var(--accent);
+    cursor: pointer;
 }
 
 
@@ -81,7 +108,7 @@ h1 {
 
 form {
     width: 50%;
-    margin: 50px auto;
+    margin: 90px auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px grey;
@@ -117,14 +144,109 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+.btn {
+    margin: 10px;
+}
+
 .background-image {
     background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/45992f1c-a33a-4a04-b1f0-338aff182f8e/bvlatuR/std/2880x1800/_25-Hero-D');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.cm-text {
+    height: 60px;
+    width: 200px !important;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* .col-text {
+ font-size: .5rem;
+} */
+
+@media(max-width: 1450px) {
+    .opPage {
+        width: 100%;
+        margin: 90px auto;
+    }
+    
+    .Page {
+        width: 100%;
+        margin: 90px auto;
+    }
+    .kpicard {
+        width: auto;
+        height: 6rem;
+    }
+    .kpitext {
+        font-size: 1rem;
+    }
+}
+
+
+@media(max-width: 890px) {
+    .Page {
+        width: 100%;
+        margin: 90px auto;
+    }
+    .rqform {
+        width: 100%;
+    }
+
+    .tab-text {
+        font-size: 1rem;
+    }
+
+    .cm-text {
+        font-size: .8rem;
+        width: 10rem !important;
+    }
+
+    .kpicard {
+        width: auto;
+        height: 5rem;
+    }
+    .kpitext {
+        font-size: .8rem;
+    }
+
+}
+
+@media(max-width: 700px) {
+    .cm-text {
+        font-size: .5rem;
+        width: 7rem !important;
+        height: 40px;
+    }
+    .rqform{
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .col-text {
+        font-size: .5rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .cm-text {
+        font-size: .5rem;
+        width: 5rem !important;
+        height: 60px;
+    }
+    .kpicard {
+        margin-top: 1rem;
+    }
+}
+
 
 @media(max-width: 414px) {
+    .tab-text {
+        font-size: .5rem;
+    }
+
     .carouselimg {
         object-fit: cover;
         height: 20rem
@@ -156,10 +278,19 @@ input[type="submit"]:hover {
     }
 
     .background-image {
-        background-image:none;
+        background-image: none;
         background-size: cover;
-        background-repeat:repeat;
+        background-repeat: repeat;
         min-height: 100%;
+    }
+
+    .cm-text {
+        font-size: .5rem;
+        /* height: 60px;
+        width: 200px !important ;
+        display: inline-block;
+        overflow: hidden; 
+        text-overflow: ellipsis; */
     }
 
 }

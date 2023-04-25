@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from 'framer-motion'
+import img from "../img/login.jpeg"
 import {
   MDBContainer,
   MDBCard,
@@ -13,7 +14,7 @@ import {
   MDBCol
 } from 'mdb-react-ui-kit';
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: .8 } },
   hidden: { opacity: 0, scale: 0 },
 };
 
@@ -110,7 +111,13 @@ export default function UserRequestForm() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-    ><div className="background-image"></div>
+    >
+      <img
+            className="background-image"
+            src={img}
+            alt="background"
+            style={{ height:'100rem', backgroundSize:'auto 100rem', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'  }}
+          />
       <motion.div
         className="box"
         variants={boxVariant}
@@ -123,7 +130,7 @@ export default function UserRequestForm() {
           <ToastContainer />
           <div>
             
-            <form onSubmit={handleSubmit}>
+            <form className="rqform" onSubmit={handleSubmit}>
               <h1>Request Form</h1>
               <label htmlFor="firstName">First Name:</label>
               <input
