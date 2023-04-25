@@ -41,8 +41,8 @@ export default function OpManager() {
                     animate="visible"
                 >
                     <MDBCard className="kpicard" onClick={handleClick} alignment='center'>
-                        <MDBCardBody>
-                            <MDBCardTitle><BsClipboard2CheckFill />  In Progress:</MDBCardTitle>
+                        <MDBCardBody c>
+                            <MDBCardTitle className="kpitext"><BsClipboard2CheckFill />  In Progress:</MDBCardTitle>
                             <MDBCardText>
                                 <p> {kpiData?.['IN-PROGRESS']}</p>
                             </MDBCardText>
@@ -60,7 +60,7 @@ export default function OpManager() {
                 >
                     <MDBCard className="kpicard" alignment='center'>
                         <MDBCardBody>
-                            <MDBCardTitle><BsClipboard2CheckFill />  Done:</MDBCardTitle>
+                            <MDBCardTitle className="kpitext"><BsClipboard2CheckFill />  Done:</MDBCardTitle>
                             <MDBCardText>
                                 <p>{kpiData?.DONE}</p>
                             </MDBCardText>
@@ -77,7 +77,7 @@ export default function OpManager() {
                 >
                     <MDBCard className="kpicard" alignment='center'>
                         <MDBCardBody>
-                            <MDBCardTitle><BsClipboard2CheckFill />  Payment Done: </MDBCardTitle>
+                            <MDBCardTitle className="kpitext"><BsClipboard2CheckFill />  Payment Done: </MDBCardTitle>
                             <MDBCardText>
                                 <p>{kpiData?.['PAYMENT-DONE']}</p>
                             </MDBCardText>
@@ -94,7 +94,7 @@ export default function OpManager() {
                 >
                     <MDBCard className="kpicard" alignment='center'>
                         <MDBCardBody>
-                            <MDBCardTitle><BsClipboard2CheckFill />  Initiated:</MDBCardTitle>
+                            <MDBCardTitle className="kpitext"><BsClipboard2CheckFill />  Initiated:</MDBCardTitle>
                             <MDBCardText>
                                 <p>{kpiData?.INITIATED}</p>
                             </MDBCardText>

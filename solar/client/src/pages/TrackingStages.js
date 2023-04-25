@@ -33,16 +33,6 @@ export const TrackingStages = (props) => {
   return (
     <div className="form">
       <h1 className="text-center k">Order Progress</h1>
-      {/* <div class="details">
-        <div class="order">
-          <h1>
-            Order <span>x53423765r7</span>
-          </h1>
-        </div>
-        <div class="date">
-          <p>Expected Completion 21/12/23</p>
-        </div>
-      </div> */}
       <div className="progressbar">
         <div
           className="progress"

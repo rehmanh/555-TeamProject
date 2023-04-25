@@ -20,7 +20,7 @@ import { getUserFullName } from '../utils/utils';
 import KpiCards from '../components/kpi';
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: .8 } },
   hidden: { opacity: 0, scale: 0 },
 };
 
@@ -39,13 +39,12 @@ export default function OpManager() {
       exit={{ opacity: 0 }}
     >
       {/* <Navbar /> */}
-      <h1>
-        Welcome Back {fullUserName}
-      </h1>
       <div className='opPage'>
 
         <MDBContainer breakpoint="sm">
-
+          <h1>
+            Welcome Back, {fullUserName}!
+          </h1>
           <KpiCards />
 
           <MDBRow className="mt-4 text-center">

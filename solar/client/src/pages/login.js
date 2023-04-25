@@ -10,6 +10,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { motion } from 'framer-motion';
 import { redirectToUserDashboard }  from "../utils/utils";
+import loginImg from '../img/login.jpeg'
 
 export default class Login extends Component {
   constructor(props) {
@@ -82,17 +83,16 @@ export default class Login extends Component {
     return (
       <motion.div
       initial={{opacity: 0}}
-      animate={{opacity: 1, transition: {duration: 1}}}
+      animate={{opacity: 1, transition: {duration: .8}}}
       exit={{opacity: 0 }}
       style={{ height:'70rem' }}
       >
         
           <img
           className="background-image"
-            src={
-              "https://tesla-cdn.thron.com/delivery/public/image/tesla/45992f1c-a33a-4a04-b1f0-338aff182f8e/bvlatuR/std/2880x1800/_25-Hero-D"
-            }
+            src={loginImg}
             alt="background"
+            style={{ height:'70rem', backgroundSize:'auto 70rem', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'  }}
           />
           <Form className="formclass centered" onSubmit={this.handleLogin}>
             {/* <center> */}
