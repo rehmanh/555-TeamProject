@@ -11,6 +11,11 @@ function Dropdown({ selectedRows }) {
 
   const token = "Token " + getAuthToken()
 
+  const handleRefresh = () => {
+    setTimeout(() => {
+      window.location.reload();
+    }, 1500); // 1.5 second delay before reload
+  };
   // fetch the list of values from the API
   useEffect(() => {
       axios.get('/api/construction-managers/', {
@@ -53,6 +58,7 @@ function Dropdown({ selectedRows }) {
         console.log(response)
         if (response && response.status === 200) {
           toast.success(`Successfully assigned ${request_ids} to Construction manager: ${selectedValue}`)
+          handleRefresh();
         } else if (response && response.status in [400, 404]) {
           toast.error('There was an issue with your Request. Please contact IT for support.')
         } else {

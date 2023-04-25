@@ -69,7 +69,7 @@ export default function App() {
   const handleRefresh = () => {
     setTimeout(() => {
       window.location.reload();
-    }, 2000); // 2 second delay before reload
+    }, 1500); // 1.5 second delay before reload
   };
 
   const assignRequestToSalesRep = () => {

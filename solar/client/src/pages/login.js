@@ -83,7 +83,7 @@ export default class Login extends Component {
     return (
       <motion.div
       initial={{opacity: 0}}
-      animate={{opacity: 1, transition: {duration: 1}}}
+      animate={{opacity: 1, transition: {duration: .8}}}
       exit={{opacity: 0 }}
       style={{ height:'70rem' }}
       >

@@ -56,6 +56,7 @@ function Table() {
 
   const token = "Token " + getAuthToken()
 
+
   useEffect(() => {
     Promise.all([
       fetch("https://m90c2ol29g.execute-api.us-east-1.amazonaws.com/UAT", {

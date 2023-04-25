@@ -20,7 +20,7 @@ import { getUserFullName } from '../utils/utils';
 import KpiCards from '../components/kpi';
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: .8 } },
   hidden: { opacity: 0, scale: 0 },
 };
 
