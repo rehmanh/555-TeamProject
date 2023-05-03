@@ -140,7 +140,7 @@ export default function App() {
                 animate="visible"
               >
                 <h1>
-                  Welcome Back {fullUserName}!
+                  Welcome Back, {fullUserName}!
                 </h1>
                 <MDBRow>
                   <MDBCol size='12'>

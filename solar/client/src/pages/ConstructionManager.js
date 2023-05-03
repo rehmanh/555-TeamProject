@@ -127,7 +127,6 @@ export default function ConstructionManager() {
   const unassignedRequestsColumns = [
     { name: 'Request ID', selector: (row, i) => row.request_id, center: true, cell: (row) => <div className="col-text">{row.request_id}</div> },
     { name: 'First Name', selector: (row, i) => row.first_name, center: true, cell: (row) => <div className="col-text">{row.first_name}</div> },
-    { name: 'Zip Code', selector: (row, i) => row.zip_code, center: true, cell: (row) => <div className="col-text">{row.zip_code}</div> },
     { name: 'City', selector: (row, i) => row.city, center: true, cell: (row) => <div className="col-text">{row.city}</div> }
   ];
 
@@ -166,7 +165,9 @@ export default function ConstructionManager() {
     { name: 'First Name', selector: (row, i) => row.first_name, center: true },
     { name: 'Street Address', selector: (row, i) => row.street_address1, center: true },
     { name: 'Zip Code', selector: (row, i) => row.zip_code, center: true },
-    { name: 'City', selector: (row, i) => row.city, center: true }
+    { name: 'City', selector: (row, i) => row.city, center: true },
+    { name: 'Install Start', selector: (row, i) => row.pref_install_start_date, center: true },
+    { name: 'Install End', selector: (row, i) => row.pref_install_end_date, center: true }
   ];
 
   const [selectedValue, setSelectedValue] = useState('');
@@ -375,7 +376,7 @@ export default function ConstructionManager() {
         >
           <div className='Page'>
             <MDBRow style={{ marginTop: '50px' }}>
-              <h1>Welcome Back {fullUserName}!</h1>
+              <h1>Welcome Back, {fullUserName}!</h1>
             </MDBRow>
 
             <MDBRow>

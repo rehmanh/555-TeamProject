@@ -43,7 +43,7 @@ export default function OpManager() {
 
         <MDBContainer breakpoint="sm">
           <h1>
-            Welcome Back {fullUserName}!
+            Welcome Back, {fullUserName}!
           </h1>
           <KpiCards />
 

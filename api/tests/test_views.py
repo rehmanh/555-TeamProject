@@ -158,14 +158,14 @@ class TestViews(TestSetUp):
             }
         
         res = self.client.post("https://c80q5wc5m0.execute-api.us-east-1.amazonaws.com/UAT", data=user_data)
-        self.assertEqual(res.status_code, 404)
+        self.assertEqual(res.status_code, 200)
 
     def test_assign_const_mgr2(self):
         user_data = {
             }
         
         res = self.client.post("https://c80q5wc5m0.execute-api.us-east-1.amazonaws.com/UAT", data=user_data)
-        self.assertEqual(res.status_code, 404)
+        self.assertEqual(res.status_code, 200)
 
     def test_fetch_const_mgr(self):
         user_data = {
@@ -173,7 +173,7 @@ class TestViews(TestSetUp):
             }
         
         res = self.client.post("https://szmu1lpz65.execute-api.us-east-1.amazonaws.com/UAT", data=user_data)
-        self.assertEqual(res.status_code, 404)
+        self.assertEqual(res.status_code, 200)
 
     def test_salesrep_get(self):
         # assemble
@@ -207,3 +207,37 @@ class TestViews(TestSetUp):
         r = self.client.get(self.construction_managers_url, headers={"Authorization": token_str})
         # assert
         self.assertEqual(r.status_code, 401)
+
+    def test_constmgr_update(self):
+        user_data = {
+            "request_id": "0cd22713-857d-41c0-a79a-4c6cbaacaa17",
+            "email_address": "lng@email.com",
+            "first_name": ""
+            }
+        
+        res = self.client.post("https://vlcfbqye7a.execute-api.us-east-1.amazonaws.com/UAT", data=user_data)
+        self.assertEqual(res.status_code, 200)
+
+    def test_payment_submit(self):
+        user_data = {
+            "first_name": ""
+            }
+        
+        res = self.client.post("https://9drglafz7b.execute-api.us-east-1.amazonaws.com/UAT", data=user_data)
+        self.assertEqual(res.status_code, 200)
+
+    def test_tracking(self):
+        user_data = {
+            "data": ""
+            }
+        
+        res = self.client.post("https://7wdf6k3w65.execute-api.us-east-1.amazonaws.com/UAT", data=user_data)
+        self.assertEqual(res.status_code, 200)
+
+    def test_tracking2(self):
+        user_data = {
+            }
+        
+        res = self.client.post("https://7wdf6k3w65.execute-api.us-east-1.amazonaws.com/UAT", data=user_data)
+        self.assertEqual(res.status_code, 200)
+

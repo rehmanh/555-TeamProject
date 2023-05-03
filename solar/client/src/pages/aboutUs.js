@@ -76,7 +76,9 @@ const Kevin = () => {
                     <MDBCardBody className='d-flex flex-column'>
                         <MDBCardTitle className='fontTitle'>Yu-Cheng</MDBCardTitle>
                         <MDBCardText className='fontBody'>
-                            Hi I'm Yu-Cheng. I helped with the front end of the project.
+                            Hi I'm Yu-Cheng. I helped with the front end of the project. 
+                            I am a M.S. Software Engineering student at Stevens Institute of Technology. 
+                            I helped set up the project for development, as well as developed and designed the frontend of the project.
                         </MDBCardText>
                     </MDBCardBody>
                 </MDBCard>
